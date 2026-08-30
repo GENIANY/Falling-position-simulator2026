@@ -1,27 +1,110 @@
-# WASA BFPS / Balloon Falling Position Simulator
+# Falling-position-simulator
 
-CUSFが公開しているサイト(https://predict.sondehub.org/ )を自団体用に調整し、いくつか機能を追加したものです。
-大きな変更点としては、日本語化、JSTに対応、繰り返し予測(Prediction Type)の中にGaussian_distributionを追加しました。Gaussian_distributionは上昇速度の±0.5m,バースト高度の±5%,降下速度の±0.5mの範囲で正規分布に対応させランダムで実行した結果を表示しています。中心点は赤色、中心に近いほど白、それ以外の色はRGBに対応しており、Rが上昇速度のσ、Gがバースト高度のσ、Bが降下速度のσに対応して色をプロットさせてます。
+高高度バルーンの着地位置予測・確率分布シミュレーター。
+CUSF/SondeHubのTawhiri予測APIをベースに、モンテカルロ確率分布・各種グラフ・発射条件最適化を備えたWebアプリです。
 
-サイトの中身は以下のリンクから確認できます！
-https://wasa-rockoon.github.io/Falling-position-simulator/
+## 構成
 
-## GitHub Pagesでの公開
-このリポジトリでは GitHub Actions を利用して GitHub Pages に自動デプロイされます。
-main ブランチに push するとワークフローが実行され、最新のファイルが公開されます。
-リポジトリの Settings > Pages で「Build and deployment」→「Source」を "GitHub Actions" に設定してください。
+```
+frontend/   React + TypeScript + Vite 製フロントエンド (GitHub Pages配信)
+backend/    FastAPI 製バックエンド (大規模モンテカルロ・自前軌道計算・最適化、開発中)
+legacy/     旧jQuery版アプリ (参照用に保存)
+docs/       Sphinxドキュメント (仕組み解説 + 技術提案書)
+```
 
-##　Upcoming Feature
-今後自分が実装したいものを記入していきます。
-・ガス計算シートの実装
-・CUSFが提供しているAPIの実装
-・リアルタイム予測の対応
-・誤差の修正
+## 主な機能
 
-要望はXのDMまでお願いします。
+- **単発予測 / 時系列予測**: Tawhiri API (GFS風データ) による軌道予測をLeaflet地図に表示
+- **モンテカルロ確率分布**: 上昇速度・バースト高度・降下速度を正規分布/Weibull分布で摂動 (試行回数・σ・シード設定可) し、着地点の50/90/95%信頼楕円・ヒートマップ・ヒストグラムを表示
+- **バルーン計算**: ペイロード質量・バルーン型番・ガス種別から上昇速度/バースト高度/必要ガス量を算出
+- **発射条件最適化**: 発射地点 × ガス量 × 発射時刻のグリッドサーチで「海に落とさない」「回収しやすい」条件を提案
+- **感度分析**: 各パラメータ±1σでの着地点変位をトルネード図で表示
+- **JST対応**: 入力・表示は日本標準時 (内部はUTC)
+
+## 起動方法
+
+### クイックスタート (front + back 一括起動)
+
+Node.js 22以降 + Python 3.12以降 + [uv](https://docs.astral.sh/uv/) が必要。
+
+```bash
+npm install        # 初回のみ (concurrently等)
+npm run setup      # 初回のみ (frontend依存 + backend依存を一括インストール)
+npm run dev        # フロント (http://localhost:5173) とバックエンド (http://localhost:8000) を同時起動
+```
+
+その他の一括コマンド:
+
+```bash
+npm run test       # フロント+バックエンドの全テスト
+npm run build      # フロントエンド本番ビルド
+npm run dev:frontend   # フロントのみ
+npm run dev:backend    # バックエンドのみ
+```
+
+### フロントエンド単体 (バックエンド不要)
+
+Node.js 22以降が必要。
+
+```bash
+cd frontend
+npm install        # 初回のみ
+npm run dev        # 開発サーバー起動 → http://localhost:5173
+```
+
+その他のコマンド:
+
+```bash
+npm run test       # テスト実行 (vitest)
+npm run build      # 本番ビルド → frontend/dist/
+npm run preview    # ビルド結果の確認サーバー
+```
+
+フロントエンドは単体で動作します (Tawhiri APIを直接呼ぶため、バックエンド不要)。
+
+### バックエンド (任意・開発中)
+
+Python 3.12以降 + [uv](https://docs.astral.sh/uv/) が必要。
+
+```bash
+cd backend
+uv sync                                        # 初回のみ (依存インストール)
+uv run uvicorn bfps.main:app --reload --port 8000
+```
+
+動作確認:
+
+```bash
+curl localhost:8000/api/health
+```
+
+テスト:
+
+```bash
+uv run pytest              # ネットワーク不要のテストのみ (既定)
+```
+
+フロントエンドからバックエンドを使う場合は環境変数を設定してビルド/起動:
+
+```bash
+cd frontend
+VITE_API_BASE=http://localhost:8000 npm run dev
+```
+
+### ドキュメント
+
+```bash
+pip install -r docs/requirements.txt
+python -m sphinx -b html docs/source docs/_build/html
+# → docs/_build/html/index.html をブラウザで開く
+```
+
+## デプロイ
+
+mainブランチへのpushでGitHub Actionsが `frontend/` をビルドしGitHub Pagesへ自動デプロイします
+(Settings > Pages > Source を "GitHub Actions" に設定)。
+Sphinxドキュメントも `/docs/` 配下に同時デプロイされます。
 
 ## License
-GNU General Public License
 
-## Contact
-https://x.com/wasa_rocket
+GNU General Public License

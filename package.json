@@ -1,0 +1,16 @@
+{
+  "name": "falling-position-simulator",
+  "private": true,
+  "scripts": {
+    "setup": "npm --prefix frontend install && cd backend && uv sync",
+    "dev": "concurrently -n front,back -c cyan,magenta \"npm run dev:frontend\" \"npm run dev:backend\"",
+    "dev:frontend": "cross-env VITE_API_BASE=http://localhost:8000 npm --prefix frontend run dev",
+    "dev:backend": "cd backend && uv run uvicorn bfps.main:app --reload --port 8000",
+    "test": "npm --prefix frontend run test -- --run && cd backend && uv run pytest",
+    "build": "npm --prefix frontend run build"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.0",
+    "cross-env": "^10.0.0"
+  }
+}

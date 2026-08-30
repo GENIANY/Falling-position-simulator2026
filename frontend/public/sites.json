@@ -1,0 +1,611 @@
+{
+  "北海道 (十勝)": {
+    "大樹町多目的航空公園": {
+      "altitude": 8,
+      "latitude": 42.50097,
+      "longitude": 143.4405
+    },
+    "大樹町 晩成地区(海岸平野)": {
+      "altitude": 10,
+      "latitude": 42.57,
+      "longitude": 143.5
+    },
+    "帯広 十勝川河川敷": {
+      "altitude": 35,
+      "latitude": 42.935,
+      "longitude": 143.21
+    },
+    "芽室町 十勝平野西部": {
+      "altitude": 90,
+      "latitude": 42.905,
+      "longitude": 143.05
+    },
+    "更別村 農地地帯": {
+      "altitude": 75,
+      "latitude": 42.655,
+      "longitude": 143.2
+    },
+    "豊頃町 十勝川下流": {
+      "altitude": 15,
+      "latitude": 42.8,
+      "longitude": 143.52
+    },
+    "国設阿寒湖畔スキー場 (公園)": {
+      "altitude": 0,
+      "latitude": 43.42366,
+      "longitude": 144.085
+    },
+    "すももの里 (公園)": {
+      "altitude": 0,
+      "latitude": 42.64006,
+      "longitude": 143.20359
+    },
+    "士幌町総合運動公園 (公園)": {
+      "altitude": 0,
+      "latitude": 43.16832,
+      "longitude": 143.23569
+    },
+    "士幌町農村公園 (公園)": {
+      "altitude": 0,
+      "latitude": 43.15794,
+      "longitude": 143.24192
+    },
+    "士幌鉄道記念公園 (公園)": {
+      "altitude": 0,
+      "latitude": 43.16224,
+      "longitude": 143.24745
+    },
+    "札内川ダム下流広場 (公園)": {
+      "altitude": 0,
+      "latitude": 42.58271,
+      "longitude": 142.93066
+    },
+    "津田公園 (公園)": {
+      "altitude": 0,
+      "latitude": 42.92016,
+      "longitude": 143.1257
+    },
+    "翠明橋公園 (公園)": {
+      "altitude": 0,
+      "latitude": 42.29944,
+      "longitude": 143.03409
+    },
+    "ナウマン公園 (公園)": {
+      "altitude": 0,
+      "latitude": 42.558,
+      "longitude": 143.2992
+    },
+    "歴舟川河川緑地公園 (公園)": {
+      "altitude": 0,
+      "latitude": 42.49526,
+      "longitude": 143.2758
+    },
+    "若草公園 (公園)": {
+      "altitude": 0,
+      "latitude": 43.07332,
+      "longitude": 142.82755
+    },
+    "さくら公園 (公園)": {
+      "altitude": 0,
+      "latitude": 43.07458,
+      "longitude": 142.82922
+    },
+    "本別公園 (公園)": {
+      "altitude": 0,
+      "latitude": 43.12882,
+      "longitude": 143.62692
+    },
+    "帯広中央公園 (公園)": {
+      "altitude": 0,
+      "latitude": 42.92439,
+      "longitude": 143.19931
+    },
+    "さかえ公園 (公園)": {
+      "altitude": 0,
+      "latitude": 42.92137,
+      "longitude": 143.19845
+    },
+    "緑ヶ丘公園 (公園)": {
+      "altitude": 0,
+      "latitude": 42.90515,
+      "longitude": 143.18707
+    },
+    "豊岡見晴し台駐車公園 (公園)": {
+      "altitude": 0,
+      "latitude": 43.24722,
+      "longitude": 143.22328
+    },
+    "広尾サンタの家 (公園)": {
+      "altitude": 0,
+      "latitude": 42.3025,
+      "longitude": 143.30146
+    },
+    "あやめが丘公園 (公園)": {
+      "altitude": 0,
+      "latitude": 42.95361,
+      "longitude": 144.07555
+    },
+    "逍遙公園 (公園)": {
+      "altitude": 0,
+      "latitude": 42.96201,
+      "longitude": 144.07786
+    },
+    "幸公園 (公園)": {
+      "altitude": 0,
+      "latitude": 42.96089,
+      "longitude": 144.071
+    },
+    "西町公園 (公園)": {
+      "altitude": 0,
+      "latitude": 42.92219,
+      "longitude": 143.17442
+    },
+    "祥栄の里 (公園)": {
+      "altitude": 0,
+      "latitude": 42.96591,
+      "longitude": 143.04048
+    },
+    "十勝エコロジーパーク (公園)": {
+      "altitude": 0,
+      "latitude": 42.93312,
+      "longitude": 143.31881
+    },
+    "六花の森 (公園)": {
+      "altitude": 0,
+      "latitude": 42.69117,
+      "longitude": 143.11515
+    },
+    "スマイルパーク (公園)": {
+      "altitude": 0,
+      "latitude": 42.91928,
+      "longitude": 143.27056
+    },
+    "十勝川公園 (公園)": {
+      "altitude": 0,
+      "latitude": 42.93428,
+      "longitude": 143.21843
+    },
+    "伏古別公園 (公園)": {
+      "altitude": 0,
+      "latitude": 42.92362,
+      "longitude": 143.13701
+    },
+    "柏林台公園 (公園)": {
+      "altitude": 0,
+      "latitude": 42.92244,
+      "longitude": 143.16774
+    },
+    "白樺公園 (公園)": {
+      "altitude": 0,
+      "latitude": 42.91374,
+      "longitude": 143.17309
+    },
+    "とてっぽ通 (公園)": {
+      "altitude": 0,
+      "latitude": 42.90401,
+      "longitude": 143.19735
+    },
+    "光南緑地 (公園)": {
+      "altitude": 0,
+      "latitude": 42.91112,
+      "longitude": 143.21811
+    },
+    "鈴蘭公園 (公園)": {
+      "altitude": 0,
+      "latitude": 42.94466,
+      "longitude": 143.19989
+    },
+    "南公園 (公園)": {
+      "altitude": 0,
+      "latitude": 42.91678,
+      "longitude": 143.2005
+    },
+    "こぶし児童公園 (公園)": {
+      "altitude": 0,
+      "latitude": 42.89806,
+      "longitude": 143.19323
+    },
+    "しほろ温泉パークゴルフ場 (公園)": {
+      "altitude": 0,
+      "latitude": 43.13904,
+      "longitude": 143.36657
+    },
+    "治水の森公園 (公園)": {
+      "altitude": 0,
+      "latitude": 42.93033,
+      "longitude": 143.23374
+    },
+    "あづさ公園 (公園)": {
+      "altitude": 0,
+      "latitude": 42.93863,
+      "longitude": 143.17051
+    },
+    "親和児童公園 (公園)": {
+      "altitude": 0,
+      "latitude": 42.93203,
+      "longitude": 143.16571
+    },
+    "中央公園 (公園)": {
+      "altitude": 0,
+      "latitude": 43.17102,
+      "longitude": 143.25025
+    },
+    "つつじが丘公園 (公園)": {
+      "altitude": 0,
+      "latitude": 43.07583,
+      "longitude": 142.82283
+    },
+    "屈足公園 (公園)": {
+      "altitude": 0,
+      "latitude": 43.09862,
+      "longitude": 142.91029
+    },
+    "清水中央公園 (公園)": {
+      "altitude": 0,
+      "latitude": 43.01254,
+      "longitude": 142.88477
+    },
+    "はくゆう公園 (公園)": {
+      "altitude": 0,
+      "latitude": 42.93264,
+      "longitude": 143.16223
+    },
+    "芽室公園 (公園)": {
+      "altitude": 0,
+      "latitude": 42.91948,
+      "longitude": 143.04835
+    },
+    "あけぼの公園 (公園)": {
+      "altitude": 0,
+      "latitude": 42.90192,
+      "longitude": 143.36618
+    },
+    "緑央公園 (公園)": {
+      "altitude": 0,
+      "latitude": 42.90252,
+      "longitude": 143.36843
+    },
+    "新緑公園 (公園)": {
+      "altitude": 0,
+      "latitude": 42.90524,
+      "longitude": 143.36707
+    },
+    "南町公園 (公園)": {
+      "altitude": 0,
+      "latitude": 42.90127,
+      "longitude": 143.35718
+    },
+    "寿町公園 (公園)": {
+      "altitude": 0,
+      "latitude": 42.90322,
+      "longitude": 143.35334
+    },
+    "宝町公園 (公園)": {
+      "altitude": 0,
+      "latitude": 42.90357,
+      "longitude": 143.35613
+    },
+    "緑町あすなろ公園 (公園)": {
+      "altitude": 0,
+      "latitude": 42.90552,
+      "longitude": 143.36375
+    },
+    "本町公園 (公園)": {
+      "altitude": 0,
+      "latitude": 42.9098,
+      "longitude": 143.35745
+    },
+    "旭町あさかぜ公園 (公園)": {
+      "altitude": 0,
+      "latitude": 42.91574,
+      "longitude": 143.36225
+    },
+    "旭町こばと公園 (公園)": {
+      "altitude": 0,
+      "latitude": 42.91299,
+      "longitude": 143.3614
+    },
+    "旭町三角公園 (公園)": {
+      "altitude": 0,
+      "latitude": 42.91391,
+      "longitude": 143.36392
+    },
+    "もみじ公園 (公園)": {
+      "altitude": 0,
+      "latitude": 42.9173,
+      "longitude": 143.36556
+    },
+    "交通公園 (公園)": {
+      "altitude": 0,
+      "latitude": 43.23109,
+      "longitude": 143.28947
+    },
+    "高台公園 (公園)": {
+      "altitude": 0,
+      "latitude": 43.23611,
+      "longitude": 143.30227
+    },
+    "高台公園パークゴルフ場 (公園)": {
+      "altitude": 0,
+      "latitude": 43.23796,
+      "longitude": 143.30288
+    },
+    "航空公園 (公園)": {
+      "altitude": 0,
+      "latitude": 43.23863,
+      "longitude": 143.27507
+    },
+    "コロポックル公園 (公園)": {
+      "altitude": 0,
+      "latitude": 43.43415,
+      "longitude": 144.09039
+    },
+    "希望が丘運動公園 (公園)": {
+      "altitude": 0,
+      "latitude": 42.98892,
+      "longitude": 143.19136
+    },
+    "上トマム児童公園 (公園)": {
+      "altitude": 0,
+      "latitude": 43.0416,
+      "longitude": 142.65502
+    },
+    "トマムパークゴルフ場 (公園)": {
+      "altitude": 0,
+      "latitude": 43.04102,
+      "longitude": 142.65521
+    },
+    "有明公園 (公園)": {
+      "altitude": 0,
+      "latitude": 43.01269,
+      "longitude": 142.89058
+    },
+    "上トマム公園 (公園)": {
+      "altitude": 0,
+      "latitude": 43.04212,
+      "longitude": 142.65339
+    },
+    "幕別町運動公園 (公園)": {
+      "altitude": 0,
+      "latitude": 42.90373,
+      "longitude": 143.34902
+    },
+    "茂岩末広児童公園 (公園)": {
+      "altitude": 0,
+      "latitude": 42.7945,
+      "longitude": 143.50642
+    },
+    "ポケットパーク (公園)": {
+      "altitude": 0,
+      "latitude": 42.80167,
+      "longitude": 143.50609
+    },
+    "JOYパークとよころ (公園)": {
+      "altitude": 0,
+      "latitude": 42.80283,
+      "longitude": 143.50644
+    },
+    "かしわ公園 (公園)": {
+      "altitude": 0,
+      "latitude": 42.69674,
+      "longitude": 143.13641
+    },
+    "鉄道記念公園 (公園)": {
+      "altitude": 0,
+      "latitude": 42.69497,
+      "longitude": 143.13361
+    },
+    "札内側総合運動公園 (公園)": {
+      "altitude": 0,
+      "latitude": 42.70256,
+      "longitude": 143.12669
+    },
+    "興農区公園 (公園)": {
+      "altitude": 0,
+      "latitude": 42.70317,
+      "longitude": 143.13769
+    },
+    "中央広場 (公園)": {
+      "altitude": 0,
+      "latitude": 42.80979,
+      "longitude": 143.6555
+    },
+    "緑町児童公園 (公園)": {
+      "altitude": 0,
+      "latitude": 42.80833,
+      "longitude": 143.65373
+    },
+    "南町児童公園 (公園)": {
+      "altitude": 0,
+      "latitude": 42.80411,
+      "longitude": 143.6591
+    },
+    "光南児童公園 (公園)": {
+      "altitude": 0,
+      "latitude": 42.79941,
+      "longitude": 143.65152
+    },
+    "瓜幕駅舎記念公園 (公園)": {
+      "altitude": 0,
+      "latitude": 43.16518,
+      "longitude": 143.02556
+    },
+    "まつなみ公園 (公園)": {
+      "altitude": 0,
+      "latitude": 42.48699,
+      "longitude": 143.27123
+    },
+    "旭一公園 (公園)": {
+      "altitude": 0,
+      "latitude": 43.12313,
+      "longitude": 143.61006
+    },
+    "清流公園 (公園)": {
+      "altitude": 0,
+      "latitude": 43.12894,
+      "longitude": 143.60883
+    },
+    "北公園 (公園)": {
+      "altitude": 0,
+      "latitude": 43.13199,
+      "longitude": 143.61244
+    },
+    "ふれあい公園 (公園)": {
+      "altitude": 0,
+      "latitude": 43.13611,
+      "longitude": 143.61429
+    },
+    "新町公園 (公園)": {
+      "altitude": 0,
+      "latitude": 43.13211,
+      "longitude": 143.59728
+    },
+    "栄公園 (公園)": {
+      "altitude": 0,
+      "latitude": 43.13588,
+      "longitude": 143.6078
+    },
+    "総合運動公園 (公園)": {
+      "altitude": 0,
+      "latitude": 43.12424,
+      "longitude": 143.59181
+    },
+    "ちびっこ公園r (公園)": {
+      "altitude": 0,
+      "latitude": 43.12111,
+      "longitude": 143.60963
+    },
+    "向陽公園 (公園)": {
+      "altitude": 0,
+      "latitude": 43.12076,
+      "longitude": 143.61645
+    },
+    "のぞみ公園 (公園)": {
+      "altitude": 0,
+      "latitude": 42.90444,
+      "longitude": 143.36112
+    },
+    "十勝が丘公園 (公園)": {
+      "altitude": 0,
+      "latitude": 42.93931,
+      "longitude": 143.30088
+    },
+    "愛国ふれあい広場 (公園)": {
+      "altitude": 0,
+      "latitude": 42.83796,
+      "longitude": 143.1943
+    },
+    "温泉公園 (公園)": {
+      "altitude": 0,
+      "latitude": 43.36542,
+      "longitude": 143.18969
+    },
+    "三石海浜公園 (公園)": {
+      "altitude": 0,
+      "latitude": 42.2213,
+      "longitude": 142.63133
+    },
+    "柏林公園 (公園)": {
+      "altitude": 0,
+      "latitude": 42.49786,
+      "longitude": 143.28122
+    },
+    "大樹中央運動公園 (公園)": {
+      "altitude": 0,
+      "latitude": 42.49586,
+      "longitude": 143.26318
+    },
+    "若葉公園 (公園)": {
+      "altitude": 0,
+      "latitude": 42.99175,
+      "longitude": 143.19875
+    },
+    "千畳敷公園 (公園)": {
+      "altitude": 0,
+      "latitude": 42.99376,
+      "longitude": 143.19708
+    },
+    "コミュニティ広場 (公園)": {
+      "altitude": 0,
+      "latitude": 42.95672,
+      "longitude": 144.06267
+    },
+    "橋北1区さくら公園 (公園)": {
+      "altitude": 0,
+      "latitude": 42.95619,
+      "longitude": 144.06362
+    },
+    "やすらぎ小公園 (公園)": {
+      "altitude": 0,
+      "latitude": 42.92407,
+      "longitude": 143.19369
+    },
+    "清見ヶ丘公園 (公園)": {
+      "altitude": 0,
+      "latitude": 42.92698,
+      "longitude": 143.45616
+    },
+    "なかよし公園 (公園)": {
+      "altitude": 0,
+      "latitude": 43.07805,
+      "longitude": 142.82984
+    },
+    "浦河ダム多目的広場 (公園)": {
+      "altitude": 0,
+      "latitude": 42.25445,
+      "longitude": 142.83311
+    },
+    "栄町チビッコ広場 (公園)": {
+      "altitude": 0,
+      "latitude": 42.93527,
+      "longitude": 143.16551
+    },
+    "清水公園 (公園)": {
+      "altitude": 0,
+      "latitude": 43.00332,
+      "longitude": 142.87293
+    }
+  },
+  "愛媛・高知": {
+    "南レク南楽園ファミリーパーク": {
+      "altitude": 0,
+      "latitude": 33.13492,
+      "longitude": 132.50477
+    },
+    "津島プレーランド": {
+      "altitude": 0,
+      "latitude": 33.12604,
+      "longitude": 132.50333
+    },
+    "須ノ川公園キャンプ場": {
+      "altitude": 0,
+      "latitude": 33.04107,
+      "longitude": 132.48698
+    },
+    "南レク松軒山公園": {
+      "altitude": 0,
+      "latitude": 32.97239,
+      "longitude": 132.55583
+    },
+    "南レク御荘公園": {
+      "altitude": 0,
+      "latitude": 32.96417,
+      "longitude": 132.55206
+    },
+    "南レク城辺公園": {
+      "altitude": 0,
+      "latitude": 32.95287,
+      "longitude": 132.58429
+    },
+    "土佐西南大規模公園 大方地区": {
+      "altitude": 0,
+      "latitude": 33.02483,
+      "longitude": 133.01651
+    },
+    "一本松温泉あけぼの荘": {
+      "altitude": 0,
+      "latitude": 32.9676641,
+      "longitude": 132.6568765
+    }
+  }
+}
