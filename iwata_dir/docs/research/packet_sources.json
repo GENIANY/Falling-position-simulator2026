@@ -1,0 +1,388 @@
+{
+  "schema": "research-packet-sources/1",
+  "version": "0.55.0",
+  "basis_commit": "4e3e4db0d047af9479bcd68bfc2553eeb71efcc9",
+  "common": [
+    {
+      "path": "docs/research/README.md",
+      "kind": "markdown",
+      "heading": "## どう読むと研究の判断材料が得られるか"
+    },
+    {
+      "path": "docs/research/README.md",
+      "kind": "markdown",
+      "heading": "## PR13から来た読者へ：何が変わったか"
+    },
+    {
+      "path": "docs/research/BRIEF.md",
+      "kind": "full"
+    },
+    {
+      "path": "docs/research/UI_WALKTHROUGH.md",
+      "kind": "full"
+    }
+  ],
+  "tasks": {
+    "Q420-00": {
+      "sources": [
+        {
+          "path": "docs/research/TASKS.md",
+          "kind": "markdown",
+          "heading": "## 全体から焦点を選ぶ"
+        },
+        {
+          "path": "docs/research/TASKS.md",
+          "kind": "markdown",
+          "heading": "## Q420-00：全体を理解し、最も効く設計判断を進める"
+        },
+        {
+          "path": "docs/INTEGRATION_DESIGN.html",
+          "kind": "html_id",
+          "id": "project-story"
+        },
+        {
+          "path": "docs/INTEGRATION_DESIGN.html",
+          "kind": "html_id",
+          "id": "gui-integration460"
+        },
+        {
+          "path": "docs/SIMULATOR_VISION.html",
+          "kind": "html_id",
+          "id": "models"
+        },
+        {
+          "path": "docs/SIMULATOR_VISION.html",
+          "kind": "html_id",
+          "id": "distributions"
+        },
+        {
+          "path": "docs/SIMULATOR_VISION.html",
+          "kind": "html_id",
+          "id": "uncertainty"
+        },
+        {
+          "path": "docs/INTEGRATION_DESIGN.html",
+          "kind": "html_id",
+          "id": "inputs"
+        },
+        {
+          "path": "docs/INTEGRATION_DESIGN.html",
+          "kind": "html_id",
+          "id": "gaps"
+        },
+        {
+          "path": "docs/SIMULATOR_VISION.html",
+          "kind": "html_id",
+          "id": "climate-path290"
+        },
+        {
+          "path": "references/WIND_REPORT_REVIEW.md",
+          "kind": "markdown",
+          "heading": "## 11. 0.31：指定9図の比較軸を再読し、再集計に必要な原標本を区別する"
+        },
+        {
+          "path": "references/EXCEL_ANALYSIS_REVIEW.md",
+          "kind": "markdown",
+          "heading": "## 5. 結論を採用せず残すべき境界"
+        },
+        {
+          "path": "docs/SIMULATOR_VISION.html",
+          "kind": "html_id",
+          "id": "sources"
+        }
+      ],
+      "additional_reading": [
+        "docs/research/TASKS.md（Q410-01〜05の具体研究。焦点が決まったら対応packetも追加できる）",
+        "docs/INTEGRATION_DESIGN.html（気象支持・標本対応・実行/保存の詳細）",
+        "references/user_supplied/feedback_v_0_40_1.pdf（入力・分布・保存の人間側の考え、図付き原本）",
+        "references/user_supplied/wind_analysis_report.pdf（指定9図はWIND_REPORT_REVIEW第10/11節から戻る）",
+        "references/user_supplied/excel_analysis_20260920.zip（README.htmlから式と検証の適用範囲へ）"
+      ]
+    },
+    "Q410-01": {
+      "sources": [
+        {
+          "path": "docs/research/TASKS.md",
+          "kind": "markdown",
+          "heading": "## Q410-01：持っている情報から、整合した一標本を作る"
+        },
+        {
+          "path": "docs/SIMULATOR_VISION.html",
+          "kind": "html_id",
+          "id": "models"
+        },
+        {
+          "path": "docs/SIMULATOR_VISION.html",
+          "kind": "html_id",
+          "id": "burst"
+        },
+        {
+          "path": "docs/INTEGRATION_DESIGN.html",
+          "kind": "html_id",
+          "id": "inputs"
+        },
+        {
+          "path": "docs/INTEGRATION_DESIGN.html",
+          "kind": "html_id",
+          "id": "input-changes"
+        },
+        {
+          "path": "docs/INTEGRATION_DESIGN.html",
+          "kind": "html_id",
+          "id": "distribution"
+        },
+        {
+          "path": "docs/ENVIRONMENT_CONTRACT.md",
+          "kind": "markdown",
+          "heading": "### 本体が扱うモデルと未達の境界"
+        },
+        {
+          "path": "docs/ENVIRONMENT_CONTRACT.md",
+          "kind": "markdown",
+          "heading": "### 操作模型から一標本の実入力へ進む境界"
+        },
+        {
+          "path": "references/EXCEL_ANALYSIS_REVIEW.md",
+          "kind": "markdown",
+          "heading": "## 4. backend設計へ移す知見"
+        },
+        {
+          "path": "references/EXCEL_ANALYSIS_REVIEW.md",
+          "kind": "markdown",
+          "heading": "## 5. 結論を採用せず残すべき境界"
+        },
+        {
+          "path": "balloon_sim/flight/config.py",
+          "kind": "full"
+        },
+        {
+          "path": "docs/SIMULATOR_VISION.html",
+          "kind": "html_id",
+          "id": "sources"
+        }
+      ],
+      "additional_reading": [
+        "references/user_supplied/excel_analysis_20260920.zip (README.html → balloon_handbook.html / cell_audit.html / technical_report.html; references/excel_analysis_manifest.jsonに内部path一覧)",
+        "references/user_supplied/ascent_burst_gas_a.xlsx",
+        "references/user_supplied/ascent_burst_gas_b.xlsx",
+        "references/user_supplied/feedback_v_0_40_1.pdf p2–3"
+      ]
+    },
+    "Q410-02": {
+      "sources": [
+        {
+          "path": "docs/research/TASKS.md",
+          "kind": "markdown",
+          "heading": "## Q410-02：どの気象の不確かさを、どの場として飛ばすか"
+        },
+        {
+          "path": "docs/INTEGRATION_DESIGN.html",
+          "kind": "html_id",
+          "id": "weather"
+        },
+        {
+          "path": "docs/INTEGRATION_DESIGN.html",
+          "kind": "html_id",
+          "id": "distribution"
+        },
+        {
+          "path": "docs/SIMULATOR_VISION.html",
+          "kind": "html_id",
+          "id": "climate-path290"
+        },
+        {
+          "path": "docs/ENVIRONMENT_CONTRACT.md",
+          "kind": "markdown",
+          "heading": "## 拡張の用途：落下分散を判断に使う（0.21設計、未実装）"
+        },
+        {
+          "path": "docs/WEATHER_DATA_GUIDE.md",
+          "kind": "markdown",
+          "heading": "## 拡張の用途：落下分散に必要な気象情報（0.21設計、未実装）"
+        },
+        {
+          "path": "references/WIND_REPORT_REVIEW.md",
+          "kind": "markdown",
+          "heading": "## 3. 確定した説明と実体の不一致"
+        },
+        {
+          "path": "references/WIND_REPORT_REVIEW.md",
+          "kind": "markdown",
+          "heading": "## 10. 画面設計のための指定図再読（0.27.0 / RPT-045）"
+        },
+        {
+          "path": "docs/SIMULATOR_VISION.html",
+          "kind": "html_id",
+          "id": "sources"
+        }
+      ],
+      "additional_reading": [
+        "references/user_supplied/wind_analysis_report.pdf (WIND_REPORT_REVIEWの対象頁/不一致を併読)",
+        "docs/WEATHER_DATA_GUIDE.md 提供元別"
+      ]
+    },
+    "Q410-03": {
+      "sources": [
+        {
+          "path": "docs/research/TASKS.md",
+          "kind": "markdown",
+          "heading": "## Q410-03：輪郭と干渉を、比較可能な統計として読む"
+        },
+        {
+          "path": "docs/INTEGRATION_DESIGN.html",
+          "kind": "html_id",
+          "id": "distribution"
+        },
+        {
+          "path": "docs/INTEGRATION_DESIGN.html",
+          "kind": "html_id",
+          "id": "lifetime"
+        },
+        {
+          "path": "docs/SIMULATOR_VISION.html",
+          "kind": "html_id",
+          "id": "model-compare290"
+        },
+        {
+          "path": "references/WIND_REPORT_REVIEW.md",
+          "kind": "markdown",
+          "heading": "## 11. 0.31：指定9図の比較軸を再読し、再集計に必要な原標本を区別する"
+        },
+        {
+          "path": "docs/IMPLEMENTATION_NOTES.md",
+          "kind": "markdown",
+          "heading": "### 返値を読む順序"
+        },
+        {
+          "path": "docs/SIMULATOR_VISION.html",
+          "kind": "html_id",
+          "id": "sources"
+        }
+      ],
+      "additional_reading": [
+        "references/user_supplied/wind_analysis_report.pdf 図29等",
+        "docs/SIMULATOR_VISION.html 表示量/予測域の定義"
+      ]
+    },
+    "Q410-04": {
+      "sources": [
+        {
+          "path": "docs/research/TASKS.md",
+          "kind": "markdown",
+          "heading": "## Q410-04：三用途の飛行を支える気象取得を、費用から選ぶ"
+        },
+        {
+          "path": "docs/INTEGRATION_DESIGN.html",
+          "kind": "html_id",
+          "id": "weather"
+        },
+        {
+          "path": "docs/WEATHER_DATA_GUIDE.md",
+          "kind": "markdown",
+          "heading": "## 必要量と支持：共通の考え方と試作の境界"
+        },
+        {
+          "path": "docs/WEATHER_DATA_GUIDE.md",
+          "kind": "markdown",
+          "heading": "## 時刻：run・valid・取得・打上げを分ける"
+        },
+        {
+          "path": "docs/WEATHER_DATA_GUIDE.md",
+          "kind": "markdown",
+          "heading": "## 高さ：再構成の根拠とモデル面研究"
+        },
+        {
+          "path": "docs/WEATHER_DATA_GUIDE.md",
+          "kind": "markdown",
+          "heading": "## 提供元別：指定できる条件と取得観測"
+        },
+        {
+          "path": "docs/WEATHER_DATA_GUIDE.md",
+          "kind": "markdown",
+          "heading": "## 取得器：安定運用へつなぐ設計と試作履歴"
+        }
+      ],
+      "additional_reading": [
+        "docs/WEATHER_DATA_GUIDE.md 証拠節（外部Tempの観測原票はGitコピーに未同梱）",
+        "references/SOURCES.json",
+        "references/flight_fixture/manifest.json",
+        "references/jra3q_model_fixture/source_bundle.json"
+      ]
+    },
+    "Q410-05": {
+      "sources": [
+        {
+          "path": "docs/research/TASKS.md",
+          "kind": "markdown",
+          "heading": "## Q410-05：編集・計算・保存が並行しても、同じ結果を読み直せるか"
+        },
+        {
+          "path": "docs/INTEGRATION_DESIGN.html",
+          "kind": "html_id",
+          "id": "project-story"
+        },
+        {
+          "path": "docs/INTEGRATION_DESIGN.html",
+          "kind": "html_id",
+          "id": "lifetime"
+        },
+        {
+          "path": "docs/INTEGRATION_DESIGN.html",
+          "kind": "html_id",
+          "id": "save-and-reopen"
+        },
+        {
+          "path": "docs/INTEGRATION_DESIGN.html",
+          "kind": "html_id",
+          "id": "gaps"
+        },
+        {
+          "path": "docs/INTEGRATION_DESIGN.html",
+          "kind": "html_id",
+          "id": "technology"
+        },
+        {
+          "path": "docs/INTEGRATION_DESIGN.html",
+          "kind": "html_id",
+          "id": "framework-candidate"
+        },
+        {
+          "path": "docs/INTEGRATION_DESIGN.html",
+          "kind": "html_id",
+          "id": "gui-integration460"
+        },
+        {
+          "path": "docs/INTEGRATION_DESIGN.html",
+          "kind": "html_id",
+          "id": "service-boundary"
+        },
+        {
+          "path": "docs/INTEGRATION_DESIGN.html",
+          "kind": "html_id",
+          "id": "gates"
+        },
+        {
+          "path": "docs/IMPLEMENTATION_NOTES.md",
+          "kind": "markdown",
+          "heading": "### 返値を読む順序"
+        },
+        {
+          "path": "docs/IMPLEMENTATION_NOTES.md",
+          "kind": "markdown",
+          "heading": "## CLIと保存：利用者の一回の操作を再現可能にする"
+        }
+      ],
+      "additional_reading": [
+        "docs/PROGRAM_GUIDE.pdf 現実装の階層（未来APIとは別）",
+        "docs/INTEGRATION_DESIGN.html 元SVG図",
+        "references/design_trials/hover_surface_pick_correction_0401.zip (画面操作必須でなく必要時のみ)"
+      ]
+    }
+  },
+  "closing": [
+    {
+      "path": "docs/research/RESPONSE_TEMPLATE.md",
+      "kind": "full"
+    }
+  ]
+}

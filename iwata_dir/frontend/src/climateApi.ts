@@ -1,0 +1,3 @@
+import {request} from './api';
+import {validateClimateArtifact,type ClimateDescriptor,type ClimateQuery,type ClimateArtifact} from './climateDomain';
+export const climateApi={sources:(signal?:AbortSignal)=>request<{sources:ClimateDescriptor[];errors:{code:string;message:string}[]}>('/climate-sources',{signal}),create:(query:ClimateQuery,id:string,signal?:AbortSignal)=>request<ClimateArtifact>('/climate-analyses',{method:'POST',body:JSON.stringify({client_request_id:id,query}),signal}).then(validateClimateArtifact),get:(id:string,signal?:AbortSignal)=>request<ClimateArtifact>('/climate-analyses/'+encodeURIComponent(id),{signal}).then(validateClimateArtifact)};

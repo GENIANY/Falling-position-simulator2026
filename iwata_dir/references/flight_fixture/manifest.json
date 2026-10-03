@@ -1,0 +1,178 @@
+{
+  "schema": "balloon.flight.fixture/1",
+  "purpose": "Small exact subsets of real GFS input for offline end-to-end replay; no trajectory accuracy certification",
+  "run_utc": "2026-09-22T18:00:00+00:00",
+  "valid_utc": [
+    "2026-09-23T03:00:00+00:00",
+    "2026-09-23T09:00:00+00:00"
+  ],
+  "subset_tool": "tools/make_flight_fixture.py",
+  "source_receipt": {
+    "bundle": "weather.json.gz",
+    "bundle_sha256": "c683f853b485839c91f0b8a5dd44569d94506009cd698d689d17d0d78168972a",
+    "downloaded_bytes": 9692040,
+    "raw_files": 7
+  },
+  "source_raw": [
+    {
+      "url": "https://nomads.ncep.noaa.gov/cgi-bin/filter_gfs_0p25.pl?file=gfs.t18z.pgrb2.0p25.f009&dir=%2Fgfs.20260922%2F18%2Fatmos&subregion=&lev_1000_mb=on&lev_975_mb=on&lev_950_mb=on&lev_925_mb=on&lev_900_mb=on&lev_850_mb=on&lev_800_mb=on&lev_750_mb=on&lev_700_mb=on&lev_650_mb=on&lev_600_mb=on&lev_550_mb=on&lev_500_mb=on&lev_450_mb=on&lev_400_mb=on&lev_350_mb=on&lev_300_mb=on&lev_250_mb=on&lev_200_mb=on&lev_150_mb=on&lev_100_mb=on&lev_70_mb=on&lev_50_mb=on&lev_40_mb=on&lev_30_mb=on&lev_20_mb=on&lev_15_mb=on&lev_10_mb=on&lev_7_mb=on&lev_5_mb=on&lev_3_mb=on&lev_2_mb=on&lev_1_mb=on&lev_surface=on&lev_2_m_above_ground=on&lev_10_m_above_ground=on&var_HGT=on&var_TMP=on&var_UGRD=on&var_VGRD=on&var_SPFH=on&var_PRES=on&leftlon=130.0&rightlon=151.0&bottomlat=30.0&toplat=46.0",
+      "file": "f009.grib2",
+      "bytes": 1383095,
+      "sha256": "656b72083154e4eb1943d029ae5be8d72f7066488a8090424320867985ab1315",
+      "started_at_utc": "2026-09-23T03:39:00.423536+00:00",
+      "completed_at_utc": "2026-09-23T03:39:06.276718+00:00",
+      "headers": {
+        "Content-Type": "application/octet-stream",
+        "Content-Length": null,
+        "Last-Modified": null,
+        "ETag": null
+      }
+    },
+    {
+      "url": "https://nomads.ncep.noaa.gov/cgi-bin/filter_gfs_0p25.pl?file=gfs.t18z.pgrb2.0p25.f010&dir=%2Fgfs.20260922%2F18%2Fatmos&subregion=&lev_1000_mb=on&lev_975_mb=on&lev_950_mb=on&lev_925_mb=on&lev_900_mb=on&lev_850_mb=on&lev_800_mb=on&lev_750_mb=on&lev_700_mb=on&lev_650_mb=on&lev_600_mb=on&lev_550_mb=on&lev_500_mb=on&lev_450_mb=on&lev_400_mb=on&lev_350_mb=on&lev_300_mb=on&lev_250_mb=on&lev_200_mb=on&lev_150_mb=on&lev_100_mb=on&lev_70_mb=on&lev_50_mb=on&lev_40_mb=on&lev_30_mb=on&lev_20_mb=on&lev_15_mb=on&lev_10_mb=on&lev_7_mb=on&lev_5_mb=on&lev_3_mb=on&lev_2_mb=on&lev_1_mb=on&lev_surface=on&lev_2_m_above_ground=on&lev_10_m_above_ground=on&var_HGT=on&var_TMP=on&var_UGRD=on&var_VGRD=on&var_SPFH=on&var_PRES=on&leftlon=130.0&rightlon=151.0&bottomlat=30.0&toplat=46.0",
+      "file": "f010.grib2",
+      "bytes": 1378950,
+      "sha256": "efa055bb761ca00aa2fb4ed373a9945a4d900e2dd55e042ba487dbd47c358e65",
+      "started_at_utc": "2026-09-23T03:39:06.277722+00:00",
+      "completed_at_utc": "2026-09-23T03:39:11.446930+00:00",
+      "headers": {
+        "Content-Type": "application/octet-stream",
+        "Content-Length": null,
+        "Last-Modified": null,
+        "ETag": null
+      }
+    },
+    {
+      "url": "https://nomads.ncep.noaa.gov/cgi-bin/filter_gfs_0p25.pl?file=gfs.t18z.pgrb2.0p25.f011&dir=%2Fgfs.20260922%2F18%2Fatmos&subregion=&lev_1000_mb=on&lev_975_mb=on&lev_950_mb=on&lev_925_mb=on&lev_900_mb=on&lev_850_mb=on&lev_800_mb=on&lev_750_mb=on&lev_700_mb=on&lev_650_mb=on&lev_600_mb=on&lev_550_mb=on&lev_500_mb=on&lev_450_mb=on&lev_400_mb=on&lev_350_mb=on&lev_300_mb=on&lev_250_mb=on&lev_200_mb=on&lev_150_mb=on&lev_100_mb=on&lev_70_mb=on&lev_50_mb=on&lev_40_mb=on&lev_30_mb=on&lev_20_mb=on&lev_15_mb=on&lev_10_mb=on&lev_7_mb=on&lev_5_mb=on&lev_3_mb=on&lev_2_mb=on&lev_1_mb=on&lev_surface=on&lev_2_m_above_ground=on&lev_10_m_above_ground=on&var_HGT=on&var_TMP=on&var_UGRD=on&var_VGRD=on&var_SPFH=on&var_PRES=on&leftlon=130.0&rightlon=151.0&bottomlat=30.0&toplat=46.0",
+      "file": "f011.grib2",
+      "bytes": 1383098,
+      "sha256": "154d9294d34a92c22ab6e3af95d246dd49301182aeeb738ed0fffd514cacd977",
+      "started_at_utc": "2026-09-23T03:39:11.447928+00:00",
+      "completed_at_utc": "2026-09-23T03:39:15.293461+00:00",
+      "headers": {
+        "Content-Type": "application/octet-stream",
+        "Content-Length": null,
+        "Last-Modified": null,
+        "ETag": null
+      }
+    },
+    {
+      "url": "https://nomads.ncep.noaa.gov/cgi-bin/filter_gfs_0p25.pl?file=gfs.t18z.pgrb2.0p25.f012&dir=%2Fgfs.20260922%2F18%2Fatmos&subregion=&lev_1000_mb=on&lev_975_mb=on&lev_950_mb=on&lev_925_mb=on&lev_900_mb=on&lev_850_mb=on&lev_800_mb=on&lev_750_mb=on&lev_700_mb=on&lev_650_mb=on&lev_600_mb=on&lev_550_mb=on&lev_500_mb=on&lev_450_mb=on&lev_400_mb=on&lev_350_mb=on&lev_300_mb=on&lev_250_mb=on&lev_200_mb=on&lev_150_mb=on&lev_100_mb=on&lev_70_mb=on&lev_50_mb=on&lev_40_mb=on&lev_30_mb=on&lev_20_mb=on&lev_15_mb=on&lev_10_mb=on&lev_7_mb=on&lev_5_mb=on&lev_3_mb=on&lev_2_mb=on&lev_1_mb=on&lev_surface=on&lev_2_m_above_ground=on&lev_10_m_above_ground=on&var_HGT=on&var_TMP=on&var_UGRD=on&var_VGRD=on&var_SPFH=on&var_PRES=on&leftlon=130.0&rightlon=151.0&bottomlat=30.0&toplat=46.0",
+      "file": "f012.grib2",
+      "bytes": 1387244,
+      "sha256": "30744e5d21f61f432f22d99320115416dc925e9270351c8dc8dd970bdec9dd73",
+      "started_at_utc": "2026-09-23T03:39:15.295459+00:00",
+      "completed_at_utc": "2026-09-23T03:39:19.604095+00:00",
+      "headers": {
+        "Content-Type": "application/octet-stream",
+        "Content-Length": null,
+        "Last-Modified": null,
+        "ETag": null
+      }
+    },
+    {
+      "url": "https://nomads.ncep.noaa.gov/cgi-bin/filter_gfs_0p25.pl?file=gfs.t18z.pgrb2.0p25.f013&dir=%2Fgfs.20260922%2F18%2Fatmos&subregion=&lev_1000_mb=on&lev_975_mb=on&lev_950_mb=on&lev_925_mb=on&lev_900_mb=on&lev_850_mb=on&lev_800_mb=on&lev_750_mb=on&lev_700_mb=on&lev_650_mb=on&lev_600_mb=on&lev_550_mb=on&lev_500_mb=on&lev_450_mb=on&lev_400_mb=on&lev_350_mb=on&lev_300_mb=on&lev_250_mb=on&lev_200_mb=on&lev_150_mb=on&lev_100_mb=on&lev_70_mb=on&lev_50_mb=on&lev_40_mb=on&lev_30_mb=on&lev_20_mb=on&lev_15_mb=on&lev_10_mb=on&lev_7_mb=on&lev_5_mb=on&lev_3_mb=on&lev_2_mb=on&lev_1_mb=on&lev_surface=on&lev_2_m_above_ground=on&lev_10_m_above_ground=on&var_HGT=on&var_TMP=on&var_UGRD=on&var_VGRD=on&var_SPFH=on&var_PRES=on&leftlon=130.0&rightlon=151.0&bottomlat=30.0&toplat=46.0",
+      "file": "f013.grib2",
+      "bytes": 1386552,
+      "sha256": "2a09ee4bb881023a3e18c97f24f01674a965ced07b924d6e63023d702aa14b72",
+      "started_at_utc": "2026-09-23T03:39:19.605073+00:00",
+      "completed_at_utc": "2026-09-23T03:39:24.005331+00:00",
+      "headers": {
+        "Content-Type": "application/octet-stream",
+        "Content-Length": null,
+        "Last-Modified": null,
+        "ETag": null
+      }
+    },
+    {
+      "url": "https://nomads.ncep.noaa.gov/cgi-bin/filter_gfs_0p25.pl?file=gfs.t18z.pgrb2.0p25.f014&dir=%2Fgfs.20260922%2F18%2Fatmos&subregion=&lev_1000_mb=on&lev_975_mb=on&lev_950_mb=on&lev_925_mb=on&lev_900_mb=on&lev_850_mb=on&lev_800_mb=on&lev_750_mb=on&lev_700_mb=on&lev_650_mb=on&lev_600_mb=on&lev_550_mb=on&lev_500_mb=on&lev_450_mb=on&lev_400_mb=on&lev_350_mb=on&lev_300_mb=on&lev_250_mb=on&lev_200_mb=on&lev_150_mb=on&lev_100_mb=on&lev_70_mb=on&lev_50_mb=on&lev_40_mb=on&lev_30_mb=on&lev_20_mb=on&lev_15_mb=on&lev_10_mb=on&lev_7_mb=on&lev_5_mb=on&lev_3_mb=on&lev_2_mb=on&lev_1_mb=on&lev_surface=on&lev_2_m_above_ground=on&lev_10_m_above_ground=on&var_HGT=on&var_TMP=on&var_UGRD=on&var_VGRD=on&var_SPFH=on&var_PRES=on&leftlon=130.0&rightlon=151.0&bottomlat=30.0&toplat=46.0",
+      "file": "f014.grib2",
+      "bytes": 1387241,
+      "sha256": "b6fa18594b3107b612c6c181ae7bcc3a2be6e80777c9a6106b2c09d63a34a2a5",
+      "started_at_utc": "2026-09-23T03:39:24.006332+00:00",
+      "completed_at_utc": "2026-09-23T03:39:28.572793+00:00",
+      "headers": {
+        "Content-Type": "application/octet-stream",
+        "Content-Length": null,
+        "Last-Modified": null,
+        "ETag": null
+      }
+    },
+    {
+      "url": "https://nomads.ncep.noaa.gov/cgi-bin/filter_gfs_0p25.pl?file=gfs.t18z.pgrb2.0p25.f015&dir=%2Fgfs.20260922%2F18%2Fatmos&subregion=&lev_1000_mb=on&lev_975_mb=on&lev_950_mb=on&lev_925_mb=on&lev_900_mb=on&lev_850_mb=on&lev_800_mb=on&lev_750_mb=on&lev_700_mb=on&lev_650_mb=on&lev_600_mb=on&lev_550_mb=on&lev_500_mb=on&lev_450_mb=on&lev_400_mb=on&lev_350_mb=on&lev_300_mb=on&lev_250_mb=on&lev_200_mb=on&lev_150_mb=on&lev_100_mb=on&lev_70_mb=on&lev_50_mb=on&lev_40_mb=on&lev_30_mb=on&lev_20_mb=on&lev_15_mb=on&lev_10_mb=on&lev_7_mb=on&lev_5_mb=on&lev_3_mb=on&lev_2_mb=on&lev_1_mb=on&lev_surface=on&lev_2_m_above_ground=on&lev_10_m_above_ground=on&var_HGT=on&var_TMP=on&var_UGRD=on&var_VGRD=on&var_SPFH=on&var_PRES=on&leftlon=130.0&rightlon=151.0&bottomlat=30.0&toplat=46.0",
+      "file": "f015.grib2",
+      "bytes": 1385860,
+      "sha256": "50891e2171873a4e9c8e5f7a2f52160e2d7171febd6aaa7599af2926f6ac23ea",
+      "started_at_utc": "2026-09-23T03:39:28.572793+00:00",
+      "completed_at_utc": "2026-09-23T03:39:33.672645+00:00",
+      "headers": {
+        "Content-Type": "application/octet-stream",
+        "Content-Length": null,
+        "Last-Modified": null,
+        "ETag": null
+      }
+    }
+  ],
+  "files": {
+    "hokkaido-weather.json.gz": {
+      "bytes": 296340,
+      "sha256": "69b4b0c23919eeb2e645e6a632d05824a892e301295bec4645013e0df13545a9"
+    },
+    "wakayama-weather.json.gz": {
+      "bytes": 156112,
+      "sha256": "de3c00643092b34a50451d7263987014030b1d760c2e3da6f03a5245cf8c1739"
+    }
+  },
+  "examples": {
+    "hokkaido-simple": {
+      "config": "examples/hokkaido-simple.json",
+      "weather": "hokkaido-weather.json.gz",
+      "verification": {
+        "duration_s": 8670.016184156306,
+        "maximum_altitude_m": 30000.0,
+        "accepted_steps": 868,
+        "record_count": 869,
+        "ground_clamped_stage_queries": 11,
+        "landing": {
+          "type": "landing",
+          "elapsed_s": 8670.016184156306,
+          "time_utc": "2026-09-23T05:54:30.016184+00:00",
+          "latitude_deg": 43.507333857489286,
+          "longitude_deg": 143.85432678704137,
+          "altitude_m": 432.46981570043454
+        }
+      },
+      "bounds": {
+        "south": 42.75,
+        "north": 44.0,
+        "west": 141.25,
+        "east": 144.25
+      }
+    },
+    "wakayama-isothermal": {
+      "config": "examples/wakayama-isothermal.json",
+      "weather": "wakayama-weather.json.gz",
+      "verification": {
+        "duration_s": 8363.853149414062,
+        "maximum_altitude_m": 30000.0,
+        "accepted_steps": 837,
+        "record_count": 838,
+        "ground_clamped_stage_queries": 10,
+        "landing": {
+          "type": "landing",
+          "elapsed_s": 8363.853149414062,
+          "time_utc": "2026-09-23T05:49:23.853149+00:00",
+          "latitude_deg": 34.319742787510144,
+          "longitude_deg": 135.86156324744252,
+          "altitude_m": 632.5793257309389
+        }
+      },
+      "bounds": {
+        "south": 33.5,
+        "north": 34.75,
+        "west": 135.0,
+        "east": 136.25
+      }
+    }
+  }
+}

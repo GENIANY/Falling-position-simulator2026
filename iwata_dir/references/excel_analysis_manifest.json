@@ -1,0 +1,4425 @@
+{
+  "schema": "balloon.reference.excel-preservation/1",
+  "version": "0.40.0",
+  "basis_commit": "7622593e0d4dacb101f9ed86990f2832845494ed",
+  "source_zip": {
+    "schema": "excel-source-archive-verification/1",
+    "verified_utc": "2026-09-27T09:53:02.500592+00:00",
+    "basis_main": "7622593e0d4dacb101f9ed86990f2832845494ed",
+    "source_archive": "C:\\Users\\genia\\OneDrive\\ドキュメント\\00 よく使う\\n_名古屋大学\\06_Chart\\バルーン\\Balloon_Sim\\2026_Sep_\\参考資料\\outputs\\revised_01a0b429.zip",
+    "archive_bytes": 11177282,
+    "archive_sha256": "e389c09b9f89c3099432b56ba1357c68149fe4e6e7b3fa0b8d1a1b9c8f7145c4",
+    "member_count": 179,
+    "directory_count": 9,
+    "file_count": 170,
+    "uncompressed_file_bytes": 17227285,
+    "top_level_directory": "revised_01a0b429",
+    "path_safety_issues": [],
+    "duplicate_names": [],
+    "crc_failure_member": null,
+    "missing_vs_170_index": [],
+    "extra_vs_170_index": [],
+    "content_changes_vs_index_live_stage": [],
+    "provided_six": [
+      {
+        "relative_path": "verification_summary.html",
+        "bytes": 13550,
+        "sha256": "54db36f39565dba4060ca0107f7bf093f4f0376f86e363577bc5f08806b1cd72",
+        "archive_same_bytes": true
+      },
+      {
+        "relative_path": "balloon_handbook.html",
+        "bytes": 4288229,
+        "sha256": "687918073db7655b0027ddbf4dca6d51827e67e22a4f7ca04fed385ba3440113",
+        "archive_same_bytes": true
+      },
+      {
+        "relative_path": "cell_audit.html",
+        "bytes": 22616,
+        "sha256": "6056c4e731eaf2bd9f2df27cf3bfec40c45a8204de10d720da738fa2e226b05a",
+        "archive_same_bytes": true
+      },
+      {
+        "relative_path": "literature_review.html",
+        "bytes": 15407,
+        "sha256": "5bb6122b420d7b14843901e822f11c29c850c77db5f8ba6439b461dd9bdf3104",
+        "archive_same_bytes": true
+      },
+      {
+        "relative_path": "README.html",
+        "bytes": 11451,
+        "sha256": "2641684f399c4eaf56dc5672363ea5febbf1993cf0eebb81b812cb750c7953d0",
+        "archive_same_bytes": true
+      },
+      {
+        "relative_path": "technical_report.html",
+        "bytes": 26263,
+        "sha256": "51e73e8e31bff47703811470c0c1012fdc8c38b60d4d2bfb31a199a99dd01d1f",
+        "archive_same_bytes": true
+      }
+    ],
+    "html_dependency_closure_count": 43,
+    "html_dependency_closure": [
+      {
+        "relative_path": "README.html",
+        "present": true,
+        "same_bytes": true
+      },
+      {
+        "relative_path": "ab_comparison/README.html",
+        "present": true,
+        "same_bytes": true
+      },
+      {
+        "relative_path": "ab_comparison/assumption_sensitivity.csv",
+        "present": true,
+        "same_bytes": true
+      },
+      {
+        "relative_path": "ab_comparison/comparison.py",
+        "present": true,
+        "same_bytes": true
+      },
+      {
+        "relative_path": "ab_comparison/conditional_predictions.csv",
+        "present": true,
+        "same_bytes": true
+      },
+      {
+        "relative_path": "ab_comparison/declared_variants.csv",
+        "present": true,
+        "same_bytes": true
+      },
+      {
+        "relative_path": "ab_comparison/input_audit.html",
+        "present": true,
+        "same_bytes": true
+      },
+      {
+        "relative_path": "ab_comparison/public_case.json",
+        "present": true,
+        "same_bytes": true
+      },
+      {
+        "relative_path": "ab_comparison/public_evidence.html",
+        "present": true,
+        "same_bytes": true
+      },
+      {
+        "relative_path": "ab_comparison/summary.json",
+        "present": true,
+        "same_bytes": true
+      },
+      {
+        "relative_path": "ab_comparison/theory_review.html",
+        "present": true,
+        "same_bytes": true
+      },
+      {
+        "relative_path": "ab_comparison/wasa2024_digitization.json",
+        "present": true,
+        "same_bytes": true
+      },
+      {
+        "relative_path": "balloon_corrected.xlsx",
+        "present": true,
+        "same_bytes": true
+      },
+      {
+        "relative_path": "balloon_handbook.html",
+        "present": true,
+        "same_bytes": true
+      },
+      {
+        "relative_path": "balloon_handbook.md",
+        "present": true,
+        "same_bytes": true
+      },
+      {
+        "relative_path": "cell_audit.html",
+        "present": true,
+        "same_bytes": true
+      },
+      {
+        "relative_path": "data/formula_inventory.csv",
+        "present": true,
+        "same_bytes": true
+      },
+      {
+        "relative_path": "existing_data/analysis.py",
+        "present": true,
+        "same_bytes": true
+      },
+      {
+        "relative_path": "existing_data/ascent_by_flight.csv",
+        "present": true,
+        "same_bytes": true
+      },
+      {
+        "relative_path": "existing_data/ascent_empirical_paper.pdf",
+        "present": true,
+        "same_bytes": true
+      },
+      {
+        "relative_path": "existing_data/ascent_predictions.csv",
+        "present": true,
+        "same_bytes": true
+      },
+      {
+        "relative_path": "existing_data/descent_diagnostics.csv",
+        "present": true,
+        "same_bytes": true
+      },
+      {
+        "relative_path": "existing_data/empirical_paper_review.html",
+        "present": true,
+        "same_bytes": true
+      },
+      {
+        "relative_path": "existing_data/results.json",
+        "present": true,
+        "same_bytes": true
+      },
+      {
+        "relative_path": "existing_data/source_data.xlsx",
+        "present": true,
+        "same_bytes": true
+      },
+      {
+        "relative_path": "existing_data/symposium_flights.csv",
+        "present": true,
+        "same_bytes": true
+      },
+      {
+        "relative_path": "existing_data/symposium_flights.json",
+        "present": true,
+        "same_bytes": true
+      },
+      {
+        "relative_path": "existing_data/symposium_notes.html",
+        "present": true,
+        "same_bytes": true
+      },
+      {
+        "relative_path": "existing_data/workbook_audit.html",
+        "present": true,
+        "same_bytes": true
+      },
+      {
+        "relative_path": "graphs/01_ascent_formula_audit.png",
+        "present": true,
+        "same_bytes": true
+      },
+      {
+        "relative_path": "graphs/02_atmosphere_audit.png",
+        "present": true,
+        "same_bytes": true
+      },
+      {
+        "relative_path": "graphs/03_burst_criteria.png",
+        "present": true,
+        "same_bytes": true
+      },
+      {
+        "relative_path": "graphs/04_parameter_sensitivity.png",
+        "present": true,
+        "same_bytes": true
+      },
+      {
+        "relative_path": "graphs/05_fill_burst_tradeoff.png",
+        "present": true,
+        "same_bytes": true
+      },
+      {
+        "relative_path": "graphs/06_upper_air_model.png",
+        "present": true,
+        "same_bytes": true
+      },
+      {
+        "relative_path": "graphs/07_cylinder_inventory.png",
+        "present": true,
+        "same_bytes": true
+      },
+      {
+        "relative_path": "literature_review.html",
+        "present": true,
+        "same_bytes": true
+      },
+      {
+        "relative_path": "tawhiri_plan/code_audit.md",
+        "present": true,
+        "same_bytes": true
+      },
+      {
+        "relative_path": "tawhiri_plan/evidence.md",
+        "present": true,
+        "same_bytes": true
+      },
+      {
+        "relative_path": "tawhiri_plan/sensitivity.py",
+        "present": true,
+        "same_bytes": true
+      },
+      {
+        "relative_path": "technical_report.html",
+        "present": true,
+        "same_bytes": true
+      },
+      {
+        "relative_path": "theory_sources.json",
+        "present": true,
+        "same_bytes": true
+      },
+      {
+        "relative_path": "verification_summary.html",
+        "present": true,
+        "same_bytes": true
+      }
+    ],
+    "members": [
+      {
+        "archive_member": "revised_01a0b429/ab_comparison/all_flights_input_availability.csv",
+        "relative_path": "ab_comparison/all_flights_input_availability.csv",
+        "bytes": 4854,
+        "sha256": "185d04a4a0f40fe253672935810591453b49a3a4e2d5a6632ac1c556c453402e",
+        "compression_type": 8,
+        "indexed_original_match": true,
+        "live_original_match": true,
+        "staged_original_match": true
+      },
+      {
+        "archive_member": "revised_01a0b429/ab_comparison/all_flights_input_availability.json",
+        "relative_path": "ab_comparison/all_flights_input_availability.json",
+        "bytes": 11927,
+        "sha256": "b54eff1cc38b0a11051631676be314f60385aeceadb5f1a44977869fee320f19",
+        "compression_type": 8,
+        "indexed_original_match": true,
+        "live_original_match": true,
+        "staged_original_match": true
+      },
+      {
+        "archive_member": "revised_01a0b429/ab_comparison/assumption_sensitivity.csv",
+        "relative_path": "ab_comparison/assumption_sensitivity.csv",
+        "bytes": 357864,
+        "sha256": "debbed389cec3b962c27a36c6006da854036d646dbfa0ea05b3541d205e6d07d",
+        "compression_type": 8,
+        "indexed_original_match": true,
+        "live_original_match": true,
+        "staged_original_match": true
+      },
+      {
+        "archive_member": "revised_01a0b429/ab_comparison/band_target_details.json",
+        "relative_path": "ab_comparison/band_target_details.json",
+        "bytes": 11021,
+        "sha256": "6635f2b9f60d85a6c638d9c4605baf346c2faea51516a8fda49db8baa48d1332",
+        "compression_type": 8,
+        "indexed_original_match": true,
+        "live_original_match": true,
+        "staged_original_match": true
+      },
+      {
+        "archive_member": "revised_01a0b429/ab_comparison/comparison.py",
+        "relative_path": "ab_comparison/comparison.py",
+        "bytes": 16163,
+        "sha256": "6f7315289a7162f484fd24bbd66cb990954dc7f26d8e179365718b271cb8e7f1",
+        "compression_type": 8,
+        "indexed_original_match": true,
+        "live_original_match": true,
+        "staged_original_match": true
+      },
+      {
+        "archive_member": "revised_01a0b429/ab_comparison/comparison_inputs.csv",
+        "relative_path": "ab_comparison/comparison_inputs.csv",
+        "bytes": 1202,
+        "sha256": "0a5078347389bea2675eb6cfd514cd3576e09fbde3fe636c7fc1e1121cd02207",
+        "compression_type": 8,
+        "indexed_original_match": true,
+        "live_original_match": true,
+        "staged_original_match": true
+      },
+      {
+        "archive_member": "revised_01a0b429/ab_comparison/compensation_identifiability.png",
+        "relative_path": "ab_comparison/compensation_identifiability.png",
+        "bytes": 109014,
+        "sha256": "56bd1a411daea747bc1733a9ca79cf5a7c3b82e88fdc7107a6c7a40703dd81c1",
+        "compression_type": 8,
+        "indexed_original_match": true,
+        "live_original_match": true,
+        "staged_original_match": true
+      },
+      {
+        "archive_member": "revised_01a0b429/ab_comparison/conditional_comparison.png",
+        "relative_path": "ab_comparison/conditional_comparison.png",
+        "bytes": 134242,
+        "sha256": "3a207445a1042645593aede5539d253ef60a2a221dadd2d1e4685a8d4e41e09f",
+        "compression_type": 8,
+        "indexed_original_match": true,
+        "live_original_match": true,
+        "staged_original_match": true
+      },
+      {
+        "archive_member": "revised_01a0b429/ab_comparison/conditional_metrics.csv",
+        "relative_path": "ab_comparison/conditional_metrics.csv",
+        "bytes": 585,
+        "sha256": "474659d27dfb56d3ee96bc479eaf2abedbca50ed5824eea3d83de03545755472",
+        "compression_type": 8,
+        "indexed_original_match": true,
+        "live_original_match": true,
+        "staged_original_match": true
+      },
+      {
+        "archive_member": "revised_01a0b429/ab_comparison/conditional_predictions.csv",
+        "relative_path": "ab_comparison/conditional_predictions.csv",
+        "bytes": 2105,
+        "sha256": "aead9c0d8ba4eb20c5ad282aa92a901b35ec8509892ae01e5883c481009760a7",
+        "compression_type": 8,
+        "indexed_original_match": true,
+        "live_original_match": true,
+        "staged_original_match": true
+      },
+      {
+        "archive_member": "revised_01a0b429/ab_comparison/declared_variants.csv",
+        "relative_path": "ab_comparison/declared_variants.csv",
+        "bytes": 2055,
+        "sha256": "e81d758860fa8b5b18634a11737d3bd10bc91e6882a24028090d2c083b34c121",
+        "compression_type": 8,
+        "indexed_original_match": true,
+        "live_original_match": true,
+        "staged_original_match": true
+      },
+      {
+        "archive_member": "revised_01a0b429/ab_comparison/digitize_wasa2024.py",
+        "relative_path": "ab_comparison/digitize_wasa2024.py",
+        "bytes": 3822,
+        "sha256": "ac834b9936d0d37c163e44deb81cee69787c79ebb21d3aea1805be0cd50fe682",
+        "compression_type": 8,
+        "indexed_original_match": true,
+        "live_original_match": true,
+        "staged_original_match": true
+      },
+      {
+        "archive_member": "revised_01a0b429/ab_comparison/evidence.json",
+        "relative_path": "ab_comparison/evidence.json",
+        "bytes": 10782,
+        "sha256": "60e89d42d81bc407158d16d224da901c5bc801c0fffea806e837b26e69ab3de4",
+        "compression_type": 8,
+        "indexed_original_match": true,
+        "live_original_match": true,
+        "staged_original_match": true
+      },
+      {
+        "archive_member": "revised_01a0b429/ab_comparison/input_audit.html",
+        "relative_path": "ab_comparison/input_audit.html",
+        "bytes": 16202,
+        "sha256": "c877b0829e454f4789afa0b448181e109b5c098b312a303ad07613a6a37c94a3",
+        "compression_type": 8,
+        "indexed_original_match": true,
+        "live_original_match": true,
+        "staged_original_match": true
+      },
+      {
+        "archive_member": "revised_01a0b429/ab_comparison/input_audit.md",
+        "relative_path": "ab_comparison/input_audit.md",
+        "bytes": 12547,
+        "sha256": "b5271a088563f05a12ed396b9d0d7164e45078c795299fe12481384184ba9430",
+        "compression_type": 8,
+        "indexed_original_match": true,
+        "live_original_match": true,
+        "staged_original_match": true
+      },
+      {
+        "archive_member": "revised_01a0b429/ab_comparison/input_candidates.csv",
+        "relative_path": "ab_comparison/input_candidates.csv",
+        "bytes": 3318,
+        "sha256": "2ca75193dae987810ea67dd5c05a47db2a04e79af7e555f107236c5e434b9d29",
+        "compression_type": 8,
+        "indexed_original_match": true,
+        "live_original_match": true,
+        "staged_original_match": true
+      },
+      {
+        "archive_member": "revised_01a0b429/ab_comparison/input_candidates.json",
+        "relative_path": "ab_comparison/input_candidates.json",
+        "bytes": 26789,
+        "sha256": "0154a710fc42555c36c6321ab3341588365271483fc94571059ee21a4c089231",
+        "compression_type": 8,
+        "indexed_original_match": true,
+        "live_original_match": true,
+        "staged_original_match": true
+      },
+      {
+        "archive_member": "revised_01a0b429/ab_comparison/mass_sensitivity.png",
+        "relative_path": "ab_comparison/mass_sensitivity.png",
+        "bytes": 144494,
+        "sha256": "cb06e76c86637cbb5559e523dcfef4112ef829b7a22805354703658629e272e1",
+        "compression_type": 8,
+        "indexed_original_match": true,
+        "live_original_match": true,
+        "staged_original_match": true
+      },
+      {
+        "archive_member": "revised_01a0b429/ab_comparison/public_case.json",
+        "relative_path": "ab_comparison/public_case.json",
+        "bytes": 1822,
+        "sha256": "3e232ffa3db03d71ad0fbc913e6c58050b50528cd8431b9d0ebe52cb4647c3b1",
+        "compression_type": 8,
+        "indexed_original_match": true,
+        "live_original_match": true,
+        "staged_original_match": true
+      },
+      {
+        "archive_member": "revised_01a0b429/ab_comparison/public_case.py",
+        "relative_path": "ab_comparison/public_case.py",
+        "bytes": 2154,
+        "sha256": "109d150b32edbdc10ef42ffbd0dd20722f47adf7debd6da978b21eb6c1a7d303",
+        "compression_type": 8,
+        "indexed_original_match": true,
+        "live_original_match": true,
+        "staged_original_match": true
+      },
+      {
+        "archive_member": "revised_01a0b429/ab_comparison/public_evidence.html",
+        "relative_path": "ab_comparison/public_evidence.html",
+        "bytes": 11977,
+        "sha256": "30fd9282266f710cf22d92c48bd006b5cbe91eccb00ab10bd687b12b2b48af1c",
+        "compression_type": 8,
+        "indexed_original_match": true,
+        "live_original_match": true,
+        "staged_original_match": true
+      },
+      {
+        "archive_member": "revised_01a0b429/ab_comparison/public_evidence.md",
+        "relative_path": "ab_comparison/public_evidence.md",
+        "bytes": 10428,
+        "sha256": "151421f4b5127e251b6a5a6e4ef88097879565c158a76cbd9eecce14c47fef5e",
+        "compression_type": 8,
+        "indexed_original_match": true,
+        "live_original_match": true,
+        "staged_original_match": true
+      },
+      {
+        "archive_member": "revised_01a0b429/ab_comparison/quantity_hypotheses.csv",
+        "relative_path": "ab_comparison/quantity_hypotheses.csv",
+        "bytes": 1784,
+        "sha256": "ff3640fa26c71571b94f493e9746c80e785f9031916d234f346e0334f36786a5",
+        "compression_type": 8,
+        "indexed_original_match": true,
+        "live_original_match": true,
+        "staged_original_match": true
+      },
+      {
+        "archive_member": "revised_01a0b429/ab_comparison/quantity_hypotheses.json",
+        "relative_path": "ab_comparison/quantity_hypotheses.json",
+        "bytes": 6028,
+        "sha256": "59458d6ebbdf9704a71ae6d5e5f5fd44c2c32ef0268003f87481211196159c29",
+        "compression_type": 8,
+        "indexed_original_match": true,
+        "live_original_match": true,
+        "staged_original_match": true
+      },
+      {
+        "archive_member": "revised_01a0b429/ab_comparison/README.html",
+        "relative_path": "ab_comparison/README.html",
+        "bytes": 4540,
+        "sha256": "6dac96ef190e1618fc90f2340d1fc39f3bfbb30d1904c1114d0e21ec22010021",
+        "compression_type": 8,
+        "indexed_original_match": true,
+        "live_original_match": true,
+        "staged_original_match": true
+      },
+      {
+        "archive_member": "revised_01a0b429/ab_comparison/README.md",
+        "relative_path": "ab_comparison/README.md",
+        "bytes": 3367,
+        "sha256": "07f50696685906ddaf08a546eb2c4bb76c079e5b48e957af06551b25209bdda9",
+        "compression_type": 8,
+        "indexed_original_match": true,
+        "live_original_match": true,
+        "staged_original_match": true
+      },
+      {
+        "archive_member": "revised_01a0b429/ab_comparison/requirements.txt",
+        "relative_path": "ab_comparison/requirements.txt",
+        "bytes": 27,
+        "sha256": "d3b6604daa05bb9fbfa57688a9df4be787b4888bd65adbaf6d5d9bcf6483b68e",
+        "compression_type": 8,
+        "indexed_original_match": true,
+        "live_original_match": true,
+        "staged_original_match": true
+      },
+      {
+        "archive_member": "revised_01a0b429/ab_comparison/summary.json",
+        "relative_path": "ab_comparison/summary.json",
+        "bytes": 3142,
+        "sha256": "067417f1ba865b7ea9e7fec03e1458d2e8be500de5488438d8a9642a3df57aad",
+        "compression_type": 8,
+        "indexed_original_match": true,
+        "live_original_match": true,
+        "staged_original_match": true
+      },
+      {
+        "archive_member": "revised_01a0b429/ab_comparison/theory_review.html",
+        "relative_path": "ab_comparison/theory_review.html",
+        "bytes": 11529,
+        "sha256": "e42def7b9d10f48e848f7b7546d3c99c6d6a181cebcdace6a4604c368bad9df8",
+        "compression_type": 8,
+        "indexed_original_match": true,
+        "live_original_match": true,
+        "staged_original_match": true
+      },
+      {
+        "archive_member": "revised_01a0b429/ab_comparison/theory_review.md",
+        "relative_path": "ab_comparison/theory_review.md",
+        "bytes": 10191,
+        "sha256": "7e74c5e9afed0861c64d52a48fdfb335065ff08d4995ee558da8ef4bcdcc3572",
+        "compression_type": 8,
+        "indexed_original_match": true,
+        "live_original_match": true,
+        "staged_original_match": true
+      },
+      {
+        "archive_member": "revised_01a0b429/ab_comparison/wasa2024_digitization.json",
+        "relative_path": "ab_comparison/wasa2024_digitization.json",
+        "bytes": 4004,
+        "sha256": "b7267cb0d6b2f1d897c8af7f9440d49ed45ccbca3c94d4b5c377ee67a6286277",
+        "compression_type": 8,
+        "indexed_original_match": true,
+        "live_original_match": true,
+        "staged_original_match": true
+      },
+      {
+        "archive_member": "revised_01a0b429/ab_comparison/wasa2024_fig4_2_original.jpg",
+        "relative_path": "ab_comparison/wasa2024_fig4_2_original.jpg",
+        "bytes": 45125,
+        "sha256": "b91eff724ef943ff76564bb8f463bb1c9ba7a75c16b25a54718a7ed501f3411e",
+        "compression_type": 8,
+        "indexed_original_match": true,
+        "live_original_match": true,
+        "staged_original_match": true
+      },
+      {
+        "archive_member": "revised_01a0b429/ab_comparison/wasa2024_figure_altitude_trace.csv",
+        "relative_path": "ab_comparison/wasa2024_figure_altitude_trace.csv",
+        "bytes": 17166,
+        "sha256": "dddcb9246c163c48718527edc2a73925e135b2fe3131e93ee5e59fe83fa06c99",
+        "compression_type": 8,
+        "indexed_original_match": true,
+        "live_original_match": true,
+        "staged_original_match": true
+      },
+      {
+        "archive_member": "revised_01a0b429/audit_workbooks.py",
+        "relative_path": "audit_workbooks.py",
+        "bytes": 2420,
+        "sha256": "ab3c879f25302b73db08b30749d239b41f62a263e615c707d385ab396bb5b514",
+        "compression_type": 8,
+        "indexed_original_match": true,
+        "live_original_match": true,
+        "staged_original_match": true
+      },
+      {
+        "archive_member": "revised_01a0b429/balloon_corrected.xlsx",
+        "relative_path": "balloon_corrected.xlsx",
+        "bytes": 65208,
+        "sha256": "0d037709151aab17d27d2e0a222a86e829ba17713ed771966f9392e19cbe224c",
+        "compression_type": 8,
+        "indexed_original_match": true,
+        "live_original_match": true,
+        "staged_original_match": true
+      },
+      {
+        "archive_member": "revised_01a0b429/balloon_handbook.html",
+        "relative_path": "balloon_handbook.html",
+        "bytes": 4288229,
+        "sha256": "687918073db7655b0027ddbf4dca6d51827e67e22a4f7ca04fed385ba3440113",
+        "compression_type": 8,
+        "indexed_original_match": true,
+        "live_original_match": true,
+        "staged_original_match": true
+      },
+      {
+        "archive_member": "revised_01a0b429/balloon_handbook.md",
+        "relative_path": "balloon_handbook.md",
+        "bytes": 177364,
+        "sha256": "9add6d54ce61846cab7a47b37bf82198156ff052c11b40804bf48e48600f74e9",
+        "compression_type": 8,
+        "indexed_original_match": true,
+        "live_original_match": true,
+        "staged_original_match": true
+      },
+      {
+        "archive_member": "revised_01a0b429/balloon_model.py",
+        "relative_path": "balloon_model.py",
+        "bytes": 11755,
+        "sha256": "9a9ad9bccec29ba1080ac22c1aa16fe798a795fd9ae0d5b440ae0ea2781391fd",
+        "compression_type": 8,
+        "indexed_original_match": true,
+        "live_original_match": true,
+        "staged_original_match": true
+      },
+      {
+        "archive_member": "revised_01a0b429/cell_audit.html",
+        "relative_path": "cell_audit.html",
+        "bytes": 22616,
+        "sha256": "6056c4e731eaf2bd9f2df27cf3bfec40c45a8204de10d720da738fa2e226b05a",
+        "compression_type": 8,
+        "indexed_original_match": true,
+        "live_original_match": true,
+        "staged_original_match": true
+      },
+      {
+        "archive_member": "revised_01a0b429/cell_audit.md",
+        "relative_path": "cell_audit.md",
+        "bytes": 19346,
+        "sha256": "10eb2874b3b6d2c9a6c08f1ae8c1c4cecd6c101f2094aff8c09ae0d49358e130",
+        "compression_type": 8,
+        "indexed_original_match": true,
+        "live_original_match": true,
+        "staged_original_match": true
+      },
+      {
+        "archive_member": "revised_01a0b429/data/analysis_results.json",
+        "relative_path": "data/analysis_results.json",
+        "bytes": 105447,
+        "sha256": "f96c680189e913173e52aba91b0c6671506bc841fafdeb05b93be7c0093cc72c",
+        "compression_type": 8,
+        "indexed_original_match": true,
+        "live_original_match": true,
+        "staged_original_match": true
+      },
+      {
+        "archive_member": "revised_01a0b429/data/burst_sensitivity.csv",
+        "relative_path": "data/burst_sensitivity.csv",
+        "bytes": 490,
+        "sha256": "b9d6d0f5dac534673ceb004353cc495ceeb313cf8a80d08f921a7cfa827d8e5c",
+        "compression_type": 8,
+        "indexed_original_match": true,
+        "live_original_match": true,
+        "staged_original_match": true
+      },
+      {
+        "archive_member": "revised_01a0b429/data/cd_sensitivity.csv",
+        "relative_path": "data/cd_sensitivity.csv",
+        "bytes": 416,
+        "sha256": "65d946c0b34f7411085d32b5b6094c5f08acf94ec0df308aa6a097a74da7697d",
+        "compression_type": 8,
+        "indexed_original_match": true,
+        "live_original_match": true,
+        "staged_original_match": true
+      },
+      {
+        "archive_member": "revised_01a0b429/data/cd_sweep.csv",
+        "relative_path": "data/cd_sweep.csv",
+        "bytes": 2339,
+        "sha256": "0beb7cab7100ed0c5e7e7432188a8ed8b73f4e909074a40a22e0b6480b789ab0",
+        "compression_type": 8,
+        "indexed_original_match": true,
+        "live_original_match": true,
+        "staged_original_match": true
+      },
+      {
+        "archive_member": "revised_01a0b429/data/cylinder_sensitivity.csv",
+        "relative_path": "data/cylinder_sensitivity.csv",
+        "bytes": 260,
+        "sha256": "6d83fb500e58d59a7c3756373ec87fe4e0978ff6fe4e1044c2c8c9c71ba84c83",
+        "compression_type": 8,
+        "indexed_original_match": true,
+        "live_original_match": true,
+        "staged_original_match": true
+      },
+      {
+        "archive_member": "revised_01a0b429/data/diameter_sweep.csv",
+        "relative_path": "data/diameter_sweep.csv",
+        "bytes": 2017,
+        "sha256": "4562cc5cf803db519edb550e65a7c6e17a30b0f2a883db8b7b01aece01573240",
+        "compression_type": 8,
+        "indexed_original_match": true,
+        "live_original_match": true,
+        "staged_original_match": true
+      },
+      {
+        "archive_member": "revised_01a0b429/data/fill_sweep.csv",
+        "relative_path": "data/fill_sweep.csv",
+        "bytes": 8442,
+        "sha256": "5fb89450c2c13c7290e46de07219c03838cf2eafda2b64403c53c4c5a6abb7ad",
+        "compression_type": 8,
+        "indexed_original_match": true,
+        "live_original_match": true,
+        "staged_original_match": true
+      },
+      {
+        "archive_member": "revised_01a0b429/data/formula_inventory.csv",
+        "relative_path": "data/formula_inventory.csv",
+        "bytes": 931908,
+        "sha256": "6b555ec9e7ad1f99257c38a212ddba77c34faa9ab34690c64e84da98bf8abc5f",
+        "compression_type": 8,
+        "indexed_original_match": true,
+        "live_original_match": true,
+        "staged_original_match": true
+      },
+      {
+        "archive_member": "revised_01a0b429/data/source_A_pressure_comparison.csv",
+        "relative_path": "data/source_A_pressure_comparison.csv",
+        "bytes": 1378,
+        "sha256": "e5d28f2f72561016548c654e53a735ce1df791ea082ae412ca02e2132f7dd3d7",
+        "compression_type": 8,
+        "indexed_original_match": true,
+        "live_original_match": true,
+        "staged_original_match": true
+      },
+      {
+        "archive_member": "revised_01a0b429/data/source_manifest.json",
+        "relative_path": "data/source_manifest.json",
+        "bytes": 1899,
+        "sha256": "d2a4d85b3b6e5592fe4deff72e904acc802dabb812497447120e2357892afc5a",
+        "compression_type": 8,
+        "indexed_original_match": true,
+        "live_original_match": true,
+        "staged_original_match": true
+      },
+      {
+        "archive_member": "revised_01a0b429/data/standard_atmosphere.csv",
+        "relative_path": "data/standard_atmosphere.csv",
+        "bytes": 6740,
+        "sha256": "b3c713927c13e868d404aecdc700d74df9286382274d8753e82d41f2aea73c65",
+        "compression_type": 8,
+        "indexed_original_match": true,
+        "live_original_match": true,
+        "staged_original_match": true
+      },
+      {
+        "archive_member": "revised_01a0b429/data/summary.json",
+        "relative_path": "data/summary.json",
+        "bytes": 726,
+        "sha256": "e26a719f91bef3590a35d5604abaab28c22f913c385d50585c1beb824519749e",
+        "compression_type": 8,
+        "indexed_original_match": true,
+        "live_original_match": true,
+        "staged_original_match": true
+      },
+      {
+        "archive_member": "revised_01a0b429/data/upper_air_profile.csv",
+        "relative_path": "data/upper_air_profile.csv",
+        "bytes": 16765,
+        "sha256": "557faac45d7aeb0428c3e99b49bc6bd538d80b57e42761569c730204594f4552",
+        "compression_type": 8,
+        "indexed_original_match": true,
+        "live_original_match": true,
+        "staged_original_match": true
+      },
+      {
+        "archive_member": "revised_01a0b429/example_config.json",
+        "relative_path": "example_config.json",
+        "bytes": 802,
+        "sha256": "7aab489d580b5e6a67e33a6ef1528c6be7b798a18b8107d75779ab3f6383467c",
+        "compression_type": 8,
+        "indexed_original_match": true,
+        "live_original_match": true,
+        "staged_original_match": true
+      },
+      {
+        "archive_member": "revised_01a0b429/existing_data/analysis.py",
+        "relative_path": "existing_data/analysis.py",
+        "bytes": 12855,
+        "sha256": "9bd6e962f2f5a789f45d6c79badd801e46f40feeca44e0f39aa193806dd2da01",
+        "compression_type": 8,
+        "indexed_original_match": true,
+        "live_original_match": true,
+        "staged_original_match": true
+      },
+      {
+        "archive_member": "revised_01a0b429/existing_data/ascent_benchmark.png",
+        "relative_path": "existing_data/ascent_benchmark.png",
+        "bytes": 93977,
+        "sha256": "493e6e31ed6dd07b7930a2e68a41bbf07ff43e69cdfafe2d02559648414a141a",
+        "compression_type": 8,
+        "indexed_original_match": true,
+        "live_original_match": true,
+        "staged_original_match": true
+      },
+      {
+        "archive_member": "revised_01a0b429/existing_data/ascent_by_flight.csv",
+        "relative_path": "existing_data/ascent_by_flight.csv",
+        "bytes": 1522,
+        "sha256": "7e07f6f544e208f439a32f3d23ba7220ade7a9fd6b3243226653204619e8354b",
+        "compression_type": 8,
+        "indexed_original_match": true,
+        "live_original_match": true,
+        "staged_original_match": true
+      },
+      {
+        "archive_member": "revised_01a0b429/existing_data/ascent_empirical_paper.pdf",
+        "relative_path": "existing_data/ascent_empirical_paper.pdf",
+        "bytes": 4351463,
+        "sha256": "a0174443801bc73951685873bd9e047cd7a16c3b2c9c78141bb798698b7de7cb",
+        "compression_type": 8,
+        "indexed_original_match": true,
+        "live_original_match": true,
+        "staged_original_match": true
+      },
+      {
+        "archive_member": "revised_01a0b429/existing_data/ascent_intervals.csv",
+        "relative_path": "existing_data/ascent_intervals.csv",
+        "bytes": 26681,
+        "sha256": "7f998982e3beba016fef1df1ec32ca66f53f3629c8ab56a25faf5dcccf3c182a",
+        "compression_type": 8,
+        "indexed_original_match": true,
+        "live_original_match": true,
+        "staged_original_match": true
+      },
+      {
+        "archive_member": "revised_01a0b429/existing_data/ascent_predictions.csv",
+        "relative_path": "existing_data/ascent_predictions.csv",
+        "bytes": 4886,
+        "sha256": "97ef3d51abf292c61739bfb0731cc5a21ccb7efb93dc51528d23f09979001f29",
+        "compression_type": 8,
+        "indexed_original_match": true,
+        "live_original_match": true,
+        "staged_original_match": true
+      },
+      {
+        "archive_member": "revised_01a0b429/existing_data/ascent_profiles.png",
+        "relative_path": "existing_data/ascent_profiles.png",
+        "bytes": 259229,
+        "sha256": "d1ae36e68392c12bd70703d9de20bd0f9eab2c31541038ed5e61b2a64cc4587b",
+        "compression_type": 8,
+        "indexed_original_match": true,
+        "live_original_match": true,
+        "staged_original_match": true
+      },
+      {
+        "archive_member": "revised_01a0b429/existing_data/descent_by_flight.csv",
+        "relative_path": "existing_data/descent_by_flight.csv",
+        "bytes": 914,
+        "sha256": "f7d5b7055aa96f46eac2907ee0b56b0794a04f82832e753e410dbf5ca50f3e39",
+        "compression_type": 8,
+        "indexed_original_match": true,
+        "live_original_match": true,
+        "staged_original_match": true
+      },
+      {
+        "archive_member": "revised_01a0b429/existing_data/descent_diagnostics.csv",
+        "relative_path": "existing_data/descent_diagnostics.csv",
+        "bytes": 2841,
+        "sha256": "6a8a77fcf7f2ca7ffb114d6befcef04575733b687b391bd6c1916c6fc89c7ba8",
+        "compression_type": 8,
+        "indexed_original_match": true,
+        "live_original_match": true,
+        "staged_original_match": true
+      },
+      {
+        "archive_member": "revised_01a0b429/existing_data/descent_effective_s0.png",
+        "relative_path": "existing_data/descent_effective_s0.png",
+        "bytes": 89907,
+        "sha256": "18ef27a79a63e3c429f33f58d6c4c5dfbc78c847451046ee4ecf8707f1c4f0cd",
+        "compression_type": 8,
+        "indexed_original_match": true,
+        "live_original_match": true,
+        "staged_original_match": true
+      },
+      {
+        "archive_member": "revised_01a0b429/existing_data/descent_intervals.csv",
+        "relative_path": "existing_data/descent_intervals.csv",
+        "bytes": 18210,
+        "sha256": "138b0d8d98267fa179e935ee34b8b85f9a09c2a76f910e122120dd8073e8d940",
+        "compression_type": 8,
+        "indexed_original_match": true,
+        "live_original_match": true,
+        "staged_original_match": true
+      },
+      {
+        "archive_member": "revised_01a0b429/existing_data/empirical_paper_evidence.json",
+        "relative_path": "existing_data/empirical_paper_evidence.json",
+        "bytes": 6739,
+        "sha256": "516e1424056ebe698ba8fc52b9b22a7839469be3f892e04bc873c53454f5a2d0",
+        "compression_type": 8,
+        "indexed_original_match": true,
+        "live_original_match": true,
+        "staged_original_match": true
+      },
+      {
+        "archive_member": "revised_01a0b429/existing_data/empirical_paper_review.html",
+        "relative_path": "existing_data/empirical_paper_review.html",
+        "bytes": 18530,
+        "sha256": "26b0e0e276670e30f776e4ce762b103aa8ebd311fa9572456607ff7223743bf9",
+        "compression_type": 8,
+        "indexed_original_match": true,
+        "live_original_match": true,
+        "staged_original_match": true
+      },
+      {
+        "archive_member": "revised_01a0b429/existing_data/empirical_paper_review.md",
+        "relative_path": "existing_data/empirical_paper_review.md",
+        "bytes": 15812,
+        "sha256": "6203925d11ea7f09c2f9dc44ea8aaabd1053db76cd3c48a420630b0faa076409",
+        "compression_type": 8,
+        "indexed_original_match": true,
+        "live_original_match": true,
+        "staged_original_match": true
+      },
+      {
+        "archive_member": "revised_01a0b429/existing_data/flights.csv",
+        "relative_path": "existing_data/flights.csv",
+        "bytes": 17708,
+        "sha256": "985951000ffda7ef6132e72ad3301ece2362e0d4b7f8125e170de1bdd066da6b",
+        "compression_type": 8,
+        "indexed_original_match": true,
+        "live_original_match": true,
+        "staged_original_match": true
+      },
+      {
+        "archive_member": "revised_01a0b429/existing_data/flights.json",
+        "relative_path": "existing_data/flights.json",
+        "bytes": 31203,
+        "sha256": "5c60072c4a738676a1e1d990fc336afae9dd843f8436aa437342e7140704ec50",
+        "compression_type": 8,
+        "indexed_original_match": true,
+        "live_original_match": true,
+        "staged_original_match": true
+      },
+      {
+        "archive_member": "revised_01a0b429/existing_data/intervals.csv",
+        "relative_path": "existing_data/intervals.csv",
+        "bytes": 44224,
+        "sha256": "efd711f97453949aae0524fa11d8eb40794752427aea72c5d5168c63782edba5",
+        "compression_type": 8,
+        "indexed_original_match": true,
+        "live_original_match": true,
+        "staged_original_match": true
+      },
+      {
+        "archive_member": "revised_01a0b429/existing_data/intervals.json",
+        "relative_path": "existing_data/intervals.json",
+        "bytes": 206750,
+        "sha256": "8487db2b64972fccecf9bd52d33758c6c628f0c6365f93ba505e7aea9b92073f",
+        "compression_type": 8,
+        "indexed_original_match": true,
+        "live_original_match": true,
+        "staged_original_match": true
+      },
+      {
+        "archive_member": "revised_01a0b429/existing_data/inventory.json",
+        "relative_path": "existing_data/inventory.json",
+        "bytes": 108582,
+        "sha256": "700f6b728dda5d815d81a27fba199544a48d74ba7c5b3785495c5fdfbd357950",
+        "compression_type": 8,
+        "indexed_original_match": true,
+        "live_original_match": true,
+        "staged_original_match": true
+      },
+      {
+        "archive_member": "revised_01a0b429/existing_data/leave_one_flight_out.csv",
+        "relative_path": "existing_data/leave_one_flight_out.csv",
+        "bytes": 320,
+        "sha256": "30bdf4589c77542e3657686b2bf53fb9bf333d9235c09f354aad1cb57084a55e",
+        "compression_type": 8,
+        "indexed_original_match": true,
+        "live_original_match": true,
+        "staged_original_match": true
+      },
+      {
+        "archive_member": "revised_01a0b429/existing_data/README.md",
+        "relative_path": "existing_data/README.md",
+        "bytes": 1429,
+        "sha256": "610f48055b8e16bc30d30e5a5a39515684147fd29981ae482b66cf4f01ebde2b",
+        "compression_type": 8,
+        "indexed_original_match": true,
+        "live_original_match": true,
+        "staged_original_match": true
+      },
+      {
+        "archive_member": "revised_01a0b429/existing_data/results.json",
+        "relative_path": "existing_data/results.json",
+        "bytes": 1590,
+        "sha256": "7be49a0518b7b7207d9b7d800e5bf21f598559b68826bc44e832d40ecc1e7e6d",
+        "compression_type": 8,
+        "indexed_original_match": true,
+        "live_original_match": true,
+        "staged_original_match": true
+      },
+      {
+        "archive_member": "revised_01a0b429/existing_data/sources.json",
+        "relative_path": "existing_data/sources.json",
+        "bytes": 1071,
+        "sha256": "69cab8e9bd6b10436009a5f3a39fa8532b5744e76f68e11872f34b4bcc087fe0",
+        "compression_type": 8,
+        "indexed_original_match": true,
+        "live_original_match": true,
+        "staged_original_match": true
+      },
+      {
+        "archive_member": "revised_01a0b429/existing_data/source_data.xlsx",
+        "relative_path": "existing_data/source_data.xlsx",
+        "bytes": 19095,
+        "sha256": "743ed3b29b2eb3778300a42be3f6aba6c82c94ce4cc845e593ca310b8a30511d",
+        "compression_type": 8,
+        "indexed_original_match": true,
+        "live_original_match": true,
+        "staged_original_match": true
+      },
+      {
+        "archive_member": "revised_01a0b429/existing_data/summary.json",
+        "relative_path": "existing_data/summary.json",
+        "bytes": 2372,
+        "sha256": "1ae37e748aafee6423f8be62385a21a5736e611e8c43bac6670503f5f575e78e",
+        "compression_type": 8,
+        "indexed_original_match": true,
+        "live_original_match": true,
+        "staged_original_match": true
+      },
+      {
+        "archive_member": "revised_01a0b429/existing_data/symposium_flights.csv",
+        "relative_path": "existing_data/symposium_flights.csv",
+        "bytes": 13557,
+        "sha256": "2eac8e63a05a7d48de3922bd8205edaf7e3656d2d1dc373e353902fb8290a55c",
+        "compression_type": 8,
+        "indexed_original_match": true,
+        "live_original_match": true,
+        "staged_original_match": true
+      },
+      {
+        "archive_member": "revised_01a0b429/existing_data/symposium_flights.json",
+        "relative_path": "existing_data/symposium_flights.json",
+        "bytes": 26711,
+        "sha256": "36ad3b74f013db3a1050dc6baf45fe0a28f8b9df09335414a2a95851bbe7ec26",
+        "compression_type": 8,
+        "indexed_original_match": true,
+        "live_original_match": true,
+        "staged_original_match": true
+      },
+      {
+        "archive_member": "revised_01a0b429/existing_data/symposium_notes.html",
+        "relative_path": "existing_data/symposium_notes.html",
+        "bytes": 6435,
+        "sha256": "a499329287f70a6281f26c6e19504c6f0fbbac81f7fc583f64922dd7ae3a946b",
+        "compression_type": 8,
+        "indexed_original_match": true,
+        "live_original_match": true,
+        "staged_original_match": true
+      },
+      {
+        "archive_member": "revised_01a0b429/existing_data/symposium_notes.md",
+        "relative_path": "existing_data/symposium_notes.md",
+        "bytes": 5267,
+        "sha256": "7b13731ceec781ad606b4e96773e9c93846cb3c9b55aa81b800d356ed4191fcb",
+        "compression_type": 8,
+        "indexed_original_match": true,
+        "live_original_match": true,
+        "staged_original_match": true
+      },
+      {
+        "archive_member": "revised_01a0b429/existing_data/symposium_secondary_leads.csv",
+        "relative_path": "existing_data/symposium_secondary_leads.csv",
+        "bytes": 2087,
+        "sha256": "32c2b47e5123d529df24bb2939e43a08aa3205ad5a6c613627330490634ea11b",
+        "compression_type": 8,
+        "indexed_original_match": true,
+        "live_original_match": true,
+        "staged_original_match": true
+      },
+      {
+        "archive_member": "revised_01a0b429/existing_data/validation.json",
+        "relative_path": "existing_data/validation.json",
+        "bytes": 1770,
+        "sha256": "2d522ce76cdd05d5972effacd0decb565d88d74b46769fba8db24ca50a5629eb",
+        "compression_type": 8,
+        "indexed_original_match": true,
+        "live_original_match": true,
+        "staged_original_match": true
+      },
+      {
+        "archive_member": "revised_01a0b429/existing_data/workbook_audit.html",
+        "relative_path": "existing_data/workbook_audit.html",
+        "bytes": 23193,
+        "sha256": "5a6bbf1a376c56c5d09dfc90bcdaf494b238ee4e812ee3ed843353e6ef59e12e",
+        "compression_type": 8,
+        "indexed_original_match": true,
+        "live_original_match": true,
+        "staged_original_match": true
+      },
+      {
+        "archive_member": "revised_01a0b429/existing_data/workbook_audit.md",
+        "relative_path": "existing_data/workbook_audit.md",
+        "bytes": 15020,
+        "sha256": "b808bc2daf9894bde9159572e92cddc0b59b837034be3eb994f1534350b76d06",
+        "compression_type": 8,
+        "indexed_original_match": true,
+        "live_original_match": true,
+        "staged_original_match": true
+      },
+      {
+        "archive_member": "revised_01a0b429/graphs/01_ascent_formula_audit.png",
+        "relative_path": "graphs/01_ascent_formula_audit.png",
+        "bytes": 63617,
+        "sha256": "1b45e80a405718463809e4710c9594b4befeea9d2b42507e8b46f059d9d513dd",
+        "compression_type": 8,
+        "indexed_original_match": true,
+        "live_original_match": true,
+        "staged_original_match": true
+      },
+      {
+        "archive_member": "revised_01a0b429/graphs/01_ascent_formula_audit.svg",
+        "relative_path": "graphs/01_ascent_formula_audit.svg",
+        "bytes": 79161,
+        "sha256": "e82edcf41929bf1e0ede4f279be4c9b81c3a58ec44127d199312ae4015818939",
+        "compression_type": 8,
+        "indexed_original_match": true,
+        "live_original_match": true,
+        "staged_original_match": true
+      },
+      {
+        "archive_member": "revised_01a0b429/graphs/02_atmosphere_audit.png",
+        "relative_path": "graphs/02_atmosphere_audit.png",
+        "bytes": 161626,
+        "sha256": "196515c5a5e72947f1a4c162b9b66b5eaec174ac34e73ac957849d2c53301c53",
+        "compression_type": 8,
+        "indexed_original_match": true,
+        "live_original_match": true,
+        "staged_original_match": true
+      },
+      {
+        "archive_member": "revised_01a0b429/graphs/02_atmosphere_audit.svg",
+        "relative_path": "graphs/02_atmosphere_audit.svg",
+        "bytes": 127577,
+        "sha256": "ac14deb4ee5c1352d2934042188a3e566fa6ec92db022890852bba5ada231761",
+        "compression_type": 8,
+        "indexed_original_match": true,
+        "live_original_match": true,
+        "staged_original_match": true
+      },
+      {
+        "archive_member": "revised_01a0b429/graphs/03_burst_criteria.png",
+        "relative_path": "graphs/03_burst_criteria.png",
+        "bytes": 85383,
+        "sha256": "c45831795bb3e2dba25579db480eda17f8f728a107a52b39cf26f3acc289b75d",
+        "compression_type": 8,
+        "indexed_original_match": true,
+        "live_original_match": true,
+        "staged_original_match": true
+      },
+      {
+        "archive_member": "revised_01a0b429/graphs/03_burst_criteria.svg",
+        "relative_path": "graphs/03_burst_criteria.svg",
+        "bytes": 118658,
+        "sha256": "c3aabf79d024a49d4f94b7d5e79a21d9197efe9b54148c677987f5b78b708667",
+        "compression_type": 8,
+        "indexed_original_match": true,
+        "live_original_match": true,
+        "staged_original_match": true
+      },
+      {
+        "archive_member": "revised_01a0b429/graphs/04_parameter_sensitivity.png",
+        "relative_path": "graphs/04_parameter_sensitivity.png",
+        "bytes": 151809,
+        "sha256": "b68233c1444f7d79e51011614dd26a24cc167dcfa2ed9c4b1e5aba8ac1da9e08",
+        "compression_type": 8,
+        "indexed_original_match": true,
+        "live_original_match": true,
+        "staged_original_match": true
+      },
+      {
+        "archive_member": "revised_01a0b429/graphs/04_parameter_sensitivity.svg",
+        "relative_path": "graphs/04_parameter_sensitivity.svg",
+        "bytes": 162084,
+        "sha256": "f36bdaee356646cd866af9ac56c385ac24555870dd8b7c697cec58afb5786376",
+        "compression_type": 8,
+        "indexed_original_match": true,
+        "live_original_match": true,
+        "staged_original_match": true
+      },
+      {
+        "archive_member": "revised_01a0b429/graphs/05_fill_burst_tradeoff.png",
+        "relative_path": "graphs/05_fill_burst_tradeoff.png",
+        "bytes": 155474,
+        "sha256": "c2de2a643364069819a526a160ff48123d864d69937c64caeb786c1962ac7704",
+        "compression_type": 8,
+        "indexed_original_match": true,
+        "live_original_match": true,
+        "staged_original_match": true
+      },
+      {
+        "archive_member": "revised_01a0b429/graphs/05_fill_burst_tradeoff.svg",
+        "relative_path": "graphs/05_fill_burst_tradeoff.svg",
+        "bytes": 140275,
+        "sha256": "bdf2e869f07c57e63d9219b8d59d22d867bb1d7ef145d5258b26e8c09b9b22aa",
+        "compression_type": 8,
+        "indexed_original_match": true,
+        "live_original_match": true,
+        "staged_original_match": true
+      },
+      {
+        "archive_member": "revised_01a0b429/graphs/06_upper_air_model.png",
+        "relative_path": "graphs/06_upper_air_model.png",
+        "bytes": 135840,
+        "sha256": "003a2b9b992e35ffec141684a1198dba17a455a95b3e703d0f6edcc9bf38e2f1",
+        "compression_type": 8,
+        "indexed_original_match": true,
+        "live_original_match": true,
+        "staged_original_match": true
+      },
+      {
+        "archive_member": "revised_01a0b429/graphs/06_upper_air_model.svg",
+        "relative_path": "graphs/06_upper_air_model.svg",
+        "bytes": 143426,
+        "sha256": "f97d4b56e39ff9a46fbc8288218de8d87887c284cd32799e7c46728151aace21",
+        "compression_type": 8,
+        "indexed_original_match": true,
+        "live_original_match": true,
+        "staged_original_match": true
+      },
+      {
+        "archive_member": "revised_01a0b429/graphs/07_cylinder_inventory.png",
+        "relative_path": "graphs/07_cylinder_inventory.png",
+        "bytes": 99309,
+        "sha256": "2807b095e1a3b693b5168db98dbbe96d35dd4b4906c782ee5c7f5c0731ee04e6",
+        "compression_type": 8,
+        "indexed_original_match": true,
+        "live_original_match": true,
+        "staged_original_match": true
+      },
+      {
+        "archive_member": "revised_01a0b429/graphs/07_cylinder_inventory.svg",
+        "relative_path": "graphs/07_cylinder_inventory.svg",
+        "bytes": 129474,
+        "sha256": "d2e50a6e824d2c4b162498d807b70dd203839fb025b05f6284fdcf170003a992",
+        "compression_type": 8,
+        "indexed_original_match": true,
+        "live_original_match": true,
+        "staged_original_match": true
+      },
+      {
+        "archive_member": "revised_01a0b429/literature_review.html",
+        "relative_path": "literature_review.html",
+        "bytes": 15407,
+        "sha256": "5bb6122b420d7b14843901e822f11c29c850c77db5f8ba6439b461dd9bdf3104",
+        "compression_type": 8,
+        "indexed_original_match": true,
+        "live_original_match": true,
+        "staged_original_match": true
+      },
+      {
+        "archive_member": "revised_01a0b429/literature_review.md",
+        "relative_path": "literature_review.md",
+        "bytes": 11659,
+        "sha256": "be9564eaf00dc0345a303fee34e23a81806186aef444ee074baa734ca7664ad6",
+        "compression_type": 8,
+        "indexed_original_match": true,
+        "live_original_match": true,
+        "staged_original_match": true
+      },
+      {
+        "archive_member": "revised_01a0b429/make_analysis.py",
+        "relative_path": "make_analysis.py",
+        "bytes": 11187,
+        "sha256": "e427295379192755b207cfd3010dc27e716a6eb7150a19057d306b7612a85b0c",
+        "compression_type": 8,
+        "indexed_original_match": true,
+        "live_original_match": true,
+        "staged_original_match": true
+      },
+      {
+        "archive_member": "revised_01a0b429/manifest_sha256.json",
+        "relative_path": "manifest_sha256.json",
+        "bytes": 29270,
+        "sha256": "0c59a7c05618fbf1771b89cf5b84fecb6846e96be8fee1d045c7c9b31f2aa214",
+        "compression_type": 8,
+        "indexed_original_match": true,
+        "live_original_match": true,
+        "staged_original_match": true
+      },
+      {
+        "archive_member": "revised_01a0b429/README.html",
+        "relative_path": "README.html",
+        "bytes": 11451,
+        "sha256": "2641684f399c4eaf56dc5672363ea5febbf1993cf0eebb81b812cb750c7953d0",
+        "compression_type": 8,
+        "indexed_original_match": true,
+        "live_original_match": true,
+        "staged_original_match": true
+      },
+      {
+        "archive_member": "revised_01a0b429/README.md",
+        "relative_path": "README.md",
+        "bytes": 9776,
+        "sha256": "618fcacaa0dc502b34615f1cb68b14b209e28f2c2c5b83ff140ebb58ee7d5ed4",
+        "compression_type": 8,
+        "indexed_original_match": true,
+        "live_original_match": true,
+        "staged_original_match": true
+      },
+      {
+        "archive_member": "revised_01a0b429/requirements.txt",
+        "relative_path": "requirements.txt",
+        "bytes": 51,
+        "sha256": "5bddadc706b7f7cd1948188a94fcc6fa9fde823dbb107d383dcdf2782c149dca",
+        "compression_type": 8,
+        "indexed_original_match": true,
+        "live_original_match": true,
+        "staged_original_match": true
+      },
+      {
+        "archive_member": "revised_01a0b429/sources.json",
+        "relative_path": "sources.json",
+        "bytes": 9609,
+        "sha256": "8a4de59e5177c72613f926f490c85f782137518669c46772b0eb917f6687b7b7",
+        "compression_type": 8,
+        "indexed_original_match": true,
+        "live_original_match": true,
+        "staged_original_match": true
+      },
+      {
+        "archive_member": "revised_01a0b429/tawhiri_plan/01_wind_and_layers.png",
+        "relative_path": "tawhiri_plan/01_wind_and_layers.png",
+        "bytes": 165118,
+        "sha256": "f7221b6de1ac68255b79350e7fac71711f27118943fb4316d3fe57a7fc6625d2",
+        "compression_type": 8,
+        "indexed_original_match": true,
+        "live_original_match": true,
+        "staged_original_match": true
+      },
+      {
+        "archive_member": "revised_01a0b429/tawhiri_plan/01_wind_and_layers.svg",
+        "relative_path": "tawhiri_plan/01_wind_and_layers.svg",
+        "bytes": 154387,
+        "sha256": "3b92e797d6f1608dec759bc7cf7452ebc3dadcf835e3b9441d6d38aa6b0872fe",
+        "compression_type": 8,
+        "indexed_original_match": true,
+        "live_original_match": true,
+        "staged_original_match": true
+      },
+      {
+        "archive_member": "revised_01a0b429/tawhiri_plan/02_endpoint_sensitivity.png",
+        "relative_path": "tawhiri_plan/02_endpoint_sensitivity.png",
+        "bytes": 279903,
+        "sha256": "5fefc707d900dca7871231b836eae5dc9967b817e981b27aeac8c14fb50d503d",
+        "compression_type": 8,
+        "indexed_original_match": true,
+        "live_original_match": true,
+        "staged_original_match": true
+      },
+      {
+        "archive_member": "revised_01a0b429/tawhiri_plan/02_endpoint_sensitivity.svg",
+        "relative_path": "tawhiri_plan/02_endpoint_sensitivity.svg",
+        "bytes": 242112,
+        "sha256": "4864d82e23f9c35ba3767e11443a5dfbe86a1c5b5ec4943a0d185c97455f4738",
+        "compression_type": 8,
+        "indexed_original_match": true,
+        "live_original_match": true,
+        "staged_original_match": true
+      },
+      {
+        "archive_member": "revised_01a0b429/tawhiri_plan/03_joint_sensitivity.png",
+        "relative_path": "tawhiri_plan/03_joint_sensitivity.png",
+        "bytes": 202876,
+        "sha256": "9c0cbac9445194bea3384b167ac86292d8013bccad5ee33b5ffe53094aea64e1",
+        "compression_type": 8,
+        "indexed_original_match": true,
+        "live_original_match": true,
+        "staged_original_match": true
+      },
+      {
+        "archive_member": "revised_01a0b429/tawhiri_plan/03_joint_sensitivity.svg",
+        "relative_path": "tawhiri_plan/03_joint_sensitivity.svg",
+        "bytes": 175064,
+        "sha256": "590e6787f2002f420f61f1450b2189b6786dff6324da782de1eb074ec06c19d3",
+        "compression_type": 8,
+        "indexed_original_match": true,
+        "live_original_match": true,
+        "staged_original_match": true
+      },
+      {
+        "archive_member": "revised_01a0b429/tawhiri_plan/code_audit.md",
+        "relative_path": "tawhiri_plan/code_audit.md",
+        "bytes": 21780,
+        "sha256": "d1a97c244ff5cff95ba128720d618dafffd7ff845cd0bbf4fc346dde799dff87",
+        "compression_type": 8,
+        "indexed_original_match": true,
+        "live_original_match": true,
+        "staged_original_match": true
+      },
+      {
+        "archive_member": "revised_01a0b429/tawhiri_plan/code_numeric_checks.json",
+        "relative_path": "tawhiri_plan/code_numeric_checks.json",
+        "bytes": 3508,
+        "sha256": "d0174ea151ab9243b5b812ea36754edbf2598027d7e8985b6c501c7a2b068748",
+        "compression_type": 8,
+        "indexed_original_match": true,
+        "live_original_match": true,
+        "staged_original_match": true
+      },
+      {
+        "archive_member": "revised_01a0b429/tawhiri_plan/code_sources.json",
+        "relative_path": "tawhiri_plan/code_sources.json",
+        "bytes": 24002,
+        "sha256": "ba5f7803f193da234f2dfd149da3ae2e57e993465c041259c2aaf11866ff8ba0",
+        "compression_type": 8,
+        "indexed_original_match": true,
+        "live_original_match": true,
+        "staged_original_match": true
+      },
+      {
+        "archive_member": "revised_01a0b429/tawhiri_plan/equal_time_shape.csv",
+        "relative_path": "tawhiri_plan/equal_time_shape.csv",
+        "bytes": 441,
+        "sha256": "c95be1fca6c3e40523ddfe98d48dc3fa87ce07c1ab36d43f63d50b2cf0f7e6ef",
+        "compression_type": 8,
+        "indexed_original_match": true,
+        "live_original_match": true,
+        "staged_original_match": true
+      },
+      {
+        "archive_member": "revised_01a0b429/tawhiri_plan/evidence.md",
+        "relative_path": "tawhiri_plan/evidence.md",
+        "bytes": 16865,
+        "sha256": "138e32b4e532b8a8c46eb817334129aaf0df40948b6f7fc169207c08e6427ea4",
+        "compression_type": 8,
+        "indexed_original_match": true,
+        "live_original_match": true,
+        "staged_original_match": true
+      },
+      {
+        "archive_member": "revised_01a0b429/tawhiri_plan/evidence_sources.json",
+        "relative_path": "tawhiri_plan/evidence_sources.json",
+        "bytes": 7496,
+        "sha256": "8544d0fc9a0ce6a1c81ea1ea8680be5ab666af40c575d7a20d6b5641fc44a9bd",
+        "compression_type": 8,
+        "indexed_original_match": true,
+        "live_original_match": true,
+        "staged_original_match": true
+      },
+      {
+        "archive_member": "revised_01a0b429/tawhiri_plan/joint_grid.csv",
+        "relative_path": "tawhiri_plan/joint_grid.csv",
+        "bytes": 2385,
+        "sha256": "7731263093a137734179098e08a4c7083ae223923d8dcc8a538e6ad476db29c9",
+        "compression_type": 8,
+        "indexed_original_match": true,
+        "live_original_match": true,
+        "staged_original_match": true
+      },
+      {
+        "archive_member": "revised_01a0b429/tawhiri_plan/layer_contributions.csv",
+        "relative_path": "tawhiri_plan/layer_contributions.csv",
+        "bytes": 1129,
+        "sha256": "adb26ce192483b22a941dd156f73c1015a748496af46f4708e3374f04e3cc8b1",
+        "compression_type": 8,
+        "indexed_original_match": true,
+        "live_original_match": true,
+        "staged_original_match": true
+      },
+      {
+        "archive_member": "revised_01a0b429/tawhiri_plan/nine_run_design.csv",
+        "relative_path": "tawhiri_plan/nine_run_design.csv",
+        "bytes": 949,
+        "sha256": "27518505a650553bad79df901cbbfe319bdbd6bffa1e910dcb3580baec01e4ed",
+        "compression_type": 8,
+        "indexed_original_match": true,
+        "live_original_match": true,
+        "staged_original_match": true
+      },
+      {
+        "archive_member": "revised_01a0b429/tawhiri_plan/sensitivity.py",
+        "relative_path": "tawhiri_plan/sensitivity.py",
+        "bytes": 13228,
+        "sha256": "0f835fc7a1761fb47b0bf9c046219fadac890f9f5e104795a03f240baa616460",
+        "compression_type": 8,
+        "indexed_original_match": true,
+        "live_original_match": true,
+        "staged_original_match": true
+      },
+      {
+        "archive_member": "revised_01a0b429/tawhiri_plan/sensitivity_design.md",
+        "relative_path": "tawhiri_plan/sensitivity_design.md",
+        "bytes": 13269,
+        "sha256": "685003ac237709c4586d0e0a3a4f5b3e31478b8ab852b4cb56603a766095fd60",
+        "compression_type": 8,
+        "indexed_original_match": true,
+        "live_original_match": true,
+        "staged_original_match": true
+      },
+      {
+        "archive_member": "revised_01a0b429/tawhiri_plan/synthetic_results.json",
+        "relative_path": "tawhiri_plan/synthetic_results.json",
+        "bytes": 138268,
+        "sha256": "2c9d82b31f1d031422e3ef240aed9a700faeb3a8a57cae51f8591201727d1026",
+        "compression_type": 8,
+        "indexed_original_match": true,
+        "live_original_match": true,
+        "staged_original_match": true
+      },
+      {
+        "archive_member": "revised_01a0b429/tawhiri_plan/synthetic_wind.csv",
+        "relative_path": "tawhiri_plan/synthetic_wind.csv",
+        "bytes": 243,
+        "sha256": "490a5cc3772ae4b6685ec2e641923d18ac12df2325b7f1c53206dc3e6c7c58cd",
+        "compression_type": 8,
+        "indexed_original_match": true,
+        "live_original_match": true,
+        "staged_original_match": true
+      },
+      {
+        "archive_member": "revised_01a0b429/technical_report.html",
+        "relative_path": "technical_report.html",
+        "bytes": 26263,
+        "sha256": "51e73e8e31bff47703811470c0c1012fdc8c38b60d4d2bfb31a199a99dd01d1f",
+        "compression_type": 8,
+        "indexed_original_match": true,
+        "live_original_match": true,
+        "staged_original_match": true
+      },
+      {
+        "archive_member": "revised_01a0b429/technical_report.md",
+        "relative_path": "technical_report.md",
+        "bytes": 20847,
+        "sha256": "27d5d069ae186bf50fbcd9ebff2f36e8da691da1dcdc0619df79a3e2ee2437d0",
+        "compression_type": 8,
+        "indexed_original_match": true,
+        "live_original_match": true,
+        "staged_original_match": true
+      },
+      {
+        "archive_member": "revised_01a0b429/test_balloon_model.py",
+        "relative_path": "test_balloon_model.py",
+        "bytes": 3341,
+        "sha256": "58b673213094bfd367894789ea2e20dc6ab0dee57f62a6fb62b55f007a8310e6",
+        "compression_type": 8,
+        "indexed_original_match": true,
+        "live_original_match": true,
+        "staged_original_match": true
+      },
+      {
+        "archive_member": "revised_01a0b429/test_theory_analysis.py",
+        "relative_path": "test_theory_analysis.py",
+        "bytes": 2371,
+        "sha256": "14156829e5c2f9056cfe4d0cf5c52a9ec9d71edafde30246d7145ff8bb403a66",
+        "compression_type": 8,
+        "indexed_original_match": true,
+        "live_original_match": true,
+        "staged_original_match": true
+      },
+      {
+        "archive_member": "revised_01a0b429/theory_analysis.py",
+        "relative_path": "theory_analysis.py",
+        "bytes": 15266,
+        "sha256": "68b0bbcb6c11849f92f8365e963358810a31baa6811e195e83cb7f657f22cfed",
+        "compression_type": 8,
+        "indexed_original_match": true,
+        "live_original_match": true,
+        "staged_original_match": true
+      },
+      {
+        "archive_member": "revised_01a0b429/theory_data/blowdown.csv",
+        "relative_path": "theory_data/blowdown.csv",
+        "bytes": 4962,
+        "sha256": "9a3869807642a5526b164c5c068ea423b346a91e869eac0f6b4a534eb51218c5",
+        "compression_type": 8,
+        "indexed_original_match": true,
+        "live_original_match": true,
+        "staged_original_match": true
+      },
+      {
+        "archive_member": "revised_01a0b429/theory_data/common_conditions.csv",
+        "relative_path": "theory_data/common_conditions.csv",
+        "bytes": 524,
+        "sha256": "c602839ad43f5f211fdf78d23e1b6efb7d1d6fea71092c89f5d3eeebe8a58e22",
+        "compression_type": 8,
+        "indexed_original_match": true,
+        "live_original_match": true,
+        "staged_original_match": true
+      },
+      {
+        "archive_member": "revised_01a0b429/theory_data/cylinder_cases.csv",
+        "relative_path": "theory_data/cylinder_cases.csv",
+        "bytes": 189,
+        "sha256": "9a287ef731e3a958d6afaf15c0085ea8afa8de46dab0eaf4c332410ec47c63e6",
+        "compression_type": 8,
+        "indexed_original_match": true,
+        "live_original_match": true,
+        "staged_original_match": true
+      },
+      {
+        "archive_member": "revised_01a0b429/theory_data/model_series.csv",
+        "relative_path": "theory_data/model_series.csv",
+        "bytes": 252,
+        "sha256": "b0c6cc1cfdc3855c60a182f177bc1ab092c483fde419d5f13ad12df9b0ec35b8",
+        "compression_type": 8,
+        "indexed_original_match": true,
+        "live_original_match": true,
+        "staged_original_match": true
+      },
+      {
+        "archive_member": "revised_01a0b429/theory_data/path_decomposition.csv",
+        "relative_path": "theory_data/path_decomposition.csv",
+        "bytes": 598,
+        "sha256": "8d9cbde20258bc51055728582e2c18ae3b1bf9544d6d277154cc0948dc57e376",
+        "compression_type": 8,
+        "indexed_original_match": true,
+        "live_original_match": true,
+        "staged_original_match": true
+      },
+      {
+        "archive_member": "revised_01a0b429/theory_data/theory_results.json",
+        "relative_path": "theory_data/theory_results.json",
+        "bytes": 128657,
+        "sha256": "a58618c596058aca8b18dab67650ceb1b0a11dd5f5703e11923e8303b42dd93b",
+        "compression_type": 8,
+        "indexed_original_match": true,
+        "live_original_match": true,
+        "staged_original_match": true
+      },
+      {
+        "archive_member": "revised_01a0b429/theory_data/thermal_profiles.csv",
+        "relative_path": "theory_data/thermal_profiles.csv",
+        "bytes": 27857,
+        "sha256": "4352ae20cfc4ca242943b23e4bbdd84728bdcdea68a5b32da2d7fddd4d3228d2",
+        "compression_type": 8,
+        "indexed_original_match": true,
+        "live_original_match": true,
+        "staged_original_match": true
+      },
+      {
+        "archive_member": "revised_01a0b429/theory_data/thresholds.csv",
+        "relative_path": "theory_data/thresholds.csv",
+        "bytes": 792,
+        "sha256": "534f5ff38f5141e3c87199ab544d09d772c0b6cebd36fa41e8b3a768760dd9d9",
+        "compression_type": 8,
+        "indexed_original_match": true,
+        "live_original_match": true,
+        "staged_original_match": true
+      },
+      {
+        "archive_member": "revised_01a0b429/theory_data/volume_decomposition.csv",
+        "relative_path": "theory_data/volume_decomposition.csv",
+        "bytes": 430,
+        "sha256": "c82e08b4990797497a4b7d16902f5fb4109baabae855c29076fed3fdcb34f1f9",
+        "compression_type": 8,
+        "indexed_original_match": true,
+        "live_original_match": true,
+        "staged_original_match": true
+      },
+      {
+        "archive_member": "revised_01a0b429/theory_graphs/08_forward_inverse.png",
+        "relative_path": "theory_graphs/08_forward_inverse.png",
+        "bytes": 142661,
+        "sha256": "94c01cd7b8a43feefafa2a25ec02711a48d39c57bdd0922d7e81e62b3ee80428",
+        "compression_type": 8,
+        "indexed_original_match": true,
+        "live_original_match": true,
+        "staged_original_match": true
+      },
+      {
+        "archive_member": "revised_01a0b429/theory_graphs/08_forward_inverse.svg",
+        "relative_path": "theory_graphs/08_forward_inverse.svg",
+        "bytes": 119439,
+        "sha256": "58c3f45676109971690cd2738de8767a34533ad784f9df4dfe89c1a7bc8f901f",
+        "compression_type": 8,
+        "indexed_original_match": true,
+        "live_original_match": true,
+        "staged_original_match": true
+      },
+      {
+        "archive_member": "revised_01a0b429/theory_graphs/09_condition_decomposition.png",
+        "relative_path": "theory_graphs/09_condition_decomposition.png",
+        "bytes": 120302,
+        "sha256": "d7cb77c1318428f00c6e8853cc0f5ba706dd501910463d95b77fb294992171f2",
+        "compression_type": 8,
+        "indexed_original_match": true,
+        "live_original_match": true,
+        "staged_original_match": true
+      },
+      {
+        "archive_member": "revised_01a0b429/theory_graphs/09_condition_decomposition.svg",
+        "relative_path": "theory_graphs/09_condition_decomposition.svg",
+        "bytes": 145303,
+        "sha256": "f6a1975dc8329ed0c1ec9351e3f0a00f3a2fb79829e67512a61c9b6f28062b03",
+        "compression_type": 8,
+        "indexed_original_match": true,
+        "live_original_match": true,
+        "staged_original_match": true
+      },
+      {
+        "archive_member": "revised_01a0b429/theory_graphs/10_burst_volume_thresholds.png",
+        "relative_path": "theory_graphs/10_burst_volume_thresholds.png",
+        "bytes": 94055,
+        "sha256": "7a351158c2d0d41d6b646dbea5a7817a8771e35342db9792c37298b6b65f5dd1",
+        "compression_type": 8,
+        "indexed_original_match": true,
+        "live_original_match": true,
+        "staged_original_match": true
+      },
+      {
+        "archive_member": "revised_01a0b429/theory_graphs/10_burst_volume_thresholds.svg",
+        "relative_path": "theory_graphs/10_burst_volume_thresholds.svg",
+        "bytes": 119122,
+        "sha256": "9427b0721b60ac8be47bf6c3f7157e1b71b2e9b60ed24e7e2b8fa2b0e93b519b",
+        "compression_type": 8,
+        "indexed_original_match": true,
+        "live_original_match": true,
+        "staged_original_match": true
+      },
+      {
+        "archive_member": "revised_01a0b429/theory_graphs/11_thermal_assumptions.png",
+        "relative_path": "theory_graphs/11_thermal_assumptions.png",
+        "bytes": 171359,
+        "sha256": "0031e082fa6cc0b46a3c208e6e904afe7530c9b24fca22266cc570b9ba839a9f",
+        "compression_type": 8,
+        "indexed_original_match": true,
+        "live_original_match": true,
+        "staged_original_match": true
+      },
+      {
+        "archive_member": "revised_01a0b429/theory_graphs/11_thermal_assumptions.svg",
+        "relative_path": "theory_graphs/11_thermal_assumptions.svg",
+        "bytes": 173582,
+        "sha256": "67cfec1c4c6dba90ec5d570ef04af60147af321300f3474fff36a4b53504cbf6",
+        "compression_type": 8,
+        "indexed_original_match": true,
+        "live_original_match": true,
+        "staged_original_match": true
+      },
+      {
+        "archive_member": "revised_01a0b429/theory_graphs/12_cylinder_thermal_models.png",
+        "relative_path": "theory_graphs/12_cylinder_thermal_models.png",
+        "bytes": 156805,
+        "sha256": "a23842a426086be6651dcb910789c5c159ce105ef46209c6812aab86bbd284c9",
+        "compression_type": 8,
+        "indexed_original_match": true,
+        "live_original_match": true,
+        "staged_original_match": true
+      },
+      {
+        "archive_member": "revised_01a0b429/theory_graphs/12_cylinder_thermal_models.svg",
+        "relative_path": "theory_graphs/12_cylinder_thermal_models.svg",
+        "bytes": 159344,
+        "sha256": "cd49c91d05c940bb414d55f816beebdefdd16c5542ffdaeefc34d665152b3423",
+        "compression_type": 8,
+        "indexed_original_match": true,
+        "live_original_match": true,
+        "staged_original_match": true
+      },
+      {
+        "archive_member": "revised_01a0b429/theory_sources.json",
+        "relative_path": "theory_sources.json",
+        "bytes": 12484,
+        "sha256": "a01981928896d45b7c8bb79c4e59629234633a419559faf905ee498951bcac32",
+        "compression_type": 8,
+        "indexed_original_match": true,
+        "live_original_match": true,
+        "staged_original_match": true
+      },
+      {
+        "archive_member": "revised_01a0b429/verification/ab_decimal_count_check.json",
+        "relative_path": "verification/ab_decimal_count_check.json",
+        "bytes": 779,
+        "sha256": "b49d17333692d9eb7e446a3b284a719b22d5d3f8536610da28055d981aa175fb",
+        "compression_type": 8,
+        "indexed_original_match": true,
+        "live_original_match": true,
+        "staged_original_match": true
+      },
+      {
+        "archive_member": "revised_01a0b429/verification/ab_deliverable_checks.json",
+        "relative_path": "verification/ab_deliverable_checks.json",
+        "bytes": 1781,
+        "sha256": "dbe1af8ab468bbc5ac1dded59ac3142e8a0929326ba5a22ece45089c262b4343",
+        "compression_type": 8,
+        "indexed_original_match": true,
+        "live_original_match": true,
+        "staged_original_match": true
+      },
+      {
+        "archive_member": "revised_01a0b429/verification/ab_final_review.json",
+        "relative_path": "verification/ab_final_review.json",
+        "bytes": 2845,
+        "sha256": "e026a5a1afa8ea4302e24858baafb13f599a3aef9cb11f1f3c78e6f34916b336",
+        "compression_type": 8,
+        "indexed_original_match": true,
+        "live_original_match": true,
+        "staged_original_match": true
+      },
+      {
+        "archive_member": "revised_01a0b429/verification/ab_final_review.md",
+        "relative_path": "verification/ab_final_review.md",
+        "bytes": 4272,
+        "sha256": "dd5c2af5ab47f6bc9ebe254fbc254bb1f91bd54ae93086e8128e009670383c55",
+        "compression_type": 8,
+        "indexed_original_match": true,
+        "live_original_match": true,
+        "staged_original_match": true
+      },
+      {
+        "archive_member": "revised_01a0b429/verification/ab_independent_code_review.json",
+        "relative_path": "verification/ab_independent_code_review.json",
+        "bytes": 1856,
+        "sha256": "2ba3d7d674e900f52f14a7b68d3d340715c74502c6e24ef9e08c95bfa0532819",
+        "compression_type": 8,
+        "indexed_original_match": true,
+        "live_original_match": true,
+        "staged_original_match": true
+      },
+      {
+        "archive_member": "revised_01a0b429/verification/ab_independent_fixtures.json",
+        "relative_path": "verification/ab_independent_fixtures.json",
+        "bytes": 17452,
+        "sha256": "8eee2d3827c6acddffcc7a8873d645b242ef0c5a19e80001fe7eda1c6701940b",
+        "compression_type": 8,
+        "indexed_original_match": true,
+        "live_original_match": true,
+        "staged_original_match": true
+      },
+      {
+        "archive_member": "revised_01a0b429/verification/ab_input_audit.json",
+        "relative_path": "verification/ab_input_audit.json",
+        "bytes": 3825,
+        "sha256": "b00263565de38d8861e8e437464893626dc05244984b045e27d80b74f5c90607",
+        "compression_type": 8,
+        "indexed_original_match": true,
+        "live_original_match": true,
+        "staged_original_match": true
+      },
+      {
+        "archive_member": "revised_01a0b429/verification/excel_author_checks.json",
+        "relative_path": "verification/excel_author_checks.json",
+        "bytes": 36129,
+        "sha256": "60a9063c46258cfcfc427e8a24dc8ac874d9a96a98babb488e8ea3af5ab79ba8",
+        "compression_type": 8,
+        "indexed_original_match": true,
+        "live_original_match": true,
+        "staged_original_match": true
+      },
+      {
+        "archive_member": "revised_01a0b429/verification/excel_cell_map.json",
+        "relative_path": "verification/excel_cell_map.json",
+        "bytes": 2751,
+        "sha256": "bed591296de5bc38487dc912b68930288736eacdaa8e3a2599c202e75b62b99a",
+        "compression_type": 8,
+        "indexed_original_match": true,
+        "live_original_match": true,
+        "staged_original_match": true
+      },
+      {
+        "archive_member": "revised_01a0b429/verification/excel_final_delta.json",
+        "relative_path": "verification/excel_final_delta.json",
+        "bytes": 3569,
+        "sha256": "63cc3c49848c0b899593b807b2c2f50ca2fb640a7e6f836bb0445af6d8ab43ed",
+        "compression_type": 8,
+        "indexed_original_match": true,
+        "live_original_match": true,
+        "staged_original_match": true
+      },
+      {
+        "archive_member": "revised_01a0b429/verification/excel_independent_checks.json",
+        "relative_path": "verification/excel_independent_checks.json",
+        "bytes": 62868,
+        "sha256": "8bb2f1c9fd1cc24e602b176c34feaae565ce440faa0b1a96f94ef92985c3506b",
+        "compression_type": 8,
+        "indexed_original_match": true,
+        "live_original_match": true,
+        "staged_original_match": true
+      },
+      {
+        "archive_member": "revised_01a0b429/verification/existing_data_checks.json",
+        "relative_path": "verification/existing_data_checks.json",
+        "bytes": 533,
+        "sha256": "2a91258fca28d57f5b8d05830f5b4729adbce8cce427b108175698d2ac4d4cd4",
+        "compression_type": 8,
+        "indexed_original_match": true,
+        "live_original_match": true,
+        "staged_original_match": true
+      },
+      {
+        "archive_member": "revised_01a0b429/verification/html_calculation_checks.json",
+        "relative_path": "verification/html_calculation_checks.json",
+        "bytes": 142,
+        "sha256": "9aa9a5cb6b499c90438faaf3f9e46536efac4787a4e402cea2437adf55ff15d9",
+        "compression_type": 8,
+        "indexed_original_match": true,
+        "live_original_match": true,
+        "staged_original_match": true
+      },
+      {
+        "archive_member": "revised_01a0b429/verification/html_structure_checks.json",
+        "relative_path": "verification/html_structure_checks.json",
+        "bytes": 240,
+        "sha256": "9b1f6ca132f63d5842ea4365fa9a056314d3bfbb4c9a2a4daac9f91c7cdde9bd",
+        "compression_type": 8,
+        "indexed_original_match": true,
+        "live_original_match": true,
+        "staged_original_match": true
+      },
+      {
+        "archive_member": "revised_01a0b429/verification/tawhiri_plan_checks.json",
+        "relative_path": "verification/tawhiri_plan_checks.json",
+        "bytes": 352,
+        "sha256": "915da5e080b89d9fb965a0292d0081d59be4eb4fd96291d2ee94ea75032d1249",
+        "compression_type": 8,
+        "indexed_original_match": true,
+        "live_original_match": true,
+        "staged_original_match": true
+      },
+      {
+        "archive_member": "revised_01a0b429/verification_summary.html",
+        "relative_path": "verification_summary.html",
+        "bytes": 13550,
+        "sha256": "54db36f39565dba4060ca0107f7bf093f4f0376f86e363577bc5f08806b1cd72",
+        "compression_type": 8,
+        "indexed_original_match": true,
+        "live_original_match": true,
+        "staged_original_match": true
+      },
+      {
+        "archive_member": "revised_01a0b429/verification_summary.md",
+        "relative_path": "verification_summary.md",
+        "bytes": 11603,
+        "sha256": "48c859b1c2d6de33cabf5d834a6e9a183dba8ebd1577665bbb63e70ae02c05f5",
+        "compression_type": 8,
+        "indexed_original_match": true,
+        "live_original_match": true,
+        "staged_original_match": true
+      }
+    ],
+    "scope": "Read all archive file bytes, validate ZIP CRC and path safety, compare size/SHA against current supplied directory, previously indexed directory and preserved staging copy. No extraction, source-code execution, Excel recalculation, document rendering or scientific acceptance.",
+    "preserved_archive": "C:\\Users\\genia\\AppData\\Local\\Temp\\balloon-design-400\\reference-stage\\revised_01a0b429.zip",
+    "preserved_archive_same_bytes": true
+  },
+  "content_index": {
+    "basis_main": "7622593e0d4dacb101f9ed86990f2832845494ed",
+    "root": "C:\\Users\\genia\\Documents\\Codex\\2026-09-18\\new-chat-3\\outputs\\revised_01a0b429",
+    "provided": [
+      {
+        "path": "verification_summary.html",
+        "bytes": 13550,
+        "sha256": "54db36f39565dba4060ca0107f7bf093f4f0376f86e363577bc5f08806b1cd72",
+        "existing_registry_same_bytes": true,
+        "tables": 2,
+        "images": 0,
+        "scripts": 0,
+        "inline_images": 0,
+        "inline_scripts": 0
+      },
+      {
+        "path": "balloon_handbook.html",
+        "bytes": 4288229,
+        "sha256": "687918073db7655b0027ddbf4dca6d51827e67e22a4f7ca04fed385ba3440113",
+        "existing_registry_same_bytes": true,
+        "tables": 32,
+        "images": 14,
+        "scripts": 1,
+        "inline_images": 14,
+        "inline_scripts": 1
+      },
+      {
+        "path": "cell_audit.html",
+        "bytes": 22616,
+        "sha256": "6056c4e731eaf2bd9f2df27cf3bfec40c45a8204de10d720da738fa2e226b05a",
+        "existing_registry_same_bytes": true,
+        "tables": 1,
+        "images": 0,
+        "scripts": 0,
+        "inline_images": 0,
+        "inline_scripts": 0
+      },
+      {
+        "path": "literature_review.html",
+        "bytes": 15407,
+        "sha256": "5bb6122b420d7b14843901e822f11c29c850c77db5f8ba6439b461dd9bdf3104",
+        "existing_registry_same_bytes": true,
+        "tables": 1,
+        "images": 0,
+        "scripts": 0,
+        "inline_images": 0,
+        "inline_scripts": 0
+      },
+      {
+        "path": "README.html",
+        "bytes": 11451,
+        "sha256": "2641684f399c4eaf56dc5672363ea5febbf1993cf0eebb81b812cb750c7953d0",
+        "existing_registry_same_bytes": true,
+        "tables": 1,
+        "images": 0,
+        "scripts": 0,
+        "inline_images": 0,
+        "inline_scripts": 0
+      },
+      {
+        "path": "technical_report.html",
+        "bytes": 26263,
+        "sha256": "51e73e8e31bff47703811470c0c1012fdc8c38b60d4d2bfb31a199a99dd01d1f",
+        "existing_registry_same_bytes": true,
+        "tables": 5,
+        "images": 7,
+        "scripts": 0,
+        "inline_images": 0,
+        "inline_scripts": 0
+      }
+    ],
+    "all_file_count": 170,
+    "all_bytes": 17227285,
+    "all_files": [
+      {
+        "path": "ab_comparison/all_flights_input_availability.csv",
+        "bytes": 4854,
+        "sha256": "185d04a4a0f40fe253672935810591453b49a3a4e2d5a6632ac1c556c453402e"
+      },
+      {
+        "path": "ab_comparison/all_flights_input_availability.json",
+        "bytes": 11927,
+        "sha256": "b54eff1cc38b0a11051631676be314f60385aeceadb5f1a44977869fee320f19"
+      },
+      {
+        "path": "ab_comparison/assumption_sensitivity.csv",
+        "bytes": 357864,
+        "sha256": "debbed389cec3b962c27a36c6006da854036d646dbfa0ea05b3541d205e6d07d"
+      },
+      {
+        "path": "ab_comparison/band_target_details.json",
+        "bytes": 11021,
+        "sha256": "6635f2b9f60d85a6c638d9c4605baf346c2faea51516a8fda49db8baa48d1332"
+      },
+      {
+        "path": "ab_comparison/comparison.py",
+        "bytes": 16163,
+        "sha256": "6f7315289a7162f484fd24bbd66cb990954dc7f26d8e179365718b271cb8e7f1"
+      },
+      {
+        "path": "ab_comparison/comparison_inputs.csv",
+        "bytes": 1202,
+        "sha256": "0a5078347389bea2675eb6cfd514cd3576e09fbde3fe636c7fc1e1121cd02207"
+      },
+      {
+        "path": "ab_comparison/compensation_identifiability.png",
+        "bytes": 109014,
+        "sha256": "56bd1a411daea747bc1733a9ca79cf5a7c3b82e88fdc7107a6c7a40703dd81c1"
+      },
+      {
+        "path": "ab_comparison/conditional_comparison.png",
+        "bytes": 134242,
+        "sha256": "3a207445a1042645593aede5539d253ef60a2a221dadd2d1e4685a8d4e41e09f"
+      },
+      {
+        "path": "ab_comparison/conditional_metrics.csv",
+        "bytes": 585,
+        "sha256": "474659d27dfb56d3ee96bc479eaf2abedbca50ed5824eea3d83de03545755472"
+      },
+      {
+        "path": "ab_comparison/conditional_predictions.csv",
+        "bytes": 2105,
+        "sha256": "aead9c0d8ba4eb20c5ad282aa92a901b35ec8509892ae01e5883c481009760a7"
+      },
+      {
+        "path": "ab_comparison/declared_variants.csv",
+        "bytes": 2055,
+        "sha256": "e81d758860fa8b5b18634a11737d3bd10bc91e6882a24028090d2c083b34c121"
+      },
+      {
+        "path": "ab_comparison/digitize_wasa2024.py",
+        "bytes": 3822,
+        "sha256": "ac834b9936d0d37c163e44deb81cee69787c79ebb21d3aea1805be0cd50fe682"
+      },
+      {
+        "path": "ab_comparison/evidence.json",
+        "bytes": 10782,
+        "sha256": "60e89d42d81bc407158d16d224da901c5bc801c0fffea806e837b26e69ab3de4"
+      },
+      {
+        "path": "ab_comparison/input_audit.html",
+        "bytes": 16202,
+        "sha256": "c877b0829e454f4789afa0b448181e109b5c098b312a303ad07613a6a37c94a3"
+      },
+      {
+        "path": "ab_comparison/input_audit.md",
+        "bytes": 12547,
+        "sha256": "b5271a088563f05a12ed396b9d0d7164e45078c795299fe12481384184ba9430"
+      },
+      {
+        "path": "ab_comparison/input_candidates.csv",
+        "bytes": 3318,
+        "sha256": "2ca75193dae987810ea67dd5c05a47db2a04e79af7e555f107236c5e434b9d29"
+      },
+      {
+        "path": "ab_comparison/input_candidates.json",
+        "bytes": 26789,
+        "sha256": "0154a710fc42555c36c6321ab3341588365271483fc94571059ee21a4c089231"
+      },
+      {
+        "path": "ab_comparison/mass_sensitivity.png",
+        "bytes": 144494,
+        "sha256": "cb06e76c86637cbb5559e523dcfef4112ef829b7a22805354703658629e272e1"
+      },
+      {
+        "path": "ab_comparison/public_case.json",
+        "bytes": 1822,
+        "sha256": "3e232ffa3db03d71ad0fbc913e6c58050b50528cd8431b9d0ebe52cb4647c3b1"
+      },
+      {
+        "path": "ab_comparison/public_case.py",
+        "bytes": 2154,
+        "sha256": "109d150b32edbdc10ef42ffbd0dd20722f47adf7debd6da978b21eb6c1a7d303"
+      },
+      {
+        "path": "ab_comparison/public_evidence.html",
+        "bytes": 11977,
+        "sha256": "30fd9282266f710cf22d92c48bd006b5cbe91eccb00ab10bd687b12b2b48af1c"
+      },
+      {
+        "path": "ab_comparison/public_evidence.md",
+        "bytes": 10428,
+        "sha256": "151421f4b5127e251b6a5a6e4ef88097879565c158a76cbd9eecce14c47fef5e"
+      },
+      {
+        "path": "ab_comparison/quantity_hypotheses.csv",
+        "bytes": 1784,
+        "sha256": "ff3640fa26c71571b94f493e9746c80e785f9031916d234f346e0334f36786a5"
+      },
+      {
+        "path": "ab_comparison/quantity_hypotheses.json",
+        "bytes": 6028,
+        "sha256": "59458d6ebbdf9704a71ae6d5e5f5fd44c2c32ef0268003f87481211196159c29"
+      },
+      {
+        "path": "ab_comparison/README.html",
+        "bytes": 4540,
+        "sha256": "6dac96ef190e1618fc90f2340d1fc39f3bfbb30d1904c1114d0e21ec22010021"
+      },
+      {
+        "path": "ab_comparison/README.md",
+        "bytes": 3367,
+        "sha256": "07f50696685906ddaf08a546eb2c4bb76c079e5b48e957af06551b25209bdda9"
+      },
+      {
+        "path": "ab_comparison/requirements.txt",
+        "bytes": 27,
+        "sha256": "d3b6604daa05bb9fbfa57688a9df4be787b4888bd65adbaf6d5d9bcf6483b68e"
+      },
+      {
+        "path": "ab_comparison/summary.json",
+        "bytes": 3142,
+        "sha256": "067417f1ba865b7ea9e7fec03e1458d2e8be500de5488438d8a9642a3df57aad"
+      },
+      {
+        "path": "ab_comparison/theory_review.html",
+        "bytes": 11529,
+        "sha256": "e42def7b9d10f48e848f7b7546d3c99c6d6a181cebcdace6a4604c368bad9df8"
+      },
+      {
+        "path": "ab_comparison/theory_review.md",
+        "bytes": 10191,
+        "sha256": "7e74c5e9afed0861c64d52a48fdfb335065ff08d4995ee558da8ef4bcdcc3572"
+      },
+      {
+        "path": "ab_comparison/wasa2024_digitization.json",
+        "bytes": 4004,
+        "sha256": "b7267cb0d6b2f1d897c8af7f9440d49ed45ccbca3c94d4b5c377ee67a6286277"
+      },
+      {
+        "path": "ab_comparison/wasa2024_fig4_2_original.jpg",
+        "bytes": 45125,
+        "sha256": "b91eff724ef943ff76564bb8f463bb1c9ba7a75c16b25a54718a7ed501f3411e"
+      },
+      {
+        "path": "ab_comparison/wasa2024_figure_altitude_trace.csv",
+        "bytes": 17166,
+        "sha256": "dddcb9246c163c48718527edc2a73925e135b2fe3131e93ee5e59fe83fa06c99"
+      },
+      {
+        "path": "audit_workbooks.py",
+        "bytes": 2420,
+        "sha256": "ab3c879f25302b73db08b30749d239b41f62a263e615c707d385ab396bb5b514"
+      },
+      {
+        "path": "balloon_corrected.xlsx",
+        "bytes": 65208,
+        "sha256": "0d037709151aab17d27d2e0a222a86e829ba17713ed771966f9392e19cbe224c"
+      },
+      {
+        "path": "balloon_handbook.html",
+        "bytes": 4288229,
+        "sha256": "687918073db7655b0027ddbf4dca6d51827e67e22a4f7ca04fed385ba3440113"
+      },
+      {
+        "path": "balloon_handbook.md",
+        "bytes": 177364,
+        "sha256": "9add6d54ce61846cab7a47b37bf82198156ff052c11b40804bf48e48600f74e9"
+      },
+      {
+        "path": "balloon_model.py",
+        "bytes": 11755,
+        "sha256": "9a9ad9bccec29ba1080ac22c1aa16fe798a795fd9ae0d5b440ae0ea2781391fd"
+      },
+      {
+        "path": "cell_audit.html",
+        "bytes": 22616,
+        "sha256": "6056c4e731eaf2bd9f2df27cf3bfec40c45a8204de10d720da738fa2e226b05a"
+      },
+      {
+        "path": "cell_audit.md",
+        "bytes": 19346,
+        "sha256": "10eb2874b3b6d2c9a6c08f1ae8c1c4cecd6c101f2094aff8c09ae0d49358e130"
+      },
+      {
+        "path": "data/analysis_results.json",
+        "bytes": 105447,
+        "sha256": "f96c680189e913173e52aba91b0c6671506bc841fafdeb05b93be7c0093cc72c"
+      },
+      {
+        "path": "data/burst_sensitivity.csv",
+        "bytes": 490,
+        "sha256": "b9d6d0f5dac534673ceb004353cc495ceeb313cf8a80d08f921a7cfa827d8e5c"
+      },
+      {
+        "path": "data/cd_sensitivity.csv",
+        "bytes": 416,
+        "sha256": "65d946c0b34f7411085d32b5b6094c5f08acf94ec0df308aa6a097a74da7697d"
+      },
+      {
+        "path": "data/cd_sweep.csv",
+        "bytes": 2339,
+        "sha256": "0beb7cab7100ed0c5e7e7432188a8ed8b73f4e909074a40a22e0b6480b789ab0"
+      },
+      {
+        "path": "data/cylinder_sensitivity.csv",
+        "bytes": 260,
+        "sha256": "6d83fb500e58d59a7c3756373ec87fe4e0978ff6fe4e1044c2c8c9c71ba84c83"
+      },
+      {
+        "path": "data/diameter_sweep.csv",
+        "bytes": 2017,
+        "sha256": "4562cc5cf803db519edb550e65a7c6e17a30b0f2a883db8b7b01aece01573240"
+      },
+      {
+        "path": "data/fill_sweep.csv",
+        "bytes": 8442,
+        "sha256": "5fb89450c2c13c7290e46de07219c03838cf2eafda2b64403c53c4c5a6abb7ad"
+      },
+      {
+        "path": "data/formula_inventory.csv",
+        "bytes": 931908,
+        "sha256": "6b555ec9e7ad1f99257c38a212ddba77c34faa9ab34690c64e84da98bf8abc5f"
+      },
+      {
+        "path": "data/source_A_pressure_comparison.csv",
+        "bytes": 1378,
+        "sha256": "e5d28f2f72561016548c654e53a735ce1df791ea082ae412ca02e2132f7dd3d7"
+      },
+      {
+        "path": "data/source_manifest.json",
+        "bytes": 1899,
+        "sha256": "d2a4d85b3b6e5592fe4deff72e904acc802dabb812497447120e2357892afc5a"
+      },
+      {
+        "path": "data/standard_atmosphere.csv",
+        "bytes": 6740,
+        "sha256": "b3c713927c13e868d404aecdc700d74df9286382274d8753e82d41f2aea73c65"
+      },
+      {
+        "path": "data/summary.json",
+        "bytes": 726,
+        "sha256": "e26a719f91bef3590a35d5604abaab28c22f913c385d50585c1beb824519749e"
+      },
+      {
+        "path": "data/upper_air_profile.csv",
+        "bytes": 16765,
+        "sha256": "557faac45d7aeb0428c3e99b49bc6bd538d80b57e42761569c730204594f4552"
+      },
+      {
+        "path": "example_config.json",
+        "bytes": 802,
+        "sha256": "7aab489d580b5e6a67e33a6ef1528c6be7b798a18b8107d75779ab3f6383467c"
+      },
+      {
+        "path": "existing_data/analysis.py",
+        "bytes": 12855,
+        "sha256": "9bd6e962f2f5a789f45d6c79badd801e46f40feeca44e0f39aa193806dd2da01"
+      },
+      {
+        "path": "existing_data/ascent_benchmark.png",
+        "bytes": 93977,
+        "sha256": "493e6e31ed6dd07b7930a2e68a41bbf07ff43e69cdfafe2d02559648414a141a"
+      },
+      {
+        "path": "existing_data/ascent_by_flight.csv",
+        "bytes": 1522,
+        "sha256": "7e07f6f544e208f439a32f3d23ba7220ade7a9fd6b3243226653204619e8354b"
+      },
+      {
+        "path": "existing_data/ascent_empirical_paper.pdf",
+        "bytes": 4351463,
+        "sha256": "a0174443801bc73951685873bd9e047cd7a16c3b2c9c78141bb798698b7de7cb"
+      },
+      {
+        "path": "existing_data/ascent_intervals.csv",
+        "bytes": 26681,
+        "sha256": "7f998982e3beba016fef1df1ec32ca66f53f3629c8ab56a25faf5dcccf3c182a"
+      },
+      {
+        "path": "existing_data/ascent_predictions.csv",
+        "bytes": 4886,
+        "sha256": "97ef3d51abf292c61739bfb0731cc5a21ccb7efb93dc51528d23f09979001f29"
+      },
+      {
+        "path": "existing_data/ascent_profiles.png",
+        "bytes": 259229,
+        "sha256": "d1ae36e68392c12bd70703d9de20bd0f9eab2c31541038ed5e61b2a64cc4587b"
+      },
+      {
+        "path": "existing_data/descent_by_flight.csv",
+        "bytes": 914,
+        "sha256": "f7d5b7055aa96f46eac2907ee0b56b0794a04f82832e753e410dbf5ca50f3e39"
+      },
+      {
+        "path": "existing_data/descent_diagnostics.csv",
+        "bytes": 2841,
+        "sha256": "6a8a77fcf7f2ca7ffb114d6befcef04575733b687b391bd6c1916c6fc89c7ba8"
+      },
+      {
+        "path": "existing_data/descent_effective_s0.png",
+        "bytes": 89907,
+        "sha256": "18ef27a79a63e3c429f33f58d6c4c5dfbc78c847451046ee4ecf8707f1c4f0cd"
+      },
+      {
+        "path": "existing_data/descent_intervals.csv",
+        "bytes": 18210,
+        "sha256": "138b0d8d98267fa179e935ee34b8b85f9a09c2a76f910e122120dd8073e8d940"
+      },
+      {
+        "path": "existing_data/empirical_paper_evidence.json",
+        "bytes": 6739,
+        "sha256": "516e1424056ebe698ba8fc52b9b22a7839469be3f892e04bc873c53454f5a2d0"
+      },
+      {
+        "path": "existing_data/empirical_paper_review.html",
+        "bytes": 18530,
+        "sha256": "26b0e0e276670e30f776e4ce762b103aa8ebd311fa9572456607ff7223743bf9"
+      },
+      {
+        "path": "existing_data/empirical_paper_review.md",
+        "bytes": 15812,
+        "sha256": "6203925d11ea7f09c2f9dc44ea8aaabd1053db76cd3c48a420630b0faa076409"
+      },
+      {
+        "path": "existing_data/flights.csv",
+        "bytes": 17708,
+        "sha256": "985951000ffda7ef6132e72ad3301ece2362e0d4b7f8125e170de1bdd066da6b"
+      },
+      {
+        "path": "existing_data/flights.json",
+        "bytes": 31203,
+        "sha256": "5c60072c4a738676a1e1d990fc336afae9dd843f8436aa437342e7140704ec50"
+      },
+      {
+        "path": "existing_data/intervals.csv",
+        "bytes": 44224,
+        "sha256": "efd711f97453949aae0524fa11d8eb40794752427aea72c5d5168c63782edba5"
+      },
+      {
+        "path": "existing_data/intervals.json",
+        "bytes": 206750,
+        "sha256": "8487db2b64972fccecf9bd52d33758c6c628f0c6365f93ba505e7aea9b92073f"
+      },
+      {
+        "path": "existing_data/inventory.json",
+        "bytes": 108582,
+        "sha256": "700f6b728dda5d815d81a27fba199544a48d74ba7c5b3785495c5fdfbd357950"
+      },
+      {
+        "path": "existing_data/leave_one_flight_out.csv",
+        "bytes": 320,
+        "sha256": "30bdf4589c77542e3657686b2bf53fb9bf333d9235c09f354aad1cb57084a55e"
+      },
+      {
+        "path": "existing_data/README.md",
+        "bytes": 1429,
+        "sha256": "610f48055b8e16bc30d30e5a5a39515684147fd29981ae482b66cf4f01ebde2b"
+      },
+      {
+        "path": "existing_data/results.json",
+        "bytes": 1590,
+        "sha256": "7be49a0518b7b7207d9b7d800e5bf21f598559b68826bc44e832d40ecc1e7e6d"
+      },
+      {
+        "path": "existing_data/source_data.xlsx",
+        "bytes": 19095,
+        "sha256": "743ed3b29b2eb3778300a42be3f6aba6c82c94ce4cc845e593ca310b8a30511d"
+      },
+      {
+        "path": "existing_data/sources.json",
+        "bytes": 1071,
+        "sha256": "69cab8e9bd6b10436009a5f3a39fa8532b5744e76f68e11872f34b4bcc087fe0"
+      },
+      {
+        "path": "existing_data/summary.json",
+        "bytes": 2372,
+        "sha256": "1ae37e748aafee6423f8be62385a21a5736e611e8c43bac6670503f5f575e78e"
+      },
+      {
+        "path": "existing_data/symposium_flights.csv",
+        "bytes": 13557,
+        "sha256": "2eac8e63a05a7d48de3922bd8205edaf7e3656d2d1dc373e353902fb8290a55c"
+      },
+      {
+        "path": "existing_data/symposium_flights.json",
+        "bytes": 26711,
+        "sha256": "36ad3b74f013db3a1050dc6baf45fe0a28f8b9df09335414a2a95851bbe7ec26"
+      },
+      {
+        "path": "existing_data/symposium_notes.html",
+        "bytes": 6435,
+        "sha256": "a499329287f70a6281f26c6e19504c6f0fbbac81f7fc583f64922dd7ae3a946b"
+      },
+      {
+        "path": "existing_data/symposium_notes.md",
+        "bytes": 5267,
+        "sha256": "7b13731ceec781ad606b4e96773e9c93846cb3c9b55aa81b800d356ed4191fcb"
+      },
+      {
+        "path": "existing_data/symposium_secondary_leads.csv",
+        "bytes": 2087,
+        "sha256": "32c2b47e5123d529df24bb2939e43a08aa3205ad5a6c613627330490634ea11b"
+      },
+      {
+        "path": "existing_data/validation.json",
+        "bytes": 1770,
+        "sha256": "2d522ce76cdd05d5972effacd0decb565d88d74b46769fba8db24ca50a5629eb"
+      },
+      {
+        "path": "existing_data/workbook_audit.html",
+        "bytes": 23193,
+        "sha256": "5a6bbf1a376c56c5d09dfc90bcdaf494b238ee4e812ee3ed843353e6ef59e12e"
+      },
+      {
+        "path": "existing_data/workbook_audit.md",
+        "bytes": 15020,
+        "sha256": "b808bc2daf9894bde9159572e92cddc0b59b837034be3eb994f1534350b76d06"
+      },
+      {
+        "path": "graphs/01_ascent_formula_audit.png",
+        "bytes": 63617,
+        "sha256": "1b45e80a405718463809e4710c9594b4befeea9d2b42507e8b46f059d9d513dd"
+      },
+      {
+        "path": "graphs/01_ascent_formula_audit.svg",
+        "bytes": 79161,
+        "sha256": "e82edcf41929bf1e0ede4f279be4c9b81c3a58ec44127d199312ae4015818939"
+      },
+      {
+        "path": "graphs/02_atmosphere_audit.png",
+        "bytes": 161626,
+        "sha256": "196515c5a5e72947f1a4c162b9b66b5eaec174ac34e73ac957849d2c53301c53"
+      },
+      {
+        "path": "graphs/02_atmosphere_audit.svg",
+        "bytes": 127577,
+        "sha256": "ac14deb4ee5c1352d2934042188a3e566fa6ec92db022890852bba5ada231761"
+      },
+      {
+        "path": "graphs/03_burst_criteria.png",
+        "bytes": 85383,
+        "sha256": "c45831795bb3e2dba25579db480eda17f8f728a107a52b39cf26f3acc289b75d"
+      },
+      {
+        "path": "graphs/03_burst_criteria.svg",
+        "bytes": 118658,
+        "sha256": "c3aabf79d024a49d4f94b7d5e79a21d9197efe9b54148c677987f5b78b708667"
+      },
+      {
+        "path": "graphs/04_parameter_sensitivity.png",
+        "bytes": 151809,
+        "sha256": "b68233c1444f7d79e51011614dd26a24cc167dcfa2ed9c4b1e5aba8ac1da9e08"
+      },
+      {
+        "path": "graphs/04_parameter_sensitivity.svg",
+        "bytes": 162084,
+        "sha256": "f36bdaee356646cd866af9ac56c385ac24555870dd8b7c697cec58afb5786376"
+      },
+      {
+        "path": "graphs/05_fill_burst_tradeoff.png",
+        "bytes": 155474,
+        "sha256": "c2de2a643364069819a526a160ff48123d864d69937c64caeb786c1962ac7704"
+      },
+      {
+        "path": "graphs/05_fill_burst_tradeoff.svg",
+        "bytes": 140275,
+        "sha256": "bdf2e869f07c57e63d9219b8d59d22d867bb1d7ef145d5258b26e8c09b9b22aa"
+      },
+      {
+        "path": "graphs/06_upper_air_model.png",
+        "bytes": 135840,
+        "sha256": "003a2b9b992e35ffec141684a1198dba17a455a95b3e703d0f6edcc9bf38e2f1"
+      },
+      {
+        "path": "graphs/06_upper_air_model.svg",
+        "bytes": 143426,
+        "sha256": "f97d4b56e39ff9a46fbc8288218de8d87887c284cd32799e7c46728151aace21"
+      },
+      {
+        "path": "graphs/07_cylinder_inventory.png",
+        "bytes": 99309,
+        "sha256": "2807b095e1a3b693b5168db98dbbe96d35dd4b4906c782ee5c7f5c0731ee04e6"
+      },
+      {
+        "path": "graphs/07_cylinder_inventory.svg",
+        "bytes": 129474,
+        "sha256": "d2e50a6e824d2c4b162498d807b70dd203839fb025b05f6284fdcf170003a992"
+      },
+      {
+        "path": "literature_review.html",
+        "bytes": 15407,
+        "sha256": "5bb6122b420d7b14843901e822f11c29c850c77db5f8ba6439b461dd9bdf3104"
+      },
+      {
+        "path": "literature_review.md",
+        "bytes": 11659,
+        "sha256": "be9564eaf00dc0345a303fee34e23a81806186aef444ee074baa734ca7664ad6"
+      },
+      {
+        "path": "make_analysis.py",
+        "bytes": 11187,
+        "sha256": "e427295379192755b207cfd3010dc27e716a6eb7150a19057d306b7612a85b0c"
+      },
+      {
+        "path": "manifest_sha256.json",
+        "bytes": 29270,
+        "sha256": "0c59a7c05618fbf1771b89cf5b84fecb6846e96be8fee1d045c7c9b31f2aa214"
+      },
+      {
+        "path": "README.html",
+        "bytes": 11451,
+        "sha256": "2641684f399c4eaf56dc5672363ea5febbf1993cf0eebb81b812cb750c7953d0"
+      },
+      {
+        "path": "README.md",
+        "bytes": 9776,
+        "sha256": "618fcacaa0dc502b34615f1cb68b14b209e28f2c2c5b83ff140ebb58ee7d5ed4"
+      },
+      {
+        "path": "requirements.txt",
+        "bytes": 51,
+        "sha256": "5bddadc706b7f7cd1948188a94fcc6fa9fde823dbb107d383dcdf2782c149dca"
+      },
+      {
+        "path": "sources.json",
+        "bytes": 9609,
+        "sha256": "8a4de59e5177c72613f926f490c85f782137518669c46772b0eb917f6687b7b7"
+      },
+      {
+        "path": "tawhiri_plan/01_wind_and_layers.png",
+        "bytes": 165118,
+        "sha256": "f7221b6de1ac68255b79350e7fac71711f27118943fb4316d3fe57a7fc6625d2"
+      },
+      {
+        "path": "tawhiri_plan/01_wind_and_layers.svg",
+        "bytes": 154387,
+        "sha256": "3b92e797d6f1608dec759bc7cf7452ebc3dadcf835e3b9441d6d38aa6b0872fe"
+      },
+      {
+        "path": "tawhiri_plan/02_endpoint_sensitivity.png",
+        "bytes": 279903,
+        "sha256": "5fefc707d900dca7871231b836eae5dc9967b817e981b27aeac8c14fb50d503d"
+      },
+      {
+        "path": "tawhiri_plan/02_endpoint_sensitivity.svg",
+        "bytes": 242112,
+        "sha256": "4864d82e23f9c35ba3767e11443a5dfbe86a1c5b5ec4943a0d185c97455f4738"
+      },
+      {
+        "path": "tawhiri_plan/03_joint_sensitivity.png",
+        "bytes": 202876,
+        "sha256": "9c0cbac9445194bea3384b167ac86292d8013bccad5ee33b5ffe53094aea64e1"
+      },
+      {
+        "path": "tawhiri_plan/03_joint_sensitivity.svg",
+        "bytes": 175064,
+        "sha256": "590e6787f2002f420f61f1450b2189b6786dff6324da782de1eb074ec06c19d3"
+      },
+      {
+        "path": "tawhiri_plan/code_audit.md",
+        "bytes": 21780,
+        "sha256": "d1a97c244ff5cff95ba128720d618dafffd7ff845cd0bbf4fc346dde799dff87"
+      },
+      {
+        "path": "tawhiri_plan/code_numeric_checks.json",
+        "bytes": 3508,
+        "sha256": "d0174ea151ab9243b5b812ea36754edbf2598027d7e8985b6c501c7a2b068748"
+      },
+      {
+        "path": "tawhiri_plan/code_sources.json",
+        "bytes": 24002,
+        "sha256": "ba5f7803f193da234f2dfd149da3ae2e57e993465c041259c2aaf11866ff8ba0"
+      },
+      {
+        "path": "tawhiri_plan/equal_time_shape.csv",
+        "bytes": 441,
+        "sha256": "c95be1fca6c3e40523ddfe98d48dc3fa87ce07c1ab36d43f63d50b2cf0f7e6ef"
+      },
+      {
+        "path": "tawhiri_plan/evidence.md",
+        "bytes": 16865,
+        "sha256": "138e32b4e532b8a8c46eb817334129aaf0df40948b6f7fc169207c08e6427ea4"
+      },
+      {
+        "path": "tawhiri_plan/evidence_sources.json",
+        "bytes": 7496,
+        "sha256": "8544d0fc9a0ce6a1c81ea1ea8680be5ab666af40c575d7a20d6b5641fc44a9bd"
+      },
+      {
+        "path": "tawhiri_plan/joint_grid.csv",
+        "bytes": 2385,
+        "sha256": "7731263093a137734179098e08a4c7083ae223923d8dcc8a538e6ad476db29c9"
+      },
+      {
+        "path": "tawhiri_plan/layer_contributions.csv",
+        "bytes": 1129,
+        "sha256": "adb26ce192483b22a941dd156f73c1015a748496af46f4708e3374f04e3cc8b1"
+      },
+      {
+        "path": "tawhiri_plan/nine_run_design.csv",
+        "bytes": 949,
+        "sha256": "27518505a650553bad79df901cbbfe319bdbd6bffa1e910dcb3580baec01e4ed"
+      },
+      {
+        "path": "tawhiri_plan/sensitivity.py",
+        "bytes": 13228,
+        "sha256": "0f835fc7a1761fb47b0bf9c046219fadac890f9f5e104795a03f240baa616460"
+      },
+      {
+        "path": "tawhiri_plan/sensitivity_design.md",
+        "bytes": 13269,
+        "sha256": "685003ac237709c4586d0e0a3a4f5b3e31478b8ab852b4cb56603a766095fd60"
+      },
+      {
+        "path": "tawhiri_plan/synthetic_results.json",
+        "bytes": 138268,
+        "sha256": "2c9d82b31f1d031422e3ef240aed9a700faeb3a8a57cae51f8591201727d1026"
+      },
+      {
+        "path": "tawhiri_plan/synthetic_wind.csv",
+        "bytes": 243,
+        "sha256": "490a5cc3772ae4b6685ec2e641923d18ac12df2325b7f1c53206dc3e6c7c58cd"
+      },
+      {
+        "path": "technical_report.html",
+        "bytes": 26263,
+        "sha256": "51e73e8e31bff47703811470c0c1012fdc8c38b60d4d2bfb31a199a99dd01d1f"
+      },
+      {
+        "path": "technical_report.md",
+        "bytes": 20847,
+        "sha256": "27d5d069ae186bf50fbcd9ebff2f36e8da691da1dcdc0619df79a3e2ee2437d0"
+      },
+      {
+        "path": "test_balloon_model.py",
+        "bytes": 3341,
+        "sha256": "58b673213094bfd367894789ea2e20dc6ab0dee57f62a6fb62b55f007a8310e6"
+      },
+      {
+        "path": "test_theory_analysis.py",
+        "bytes": 2371,
+        "sha256": "14156829e5c2f9056cfe4d0cf5c52a9ec9d71edafde30246d7145ff8bb403a66"
+      },
+      {
+        "path": "theory_analysis.py",
+        "bytes": 15266,
+        "sha256": "68b0bbcb6c11849f92f8365e963358810a31baa6811e195e83cb7f657f22cfed"
+      },
+      {
+        "path": "theory_data/blowdown.csv",
+        "bytes": 4962,
+        "sha256": "9a3869807642a5526b164c5c068ea423b346a91e869eac0f6b4a534eb51218c5"
+      },
+      {
+        "path": "theory_data/common_conditions.csv",
+        "bytes": 524,
+        "sha256": "c602839ad43f5f211fdf78d23e1b6efb7d1d6fea71092c89f5d3eeebe8a58e22"
+      },
+      {
+        "path": "theory_data/cylinder_cases.csv",
+        "bytes": 189,
+        "sha256": "9a287ef731e3a958d6afaf15c0085ea8afa8de46dab0eaf4c332410ec47c63e6"
+      },
+      {
+        "path": "theory_data/model_series.csv",
+        "bytes": 252,
+        "sha256": "b0c6cc1cfdc3855c60a182f177bc1ab092c483fde419d5f13ad12df9b0ec35b8"
+      },
+      {
+        "path": "theory_data/path_decomposition.csv",
+        "bytes": 598,
+        "sha256": "8d9cbde20258bc51055728582e2c18ae3b1bf9544d6d277154cc0948dc57e376"
+      },
+      {
+        "path": "theory_data/theory_results.json",
+        "bytes": 128657,
+        "sha256": "a58618c596058aca8b18dab67650ceb1b0a11dd5f5703e11923e8303b42dd93b"
+      },
+      {
+        "path": "theory_data/thermal_profiles.csv",
+        "bytes": 27857,
+        "sha256": "4352ae20cfc4ca242943b23e4bbdd84728bdcdea68a5b32da2d7fddd4d3228d2"
+      },
+      {
+        "path": "theory_data/thresholds.csv",
+        "bytes": 792,
+        "sha256": "534f5ff38f5141e3c87199ab544d09d772c0b6cebd36fa41e8b3a768760dd9d9"
+      },
+      {
+        "path": "theory_data/volume_decomposition.csv",
+        "bytes": 430,
+        "sha256": "c82e08b4990797497a4b7d16902f5fb4109baabae855c29076fed3fdcb34f1f9"
+      },
+      {
+        "path": "theory_graphs/08_forward_inverse.png",
+        "bytes": 142661,
+        "sha256": "94c01cd7b8a43feefafa2a25ec02711a48d39c57bdd0922d7e81e62b3ee80428"
+      },
+      {
+        "path": "theory_graphs/08_forward_inverse.svg",
+        "bytes": 119439,
+        "sha256": "58c3f45676109971690cd2738de8767a34533ad784f9df4dfe89c1a7bc8f901f"
+      },
+      {
+        "path": "theory_graphs/09_condition_decomposition.png",
+        "bytes": 120302,
+        "sha256": "d7cb77c1318428f00c6e8853cc0f5ba706dd501910463d95b77fb294992171f2"
+      },
+      {
+        "path": "theory_graphs/09_condition_decomposition.svg",
+        "bytes": 145303,
+        "sha256": "f6a1975dc8329ed0c1ec9351e3f0a00f3a2fb79829e67512a61c9b6f28062b03"
+      },
+      {
+        "path": "theory_graphs/10_burst_volume_thresholds.png",
+        "bytes": 94055,
+        "sha256": "7a351158c2d0d41d6b646dbea5a7817a8771e35342db9792c37298b6b65f5dd1"
+      },
+      {
+        "path": "theory_graphs/10_burst_volume_thresholds.svg",
+        "bytes": 119122,
+        "sha256": "9427b0721b60ac8be47bf6c3f7157e1b71b2e9b60ed24e7e2b8fa2b0e93b519b"
+      },
+      {
+        "path": "theory_graphs/11_thermal_assumptions.png",
+        "bytes": 171359,
+        "sha256": "0031e082fa6cc0b46a3c208e6e904afe7530c9b24fca22266cc570b9ba839a9f"
+      },
+      {
+        "path": "theory_graphs/11_thermal_assumptions.svg",
+        "bytes": 173582,
+        "sha256": "67cfec1c4c6dba90ec5d570ef04af60147af321300f3474fff36a4b53504cbf6"
+      },
+      {
+        "path": "theory_graphs/12_cylinder_thermal_models.png",
+        "bytes": 156805,
+        "sha256": "a23842a426086be6651dcb910789c5c159ce105ef46209c6812aab86bbd284c9"
+      },
+      {
+        "path": "theory_graphs/12_cylinder_thermal_models.svg",
+        "bytes": 159344,
+        "sha256": "cd49c91d05c940bb414d55f816beebdefdd16c5542ffdaeefc34d665152b3423"
+      },
+      {
+        "path": "theory_sources.json",
+        "bytes": 12484,
+        "sha256": "a01981928896d45b7c8bb79c4e59629234633a419559faf905ee498951bcac32"
+      },
+      {
+        "path": "verification/ab_decimal_count_check.json",
+        "bytes": 779,
+        "sha256": "b49d17333692d9eb7e446a3b284a719b22d5d3f8536610da28055d981aa175fb"
+      },
+      {
+        "path": "verification/ab_deliverable_checks.json",
+        "bytes": 1781,
+        "sha256": "dbe1af8ab468bbc5ac1dded59ac3142e8a0929326ba5a22ece45089c262b4343"
+      },
+      {
+        "path": "verification/ab_final_review.json",
+        "bytes": 2845,
+        "sha256": "e026a5a1afa8ea4302e24858baafb13f599a3aef9cb11f1f3c78e6f34916b336"
+      },
+      {
+        "path": "verification/ab_final_review.md",
+        "bytes": 4272,
+        "sha256": "dd5c2af5ab47f6bc9ebe254fbc254bb1f91bd54ae93086e8128e009670383c55"
+      },
+      {
+        "path": "verification/ab_independent_code_review.json",
+        "bytes": 1856,
+        "sha256": "2ba3d7d674e900f52f14a7b68d3d340715c74502c6e24ef9e08c95bfa0532819"
+      },
+      {
+        "path": "verification/ab_independent_fixtures.json",
+        "bytes": 17452,
+        "sha256": "8eee2d3827c6acddffcc7a8873d645b242ef0c5a19e80001fe7eda1c6701940b"
+      },
+      {
+        "path": "verification/ab_input_audit.json",
+        "bytes": 3825,
+        "sha256": "b00263565de38d8861e8e437464893626dc05244984b045e27d80b74f5c90607"
+      },
+      {
+        "path": "verification/excel_author_checks.json",
+        "bytes": 36129,
+        "sha256": "60a9063c46258cfcfc427e8a24dc8ac874d9a96a98babb488e8ea3af5ab79ba8"
+      },
+      {
+        "path": "verification/excel_cell_map.json",
+        "bytes": 2751,
+        "sha256": "bed591296de5bc38487dc912b68930288736eacdaa8e3a2599c202e75b62b99a"
+      },
+      {
+        "path": "verification/excel_final_delta.json",
+        "bytes": 3569,
+        "sha256": "63cc3c49848c0b899593b807b2c2f50ca2fb640a7e6f836bb0445af6d8ab43ed"
+      },
+      {
+        "path": "verification/excel_independent_checks.json",
+        "bytes": 62868,
+        "sha256": "8bb2f1c9fd1cc24e602b176c34feaae565ce440faa0b1a96f94ef92985c3506b"
+      },
+      {
+        "path": "verification/existing_data_checks.json",
+        "bytes": 533,
+        "sha256": "2a91258fca28d57f5b8d05830f5b4729adbce8cce427b108175698d2ac4d4cd4"
+      },
+      {
+        "path": "verification/html_calculation_checks.json",
+        "bytes": 142,
+        "sha256": "9aa9a5cb6b499c90438faaf3f9e46536efac4787a4e402cea2437adf55ff15d9"
+      },
+      {
+        "path": "verification/html_structure_checks.json",
+        "bytes": 240,
+        "sha256": "9b1f6ca132f63d5842ea4365fa9a056314d3bfbb4c9a2a4daac9f91c7cdde9bd"
+      },
+      {
+        "path": "verification/tawhiri_plan_checks.json",
+        "bytes": 352,
+        "sha256": "915da5e080b89d9fb965a0292d0081d59be4eb4fd96291d2ee94ea75032d1249"
+      },
+      {
+        "path": "verification_summary.html",
+        "bytes": 13550,
+        "sha256": "54db36f39565dba4060ca0107f7bf093f4f0376f86e363577bc5f08806b1cd72"
+      },
+      {
+        "path": "verification_summary.md",
+        "bytes": 11603,
+        "sha256": "48c859b1c2d6de33cabf5d834a6e9a183dba8ebd1577665bbb63e70ae02c05f5"
+      }
+    ],
+    "html_recursive_dependency_paths": [
+      "README.html",
+      "ab_comparison/README.html",
+      "ab_comparison/assumption_sensitivity.csv",
+      "ab_comparison/comparison.py",
+      "ab_comparison/conditional_predictions.csv",
+      "ab_comparison/declared_variants.csv",
+      "ab_comparison/input_audit.html",
+      "ab_comparison/public_case.json",
+      "ab_comparison/public_evidence.html",
+      "ab_comparison/summary.json",
+      "ab_comparison/theory_review.html",
+      "ab_comparison/wasa2024_digitization.json",
+      "balloon_corrected.xlsx",
+      "balloon_handbook.html",
+      "balloon_handbook.md",
+      "cell_audit.html",
+      "data/formula_inventory.csv",
+      "existing_data/analysis.py",
+      "existing_data/ascent_by_flight.csv",
+      "existing_data/ascent_empirical_paper.pdf",
+      "existing_data/ascent_predictions.csv",
+      "existing_data/descent_diagnostics.csv",
+      "existing_data/empirical_paper_review.html",
+      "existing_data/results.json",
+      "existing_data/source_data.xlsx",
+      "existing_data/symposium_flights.csv",
+      "existing_data/symposium_flights.json",
+      "existing_data/symposium_notes.html",
+      "existing_data/workbook_audit.html",
+      "graphs/01_ascent_formula_audit.png",
+      "graphs/02_atmosphere_audit.png",
+      "graphs/03_burst_criteria.png",
+      "graphs/04_parameter_sensitivity.png",
+      "graphs/05_fill_burst_tradeoff.png",
+      "graphs/06_upper_air_model.png",
+      "graphs/07_cylinder_inventory.png",
+      "literature_review.html",
+      "tawhiri_plan/code_audit.md",
+      "tawhiri_plan/evidence.md",
+      "tawhiri_plan/sensitivity.py",
+      "technical_report.html",
+      "theory_sources.json",
+      "verification_summary.html"
+    ],
+    "dependency_edges": [
+      {
+        "from": "balloon_handbook.html",
+        "to": "balloon_corrected.xlsx",
+        "tag": "a",
+        "fragment": "",
+        "exists": true
+      },
+      {
+        "from": "balloon_handbook.html",
+        "to": "balloon_handbook.md",
+        "tag": "a",
+        "fragment": "",
+        "exists": true
+      },
+      {
+        "from": "balloon_handbook.html",
+        "to": "cell_audit.html",
+        "tag": "a",
+        "fragment": "",
+        "exists": true
+      },
+      {
+        "from": "balloon_handbook.html",
+        "to": "literature_review.html",
+        "tag": "a",
+        "fragment": "",
+        "exists": true
+      },
+      {
+        "from": "balloon_handbook.html",
+        "to": "balloon_corrected.xlsx",
+        "tag": "a",
+        "fragment": "",
+        "exists": true
+      },
+      {
+        "from": "balloon_handbook.html",
+        "to": "verification_summary.html",
+        "tag": "a",
+        "fragment": "",
+        "exists": true
+      },
+      {
+        "from": "balloon_handbook.html",
+        "to": "cell_audit.html",
+        "tag": "a",
+        "fragment": "",
+        "exists": true
+      },
+      {
+        "from": "balloon_handbook.html",
+        "to": "literature_review.html",
+        "tag": "a",
+        "fragment": "",
+        "exists": true
+      },
+      {
+        "from": "balloon_handbook.html",
+        "to": "balloon_handbook.md",
+        "tag": "a",
+        "fragment": "",
+        "exists": true
+      },
+      {
+        "from": "balloon_handbook.html",
+        "to": "theory_sources.json",
+        "tag": "a",
+        "fragment": "",
+        "exists": true
+      },
+      {
+        "from": "balloon_handbook.html",
+        "to": "tawhiri_plan/code_audit.md",
+        "tag": "a",
+        "fragment": "",
+        "exists": true
+      },
+      {
+        "from": "balloon_handbook.html",
+        "to": "tawhiri_plan/evidence.md",
+        "tag": "a",
+        "fragment": "",
+        "exists": true
+      },
+      {
+        "from": "balloon_handbook.html",
+        "to": "tawhiri_plan/sensitivity.py",
+        "tag": "a",
+        "fragment": "",
+        "exists": true
+      },
+      {
+        "from": "balloon_handbook.html",
+        "to": "tawhiri_plan/code_audit.md",
+        "tag": "a",
+        "fragment": "",
+        "exists": true
+      },
+      {
+        "from": "balloon_handbook.html",
+        "to": "existing_data/source_data.xlsx",
+        "tag": "a",
+        "fragment": "",
+        "exists": true
+      },
+      {
+        "from": "balloon_handbook.html",
+        "to": "existing_data/workbook_audit.html",
+        "tag": "a",
+        "fragment": "",
+        "exists": true
+      },
+      {
+        "from": "balloon_handbook.html",
+        "to": "existing_data/ascent_empirical_paper.pdf",
+        "tag": "a",
+        "fragment": "",
+        "exists": true
+      },
+      {
+        "from": "balloon_handbook.html",
+        "to": "existing_data/empirical_paper_review.html",
+        "tag": "a",
+        "fragment": "",
+        "exists": true
+      },
+      {
+        "from": "balloon_handbook.html",
+        "to": "existing_data/analysis.py",
+        "tag": "a",
+        "fragment": "",
+        "exists": true
+      },
+      {
+        "from": "balloon_handbook.html",
+        "to": "existing_data/ascent_predictions.csv",
+        "tag": "a",
+        "fragment": "",
+        "exists": true
+      },
+      {
+        "from": "balloon_handbook.html",
+        "to": "existing_data/ascent_by_flight.csv",
+        "tag": "a",
+        "fragment": "",
+        "exists": true
+      },
+      {
+        "from": "balloon_handbook.html",
+        "to": "existing_data/results.json",
+        "tag": "a",
+        "fragment": "",
+        "exists": true
+      },
+      {
+        "from": "balloon_handbook.html",
+        "to": "existing_data/descent_diagnostics.csv",
+        "tag": "a",
+        "fragment": "",
+        "exists": true
+      },
+      {
+        "from": "balloon_handbook.html",
+        "to": "existing_data/symposium_flights.csv",
+        "tag": "a",
+        "fragment": "",
+        "exists": true
+      },
+      {
+        "from": "balloon_handbook.html",
+        "to": "existing_data/symposium_flights.json",
+        "tag": "a",
+        "fragment": "",
+        "exists": true
+      },
+      {
+        "from": "balloon_handbook.html",
+        "to": "existing_data/symposium_notes.html",
+        "tag": "a",
+        "fragment": "",
+        "exists": true
+      },
+      {
+        "from": "balloon_handbook.html",
+        "to": "ab_comparison/input_audit.html",
+        "tag": "a",
+        "fragment": "",
+        "exists": true
+      },
+      {
+        "from": "balloon_handbook.html",
+        "to": "ab_comparison/assumption_sensitivity.csv",
+        "tag": "a",
+        "fragment": "",
+        "exists": true
+      },
+      {
+        "from": "balloon_handbook.html",
+        "to": "ab_comparison/declared_variants.csv",
+        "tag": "a",
+        "fragment": "",
+        "exists": true
+      },
+      {
+        "from": "balloon_handbook.html",
+        "to": "ab_comparison/theory_review.html",
+        "tag": "a",
+        "fragment": "",
+        "exists": true
+      },
+      {
+        "from": "balloon_handbook.html",
+        "to": "ab_comparison/public_evidence.html",
+        "tag": "a",
+        "fragment": "",
+        "exists": true
+      },
+      {
+        "from": "balloon_handbook.html",
+        "to": "ab_comparison/wasa2024_digitization.json",
+        "tag": "a",
+        "fragment": "",
+        "exists": true
+      },
+      {
+        "from": "balloon_handbook.html",
+        "to": "ab_comparison/public_case.json",
+        "tag": "a",
+        "fragment": "",
+        "exists": true
+      },
+      {
+        "from": "balloon_handbook.html",
+        "to": "ab_comparison/summary.json",
+        "tag": "a",
+        "fragment": "",
+        "exists": true
+      },
+      {
+        "from": "balloon_handbook.html",
+        "to": "ab_comparison/conditional_predictions.csv",
+        "tag": "a",
+        "fragment": "",
+        "exists": true
+      },
+      {
+        "from": "balloon_handbook.html",
+        "to": "ab_comparison/comparison.py",
+        "tag": "a",
+        "fragment": "",
+        "exists": true
+      },
+      {
+        "from": "cell_audit.html",
+        "to": "technical_report.html",
+        "tag": "a",
+        "fragment": "",
+        "exists": true
+      },
+      {
+        "from": "cell_audit.html",
+        "to": "cell_audit.html",
+        "tag": "a",
+        "fragment": "",
+        "exists": true
+      },
+      {
+        "from": "cell_audit.html",
+        "to": "literature_review.html",
+        "tag": "a",
+        "fragment": "",
+        "exists": true
+      },
+      {
+        "from": "cell_audit.html",
+        "to": "README.html",
+        "tag": "a",
+        "fragment": "",
+        "exists": true
+      },
+      {
+        "from": "literature_review.html",
+        "to": "technical_report.html",
+        "tag": "a",
+        "fragment": "",
+        "exists": true
+      },
+      {
+        "from": "literature_review.html",
+        "to": "cell_audit.html",
+        "tag": "a",
+        "fragment": "",
+        "exists": true
+      },
+      {
+        "from": "literature_review.html",
+        "to": "literature_review.html",
+        "tag": "a",
+        "fragment": "",
+        "exists": true
+      },
+      {
+        "from": "literature_review.html",
+        "to": "README.html",
+        "tag": "a",
+        "fragment": "",
+        "exists": true
+      },
+      {
+        "from": "README.html",
+        "to": "balloon_corrected.xlsx",
+        "tag": "a",
+        "fragment": "",
+        "exists": true
+      },
+      {
+        "from": "README.html",
+        "to": "balloon_handbook.html",
+        "tag": "a",
+        "fragment": "",
+        "exists": true
+      },
+      {
+        "from": "README.html",
+        "to": "balloon_handbook.md",
+        "tag": "a",
+        "fragment": "",
+        "exists": true
+      },
+      {
+        "from": "README.html",
+        "to": "balloon_handbook.html",
+        "tag": "a",
+        "fragment": "chapter-22",
+        "exists": true
+      },
+      {
+        "from": "README.html",
+        "to": "ab_comparison/README.html",
+        "tag": "a",
+        "fragment": "",
+        "exists": true
+      },
+      {
+        "from": "README.html",
+        "to": "verification_summary.html",
+        "tag": "a",
+        "fragment": "",
+        "exists": true
+      },
+      {
+        "from": "technical_report.html",
+        "to": "technical_report.html",
+        "tag": "a",
+        "fragment": "",
+        "exists": true
+      },
+      {
+        "from": "technical_report.html",
+        "to": "cell_audit.html",
+        "tag": "a",
+        "fragment": "",
+        "exists": true
+      },
+      {
+        "from": "technical_report.html",
+        "to": "literature_review.html",
+        "tag": "a",
+        "fragment": "",
+        "exists": true
+      },
+      {
+        "from": "technical_report.html",
+        "to": "README.html",
+        "tag": "a",
+        "fragment": "",
+        "exists": true
+      },
+      {
+        "from": "technical_report.html",
+        "to": "cell_audit.html",
+        "tag": "a",
+        "fragment": "",
+        "exists": true
+      },
+      {
+        "from": "technical_report.html",
+        "to": "data/formula_inventory.csv",
+        "tag": "a",
+        "fragment": "",
+        "exists": true
+      },
+      {
+        "from": "technical_report.html",
+        "to": "graphs/01_ascent_formula_audit.png",
+        "tag": "img",
+        "fragment": "",
+        "exists": true
+      },
+      {
+        "from": "technical_report.html",
+        "to": "graphs/02_atmosphere_audit.png",
+        "tag": "img",
+        "fragment": "",
+        "exists": true
+      },
+      {
+        "from": "technical_report.html",
+        "to": "graphs/03_burst_criteria.png",
+        "tag": "img",
+        "fragment": "",
+        "exists": true
+      },
+      {
+        "from": "technical_report.html",
+        "to": "graphs/04_parameter_sensitivity.png",
+        "tag": "img",
+        "fragment": "",
+        "exists": true
+      },
+      {
+        "from": "technical_report.html",
+        "to": "graphs/05_fill_burst_tradeoff.png",
+        "tag": "img",
+        "fragment": "",
+        "exists": true
+      },
+      {
+        "from": "technical_report.html",
+        "to": "graphs/06_upper_air_model.png",
+        "tag": "img",
+        "fragment": "",
+        "exists": true
+      },
+      {
+        "from": "technical_report.html",
+        "to": "graphs/07_cylinder_inventory.png",
+        "tag": "img",
+        "fragment": "",
+        "exists": true
+      },
+      {
+        "from": "existing_data/workbook_audit.html",
+        "to": "balloon_handbook.html",
+        "tag": "a",
+        "fragment": "chapter-18",
+        "exists": true
+      },
+      {
+        "from": "existing_data/empirical_paper_review.html",
+        "to": "balloon_handbook.html",
+        "tag": "a",
+        "fragment": "chapter-18",
+        "exists": true
+      },
+      {
+        "from": "existing_data/symposium_notes.html",
+        "to": "balloon_handbook.html",
+        "tag": "a",
+        "fragment": "chapter-18",
+        "exists": true
+      },
+      {
+        "from": "ab_comparison/input_audit.html",
+        "to": "balloon_handbook.html",
+        "tag": "a",
+        "fragment": "chapter-22",
+        "exists": true
+      },
+      {
+        "from": "ab_comparison/theory_review.html",
+        "to": "balloon_handbook.html",
+        "tag": "a",
+        "fragment": "chapter-22",
+        "exists": true
+      },
+      {
+        "from": "ab_comparison/public_evidence.html",
+        "to": "balloon_handbook.html",
+        "tag": "a",
+        "fragment": "chapter-22",
+        "exists": true
+      },
+      {
+        "from": "ab_comparison/README.html",
+        "to": "balloon_handbook.html",
+        "tag": "a",
+        "fragment": "chapter-22",
+        "exists": true
+      },
+      {
+        "from": "ab_comparison/README.html",
+        "to": "balloon_handbook.html",
+        "tag": "a",
+        "fragment": "chapter-22",
+        "exists": true
+      },
+      {
+        "from": "ab_comparison/README.html",
+        "to": "ab_comparison/input_audit.html",
+        "tag": "a",
+        "fragment": "",
+        "exists": true
+      },
+      {
+        "from": "ab_comparison/README.html",
+        "to": "ab_comparison/theory_review.html",
+        "tag": "a",
+        "fragment": "",
+        "exists": true
+      },
+      {
+        "from": "ab_comparison/README.html",
+        "to": "ab_comparison/public_evidence.html",
+        "tag": "a",
+        "fragment": "",
+        "exists": true
+      }
+    ],
+    "missing": [],
+    "external_links": [
+      {
+        "from": "balloon_handbook.html",
+        "tag": "a",
+        "attribute": "href",
+        "value": "https://doi.org/10.2151/jmsj1923.32.7-8_183"
+      },
+      {
+        "from": "balloon_handbook.html",
+        "tag": "a",
+        "attribute": "href",
+        "value": "https://www.kaymont.com/balloons"
+      },
+      {
+        "from": "balloon_handbook.html",
+        "tag": "a",
+        "attribute": "href",
+        "value": "https://amt.copernicus.org/articles/4/2235/2011/"
+      },
+      {
+        "from": "balloon_handbook.html",
+        "tag": "a",
+        "attribute": "href",
+        "value": "https://ntrs.nasa.gov/citations/19770009539"
+      },
+      {
+        "from": "balloon_handbook.html",
+        "tag": "a",
+        "attribute": "href",
+        "value": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/notes/node17.html"
+      },
+      {
+        "from": "balloon_handbook.html",
+        "tag": "a",
+        "attribute": "href",
+        "value": "https://www1.grc.nasa.gov/beginners-guide-to-aeronautics/isentrophic-compression/"
+      },
+      {
+        "from": "balloon_handbook.html",
+        "tag": "a",
+        "attribute": "href",
+        "value": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/notes/node17.html"
+      },
+      {
+        "from": "balloon_handbook.html",
+        "tag": "a",
+        "attribute": "href",
+        "value": "https://amt.copernicus.org/articles/4/2235/2011/"
+      },
+      {
+        "from": "balloon_handbook.html",
+        "tag": "a",
+        "attribute": "href",
+        "value": "https://www.kaymont.com/_files/ugd/a13aac_0ac3808bd04943b7ab3708435ec3f02e.pdf"
+      },
+      {
+        "from": "balloon_handbook.html",
+        "tag": "a",
+        "attribute": "href",
+        "value": "https://doc.comsol.com/6.0/doc/com.comsol.help.models.nsm.balloon_inflation/models.nsm.balloon_inflation.pdf"
+      },
+      {
+        "from": "balloon_handbook.html",
+        "tag": "a",
+        "attribute": "href",
+        "value": "https://doi.org/10.1098/rspa.2018.0102"
+      },
+      {
+        "from": "balloon_handbook.html",
+        "tag": "a",
+        "attribute": "href",
+        "value": "https://ocw.mit.edu/courses/res-2-008-thermodynamics-and-climate-change-summer-2020/mitres-2-008su22_book.pdf"
+      },
+      {
+        "from": "balloon_handbook.html",
+        "tag": "a",
+        "attribute": "href",
+        "value": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/notes/node17.html"
+      },
+      {
+        "from": "balloon_handbook.html",
+        "tag": "a",
+        "attribute": "href",
+        "value": "https://ocw.mit.edu/courses/res-2-008-thermodynamics-and-climate-change-summer-2020/mitres-2-008su22_book.pdf"
+      },
+      {
+        "from": "balloon_handbook.html",
+        "tag": "a",
+        "attribute": "href",
+        "value": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/notes/node17.html"
+      },
+      {
+        "from": "balloon_handbook.html",
+        "tag": "a",
+        "attribute": "href",
+        "value": "https://www.nist.gov/publications/equation-state-thermodynamic-properties-helium"
+      },
+      {
+        "from": "balloon_handbook.html",
+        "tag": "a",
+        "attribute": "href",
+        "value": "https://doi.org/10.2151/jmsj1923.32.7-8_183"
+      },
+      {
+        "from": "balloon_handbook.html",
+        "tag": "a",
+        "attribute": "href",
+        "value": "https://ntrs.nasa.gov/citations/19770009539"
+      },
+      {
+        "from": "balloon_handbook.html",
+        "tag": "a",
+        "attribute": "href",
+        "value": "https://amt.copernicus.org/articles/4/2235/2011/"
+      },
+      {
+        "from": "balloon_handbook.html",
+        "tag": "a",
+        "attribute": "href",
+        "value": "https://www.kaymont.com/_files/ugd/a13aac_0ac3808bd04943b7ab3708435ec3f02e.pdf"
+      },
+      {
+        "from": "balloon_handbook.html",
+        "tag": "a",
+        "attribute": "href",
+        "value": "https://jaxa.repo.nii.ac.jp/record/2001219/files/SA6000204018.pdf"
+      },
+      {
+        "from": "balloon_handbook.html",
+        "tag": "a",
+        "attribute": "href",
+        "value": "https://jaxa.repo.nii.ac.jp/record/2000165/files/SA6000190044.pdf"
+      },
+      {
+        "from": "balloon_handbook.html",
+        "tag": "a",
+        "attribute": "href",
+        "value": "https://www.nist.gov/publications/equation-state-thermodynamic-properties-helium"
+      },
+      {
+        "from": "balloon_handbook.html",
+        "tag": "a",
+        "attribute": "href",
+        "value": "https://amt.copernicus.org/articles/4/2235/2011/"
+      },
+      {
+        "from": "balloon_handbook.html",
+        "tag": "a",
+        "attribute": "href",
+        "value": "https://jaxa.repo.nii.ac.jp/record/2001219/files/SA6000204018.pdf"
+      },
+      {
+        "from": "balloon_handbook.html",
+        "tag": "a",
+        "attribute": "href",
+        "value": "https://tawhiri.readthedocs.io/en/latest/api.html"
+      },
+      {
+        "from": "balloon_handbook.html",
+        "tag": "a",
+        "attribute": "href",
+        "value": "https://github.com/cuspaceflight/tawhiri/blob/668b44e5b88a66e0d885a9f9b16ff507d856bbbd/tawhiri/models.py"
+      },
+      {
+        "from": "balloon_handbook.html",
+        "tag": "a",
+        "attribute": "href",
+        "value": "https://amt.copernicus.org/articles/15/165/2022/"
+      },
+      {
+        "from": "balloon_handbook.html",
+        "tag": "a",
+        "attribute": "href",
+        "value": "https://eprints.soton.ac.uk/id/eprint/350844/1/AIAA_202013-1295.pdf"
+      },
+      {
+        "from": "balloon_handbook.html",
+        "tag": "a",
+        "attribute": "href",
+        "value": "https://bpp.umd.edu/archives/TO_REVIEW/Library/Papers/development-probabilistic-trajectory.pdf"
+      },
+      {
+        "from": "balloon_handbook.html",
+        "tag": "a",
+        "attribute": "href",
+        "value": "https://www.ecmwf.int/en/newsletter/153/meteorology/25-years-ensemble-forecasting-ecmwf"
+      },
+      {
+        "from": "balloon_handbook.html",
+        "tag": "a",
+        "attribute": "href",
+        "value": "https://github.com/projecthorus/sondehub-infra/blob/cfc56f2eda5cb86b0dc3cd4be0b6399b4a2bcbd7/lambda/ham_predict_updater/__init__.py"
+      },
+      {
+        "from": "balloon_handbook.html",
+        "tag": "a",
+        "attribute": "href",
+        "value": "https://jaxa.repo.nii.ac.jp/record/48991/files/SA6000177023.pdf"
+      },
+      {
+        "from": "balloon_handbook.html",
+        "tag": "a",
+        "attribute": "href",
+        "value": "https://jaxa.repo.nii.ac.jp/record/49008/files/SA6000177040.pdf"
+      },
+      {
+        "from": "balloon_handbook.html",
+        "tag": "a",
+        "attribute": "href",
+        "value": "https://jaxa.repo.nii.ac.jp/record/49006/files/SA6000177038.pdf"
+      },
+      {
+        "from": "balloon_handbook.html",
+        "tag": "a",
+        "attribute": "href",
+        "value": "https://jaxa.repo.nii.ac.jp/record/2000169/files/SA6000190048.pdf"
+      },
+      {
+        "from": "balloon_handbook.html",
+        "tag": "a",
+        "attribute": "href",
+        "value": "https://jaxa.repo.nii.ac.jp/record/2000171/files/SA6000190050.pdf"
+      },
+      {
+        "from": "balloon_handbook.html",
+        "tag": "a",
+        "attribute": "href",
+        "value": "https://jaxa.repo.nii.ac.jp/record/2001216/files/SA6000204015.pdf"
+      },
+      {
+        "from": "balloon_handbook.html",
+        "tag": "a",
+        "attribute": "href",
+        "value": "https://jaxa.repo.nii.ac.jp/record/2001219/files/SA6000204018.pdf"
+      },
+      {
+        "from": "balloon_handbook.html",
+        "tag": "a",
+        "attribute": "href",
+        "value": "https://jaxa.repo.nii.ac.jp/record/2000169/files/SA6000190048.pdf"
+      },
+      {
+        "from": "balloon_handbook.html",
+        "tag": "a",
+        "attribute": "href",
+        "value": "https://jaxa.repo.nii.ac.jp/record/2001216/files/SA6000204015.pdf"
+      },
+      {
+        "from": "balloon_handbook.html",
+        "tag": "a",
+        "attribute": "href",
+        "value": "https://jaxa.repo.nii.ac.jp/record/49008/files/SA6000177040.pdf"
+      },
+      {
+        "from": "balloon_handbook.html",
+        "tag": "a",
+        "attribute": "href",
+        "value": "https://jaxa.repo.nii.ac.jp/record/2001216/files/SA6000204015.pdf"
+      },
+      {
+        "from": "balloon_handbook.html",
+        "tag": "a",
+        "attribute": "href",
+        "value": "https://gdex.ucar.edu/datasets/d084001/"
+      },
+      {
+        "from": "balloon_handbook.html",
+        "tag": "a",
+        "attribute": "href",
+        "value": "https://cds.climate.copernicus.eu/datasets/reanalysis-era5-pressure-levels?tab=overview"
+      },
+      {
+        "from": "balloon_handbook.html",
+        "tag": "a",
+        "attribute": "href",
+        "value": "https://emilys-online.com/item/0109080001.html"
+      },
+      {
+        "from": "balloon_handbook.html",
+        "tag": "a",
+        "attribute": "href",
+        "value": "https://jaxa.repo.nii.ac.jp/record/2001216/files/SA6000204015.pdf"
+      },
+      {
+        "from": "balloon_handbook.html",
+        "tag": "a",
+        "attribute": "href",
+        "value": "https://jaxa.repo.nii.ac.jp/record/2001219/files/SA6000204018.pdf"
+      },
+      {
+        "from": "literature_review.html",
+        "tag": "a",
+        "attribute": "href",
+        "value": "https://ntrs.nasa.gov/citations/19770009539"
+      },
+      {
+        "from": "literature_review.html",
+        "tag": "a",
+        "attribute": "href",
+        "value": "https://ntrs.nasa.gov/api/citations/19770009539/downloads/19770009539.pdf"
+      },
+      {
+        "from": "literature_review.html",
+        "tag": "a",
+        "attribute": "href",
+        "value": "https://www.ngdc.noaa.gov/stp/space-weather/online-publications/miscellaneous/us-standard-atmosphere-1976/us-standard-atmosphere_st76-1562_noaa.pdf"
+      },
+      {
+        "from": "literature_review.html",
+        "tag": "a",
+        "attribute": "href",
+        "value": "https://doi.org/10.2151/jmsj1923.32.7-8_183"
+      },
+      {
+        "from": "literature_review.html",
+        "tag": "a",
+        "attribute": "href",
+        "value": "https://www.jstage.jst.go.jp/article/jmsj1923/32/7-8/32_7-8_183/_pdf/-char/ja"
+      },
+      {
+        "from": "literature_review.html",
+        "tag": "a",
+        "attribute": "href",
+        "value": "https://doi.org/10.2151/jmsj1923.32.9-10_316"
+      },
+      {
+        "from": "literature_review.html",
+        "tag": "a",
+        "attribute": "href",
+        "value": "https://doi.org/10.5194/amt-4-2235-2011"
+      },
+      {
+        "from": "literature_review.html",
+        "tag": "a",
+        "attribute": "href",
+        "value": "https://amt.copernicus.org/articles/4/2235/2011/"
+      },
+      {
+        "from": "literature_review.html",
+        "tag": "a",
+        "attribute": "href",
+        "value": "https://www.kaymont.com/balloons"
+      },
+      {
+        "from": "literature_review.html",
+        "tag": "a",
+        "attribute": "href",
+        "value": "https://www.kaymont.com/_files/ugd/a13aac_0f5b5dce01a24a0985107e7275264198.pdf"
+      },
+      {
+        "from": "literature_review.html",
+        "tag": "a",
+        "attribute": "href",
+        "value": "https://www.kaymont.com/_files/ugd/a13aac_0ac3808bd04943b7ab3708435ec3f02e.pdf"
+      },
+      {
+        "from": "literature_review.html",
+        "tag": "a",
+        "attribute": "href",
+        "value": "https://www.kaymont.com/_files/ugd/a13aac_00518edae5e5406e91aacebd8ffee93b.pdf"
+      },
+      {
+        "from": "literature_review.html",
+        "tag": "a",
+        "attribute": "href",
+        "value": "https://www.kaymont.com/predict"
+      },
+      {
+        "from": "literature_review.html",
+        "tag": "a",
+        "attribute": "href",
+        "value": "https://doi.org/10.1016/j.euromechsol.2022.104893"
+      },
+      {
+        "from": "literature_review.html",
+        "tag": "a",
+        "attribute": "href",
+        "value": "https://www.sciencedirect.com/science/article/abs/pii/S0997753822003230"
+      },
+      {
+        "from": "literature_review.html",
+        "tag": "a",
+        "attribute": "href",
+        "value": "https://doi.org/10.21741/9781644902813-60"
+      },
+      {
+        "from": "literature_review.html",
+        "tag": "a",
+        "attribute": "href",
+        "value": "https://mrforum.com/wp-content/uploads/open_access/9781644902813/60.pdf"
+      },
+      {
+        "from": "literature_review.html",
+        "tag": "a",
+        "attribute": "href",
+        "value": "https://jaxa.repo.nii.ac.jp/record/2001219/files/SA6000204018.pdf"
+      },
+      {
+        "from": "literature_review.html",
+        "tag": "a",
+        "attribute": "href",
+        "value": "https://jaxa.repo.nii.ac.jp/records/2000165"
+      },
+      {
+        "from": "literature_review.html",
+        "tag": "a",
+        "attribute": "href",
+        "value": "https://jaxa.repo.nii.ac.jp/record/2000165/files/SA6000190044.pdf"
+      },
+      {
+        "from": "technical_report.html",
+        "tag": "a",
+        "attribute": "href",
+        "value": "https://ntrs.nasa.gov/citations/19770009539"
+      },
+      {
+        "from": "technical_report.html",
+        "tag": "a",
+        "attribute": "href",
+        "value": "https://doi.org/10.2151/jmsj1923.32.7-8_183"
+      },
+      {
+        "from": "technical_report.html",
+        "tag": "a",
+        "attribute": "href",
+        "value": "https://amt.copernicus.org/articles/4/2235/2011/"
+      },
+      {
+        "from": "technical_report.html",
+        "tag": "a",
+        "attribute": "href",
+        "value": "https://www.kaymont.com/balloons"
+      },
+      {
+        "from": "technical_report.html",
+        "tag": "a",
+        "attribute": "href",
+        "value": "https://www.kaymont.com/_files/ugd/a13aac_0ac3808bd04943b7ab3708435ec3f02e.pdf"
+      },
+      {
+        "from": "technical_report.html",
+        "tag": "a",
+        "attribute": "href",
+        "value": "https://doi.org/10.1016/j.euromechsol.2022.104893"
+      },
+      {
+        "from": "technical_report.html",
+        "tag": "a",
+        "attribute": "href",
+        "value": "https://mrforum.com/wp-content/uploads/open_access/9781644902813/60.pdf"
+      },
+      {
+        "from": "technical_report.html",
+        "tag": "a",
+        "attribute": "href",
+        "value": "https://jaxa.repo.nii.ac.jp/record/2001219/files/SA6000204018.pdf"
+      },
+      {
+        "from": "technical_report.html",
+        "tag": "a",
+        "attribute": "href",
+        "value": "https://jaxa.repo.nii.ac.jp/record/2000165/files/SA6000190044.pdf"
+      },
+      {
+        "from": "technical_report.html",
+        "tag": "a",
+        "attribute": "href",
+        "value": "https://www.nist.gov/publications/equation-state-thermodynamic-properties-helium"
+      },
+      {
+        "from": "existing_data/empirical_paper_review.html",
+        "tag": "a",
+        "attribute": "href",
+        "value": "https://jaxa.repo.nii.ac.jp/record/48991/files/SA6000177023.pdf"
+      },
+      {
+        "from": "existing_data/empirical_paper_review.html",
+        "tag": "a",
+        "attribute": "href",
+        "value": "https://www.isas.jaxa.jp/researchers/symposium/files/balloon2022_program4.pdf"
+      },
+      {
+        "from": "ab_comparison/public_evidence.html",
+        "tag": "a",
+        "attribute": "href",
+        "value": "https://jaxa.repo.nii.ac.jp/record/2001216/files/SA6000204015.pdf"
+      },
+      {
+        "from": "ab_comparison/public_evidence.html",
+        "tag": "a",
+        "attribute": "href",
+        "value": "https://jaxa.repo.nii.ac.jp/record/49006/files/SA6000177038.pdf"
+      },
+      {
+        "from": "ab_comparison/public_evidence.html",
+        "tag": "a",
+        "attribute": "href",
+        "value": "https://jaxa.repo.nii.ac.jp/record/2000169/files/SA6000190048.pdf"
+      },
+      {
+        "from": "ab_comparison/public_evidence.html",
+        "tag": "a",
+        "attribute": "href",
+        "value": "https://jaxa.repo.nii.ac.jp/record/2001219/files/SA6000204018.pdf"
+      },
+      {
+        "from": "ab_comparison/public_evidence.html",
+        "tag": "a",
+        "attribute": "href",
+        "value": "https://jaxa.repo.nii.ac.jp/record/49008/files/SA6000177040.pdf"
+      },
+      {
+        "from": "ab_comparison/public_evidence.html",
+        "tag": "a",
+        "attribute": "href",
+        "value": "https://jaxa.repo.nii.ac.jp/record/2000171/files/SA6000190050.pdf"
+      },
+      {
+        "from": "ab_comparison/README.html",
+        "tag": "a",
+        "attribute": "href",
+        "value": "https://jaxa.repo.nii.ac.jp/record/2001216/files/SA6000204015.pdf"
+      }
+    ],
+    "excluded_dirs_recommended": [
+      "__pycache__"
+    ],
+    "scan_scope": "Static HTML href/src/data/poster and CSS url; no script execution, no numerical or rendering acceptance.",
+    "author_manifest_check": {
+      "records": 169,
+      "mismatch": [],
+      "unlisted": [
+        "manifest_sha256.json"
+      ],
+      "checked_scope": "Current bytes versus author manifest, not rerun numerical results."
+    },
+    "types": {
+      ".csv": 43,
+      ".json": 43,
+      ".py": 11,
+      ".png": 21,
+      ".html": 13,
+      ".md": 18,
+      ".txt": 2,
+      ".jpg": 1,
+      ".xlsx": 2,
+      ".pdf": 1,
+      ".svg": 15
+    }
+  },
+  "flight_table_comparison": {
+    "basis_main": "7622593e0d4dacb101f9ed86990f2832845494ed",
+    "read_only_xml_comparison": true,
+    "inputs": [
+      {
+        "path": "C:\\Users\\genia\\Documents\\Codex\\2026-09-18\\new-chat-3\\outputs\\revised_01a0b429\\existing_data\\source_data.xlsx",
+        "sha256": "743ed3b29b2eb3778300a42be3f6aba6c82c94ce4cc845e593ca310b8a30511d",
+        "bytes": 19095,
+        "cells": 280,
+        "dimension": null
+      },
+      {
+        "path": "C:\\Users\\genia\\OneDrive\\ドキュメント\\00 よく使う\\n_名古屋大学\\06_Chart\\バルーン\\Balloon_Sim\\2026_Sep_\\space-balloon-simulator-jp\\references\\user_supplied\\flight_records.xlsx",
+        "sha256": "f90248dda366afa2825bdf2bf93c86aa4179df47b914adb1b76965804717b127",
+        "bytes": 24588,
+        "cells": 280,
+        "dimension": {
+          "ref": "A1:AD1011"
+        }
+      }
+    ],
+    "cell_differences": [
+      {
+        "cell": "B15",
+        "analysis": {
+          "type": "n",
+          "formula": null,
+          "value": "45964.0"
+        },
+        "repo": {
+          "type": "n",
+          "formula": null,
+          "value": "45964"
+        }
+      },
+      {
+        "cell": "B16",
+        "analysis": {
+          "type": "n",
+          "formula": null,
+          "value": "45970.0"
+        },
+        "repo": {
+          "type": "n",
+          "formula": null,
+          "value": "45970"
+        }
+      },
+      {
+        "cell": "B17",
+        "analysis": {
+          "type": "n",
+          "formula": null,
+          "value": "45977.0"
+        },
+        "repo": {
+          "type": "n",
+          "formula": null,
+          "value": "45977"
+        }
+      },
+      {
+        "cell": "B18",
+        "analysis": {
+          "type": "n",
+          "formula": null,
+          "value": "45984.0"
+        },
+        "repo": {
+          "type": "n",
+          "formula": null,
+          "value": "45984"
+        }
+      },
+      {
+        "cell": "B3",
+        "analysis": {
+          "type": "n",
+          "formula": null,
+          "value": "45714.0"
+        },
+        "repo": {
+          "type": "n",
+          "formula": null,
+          "value": "45714"
+        }
+      },
+      {
+        "cell": "B4",
+        "analysis": {
+          "type": "n",
+          "formula": null,
+          "value": "45761.0"
+        },
+        "repo": {
+          "type": "n",
+          "formula": null,
+          "value": "45761"
+        }
+      },
+      {
+        "cell": "B5",
+        "analysis": {
+          "type": "n",
+          "formula": null,
+          "value": "45843.0"
+        },
+        "repo": {
+          "type": "n",
+          "formula": null,
+          "value": "45843"
+        }
+      },
+      {
+        "cell": "B6",
+        "analysis": {
+          "type": "n",
+          "formula": null,
+          "value": "45888.0"
+        },
+        "repo": {
+          "type": "n",
+          "formula": null,
+          "value": "45888"
+        }
+      },
+      {
+        "cell": "B7",
+        "analysis": {
+          "type": "n",
+          "formula": null,
+          "value": "45946.0"
+        },
+        "repo": {
+          "type": "n",
+          "formula": null,
+          "value": "45946"
+        }
+      },
+      {
+        "cell": "B8",
+        "analysis": {
+          "type": "n",
+          "formula": null,
+          "value": "45959.0"
+        },
+        "repo": {
+          "type": "n",
+          "formula": null,
+          "value": "45959"
+        }
+      },
+      {
+        "cell": "B9",
+        "analysis": {
+          "type": "n",
+          "formula": null,
+          "value": "45965.0"
+        },
+        "repo": {
+          "type": "n",
+          "formula": null,
+          "value": "45965"
+        }
+      },
+      {
+        "cell": "R15",
+        "analysis": {
+          "type": "n",
+          "formula": null,
+          "value": "0.3638888888888889"
+        },
+        "repo": {
+          "type": "n",
+          "formula": null,
+          "value": "0.36388888888888887"
+        }
+      },
+      {
+        "cell": "R18",
+        "analysis": {
+          "type": "n",
+          "formula": null,
+          "value": "0.5520833333333334"
+        },
+        "repo": {
+          "type": "n",
+          "formula": null,
+          "value": "0.55208333333333337"
+        }
+      },
+      {
+        "cell": "X14",
+        "analysis": {
+          "type": "n",
+          "formula": null,
+          "value": "3300.0"
+        },
+        "repo": {
+          "type": "n",
+          "formula": null,
+          "value": "3300"
+        }
+      }
+    ],
+    "zip_same_members": [],
+    "zip_different_members": [
+      "[Content_Types].xml",
+      "_rels/.rels",
+      "xl/_rels/workbook.xml.rels",
+      "xl/sharedStrings.xml",
+      "xl/styles.xml",
+      "xl/tables/table1.xml",
+      "xl/theme/theme1.xml",
+      "xl/workbook.xml",
+      "xl/worksheets/_rels/sheet1.xml.rels",
+      "xl/worksheets/sheet1.xml"
+    ],
+    "zip_only_analysis": [
+      "xl/drawings/drawing1.xml",
+      "xl/persons/person.xml"
+    ],
+    "zip_only_repo": [
+      "docProps/app.xml",
+      "docProps/core.xml",
+      "xl/calcChain.xml"
+    ],
+    "hyperlinks": [
+      [
+        {
+          "{http://schemas.openxmlformats.org/officeDocument/2006/relationships}id": "rId1",
+          "ref": "AA4"
+        },
+        {
+          "{http://schemas.openxmlformats.org/officeDocument/2006/relationships}id": "rId2",
+          "ref": "AA5"
+        },
+        {
+          "{http://schemas.openxmlformats.org/officeDocument/2006/relationships}id": "rId3",
+          "ref": "AA6"
+        },
+        {
+          "{http://schemas.openxmlformats.org/officeDocument/2006/relationships}id": "rId4",
+          "ref": "AA8"
+        },
+        {
+          "{http://schemas.openxmlformats.org/officeDocument/2006/relationships}id": "rId5",
+          "ref": "AA9"
+        }
+      ],
+      [
+        {
+          "ref": "AA4",
+          "{http://schemas.openxmlformats.org/officeDocument/2006/relationships}id": "rId1",
+          "{http://schemas.microsoft.com/office/spreadsheetml/2014/revision}uid": "{00000000-0004-0000-0000-000000000000}"
+        },
+        {
+          "ref": "AA5",
+          "{http://schemas.openxmlformats.org/officeDocument/2006/relationships}id": "rId2",
+          "{http://schemas.microsoft.com/office/spreadsheetml/2014/revision}uid": "{00000000-0004-0000-0000-000001000000}"
+        },
+        {
+          "ref": "AA6",
+          "{http://schemas.openxmlformats.org/officeDocument/2006/relationships}id": "rId3",
+          "{http://schemas.microsoft.com/office/spreadsheetml/2014/revision}uid": "{00000000-0004-0000-0000-000002000000}"
+        },
+        {
+          "ref": "AA8",
+          "{http://schemas.openxmlformats.org/officeDocument/2006/relationships}id": "rId4",
+          "{http://schemas.microsoft.com/office/spreadsheetml/2014/revision}uid": "{00000000-0004-0000-0000-000003000000}"
+        },
+        {
+          "ref": "AA9",
+          "{http://schemas.openxmlformats.org/officeDocument/2006/relationships}id": "rId5",
+          "{http://schemas.microsoft.com/office/spreadsheetml/2014/revision}uid": "{00000000-0004-0000-0000-000004000000}"
+        }
+      ]
+    ],
+    "limitations": "Stored shared/inline strings, numeric text, formula text and cached v compared; no recalculation, style/date semantic equivalence or author intent inferred.",
+    "numeric_equivalent_differences": [
+      {
+        "cell": "B15",
+        "delta": "0.0"
+      },
+      {
+        "cell": "B16",
+        "delta": "0.0"
+      },
+      {
+        "cell": "B17",
+        "delta": "0.0"
+      },
+      {
+        "cell": "B18",
+        "delta": "0.0"
+      },
+      {
+        "cell": "B3",
+        "delta": "0.0"
+      },
+      {
+        "cell": "B4",
+        "delta": "0.0"
+      },
+      {
+        "cell": "B5",
+        "delta": "0.0"
+      },
+      {
+        "cell": "B6",
+        "delta": "0.0"
+      },
+      {
+        "cell": "B7",
+        "delta": "0.0"
+      },
+      {
+        "cell": "B8",
+        "delta": "0.0"
+      },
+      {
+        "cell": "B9",
+        "delta": "0.0"
+      },
+      {
+        "cell": "X14",
+        "delta": "0.0"
+      }
+    ],
+    "numeric_rounding_differences": [
+      {
+        "cell": "R15",
+        "delta": "3E-17",
+        "delta_seconds_if_time_fraction": "2.59200E-12"
+      },
+      {
+        "cell": "R18",
+        "delta": "3E-17",
+        "delta_seconds_if_time_fraction": "2.59200E-12"
+      }
+    ],
+    "format_and_hyperlink_metadata": [
+      {
+        "path": "C:\\Users\\genia\\Documents\\Codex\\2026-09-18\\new-chat-3\\outputs\\revised_01a0b429\\existing_data\\source_data.xlsx",
+        "workbookPr": {},
+        "difference_cell_number_formats": {
+          "B3": "m/d",
+          "B4": "m/d",
+          "B5": "m/d",
+          "B6": "m/d",
+          "B7": "m/d",
+          "B8": "m/d",
+          "B9": "m/d",
+          "X14": "0",
+          "B15": "m/d",
+          "R15": "built-in time h:mm",
+          "B16": "m/d",
+          "B17": "m/d",
+          "B18": "m/d",
+          "R18": "built-in time h:mm"
+        },
+        "hyperlink_targets": {
+          "rId1": "https://sorae.info/space/20240524-chart.html",
+          "rId2": "https://youtu.be/R5LT2bmWH70?si=VHdrn0VIAYr9FDmJ",
+          "rId3": "https://youtu.be/5ftu-HTBlaI?si=-3rQfxr0jMs0ydaV",
+          "rId4": "https://youtu.be/kfdsUmahSk0?si=75uLDC141j5s4J6e",
+          "rId5": "https://youtu.be/q-kHaoEWcwc?si=mQrdr__dsXYakSVE"
+        }
+      },
+      {
+        "path": "C:\\Users\\genia\\OneDrive\\ドキュメント\\00 よく使う\\n_名古屋大学\\06_Chart\\バルーン\\Balloon_Sim\\2026_Sep_\\space-balloon-simulator-jp\\references\\user_supplied\\flight_records.xlsx",
+        "workbookPr": {},
+        "difference_cell_number_formats": {
+          "B3": "m/d",
+          "B4": "m/d",
+          "B5": "m/d",
+          "B6": "m/d",
+          "B7": "m/d",
+          "B8": "m/d",
+          "B9": "m/d",
+          "X14": "0",
+          "B15": "m/d",
+          "R15": "built-in time h:mm",
+          "B16": "m/d",
+          "B17": "m/d",
+          "B18": "m/d",
+          "R18": "built-in time h:mm"
+        },
+        "hyperlink_targets": {
+          "rId3": "https://youtu.be/5ftu-HTBlaI?si=-3rQfxr0jMs0ydaV",
+          "rId2": "https://youtu.be/R5LT2bmWH70?si=VHdrn0VIAYr9FDmJ",
+          "rId1": "https://sorae.info/space/20240524-chart.html",
+          "rId5": "https://youtu.be/q-kHaoEWcwc?si=mQrdr__dsXYakSVE",
+          "rId4": "https://youtu.be/kfdsUmahSk0?si=75uLDC141j5s4J6e"
+        }
+      }
+    ]
+  },
+  "boundary": "Byte preservation and finite source comparison; not scientific recalculation or Excel recalculation."
+}

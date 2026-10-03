@@ -1,0 +1,425 @@
+{
+  "schema_version": 1,
+  "document_version": "0.13.0",
+  "fixture_id": "GFS-P1-20260921T18Z-136-138E-34-36N",
+  "role": "Offline first acceptance fixture for GFS ingestion; not actual launch conditions or an operational forecast.",
+  "source": "NOAA NCEP GFS 0.25 degree pgrb2 via NOMADS GRIB Filter",
+  "product_documentation": [
+    "https://www.nco.ncep.noaa.gov/pmb/products/gfs/",
+    "https://nomads.ncep.noaa.gov/info.php?page=gribfilter",
+    "https://nomads.ncep.noaa.gov/info.php?page=opendap_grib_migration",
+    "https://www.weather.gov/disclaimer"
+  ],
+  "license_note": "NWS states information is public domain unless otherwise noted; identify NOAA/NCEP source, do not imply endorsement or present changes as official NOAA products.",
+  "run_utc": "2026-09-21T18:00:00Z",
+  "run_date": 20260921,
+  "run_time": 1800,
+  "grid": {
+    "type": "regular_ll",
+    "ni": 9,
+    "nj": 9,
+    "west": 136.0,
+    "east": 138.0,
+    "south": 34.0,
+    "north": 36.0,
+    "increment_degrees": 0.25,
+    "i_scans_negatively": 0,
+    "j_scans_positively": 1,
+    "j_points_are_consecutive": 0,
+    "uv_relative_to_grid": 0
+  },
+  "requested_pressure_levels_hpa": [
+    1000,
+    975,
+    950,
+    925,
+    900,
+    850,
+    800,
+    750,
+    700,
+    650,
+    600,
+    550,
+    500,
+    450,
+    400,
+    350,
+    300,
+    250,
+    200,
+    150,
+    100,
+    70,
+    50,
+    40,
+    30,
+    20,
+    15,
+    10,
+    7,
+    5,
+    3,
+    2,
+    1
+  ],
+  "requested_filter_variables": [
+    "HGT",
+    "TMP",
+    "UGRD",
+    "VGRD",
+    "PRES",
+    "LAND"
+  ],
+  "requested_additional_levels": [
+    "surface",
+    "2 m above ground",
+    "10 m above ground"
+  ],
+  "expected_fields": [
+    {
+      "short_name": "gh",
+      "type_of_level": "isobaricInhPa",
+      "levels": [
+        1000,
+        975,
+        950,
+        925,
+        900,
+        850,
+        800,
+        750,
+        700,
+        650,
+        600,
+        550,
+        500,
+        450,
+        400,
+        350,
+        300,
+        250,
+        200,
+        150,
+        100,
+        70,
+        50,
+        40,
+        30,
+        20,
+        15,
+        10,
+        7,
+        5,
+        3,
+        2,
+        1
+      ],
+      "units": "gpm",
+      "discipline": 0,
+      "parameter_category": 3,
+      "parameter_number": 5
+    },
+    {
+      "short_name": "t",
+      "type_of_level": "isobaricInhPa",
+      "levels": [
+        1000,
+        975,
+        950,
+        925,
+        900,
+        850,
+        800,
+        750,
+        700,
+        650,
+        600,
+        550,
+        500,
+        450,
+        400,
+        350,
+        300,
+        250,
+        200,
+        150,
+        100,
+        70,
+        50,
+        40,
+        30,
+        20,
+        15,
+        10,
+        7,
+        5,
+        3,
+        2,
+        1
+      ],
+      "units": "K",
+      "discipline": 0,
+      "parameter_category": 0,
+      "parameter_number": 0
+    },
+    {
+      "short_name": "u",
+      "type_of_level": "isobaricInhPa",
+      "levels": [
+        1000,
+        975,
+        950,
+        925,
+        900,
+        850,
+        800,
+        750,
+        700,
+        650,
+        600,
+        550,
+        500,
+        450,
+        400,
+        350,
+        300,
+        250,
+        200,
+        150,
+        100,
+        70,
+        50,
+        40,
+        30,
+        20,
+        15,
+        10,
+        7,
+        5,
+        3,
+        2,
+        1
+      ],
+      "units": "m s**-1",
+      "discipline": 0,
+      "parameter_category": 2,
+      "parameter_number": 2
+    },
+    {
+      "short_name": "v",
+      "type_of_level": "isobaricInhPa",
+      "levels": [
+        1000,
+        975,
+        950,
+        925,
+        900,
+        850,
+        800,
+        750,
+        700,
+        650,
+        600,
+        550,
+        500,
+        450,
+        400,
+        350,
+        300,
+        250,
+        200,
+        150,
+        100,
+        70,
+        50,
+        40,
+        30,
+        20,
+        15,
+        10,
+        7,
+        5,
+        3,
+        2,
+        1
+      ],
+      "units": "m s**-1",
+      "discipline": 0,
+      "parameter_category": 2,
+      "parameter_number": 3
+    },
+    {
+      "short_name": "sp",
+      "type_of_level": "surface",
+      "levels": [
+        0
+      ],
+      "units": "Pa",
+      "discipline": 0,
+      "parameter_category": 3,
+      "parameter_number": 0
+    },
+    {
+      "short_name": "orog",
+      "type_of_level": "surface",
+      "levels": [
+        0
+      ],
+      "units": "m",
+      "discipline": 0,
+      "parameter_category": 3,
+      "parameter_number": 5
+    },
+    {
+      "short_name": "t",
+      "type_of_level": "surface",
+      "levels": [
+        0
+      ],
+      "units": "K",
+      "discipline": 0,
+      "parameter_category": 0,
+      "parameter_number": 0
+    },
+    {
+      "short_name": "2t",
+      "type_of_level": "heightAboveGround",
+      "levels": [
+        2
+      ],
+      "units": "K",
+      "discipline": 0,
+      "parameter_category": 0,
+      "parameter_number": 0
+    },
+    {
+      "short_name": "10u",
+      "type_of_level": "heightAboveGround",
+      "levels": [
+        10
+      ],
+      "units": "m s**-1",
+      "discipline": 0,
+      "parameter_category": 2,
+      "parameter_number": 2
+    },
+    {
+      "short_name": "10v",
+      "type_of_level": "heightAboveGround",
+      "levels": [
+        10
+      ],
+      "units": "m s**-1",
+      "discipline": 0,
+      "parameter_category": 2,
+      "parameter_number": 3
+    },
+    {
+      "short_name": "lsm",
+      "type_of_level": "surface",
+      "levels": [
+        0
+      ],
+      "units": "(0 - 1)",
+      "discipline": 2,
+      "parameter_category": 0,
+      "parameter_number": 0
+    }
+  ],
+  "files": [
+    {
+      "file": "f000.grib2",
+      "forecast_hour": 0,
+      "source_url": "https://nomads.ncep.noaa.gov/cgi-bin/filter_gfs_0p25_1hr.pl?file=gfs.t18z.pgrb2.0p25.f000&dir=%2Fgfs.20260921%2F18%2Fatmos&lev_1000_mb=on&lev_975_mb=on&lev_950_mb=on&lev_925_mb=on&lev_900_mb=on&lev_850_mb=on&lev_800_mb=on&lev_750_mb=on&lev_700_mb=on&lev_650_mb=on&lev_600_mb=on&lev_550_mb=on&lev_500_mb=on&lev_450_mb=on&lev_400_mb=on&lev_350_mb=on&lev_300_mb=on&lev_250_mb=on&lev_200_mb=on&lev_150_mb=on&lev_100_mb=on&lev_70_mb=on&lev_50_mb=on&lev_40_mb=on&lev_30_mb=on&lev_20_mb=on&lev_15_mb=on&lev_10_mb=on&lev_7_mb=on&lev_5_mb=on&lev_3_mb=on&lev_2_mb=on&lev_1_mb=on&lev_surface=on&lev_2_m_above_ground=on&lev_10_m_above_ground=on&var_HGT=on&var_TMP=on&var_UGRD=on&var_VGRD=on&var_PRES=on&var_LAND=on&subregion=&leftlon=136&rightlon=138&bottomlat=34&toplat=36",
+      "http_status": 200,
+      "request_started_at_utc": "2026-09-22T02:22:27.997899+00:00",
+      "response_date": "Tue, 22 Sep 2026 02:22:31 GMT",
+      "bytes": 37870,
+      "sha256": "4baefb0af3ed2924e11c0610b26fdc5d6d2c21759dc7c63380818bb8c40e628c",
+      "expected_message_count": 139,
+      "expected_value_count": 11259,
+      "observed_below_ground_level_cells": 144,
+      "height_1hpa_range_gpm": [
+        47886.33,
+        47918.65
+      ]
+    },
+    {
+      "file": "f001.grib2",
+      "forecast_hour": 1,
+      "source_url": "https://nomads.ncep.noaa.gov/cgi-bin/filter_gfs_0p25_1hr.pl?file=gfs.t18z.pgrb2.0p25.f001&dir=%2Fgfs.20260921%2F18%2Fatmos&lev_1000_mb=on&lev_975_mb=on&lev_950_mb=on&lev_925_mb=on&lev_900_mb=on&lev_850_mb=on&lev_800_mb=on&lev_750_mb=on&lev_700_mb=on&lev_650_mb=on&lev_600_mb=on&lev_550_mb=on&lev_500_mb=on&lev_450_mb=on&lev_400_mb=on&lev_350_mb=on&lev_300_mb=on&lev_250_mb=on&lev_200_mb=on&lev_150_mb=on&lev_100_mb=on&lev_70_mb=on&lev_50_mb=on&lev_40_mb=on&lev_30_mb=on&lev_20_mb=on&lev_15_mb=on&lev_10_mb=on&lev_7_mb=on&lev_5_mb=on&lev_3_mb=on&lev_2_mb=on&lev_1_mb=on&lev_surface=on&lev_2_m_above_ground=on&lev_10_m_above_ground=on&var_HGT=on&var_TMP=on&var_UGRD=on&var_VGRD=on&var_PRES=on&var_LAND=on&subregion=&leftlon=136&rightlon=138&bottomlat=34&toplat=36",
+      "http_status": 200,
+      "request_started_at_utc": "2026-09-22T02:22:32.547751+00:00",
+      "response_date": "Tue, 22 Sep 2026 02:22:36 GMT",
+      "bytes": 37861,
+      "sha256": "1f0a29b6855fcbad942a82440f6b8a3d8b1cde1b3db8c946172804212231332d",
+      "expected_message_count": 139,
+      "expected_value_count": 11259,
+      "observed_below_ground_level_cells": 142,
+      "height_1hpa_range_gpm": [
+        47880.82,
+        47914.66
+      ]
+    },
+    {
+      "file": "f002.grib2",
+      "forecast_hour": 2,
+      "source_url": "https://nomads.ncep.noaa.gov/cgi-bin/filter_gfs_0p25_1hr.pl?file=gfs.t18z.pgrb2.0p25.f002&dir=%2Fgfs.20260921%2F18%2Fatmos&lev_1000_mb=on&lev_975_mb=on&lev_950_mb=on&lev_925_mb=on&lev_900_mb=on&lev_850_mb=on&lev_800_mb=on&lev_750_mb=on&lev_700_mb=on&lev_650_mb=on&lev_600_mb=on&lev_550_mb=on&lev_500_mb=on&lev_450_mb=on&lev_400_mb=on&lev_350_mb=on&lev_300_mb=on&lev_250_mb=on&lev_200_mb=on&lev_150_mb=on&lev_100_mb=on&lev_70_mb=on&lev_50_mb=on&lev_40_mb=on&lev_30_mb=on&lev_20_mb=on&lev_15_mb=on&lev_10_mb=on&lev_7_mb=on&lev_5_mb=on&lev_3_mb=on&lev_2_mb=on&lev_1_mb=on&lev_surface=on&lev_2_m_above_ground=on&lev_10_m_above_ground=on&var_HGT=on&var_TMP=on&var_UGRD=on&var_VGRD=on&var_PRES=on&var_LAND=on&subregion=&leftlon=136&rightlon=138&bottomlat=34&toplat=36",
+      "http_status": 200,
+      "request_started_at_utc": "2026-09-22T02:22:37.178896+00:00",
+      "response_date": "Tue, 22 Sep 2026 02:22:40 GMT",
+      "bytes": 37859,
+      "sha256": "547b2402efd47eb51c9ea03c516edd59696fbd1b20b687083da95395a43cb13e",
+      "expected_message_count": 139,
+      "expected_value_count": 11259,
+      "observed_below_ground_level_cells": 142,
+      "height_1hpa_range_gpm": [
+        47864.355,
+        47901.715000000004
+      ]
+    }
+  ],
+  "observed_decoding": {
+    "observed_at_utc": "2026-09-22T02:28:00.142761+00:00",
+    "python_version": "3.12.12",
+    "eccodes_python_version": "2.47.0",
+    "eccodes_api_version": "2.47.0",
+    "numpy_version": "2.4.4",
+    "new_dependencies_installed": false
+  },
+  "passed_initial_checks": [
+    "417 GRIB2 messages and 33777 values decoded",
+    "same 9 by 9 grid at all three times",
+    "expected UTC run, lead and valid times",
+    "33 pressure levels for gh/t/u/v with expected units",
+    "zero encoded missing values and all decoded values finite",
+    "81 monotonic geopotential-height columns per time",
+    "30000 gpm bracketed at all 81 columns per time"
+  ],
+  "not_accepted": [
+    "scientific forecast accuracy or trajectory validity",
+    "geometric/geopotential/terrain height conversion",
+    "below-ground masking and near-surface interpolation",
+    "space/time/height interpolation or out-of-domain behavior",
+    "fine DEM or coastline for landing",
+    "future product schema and other forecast hours",
+    "self-contained dependency installation on another machine"
+  ],
+  "findings": [
+    "Below-ground pressure-level cells exist despite finite nonmissing values: counts recorded per file. Mask using surface pressure before interpolation.",
+    "Upper HGT decodes as gh[gpm], surface HGT as orog[m]; preserve raw parameter IDs/level types/units and decide height conversion explicitly.",
+    "Subset latitude scans south to north. Do not assume descending latitude."
+  ],
+  "request_interval_deviation": {
+    "occurred": true,
+    "actual_start_intervals_seconds": [
+      4.549852,
+      4.631145
+    ],
+    "official_guidance": "GRIB Filter help requires a 10 second wait between loop fetches. Detailed help was read after these three requests.",
+    "corrective_action": "No further download for this fixture. Future fetch loop must wait at least 10 seconds after each response, run sequentially with response-size cap/backoff and reuse cached bytes."
+  },
+  "reproduction_boundary": "Committed bytes allow offline inspection. NOMADS is a rotating service: source URLs may expire, and a later run is a different fixture, not reproduction. Dependencies are required; no network or installation is performed by inspector.",
+  "evidence_date_utc": "2026-09-22"
+}

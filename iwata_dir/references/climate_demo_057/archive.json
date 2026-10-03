@@ -1,0 +1,278 @@
+{
+  "schema": "balloon.climate-demo-package/1",
+  "scope": "Separate JRA-3Q and ERA5 four-native-cell functional samples; calendar2024 all00/06/12/18UTC; no interpolation, quantization or flight field",
+  "file": "wind-samples.zip",
+  "bytes": 2994432,
+  "sha256": "83b9a8c68b73938acd2163fd9e3c6ba11a756470083143e6129a70c8449d9f32",
+  "members": {
+    "era5/manifest.json": {
+      "bytes": 1729694,
+      "sha256": "dbe42e83ecd54ef35e4b5ba2254597a8f4cd6c1461b6c80643d95c0438370923"
+    },
+    "era5/month-01/u.npy": {
+      "bytes": 73536,
+      "sha256": "2aafb4e83dc33adc59faa1587d9ecf20595913c62188078c48fcfed1c892a984"
+    },
+    "era5/month-01/v.npy": {
+      "bytes": 73536,
+      "sha256": "a24eb62501a20d316ac35c1191e9235c05e2c8332dd002ce26507a20f5269c0a"
+    },
+    "era5/month-02/u.npy": {
+      "bytes": 68800,
+      "sha256": "947c21323e0041c3998db1eb74a94a26a9df094e4af411b67be2ef6985089322"
+    },
+    "era5/month-02/v.npy": {
+      "bytes": 68800,
+      "sha256": "5a2b6247772045e104e84c1642dfc82eb07042afecda7265fce09695cd5bd85b"
+    },
+    "era5/month-03/u.npy": {
+      "bytes": 73536,
+      "sha256": "f29cfeb45458e6e43b87ed0ee3731924588b4d219904cd91579666524c31d2a5"
+    },
+    "era5/month-03/v.npy": {
+      "bytes": 73536,
+      "sha256": "b85d509adc25d7e2b4ae9d0f10449577c198d68d248d95543002c0f7550da4ea"
+    },
+    "era5/month-04/u.npy": {
+      "bytes": 71168,
+      "sha256": "cc085594d3c15493d57ad912e90dd1b8c4a19909d9e532ad30d6b5df9382b659"
+    },
+    "era5/month-04/v.npy": {
+      "bytes": 71168,
+      "sha256": "03cdd712d5e5750edab9c06618b11785c5e0f6326ae8ce057c3bfe83a1c6a612"
+    },
+    "era5/month-05/u.npy": {
+      "bytes": 73536,
+      "sha256": "1cc19c52785da5594df61d2ca7d72766ab717ed141e57c03253f76bfc39ee384"
+    },
+    "era5/month-05/v.npy": {
+      "bytes": 73536,
+      "sha256": "ce4020a72a95166ae2724d1a109d705f1e3beead2a015e1f2cce5f1d3fa59753"
+    },
+    "era5/month-06/u.npy": {
+      "bytes": 71168,
+      "sha256": "e52242ec0dffd7c1ba4af577df40b9ad143e9673f7d9b526f829f37db795149f"
+    },
+    "era5/month-06/v.npy": {
+      "bytes": 71168,
+      "sha256": "b752554c4cba8538578cab6b574c80d64f89150bf282fd1162ffd184f52ce378"
+    },
+    "era5/month-07/u.npy": {
+      "bytes": 73536,
+      "sha256": "9c3fb6818c22b6a7bf8987cb96db5015998f2d4d70e8fdcac33f347a67236599"
+    },
+    "era5/month-07/v.npy": {
+      "bytes": 73536,
+      "sha256": "4e0522b2868c5ec9f310c5ee0f734f28e13bbcc959f0c0f419c3d770752b9697"
+    },
+    "era5/month-08/u.npy": {
+      "bytes": 73536,
+      "sha256": "fac9340cbe287b8e58eca6e5cd5ce17f32f4c8c86f8c396fa56027bdc42c3623"
+    },
+    "era5/month-08/v.npy": {
+      "bytes": 73536,
+      "sha256": "c49b976b03d89ef1245daced0bf5125a32ef4f0927d323e39e6b85e3ebc0ca0f"
+    },
+    "era5/month-09/u.npy": {
+      "bytes": 71168,
+      "sha256": "129a745f9f79e342bb220af086f8fe9858c570120049293cf7648703dee00b96"
+    },
+    "era5/month-09/v.npy": {
+      "bytes": 71168,
+      "sha256": "a25a93c5cce72486e6e9c84261a13afa886bbe2301ac1405638084f5227e4340"
+    },
+    "era5/month-10/u.npy": {
+      "bytes": 73536,
+      "sha256": "0b7108c64506c55e23c740d96e6bca83db3fa2a2f8c6a20c32a300444f2c0dbc"
+    },
+    "era5/month-10/v.npy": {
+      "bytes": 73536,
+      "sha256": "d833c6aa39a44c6ee8b86144735282cd193266d4911f0bffa775bd8d24a28345"
+    },
+    "era5/month-11/u.npy": {
+      "bytes": 71168,
+      "sha256": "ec818c77b770f025b7f72271082e1c54676e80449ff78983edb244616342cd9e"
+    },
+    "era5/month-11/v.npy": {
+      "bytes": 71168,
+      "sha256": "e0195e06c95c7b70287f0fdd898eb0555564eefd31c87389849051ad947d2b29"
+    },
+    "era5/month-12/u.npy": {
+      "bytes": 73536,
+      "sha256": "00afb2bb40e1db9be3b96960018803ea279ae8b7c9fc31e9971123fd4a488cbb"
+    },
+    "era5/month-12/v.npy": {
+      "bytes": 73536,
+      "sha256": "aec77488d72607fcb98cc352766b17bfbfb025fbcc4bdffd199ef74d4d83078f"
+    },
+    "jra3q/manifest.json": {
+      "bytes": 244584,
+      "sha256": "3ff632c02bdbe7fcf3eeddd35d2519fd2f30a970b895a9e38bbf9946372da9dc"
+    },
+    "jra3q/month-01/u.npy": {
+      "bytes": 75520,
+      "sha256": "73e53b3ce04c8f3f3e39b5f60a68649d7b942fd6998a6a9a33daecbe84969fcd"
+    },
+    "jra3q/month-01/v.npy": {
+      "bytes": 75520,
+      "sha256": "bcc1ffa9f3475b1b9c41aeadcc0f0760f3212b08cd663723a06fdfa75a3c8c63"
+    },
+    "jra3q/month-02/u.npy": {
+      "bytes": 70656,
+      "sha256": "d81524b124f6b58a3879e3b08fb2569e62beac80ee27cca8f2433e0d3a4a8590"
+    },
+    "jra3q/month-02/v.npy": {
+      "bytes": 70656,
+      "sha256": "c9ba2e9514d3593ecd8c58870a79e92a1d095354b319b9e0010679d62ea7bff9"
+    },
+    "jra3q/month-03/u.npy": {
+      "bytes": 75520,
+      "sha256": "54380ec1fee2d3f83e81a1f626dc41058867b92db4cffd8d7d9b5d51eaca21ab"
+    },
+    "jra3q/month-03/v.npy": {
+      "bytes": 75520,
+      "sha256": "749b540fb900b3586d151051e3e902d52922419687438af31eb54ed931afd5e0"
+    },
+    "jra3q/month-04/u.npy": {
+      "bytes": 73088,
+      "sha256": "40554c9c6d11a98393181b3311d21504e0a4e42e75dbbb51aca0df2900442937"
+    },
+    "jra3q/month-04/v.npy": {
+      "bytes": 73088,
+      "sha256": "7c8e4e124e83f0404a69f78e500515a7cb5e957a7b126c24a92b8dc83b6c8cbf"
+    },
+    "jra3q/month-05/u.npy": {
+      "bytes": 75520,
+      "sha256": "3440b08ea4e6df0aee05cf7bfa1be5ced70b35ee43ab408830d3f394d8f57ae5"
+    },
+    "jra3q/month-05/v.npy": {
+      "bytes": 75520,
+      "sha256": "92f03c5b028ffd402fcd12958b6de4ec56e55b61a9746f9dbb6c24ace9b378c5"
+    },
+    "jra3q/month-06/u.npy": {
+      "bytes": 73088,
+      "sha256": "5dc24d59386fa94cbd5ed418455615420b3dc470e20aa18ea606db157de76e3a"
+    },
+    "jra3q/month-06/v.npy": {
+      "bytes": 73088,
+      "sha256": "622d067e7a7d1f313c8e771798a4d8215c12e27b9278e2f7535c981a9edbe072"
+    },
+    "jra3q/month-07/u.npy": {
+      "bytes": 75520,
+      "sha256": "4917c73f8258dbf5fb4990cb856e804774f40e8d461c5f2b8992eaad7bcbb0bd"
+    },
+    "jra3q/month-07/v.npy": {
+      "bytes": 75520,
+      "sha256": "97b80e103d67f328a917777c44b8339bd9629151b13d1135d1a3b631c9112bfe"
+    },
+    "jra3q/month-08/u.npy": {
+      "bytes": 75520,
+      "sha256": "cb0621f17328273c483bf8b1b6f92f3f5bc5e6462c3ef5fbdc33e8deee50b25a"
+    },
+    "jra3q/month-08/v.npy": {
+      "bytes": 75520,
+      "sha256": "610e605709b1dc4d6befe0b3414a6cda734ff5a0fd336a9d2a79d23615a7e5d4"
+    },
+    "jra3q/month-09/u.npy": {
+      "bytes": 73088,
+      "sha256": "92db6380834015f6780694deac8491941bb86d3ea3b87da056a5a7289c0926c1"
+    },
+    "jra3q/month-09/v.npy": {
+      "bytes": 73088,
+      "sha256": "a41069147287a45d697a61db6b3fa3ed5464df02e8ec26f22efcf0fed5aaf91f"
+    },
+    "jra3q/month-10/u.npy": {
+      "bytes": 75520,
+      "sha256": "be51399767dbb95c240eb1b7527f8b5a98673a09c6c36d811d568b1a1e954786"
+    },
+    "jra3q/month-10/v.npy": {
+      "bytes": 75520,
+      "sha256": "5f0be704fea77c9ffc36a46098ddd58dfde0eb21d52af779a194958b7b542f56"
+    },
+    "jra3q/month-11/u.npy": {
+      "bytes": 73088,
+      "sha256": "2c2e54c3dc364b8921d463ce3119e3e837d11344b3abd6d0a29bd975244e7df6"
+    },
+    "jra3q/month-11/v.npy": {
+      "bytes": 73088,
+      "sha256": "e86d94daa0007d0c63639dc0381b6d271eae339f245ed67ddcdcc97f57e79546"
+    },
+    "jra3q/month-12/u.npy": {
+      "bytes": 75520,
+      "sha256": "171603ad844256142ea8f95879b7bbe5f0c6d680820430633c3d1fbe5a5bb5a0"
+    },
+    "jra3q/month-12/v.npy": {
+      "bytes": 75520,
+      "sha256": "0e7edc27e72374d7ccbf6e11ee034a318c82ce7c4a095b23a626ad3794a530d3"
+    }
+  },
+  "provenance": {
+    "jra3q": {
+      "manifest": "C:\\Users\\genia\\AppData\\Local\\Temp\\balloon-climate-quantiles570\\demo-final570\\jra3q\\manifest.json",
+      "bundle_sha256": "3ff632c02bdbe7fcf3eeddd35d2519fd2f30a970b895a9e38bbf9946372da9dc",
+      "months": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "array_count": 24,
+      "original_manifest_sha256": "3eada6b606ec83db559795dbbf84e4adbc9f0fa7a59704d6201316822f072e60",
+      "cells": 4,
+      "bit_checked_values": 445056,
+      "original_native_ids": [
+        249,
+        250,
+        279,
+        280
+      ],
+      "source_manifest_sha256": "3eada6b606ec83db559795dbbf84e4adbc9f0fa7a59704d6201316822f072e60",
+      "subset_manifest_sha256": "3ff632c02bdbe7fcf3eeddd35d2519fd2f30a970b895a9e38bbf9946372da9dc"
+    },
+    "era5": {
+      "manifest": "C:\\Users\\genia\\AppData\\Local\\Temp\\balloon-climate-quantiles570\\demo-final570\\era5\\manifest.json",
+      "bundle_sha256": "dbe42e83ecd54ef35e4b5ba2254597a8f4cd6c1461b6c80643d95c0438370923",
+      "months": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "array_count": 24,
+      "original_manifest_sha256": "7718ccf5f25cb10859bbe49bdf20a4dd180e1a6c9ac7d5c1f8d8eb991e82cdbe",
+      "cells": 4,
+      "bit_checked_values": 433344,
+      "original_native_ids": [
+        269845,
+        269846,
+        271285,
+        271286
+      ],
+      "source_manifest_sha256": "7718ccf5f25cb10859bbe49bdf20a4dd180e1a6c9ac7d5c1f8d8eb991e82cdbe",
+      "subset_manifest_sha256": "dbe42e83ecd54ef35e4b5ba2254597a8f4cd6c1461b6c80643d95c0438370923"
+    }
+  },
+  "zip": {
+    "ordered": true,
+    "timestamp": "2024-01-01T00:00:00",
+    "compression": "deflate9",
+    "zlib": "1.3.1"
+  },
+  "prepared_utc": "2026-10-02T08:21:07.218676+00:00"
+}

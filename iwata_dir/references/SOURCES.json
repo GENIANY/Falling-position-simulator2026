@@ -1,0 +1,796 @@
+{
+  "schema_version": "project-sources/1",
+  "checked_on": "2026-09-16",
+  "policy": "各項目checked_onが実際の確認日。旧調査の科学記述を本改訂で再調査したとはしない。現在の操作出典はBOOTSTRAP_RUNBOOK.htmlのSRC-01〜12に管理し、確認範囲はREFERENCE_LOGへ記録。外部サイトの恒久可用性を保証しない。 0.10.0の登録点検は提供原本の同一性・役割・探索資料の所在を対象とし、旧外部出典の科学的再検証ではない。Projectにない付属物の完備や将来の可用性は保証しない。",
+  "sources": [
+    {
+      "id": "S01",
+      "title": "Tawhiri API",
+      "url": "https://tawhiri.readthedocs.io/en/latest/api.html",
+      "access_result": "read",
+      "supports": "標準/floatの文書説明",
+      "limitations": "実装全体の監査とサービス実行は未実施",
+      "checked_on": "2026-09-16"
+    },
+    {
+      "id": "S02",
+      "title": "Tawhiri predictor design",
+      "url": "https://github.com/cuspaceflight/tawhiri/blob/master/docs/predictor.rst",
+      "access_result": "read",
+      "supports": "モデル合成・純粋性・段階連結",
+      "limitations": "設計例の疑似コードを実際のソルバとみなさない",
+      "checked_on": "2026-09-16"
+    },
+    {
+      "id": "S03",
+      "title": "Tawhiri master commit",
+      "url": "https://api.github.com/repos/cuspaceflight/tawhiri/commits/master",
+      "access_result": "read",
+      "supports": "基準候補のSHA確認",
+      "limitations": "原版と公開サービス/派生版との一致は未確認",
+      "checked_on": "2026-09-16"
+    },
+    {
+      "id": "S04",
+      "title": "Tawhiri pinned README",
+      "url": "https://github.com/cuspaceflight/tawhiri/blob/668b44e5b88a66e0d885a9f9b16ff507d856bbbd/README.md",
+      "access_result": "read",
+      "supports": "GNU GPL 3の表記",
+      "limitations": "流用・派生物の具体的方針は未決定",
+      "checked_on": "2026-09-16"
+    },
+    {
+      "id": "S05",
+      "title": "NOAA NOMADS",
+      "url": "https://nomads.ncep.noaa.gov/",
+      "access_result": "read",
+      "supports": "配布一覧の窓口",
+      "limitations": "数値データ取得・復号試験未実施",
+      "checked_on": "2026-09-16"
+    },
+    {
+      "id": "S06",
+      "title": "NOAA GFS Filter",
+      "url": "https://nomads.ncep.noaa.gov/gribfilter.php?ds=gfs_0p25",
+      "access_result": "read",
+      "supports": "GFS変数選択の公開窓口",
+      "limitations": "対象層・条件・匿名データ取得の受入未完",
+      "checked_on": "2026-09-16"
+    },
+    {
+      "id": "S07",
+      "title": "GSI tile specification",
+      "url": "https://maps.gsi.go.jp/development/siyou.html",
+      "access_result": "read",
+      "supports": "公式タイル仕様と一覧",
+      "limitations": "個別の標高モデル・利用条件採用は未完",
+      "checked_on": "2026-09-16"
+    },
+    {
+      "id": "S08",
+      "title": "RISH GPV",
+      "url": "https://database.rish.kyoto-u.ac.jp/arch/jmadata/",
+      "access_result": "retrieval_failed",
+      "supports": "取得を試行した対象",
+      "limitations": "本文未取得。利用条件の根拠として使わない",
+      "checked_on": "2026-09-16"
+    },
+    {
+      "id": "S09",
+      "title": "OpenAI Projects",
+      "url": "https://help.openai.com/en/articles/10169521-projects-in-chatgpt",
+      "access_result": "read",
+      "supports": "指示・資料・同名ファイル・現行上限",
+      "limitations": "アカウントでの実際の能力確認は未実施",
+      "checked_on": "2026-09-16"
+    },
+    {
+      "id": "S10",
+      "title": "ChatGPT Work and Codex",
+      "url": "https://help.openai.com/ja-jp/articles/20001275-chatgpt-work-and-codex",
+      "access_result": "read",
+      "supports": "役割とローカル/クラウドの制約",
+      "limitations": "提供状況と権限は実環境で確認する",
+      "checked_on": "2026-09-16"
+    },
+    {
+      "id": "S11",
+      "title": "Get started with Work",
+      "url": "https://learn.chatgpt.com/docs/get-started-with-work",
+      "access_result": "read",
+      "supports": "成果物と許可ツールを持つタスク設計",
+      "limitations": "本対話でWorkを別途起動したという意味ではない",
+      "checked_on": "2026-09-16"
+    },
+    {
+      "id": "S12",
+      "title": "AGENTS.md instructions",
+      "url": "https://learn.chatgpt.com/docs/agent-configuration/agents-md",
+      "access_result": "read",
+      "supports": "Codexが起動時にAGENTSの指示階層を読むこと、古い指示が疑われる場合に起動し直して適用内容を確認する公式案内。",
+      "limitations": "当該Desktop会話/自動承認レビューの内部状態や将来の無誤判定は観測していない。",
+      "checked_on": "2026-09-22"
+    },
+    {
+      "id": "U01",
+      "title": "ユーザー提供プログラム構造ガイド例",
+      "local_files": [
+        "references/Program_Guide_FractalJP_Settings.pdf",
+        "references/Program_Guide_FractalJP_Settings.tex"
+      ],
+      "access_result": "read",
+      "supports": "物理ページ2–4の階層説明型と103の逆引き。TeXのビルド構成。",
+      "limitations": "実装コードの一致と原資料のクリーンビルドは未監査。一般公開の再配布権は未確認。",
+      "checked_on": "2026-09-16"
+    },
+    {
+      "id": "RAW-FLIGHT-001",
+      "title": "提供された15便の打上げ記録表。完全な生計測ログとは区別する",
+      "local_files": [
+        "references/user_supplied/flight_records.xlsx"
+      ],
+      "original_filename": "データ.xlsx",
+      "access_result": "read_original_bytes_and_selected_xml",
+      "supports": "提供原本の同一性、所在、シート構成と代表セルの原記述。提供された15便の打上げ記録表。完全な生計測ログとは区別する",
+      "limitations": "著作者・正式版・利用/再配布範囲、科学的妥当性は未確認。Excel本体の再計算なし。原単位・注記・数式・保存値は変更しない。PR #13へ統合済み。Project削除は未実施。",
+      "checked_on": "2026-09-21",
+      "sha256": "f90248dda366afa2825bdf2bf93c86aa4179df47b914adb1b76965804717b127",
+      "size_bytes": 24588,
+      "scientific_acceptance": "not_reviewed",
+      "copy_status": "integrated_and_hash_verified",
+      "integration": {
+        "commit": "ad3494d700068d873a22ed2fbbf6f0a760a41735",
+        "pr": 13,
+        "verified_on_utc": "2026-09-21",
+        "evidence": "CHK-017;Git objectと全39作業バイトを照合し、当該3冊の登録SHA-256一致。原提供元の再取得・科学認定ではない。"
+      }
+    },
+    {
+      "id": "RAW-CALC-A",
+      "title": "上昇・破裂・ガス量計算書Aの提供原本。既存式と入力の比較元",
+      "local_files": [
+        "references/user_supplied/ascent_burst_gas_a.xlsx"
+      ],
+      "original_filename": "（コピーして使ってください）新版気球の上昇速度_破裂高度_ガス量計算シート.xlsx のコピー.xlsx のコピー.xlsx",
+      "access_result": "read_original_bytes_and_selected_xml",
+      "supports": "提供原本の同一性、所在、シート構成と代表セルの原記述。上昇・破裂・ガス量計算書Aの提供原本。既存式と入力の比較元",
+      "limitations": "著作者・正式版・利用/再配布範囲、科学的妥当性は未確認。Excel本体の再計算なし。原単位・注記・数式・保存値は変更しない。PR #13へ統合済み。Project削除は未実施。",
+      "checked_on": "2026-09-21",
+      "sha256": "9e2323b1c1723833e3a1135ffbb17e2b789a79a21083d5b99e0f3f91f0faf7bd",
+      "size_bytes": 393248,
+      "scientific_acceptance": "not_reviewed",
+      "copy_status": "integrated_and_hash_verified",
+      "integration": {
+        "commit": "ad3494d700068d873a22ed2fbbf6f0a760a41735",
+        "pr": 13,
+        "verified_on_utc": "2026-09-21",
+        "evidence": "CHK-017;Git objectと全39作業バイトを照合し、当該3冊の登録SHA-256一致。原提供元の再取得・科学認定ではない。"
+      }
+    },
+    {
+      "id": "RAW-CALC-B",
+      "title": "上昇・破裂・ガス量計算書Bの提供原本。Aの完全な後継とは未認定",
+      "local_files": [
+        "references/user_supplied/ascent_burst_gas_b.xlsx"
+      ],
+      "original_filename": "最新_ガス のコピー.xlsx",
+      "access_result": "read_original_bytes_and_selected_xml",
+      "supports": "提供原本の同一性、所在、シート構成と代表セルの原記述。上昇・破裂・ガス量計算書Bの提供原本。Aの完全な後継とは未認定",
+      "limitations": "著作者・正式版・利用/再配布範囲、科学的妥当性は未確認。Excel本体の再計算なし。原単位・注記・数式・保存値は変更しない。PR #13へ統合済み。Project削除は未実施。",
+      "checked_on": "2026-09-21",
+      "sha256": "adb79c4fe2cf08ff4aa389f6bcbe39c20af723e1487c6bc1f331ef199079662b",
+      "size_bytes": 314863,
+      "scientific_acceptance": "not_reviewed",
+      "copy_status": "integrated_and_hash_verified",
+      "integration": {
+        "commit": "ad3494d700068d873a22ed2fbbf6f0a760a41735",
+        "pr": 13,
+        "verified_on_utc": "2026-09-21",
+        "evidence": "CHK-017;Git objectと全39作業バイトを照合し、当該3冊の登録SHA-256一致。原提供元の再取得・科学認定ではない。"
+      }
+    },
+    {
+      "id": "AI-PROJECT-LEADS",
+      "title": "Project一時保管のAI調査・解析資料",
+      "access_result": "inventory_and_selected_passages_only",
+      "supports": "原典・既存実装・比較論点への探索経路",
+      "limitations": "科学的真偽・文献の現行条件・記載された過去実行数を未再検証。依存する一部コード・修正版Excel等が今回のProject集合にない。",
+      "checked_on": "2026-09-21",
+      "external_project_files": [
+        {
+          "filename": "verification_summary.html",
+          "size_bytes": 13550,
+          "sha256": "54db36f39565dba4060ca0107f7bf093f4f0376f86e363577bc5f08806b1cd72"
+        },
+        {
+          "filename": "01_forecast_database_gfs.pdf",
+          "size_bytes": 355674,
+          "sha256": "025e215f5a909ca1691a5d36e39f92fb7422c7058f76c39b5a0ae19f651ae13c"
+        },
+        {
+          "filename": "technical_report.html",
+          "size_bytes": 26263,
+          "sha256": "51e73e8e31bff47703811470c0c1012fdc8c38b60d4d2bfb31a199a99dd01d1f"
+        },
+        {
+          "filename": "README.html",
+          "size_bytes": 11451,
+          "sha256": "2641684f399c4eaf56dc5672363ea5febbf1993cf0eebb81b812cb750c7953d0"
+        },
+        {
+          "filename": "02_historical_database_gfs.pdf",
+          "size_bytes": 380859,
+          "sha256": "599829b9f4925d3bcb92057671b763870c799c08677636cbc5ad0b004d27b7e1"
+        },
+        {
+          "filename": "balloon_handbook.html",
+          "size_bytes": 4288229,
+          "sha256": "687918073db7655b0027ddbf4dca6d51827e67e22a4f7ca04fed385ba3440113"
+        },
+        {
+          "filename": "AB_theory.html",
+          "size_bytes": 49372,
+          "sha256": "5a762f19ae44e1148a6e16ae3086d94b2a08088479bef74c466cf9843e3e5251"
+        },
+        {
+          "filename": "03_implementation_reference.pdf",
+          "size_bytes": 589538,
+          "sha256": "3e5b20334ea29f98266b9739e2754286590b9539a62eb2a6ac31c6bdf4fc4bbc"
+        },
+        {
+          "filename": "literature_review.html",
+          "size_bytes": 15407,
+          "sha256": "5bb6122b420d7b14843901e822f11c29c850c77db5f8ba6439b461dd9bdf3104"
+        },
+        {
+          "filename": "cell_audit.html",
+          "size_bytes": 22616,
+          "sha256": "6056c4e731eaf2bd9f2df27cf3bfec40c45a8204de10d720da738fa2e226b05a"
+        },
+        {
+          "filename": "04_flight_physics_research.pdf",
+          "size_bytes": 548103,
+          "sha256": "440eeeb611bea6db9ac91851abec5b11c35bc0b9f82a8632c9d92d0bcc287ba8"
+        }
+      ],
+      "next_disposition_gate": "最初のP1の情報源/比較条件レビュー、または当該論点の正式採用前",
+      "reproduction": "一部の過去解析セットは不足しているため、この集合だけの完全再実行を約束しない",
+      "github_copy": "not_proposed",
+      "deepwiki_leads": [
+        "https://deepwiki.com/cuspaceflight/tawhiri/1-overview",
+        "https://deepwiki.com/cuspaceflight/tawhiri/1.1-system-architecture",
+        "https://deepwiki.com/projecthorus/tawhiri-downloader-container/2-getting-started"
+      ],
+      "followup_040": "2026-09-27：既知6HTMLと同一の完全原ZIPを受領。EXCEL-ANALYSIS-20260920へ保存・来歴・依存確認を追加。旧未再検証の科学的境界は維持する。"
+    },
+    {
+      "id": "P1-T004",
+      "title": "固定CUSF Tawhiri原版と派生差分",
+      "url": "https://github.com/cuspaceflight/tawhiri/tree/668b44e5b88a66e0d885a9f9b16ff507d856bbbd",
+      "access_result": "read",
+      "supports": "models.py, solver.pyx, dataset.py, interpolate.pyx, api.py, tests、README/setupと派生03170ee9a33e55ccf4407474673b8c9dcee9b268差分の確認。PLAN10.4/D-134の比較基準。",
+      "limitations": "固定一次コードの読取。公開サービス一致・原版実行・ライセンス運用判断は未完。",
+      "checked_on": "2026-09-22"
+    },
+    {
+      "id": "P1-GFS",
+      "title": "NOAA GFS 0.25度小標本と配布条件",
+      "url": "https://nomads.ncep.noaa.gov/cgi-bin/filter_gfs_0p25.pl",
+      "access_result": "downloaded_and_decoded",
+      "supports": "公式一覧/idxと3時刻の領域GRIB取得、417メッセージ復号。完全URL/UTC/HTTP/hash/単位はreferences/gfs_p1_fixture/manifest.json。",
+      "limitations": "地下マスク・高さ変換・補間・DEM・全飛行精度未受入。要求間隔逸脱をmanifestに記録。",
+      "checked_on": "2026-09-22"
+    },
+    {
+      "id": "P1-HEIGHT",
+      "title": "NCEP GRIB2 table 4.2-0-3",
+      "url": "https://www.nco.ncep.noaa.gov/pmb/docs/grib2/grib2_doc/grib2_table4-2-0-3.shtml",
+      "access_result": "read",
+      "supports": "number5 HGT=gpm/geopotential height、6 geometric height=m、33/34の海抜/地上高区別。",
+      "limitations": "surface orogの高さ基準、幾何高度変換式、科学モデル採用はこの表だけで確定しない。",
+      "checked_on": "2026-09-22"
+    },
+    {
+      "id": "P1-MOMENTUM",
+      "title": "NCEP GRIB2 table 4.2-0-2: vertical velocity quantity and units",
+      "url": "https://www.nco.ncep.noaa.gov/pmb/docs/grib2/grib2_doc/grib2_table4-2-0-2.shtml",
+      "access_result": "read",
+      "supports": "2026-09-22に表本文のdiscipline0/category2を読取。number8の気圧速度Pa/sとnumber9の幾何速度m/sが別parameterであること。ENVIRONMENT_CONTRACTの将来要求設計で量/単位/座標を分ける根拠。",
+      "limitations": "特定run/層の取得可否、鉛直風の精度、変換法、モデル採用は未受入。現固定標本へのfield追加やAPI変更を意味しない。",
+      "checked_on": "2026-09-22"
+    },
+    {
+      "id": "P1-GFS-TIME-SUPPORT",
+      "title": "GFS 0.25 degree f003 inventory: radiation boundary and temporal support",
+      "url": "https://www.nco.ncep.noaa.gov/pmb/products/gfs/gfs.t00z.pgrb2.0p25.f003.shtml",
+      "access_result": "read",
+      "supports": "2026-09-22に公式inventory本文、特にrecords653-658の地表/大気上端・短長波fluxと0-3hour ave表示を読取。時間支持と境界位置を保存し、飛行位置の瞬時熱入力へ無言転用しない設計の根拠。",
+      "limitations": "製品説明であって特定runの実バイト取得・全field可用性の確認ではない。放射の高度変換、熱モデル、科学的精度、データ提供の継続性は未受入。",
+      "checked_on": "2026-09-22"
+    },
+    {
+      "id": "P1-ACQUISITION-POLICY",
+      "title": "NOMADS GRIB Filter help: regional subsets and loop pacing",
+      "url": "https://nomads.ncep.noaa.gov/info.php?page=gribfilter",
+      "access_result": "read",
+      "supports": "2026-09-22にPurpose/Description/Procedureを読取。地域subsetとURL生成、loop fetch間10秒待ちの公式案内。ENVIRONMENT_CONTRACTの実取得試験計画と既存manifestの逸脱是正方針の根拠。",
+      "limitations": "案内の読取は実ログによる遵守・安定運用の受入ではない。初回3取得の間隔逸脱はmanifestへ保持。今回の設計追記で外部数値データの新取得は行っていない。",
+      "checked_on": "2026-09-22"
+    },
+    {
+      "id": "P1-TERRAIN-GSI",
+      "title": "地理院標高タイルの表面・格子・欠測と高さ基準",
+      "url": "https://maps.gsi.go.jp/development/hyokochi.html",
+      "related_urls": [
+        "https://maps.gsi.go.jp/development/demtile.html",
+        "https://www.gsi.go.jp/sokuchikijun/hyoko2024rev-QA.html"
+      ],
+      "access_result": "read",
+      "supports": "2026-09-22に公式本文を読取。元DEMの地表面測定・構造物高さ非反映、約1/5/10m間隔とタイル平滑化、水部の注意。形式仕様のPNG/TXT欠測、Q&A Q2-13の標高基準/離島を確認。",
+      "limitations": "地形の実バイト取得・復号・精度評価は未実施。DTM側という位置づけは用途上の解釈。GFS gh/EGM2008/楕円体高との変換、海陸湖判定、製品採用は未受入。",
+      "checked_on": "2026-09-22"
+    },
+    {
+      "id": "P1-TERRAIN-GSI-REVISION",
+      "title": "地理院標高タイルの更新状態・現行URL・利用条件",
+      "url": "https://maps.gsi.go.jp/development/ichiran.html",
+      "related_urls": [
+        "https://maps.gsi.go.jp/help/",
+        "https://www.gsi.go.jp/kikakuchousei/kikakuchousei40182.html"
+      ],
+      "access_result": "read",
+      "supports": "2026-09-22に標高タイル欄のPNG/TXT URL、TXTが2024年10月から更新停止との記載、ヘルプの2026-03-31測地成果2024更新告知、現行利用規約の出典/加工表示を読取。",
+      "limitations": "各URLの地形データ取得、旧TXTと現行PNGの現物比較、定量アクセス上限、全履歴再取得は未確認。形式仕様の一般的な同値性を更新停止後の同一性へ拡張しない。",
+      "checked_on": "2026-09-22"
+    },
+    {
+      "id": "P1-TERRAIN-COPDEM",
+      "title": "Copernicus DEM GLO-30公式仕様・DSM・鉛直基準・版",
+      "url": "https://dataspace.copernicus.eu/explore-data/data-collections/copernicus-contributing-missions/collections-description/COP-DEM",
+      "related_urls": [
+        "https://dataspace.copernicus.eu/sites/default/files/media/files/2024-06/geo1988-copernicusdem-spe-002_producthandbook_i5.0.pdf",
+        "https://documentation.dataspace.copernicus.eu/APIs/SentinelHub/Data/DEM/resources/license/License-COPDEM-30.pdf"
+      ],
+      "access_result": "read",
+      "supports": "2026-09-22に公式製品本文とHandbook v5.0の表1/§1.2.1-2/表8/§1.3.1を読取。全球陸域/内陸水域、DSM、約30m・1秒角、EGM2008、WBM、release/tileVersion、NoData表のEEA-10限定を確認。GLO-30ライセンス第1/4-7条の無償利用権と条件を読取。",
+      "limitations": "地形データ・metadata/maskの実取得、GLO-30実体nodata、海面提供、精度・日本標高/GFS高度との接続は未確認。DSMをDTM扱いしない。採用・利用条件への同意・配布を行った記録ではない。",
+      "checked_on": "2026-09-22"
+    },
+    {
+      "id": "P1-TERRAIN-CDSE-ACCESS",
+      "title": "Copernicus CDSE経路のCCM登録・通知時間・30mアクセス条件",
+      "url": "https://dataspace.copernicus.eu/explore-data/data-collections/copernicus-contributing-missions/ccm-how-to-register",
+      "related_urls": [
+        "https://documentation.dataspace.copernicus.eu/Data/Others/CCM.html",
+        "https://dataspace.copernicus.eu/news/2026-7-17-copernicus-dem-30m-view-service-license-acceptance"
+      ],
+      "access_result": "read",
+      "supports": "2026-09-22に公式手順を読取。GLO-30はCCM登録利用者に無料提供、Browser/OData経路、登録/ESAライセンス同意とカテゴリ通知1営業日以内。2026-07-28から30m View ServiceにもCCM登録が必要との告知を確認。",
+      "limitations": "ユーザー登録状況・実審査時間・即時利用資格への適合・実取得・匿名の別配布経路は未確認。CDSEの条件を全配布経路へ一般化しない。アカウント作成・規約同意は未実施。",
+      "checked_on": "2026-09-22"
+    },
+    {
+      "id": "P1-OPENMETEO-FORECAST-150",
+      "title": "Open-Meteo GFS予報の実応答・10hPaと5hPa能力診断（0.15.0）",
+      "url": "https://open-meteo.com/en/docs/gfs-api",
+      "related_urls": [
+        "https://api.open-meteo.com/v1/gfs",
+        "https://open-meteo.com/en/terms"
+      ],
+      "access_result": "read and bounded public acquisition",
+      "supports": "2026-09-22の公式仕様と実応答。診断座標35N/137E、同日12/13/14UTC、地表近傍と10hPaの8量24値が有限、804 bytes。5hPaの2量6値はHTTP200でも全null/単位undefined、433 bytes。10hPa高度はAPIのgeopotential height[m]で約31.3km。要求座標と返却格子点、地表pの派生、init metadata不在を区別する。",
+      "limitations": "1点3時刻の経路診断。全層/領域/期間の支持、固定run同定、風成分・SI/高さ変換、科学精度、安定可用性は未受入。初回点検器の5hPa field不一致を原ログ保持のうえオフライン訂正した。製品の正式採用ではない。",
+      "checked_on": "2026-09-22",
+      "evidence": "ACT-150: forecast-access/request-plan.json, *.http.json, *.body, offline-review.json",
+      "sha256": {
+        "supported-10hPa.body": "a1aa65d07cef25ad8caa6f11c19c967747cf1b964ade2dbcb709d05612eb1f2e",
+        "probe-5hPa.body": "b934b9ebb4371b4242e1604d2c6d8151dca79d2cb25ba08f90ad7c95c79b68f2"
+      }
+    },
+    {
+      "id": "P1-HISTORICAL-ERA5-150",
+      "title": "ERA5 / NCAR GDEX 公開THREDDSの過去プロファイル実取得（0.15.0）",
+      "url": "https://gdex.ucar.edu/datasets/d633000/",
+      "related_urls": [
+        "https://tds.gdex.ucar.edu/thredds/dodsC/files/g/d633000/e5.oper.an.pl/202401/e5.oper.an.pl.128_130_t.ll025sc.2024010100_2024010123.nc.ascii?T%5B0:1:2%5D%5B0:1:36%5D%5B220:1:220%5D%5B548:1:548%5D",
+        "https://gdex.ucar.edu/accounts/login/",
+        "https://cds.climate.copernicus.eu/how-to-api"
+      ],
+      "access_result": "read and bounded anonymous acquisition",
+      "supports": "2026-09-22、診断日2024-01-01の00/01/02UTC、35N/137E、37層1–1000hPaのT/Z/u/vを匿名取得し444値全有限を保存bytesで検査。Z=m²/s²をgh[gpm]と区別。公式NCARのCC BY4.0とfile downloadはlogin不要、custom jobは別のORCID対象という境界を確認。",
+      "limitations": "地表量/地下mask/地域窓/全飛行支持・気象精度・継続稼働は未検証。NCAR変換netCDFの属性を保持し、原GRIBとの数値同一性は認定しない。CDS登録/token/規約同意を実施した記録ではない。",
+      "checked_on": "2026-09-22",
+      "evidence": "ACT-150: historical-access/REPORT.md, verification.json, era5-*.request.json/*.http.json/*.body",
+      "sha256": {
+        "era5-t-profile.body": "7f7f43f5d31613c367cbe3c77c6aac53c71cb9e0622756eedfd52433739db7c2"
+      }
+    },
+    {
+      "id": "P1-HISTORICAL-JRA3Q-150",
+      "title": "JRA-3Q / NCAR GDEX 公開THREDDSの過去プロファイル実取得（0.15.0）",
+      "url": "https://gdex.ucar.edu/datasets/d640000/",
+      "related_urls": [
+        "https://tds.gdex.ucar.edu/thredds/dodsC/files/g/d640000/anl_p125/202401/jra3q.anl_p125.0_0_0.tmp-pres-an-ll125.2024010100_2024013118.nc.ascii?tmp-pres-an-ll125%5B0:1:2%5D%5B0:1:44%5D%5B44:1:44%5D%5B110:1:110%5D",
+        "https://www.data.jma.go.jp/jra/html/JRA-3Q/index_ja.html",
+        "https://www.data.jma.go.jp/jra/html/JRA-3Q/document/JRA-3Q_LL125_format_v1_ja.pdf"
+      ],
+      "access_result": "read and bounded anonymous acquisition",
+      "supports": "2026-09-22、診断日2024-01-01の00/06/12UTC、35N/137.5E、anl_p125の45層0.01–1000hPa、T/gh/u/vを匿名取得し540値全有限を保存bytesで検査。gh=gpm。JMAの窓口案内とNCAR現在の公開ファイル実アクセスを分け、一般登録案内だけから匿名不可と断定しない。NCARのCC BY-NC-SA4.0表示を確認。",
+      "limitations": "地表実値/地下mask/全飛行支持、ERA5との同一点同時刻比較、精度順位、継続稼働は未検証。fcstや平均量は別の時刻支持である。利用/配布用途と経路条件の受入を別に判断する。",
+      "checked_on": "2026-09-22",
+      "evidence": "ACT-150: historical-access/REPORT.md, verification.json, jra3q-*.request.json/*.http.json/*.body",
+      "sha256": {
+        "jra3q-tmp-profile.body": "3cf87914b3272211191b1976a837ce231b6489cf207ea303891786e4bfa63470"
+      }
+    },
+    {
+      "id": "P1-HISTORICAL-GFS-150",
+      "title": "NOAA AWS GFSの固定run過去予報Range実取得（0.15.0）",
+      "url": "https://registry.opendata.aws/noaa-gfs-bdp-pds/",
+      "related_urls": [
+        "https://noaa-gfs-bdp-pds.s3.amazonaws.com/gfs.20240101/00/atmos/gfs.t00z.pgrb2.0p25.f003",
+        "https://www.ncei.noaa.gov/products/weather-climate-models/global-forecast"
+      ],
+      "access_result": "read and bounded anonymous Range acquisition",
+      "supports": "2026-09-22、init2024-01-01 00UTC/lead3h/valid03UTCの10hPa HGT/TMP/u/v各1全球GRIBをHTTP206で取得、4本文2,451,735 bytes。既存ecCodesで各1,038,240値全有限・run/lead/valid/単位を保存bytesから検査。原f003全体529,882,452 bytesを取得せず、indexの41層観測と実値復号範囲を区別。",
+      "limitations": "復号は10hPaのみ。全層/地表/全時間窓の実値・地下mask・飛行支持は未受入。2024keyの実在を全期間の恒久保存保証にしない。予報initを一般利用者が取得可能になった発行時刻と同一視しない。",
+      "checked_on": "2026-09-22",
+      "evidence": "ACT-150: historical-access/REPORT.md, verification.json, s3-20240101-f003-index.body, gfs-f003-*.request.json/*.http.json/*.body",
+      "sha256": {
+        "gfs-f003-hgt10.body": "ea5b1a5c5bb630dd521db3b1152892c4b30f12ef3239a772cbdbbb660b1fe603"
+      }
+    },
+    {
+      "id": "P1-HISTORICAL-OPENMETEO-150",
+      "title": "Open-Meteo GFS Historical Forecastの実応答（0.15.0）",
+      "url": "https://open-meteo.com/en/docs/historical-forecast-api",
+      "related_urls": [
+        "https://historical-forecast-api.open-meteo.com/v1/forecast?latitude=35&longitude=137&start_date=2024-01-01&end_date=2024-01-01&timezone=UTC&wind_speed_unit=ms&cell_selection=nearest&elevation=nan&models=gfs_global&hourly=temperature_2m,surface_pressure,wind_speed_10m,wind_direction_10m,temperature_10hPa,wind_speed_10hPa,wind_direction_10hPa,geopotential_height_10hPa",
+        "https://open-meteo.com/en/terms"
+      ],
+      "access_result": "read and bounded public acquisition",
+      "supports": "2026-09-22、履歴/v1/gfsの404/35 bytesを保持し、公式/v1/forecast?models=gfs_globalで診断日2024-01-01の8量×24時刻192値が全有限、成功本文2,131 bytes。Historical Forecastの接続時系列と単一init予報を区別し、今回JSONにinit metadataがないことを確認。非商用無料・利用条件は公式本文に接続する。",
+      "limitations": "native GFSと同一runの比較ではない。要求座標と返却点、風向/風速の成分化、派生地表p、高さ型、全飛行支持、科学精度は別受入。匿名APIの成功を無制限利用/商用無料/稼働保証としない。",
+      "checked_on": "2026-09-22",
+      "evidence": "ACT-150: historical-access/REPORT.md, verification.json, gfs-history-*.request.json/*.http.json/*.body",
+      "sha256": {
+        "gfs-history-forecast-20240101.body": "1d0c9f462755468cc1ccd0dea99443be408b84e146ecf86193cb4bc80acad5a2"
+      }
+    },
+    {
+      "id": "P1-TERRAIN-GSI-150",
+      "title": "地理院DEM10B PNG z14の陸地・海岸・沖合診断（0.15.0）",
+      "url": "https://maps.gsi.go.jp/development/demtile.html",
+      "related_urls": [
+        "https://maps.gsi.go.jp/development/ichiran.html",
+        "https://cyberjapandata.gsi.go.jp/xyz/dem_png/14/14425/6480.png",
+        "https://cyberjapandata.gsi.go.jp/xyz/dem_png/14/14419/6487.png",
+        "https://cyberjapandata.gsi.go.jp/xyz/dem_png/14/14413/6497.png"
+      ],
+      "access_result": "read and bounded public acquisition",
+      "supports": "2026-09-22、診断3要求で陸地/海岸PNG200と沖合XML404、計96,019 bytes。海岸は41,329有効/24,207NoData、有効0m67画素。符号/RGB(128,0,0)のNoData、PNG CRC、raw hash、cm整数/nullを保存し2回オフライン再現一致。埋込metadataなしを確認し取得manifest/基準説明を別保持。",
+      "limitations": "格納値は地形精度/真値ではない。実飛行点ではなく、湖/山地/タイル横断・内挿/高さ変換/分類/着地solverは未検証。0m/NoData/404を海へ変換しない。単一国内adapter候補の診断であり製品の正式採用、Copernicus自動穴埋め、恒久可用性の認定ではない。",
+      "checked_on": "2026-09-22",
+      "evidence": "ACT-150: terrain-access/terrain-access-report.md, manifest.json, raw/, offline-inspection/, offline-replay/, replay-receipt.json",
+      "sha256": {
+        "14/14425/6480.png": "f728906f9ef4cf0e7a838657862e77b9411f14422679a6dc124d0c82be0d1bc6",
+        "14/14419/6487.png": "3457f99f84dad4946843101e038d803f6052b7cfbf9ceff7c7ceed50cd30136f",
+        "14/14413/6497 HTTP404 body": "26b77477951ba11dd581671e9ddd13ec6226b476bcf4b60c4e57be44b568befb"
+      }
+    },
+    {
+      "id": "P1-GFS-OPERATIONS-160",
+      "title": "NOAA native GFSの固定run・時刻間隔・全圧力面・統計区間",
+      "url": "https://www.nco.ncep.noaa.gov/pmb/products/gfs/",
+      "related_urls": [
+        "https://nomads.ncep.noaa.gov/info.php?page=gribfilter",
+        "https://www.nco.ncep.noaa.gov/pmb/products/gfs/gfs.t00z.pgrb2.0p25.f003.shtml"
+      ],
+      "access_result": "primary sources read and bounded acquisition/offline diagnosis; scope stated separately",
+      "supports": "run2026-09-22 00UTCのlead一覧209、4時刻9×9/主41層/175messageずつ、56700値復号。sub1hPaのPa型、地下値、APCPの異なる積算区間、任意03:27の上空問い合わせを確認。",
+      "limitations": "主製品4小標本。secondaryはindexのみ、全飛行・地表接続・幾何高度・科学精度は未受入。",
+      "checked_on": "2026-09-22",
+      "evidence": "ACT-160: forecast-research/forecast-report.md; http-ledger.json; offline-final-validation.json"
+    },
+    {
+      "id": "P1-OPENMETEO-OPERATIONS-160",
+      "title": "Open-Meteoの予報/履歴/Single/Previous各経路の時刻と上空能力",
+      "url": "https://open-meteo.com/en/docs/gfs-api",
+      "related_urls": [
+        "https://open-meteo.com/en/docs/historical-forecast-api",
+        "https://open-meteo.com/en/docs/single-runs-api",
+        "https://open-meteo.com/en/docs/previous-runs-api",
+        "https://open-meteo.com/en/docs/model-updates",
+        "https://open-meteo.com/en/terms"
+      ],
+      "access_result": "primary sources read and bounded acquisition/offline diagnosis; scope stated separately",
+      "supports": "History44要求層/4点/4時刻の全有限、任意分要求の返却正時、Single2runの上空null、start_hourとPrevious圧力量の400、派生値/格子/内挿を区別。",
+      "limitations": "run固定APIの約30km能力は未受入。2runの観測を恒久仕様や全データ精度へ一般化しない。",
+      "checked_on": "2026-09-22",
+      "evidence": "ACT-160: forecast-research/claims.json; http-ledger.json; offline-final-validation.json"
+    },
+    {
+      "id": "P1-ERA5-OPERATIONS-160",
+      "title": "ERA5の時刻/地下/近地表/更新と全層小取得",
+      "url": "https://gdex.ucar.edu/datasets/d633000/",
+      "related_urls": [
+        "https://confluence.ecmwf.int/spaces/CKB/pages/76414402/ERA5+data+documentation",
+        "https://cds.climate.copernicus.eu/how-to-api",
+        "https://gdex.ucar.edu/datasets/d633006/"
+      ],
+      "access_result": "primary sources read and bounded acquisition/offline diagnosis; scope stated separately",
+      "supports": "NCAR2024-01-01 00/01UTCの37層/2×2/上空4量と表層/不変量1220値、2/2地下セル、地表gapと30000gpmの全8列支持を確認。CDS速報とNCAR月次を区別。",
+      "limitations": "NCAR末尾はページ観測。CDS job/認証・モデル層実値・全飛行・科学精度未受入。ASCIIと原binary同一性未検査。",
+      "checked_on": "2026-09-22",
+      "evidence": "ACT-160: historical-research/historical-report.md; claims-and-sources.json; offline-inspection.json"
+    },
+    {
+      "id": "P1-JRA3Q-OPERATIONS-160",
+      "title": "JRA-3Qの解析時刻/高さ/モデル層定義と全層小取得",
+      "url": "https://gdex.ucar.edu/datasets/d640000/",
+      "related_urls": [
+        "https://www.data.jma.go.jp/jra/html/JRA-3Q/index_ja.html",
+        "https://www.data.jma.go.jp/jra/html/JRA-3Q/document/JRA-3Q_LL125_format_v1_en.pdf",
+        "https://www.data.jma.go.jp/jra/html/JRA-3Q/document/JRA-3Q_TL479_format_v1_en.pdf",
+        "https://gdex.ucar.edu/datasets/d640001/"
+      ],
+      "access_result": "primary sources read and bounded acquisition/offline diagnosis; scope stated separately",
+      "supports": "00/06UTCの45層/2×2/上空4量と表層/不変量1476値、7/7地下セル、gapと30000gpm支持を確認。ERAとhybrid full pressure式を流用不可。",
+      "limitations": "NRT末尾はページ観測、実値未取得。モデル層・地表連続場・幾何高度・全飛行未受入。PDF全頁視認ではない。",
+      "checked_on": "2026-09-22",
+      "evidence": "ACT-160: historical-research/historical-report.md; claims-and-sources.json; offline-inspection.json"
+    },
+    {
+      "id": "P1-HEIGHT-RECONSTRUCTION-160",
+      "title": "ECMWFのgeopotential/height変換とmodel-level再構成条件",
+      "url": "https://confluence.ecmwf.int/spaces/CKB/pages/158636068/ERA5%2Bcompute%2Bpressure%2Band%2Bgeopotential%2Bon%2Bmodel%2Blevels%2Bgeopotential%2Bheight%2Band%2Bgeometric%2Bheight",
+      "related_urls": [],
+      "access_result": "primary sources read and bounded acquisition/offline diagnosis; scope stated separately",
+      "supports": "Z/g0と球形geoid基準の近似、ERA model-level圧力/高さの入力条件を確認。飛行モデルが乾燥でも高さ変換にqが必要な場合を区別。",
+      "limitations": "任意DEM/GNSSへのdatum変換の受入ではなく、JRAの全層式へ流用しない。",
+      "checked_on": "2026-09-22",
+      "evidence": "ACT-160: WEATHER_DATA_GUIDE3.2/4.3; historical-research/claims-and-sources.json"
+    },
+    {
+      "id": "P1-TAWHIRI-RECONSTRUCTION-160",
+      "title": "固定Tawhiriの補間順序と現候補の任意時刻診断",
+      "url": "https://github.com/cuspaceflight/tawhiri/blob/668b44e5b88a66e0d885a9f9b16ff507d856bbbd/tawhiri/interpolate.pyx",
+      "related_urls": [
+        "https://github.com/cuspaceflight/tawhiri/blob/668b44e5b88a66e0d885a9f9b16ff507d856bbbd/tawhiri/models.py",
+        "https://github.com/cuspaceflight/tawhiri/blob/668b44e5b88a66e0d885a9f9b16ff507d856bbbd/tawhiri/solver.pyx"
+      ],
+      "access_result": "primary sources read and bounded acquisition/offline diagnosis; scope stated separately",
+      "supports": "公式固定ソース5件を取得し補間順序/任意時刻を確認。既存候補と独立有理数期待値の人工21ケース・完全一致再読。",
+      "limitations": "原版Cython未実行。数値契約の診断で、地表〜幾何30km/全飛行/科学精度を保証しない。",
+      "checked_on": "2026-09-22",
+      "evidence": "ACT-160: reconstruction-research/reconstruction-report.md; diagnostic-result.json; source-inventory.json"
+    },
+    {
+      "id": "P1-MODEL-INPUT-170",
+      "title": "等温・湿潤密度/粘性/Re・気球候補へ使う物理量",
+      "url": "https://www1.grc.nasa.gov/beginners-guide-to-aeronautics/drag-of-a-sphere/",
+      "related_urls": [
+        "https://tmbwg.github.io/turbmodels/implementrans.html",
+        "https://pages.mtu.edu/~fmorriso/DataCorrelationForSphereDrag2016.pdf",
+        "https://unidata.github.io/MetPy/latest/api/generated/metpy.calc.density.html"
+      ],
+      "access_result": "primary source and bounded recorded evidence; known limits retained",
+      "supports": "独立2軸と式/単位/粘性の温度導出、球相関のRe適用域、湿度定義を確認。GFS q/RH/omega/w小取得1782値、密度差の有限例と鉛直風符号相違を診断。",
+      "limitations": "科学採用/変形気球適用/熱モデル精度/全飛行は未検証。Re/密度の例の定数を既定値にしない。",
+      "checked_on": "2026-09-22",
+      "evidence": "ACT-170: model-input-research/model-input-report.md; sources-and-claims.json; verification.json"
+    },
+    {
+      "id": "P1-MODEL-LEVELS-170",
+      "title": "ERA5/JRA-3Qモデル面の取得・係数・湿潤高さと最下gap",
+      "url": "https://gdex.ucar.edu/datasets/d633006/",
+      "related_urls": [
+        "https://gdex.ucar.edu/datasets/d640000/",
+        "https://confluence.ecmwf.int/spaces/CKB/pages/158636068/ERA5+compute+pressure+and+geopotential+on+model+levels+geopotential+height+and+geometric+height",
+        "https://www.data.jma.go.jp/jra/html/JRA-3Q/document/JRA-3Q_TL479_format_v1_en.pdf"
+      ],
+      "access_result": "primary source and bounded recorded evidence; known limits retained",
+      "supports": "全13field、JRA100層2時刻2×2とq4012値、ERA137層1列550値を保存再読。各圧力/高さ式・軸・時刻・モデル地表gap/30000gpm支持を検査。",
+      "limitations": "ERA大要求timeoutを保存し1列へ縮小。一般adapter/4D場/幾何30km/地表接続/科学精度は未受入。配布側再格子化とASCII丸めを保持。",
+      "checked_on": "2026-09-22",
+      "evidence": "ACT-170: model-level-research/model-level-report.md; claims-and-sources.json; offline-replay-receipt.json"
+    },
+    {
+      "id": "P1-GFS-NATIVE-MODEL-170",
+      "title": "GFS native model NetCDFの時刻窓と限定取得",
+      "url": "https://www.nco.ncep.noaa.gov/pmb/products/gfs/",
+      "related_urls": [
+        "https://nomads.ncep.noaa.gov/pub/data/nccf/com/gfs/prod/gfs.20260922/00/atmos/"
+      ],
+      "access_result": "primary source and bounded recorded evidence; known limits retained",
+      "supports": "公式一覧/実directoryでモデル出力毎時0〜12hを確認。atmf003.nc先頭65536 bytesはHTTP206/HDF5、全体7085209987 bytes。",
+      "limitations": "変数復号/モデル層数/最下gap未確認。新依存導入・全体取得なし。予報384hの圧力面経路と同じ窓としない。",
+      "checked_on": "2026-09-22",
+      "evidence": "ACT-170: solver-research/gfs-model-range.json; source-ledger.json"
+    },
+    {
+      "id": "P1-SOLVER-EVENT-170",
+      "title": "SciPy solve_ivpのstepと接地イベント評価順序",
+      "url": "https://github.com/scipy/scipy/blob/v1.17.1/scipy/integrate/_ivp/ivp.py",
+      "related_urls": [
+        "https://github.com/scipy/scipy/blob/v1.17.1/scipy/integrate/_ivp/rk.py",
+        "https://docs.scipy.org/doc/scipy/reference/generated/scipy.integrate.solve_ivp.html"
+      ],
+      "access_result": "primary source and bounded recorded evidence; known limits retained",
+      "supports": "installed1.17.1と固定公式ソースの改行正規化本文一致。人工6例で地下内部段階のstrict拒否と有限延長/根での終了を比較。",
+      "limitations": "latest API docsは調査時1.18.0で固定コードと区別。実地形・物理モデル・全飛行・接地精度は未受入。初期vz=0離床の仕様は次実装。",
+      "checked_on": "2026-09-22",
+      "evidence": "ACT-170: solver-research/solver-report.md; solver-diagnostic-0p3.json; source-ledger.json"
+    },
+    {
+      "id": "P1-GFS-RANGE-180",
+      "title": "GFSモデル面の限定Range、netCDF-C Windows offsetとNACC別配布",
+      "url": "https://docs.unidata.ucar.edu/netcdf-c/4.9.3/netcdf_byterange.html",
+      "related_urls": [
+        "https://github.com/Unidata/netcdf-c/blob/v4.9.3/libdispatch/dhttp.c#L245",
+        "https://www.nco.ncep.noaa.gov/pmb/products/gfs/",
+        "https://registry.opendata.aws/noaa-gfs-bdp-pds/",
+        "https://registry.opendata.aws/noaa-oar-arl-nacc-pds/",
+        "https://nomads.ncep.noaa.gov/info.php?page=whatsnew"
+      ],
+      "access_result": "primary sources and bounded HEAD/Range/listing/GRIB; failures preserved",
+      "supports": "人工netCDF Range復号、native部分bytesと負Range再現、通常0〜12hと別NACC0〜24h、80m5量の小取得を区別。",
+      "limitations": "完全native metadata/列値未達。Windows原因は公式castと整合する仮説。NACC実層/処理/同一性未検証。科学精度/全飛行は未受入。",
+      "checked_on": "2026-09-23",
+      "evidence": "ACT-180 / gfsmode-research/gfs-model-report.md; artifact-hashes.json; verify-saved.json"
+    },
+    {
+      "id": "P1-GFS-HORIZON-180",
+      "title": "GFSの384h上限と出力刻み、末端f381/f384小取得",
+      "url": "https://www.emc.ncep.noaa.gov/emc/pages/numerical_forecast_systems/gfs.php",
+      "related_urls": [
+        "https://www.nco.ncep.noaa.gov/pmb/products/gfs/nomads/"
+      ],
+      "access_result": "primary sources and bounded idx/GRIB retrieval; two offline decodes matched",
+      "supports": "4cycles/day、0〜120h毎時/以後3h〜384h。固定run末端2時刻の10hPa5量/90有限値を実取得。",
+      "limitations": "384hはinitから。全飛行/全層/地表/30kgpm補間/16日精度は未受入。全予定209時刻の一括検証ではない。",
+      "checked_on": "2026-09-23",
+      "evidence": "ACT-180 / forecast-horizon-research/forecast-report.md; claims-and-sources.json; http-ledger.json; offline-inspection.json; offline-replay.json"
+    },
+    {
+      "id": "USR-WIND-200",
+      "title": "JRA-3Qを用いた高層風の統計的傾向の解析・北海道半月統計DB",
+      "url": "local:user-provided/2026-09-23",
+      "access_result": "read and critically checked",
+      "supports": "原PDF114頁、tar195352205bytes。PDF SHA256 d2430f5399311c767198cfa4197985b7108b4d909eff24e44e77ecf3194168d4、tar SHA256 7a1a64b495a22f1b75703709ff21ce7132ef1642bebd366f08b96572e208dfbc。風成分/共分散/分布定義の独立照合と構成上の学び。",
+      "limitations": "元時系列・和歌山・軌道精度の再現ではない。3不一致はWIND_REPORT_REVIEW参照。",
+      "checked_on": "2026-09-23",
+      "evidence": "ACT-200 / wind-review or dynamics-evidence/dynamics-math-api-review.md"
+    },
+    {
+      "id": "PHYS-DRAG-200",
+      "title": "NASA drag equation",
+      "url": "https://www1.grc.nasa.gov/beginners-guide-to-aeronautics/drag-equation/",
+      "access_result": "read and critically checked",
+      "supports": "Cd rho v^2 A/2、面積と係数の依存。",
+      "limitations": "係数0.47や実気球全高度の一定Cdを保証する出典ではない。",
+      "checked_on": "2026-09-23",
+      "evidence": "ACT-200 / wind-review or dynamics-evidence/dynamics-math-api-review.md"
+    },
+    {
+      "id": "PHYS-BALLOON-200",
+      "title": "NASA designing a high altitude balloon",
+      "url": "https://www.grc.nasa.gov/www/k-12/Numbers/Math/Mathematical_Thinking/designing_a_high_altitude.htm",
+      "access_result": "read and critically checked",
+      "supports": "理想気体/浮力/球形/膜張力を無視する内外圧一致。",
+      "limitations": "実機パラメータ・等温精度・破裂高度の実証ではない。",
+      "checked_on": "2026-09-23",
+      "evidence": "ACT-200 / wind-review or dynamics-evidence/dynamics-math-api-review.md"
+    },
+    {
+      "id": "PHYS-MOIST-200",
+      "title": "ECMWF Atmospheric Thermodynamics (Bechtold 2015)",
+      "url": "https://www.ecmwf.int/sites/default/files/elibrary/2015/16954-atmospheric-thermodynamics.pdf",
+      "access_result": "read and critically checked",
+      "supports": "PDF pp5/8/9、混合理想気体、qの質量定義、R=(1-q)Rd+qRv。",
+      "limitations": "実装定数Rd287.05/Rv461.5は本文の287.06/461.52と微差。モデル適用精度は別。",
+      "checked_on": "2026-09-23",
+      "evidence": "ACT-200 / wind-review or dynamics-evidence/dynamics-math-api-review.md"
+    },
+    {
+      "id": "NUM-RK4-200",
+      "title": "GNU GSL ordinary differential equations",
+      "url": "https://www.gnu.org/software/gsl/doc/html/ode-initval.html",
+      "access_result": "read and critically checked",
+      "supports": "古典RK4の位置づけと刻み倍分比較。",
+      "limitations": "本体は独自の標準Python実装。GSLを使用せず、適応誤差制御を実装した意味ではない。",
+      "checked_on": "2026-09-23",
+      "evidence": "ACT-200 / wind-review or dynamics-evidence/dynamics-math-api-review.md"
+    },
+    {
+      "id": "USR-WIND-PRESERVE-210",
+      "title": "風分析報告原本のGit保存と落下分散の判断用途の再読",
+      "url": "local:references/user_supplied/wind_analysis_report.pdf",
+      "access_result": "original bytes preserved; 114-page text extraction verified; selected whole pages reviewed",
+      "supports": "D-156/D-158。15,759,118 bytes、114頁、SHA256 d2430f5399311c767198cfa4197985b7108b4d909eff24e44e77ecf3194168d4。PDF p5/19–21/33/76–77/86/98–99/103–109から季節・場所選定、条件付き予報誤差との区別、層間依存、同条件比較を読む。原本と検索txtの帰属/ライセンス申告保持。",
+      "limitations": "114頁すべての表示検査や原時系列の再検算ではない。既存DB検算を今ターンに再実行していない。北海道DB/tarのGit保存やLFS採用は未決。PDF自体の科学的数値結論を採用する意味ではない。",
+      "checked_on": "2026-09-23",
+      "evidence": "ACT-210 / wind-reference-evidence/acceptance.json; usecase-review.md; references/WIND_REPORT_REVIEW.md"
+    },
+    {
+      "id": "WX-GEFS-CANDIDATE-210",
+      "title": "GEFS member別連続場の候補と配布物a/b/sの一次inventory",
+      "url": "https://www.nco.ncep.noaa.gov/pmb/products/gens/",
+      "related_urls": [
+        "https://emc.ncep.noaa.gov/emc/pages/numerical_forecast_systems/gefs.php/",
+        "https://www.nco.ncep.noaa.gov/pmb/products/gens/gep01.t00z.pgrb2a.0p50.f003.shtml",
+        "https://www.nco.ncep.noaa.gov/pmb/products/gens/gep01.t00z.pgrb2b.0p50.f003.shtml",
+        "https://www.nco.ncep.noaa.gov/pmb/products/gens/gep01.t00z.pgrb2s.0p25.f003.shtml"
+      ],
+      "access_result": "primary specifications read; no GRIB acquisition",
+      "supports": "control/p01–p30と4run、0.5度a/b・0.25度selectの区別。p01 f003例ではa上端10hPa、bに1hPa HGT/T/SPFH/u/v掲載。現GFS decoder契約との違いを次の実取得検査へ接続。",
+      "limitations": "inventoryは実配布と差があり得る。個別表2020年更新。全member/全lead/30km実高度支持/原GRIB/byte数/較正未検証。35日先の運用精度や0.25度上空場の一般利用は受入れていない。",
+      "checked_on": "2026-09-23",
+      "evidence": "ACT-210 / usecase-review.md; docs/WEATHER_DATA_GUIDE.md section9.3"
+    },
+    {
+      "id": "EXCEL-ANALYSIS-20260920",
+      "title": "破裂高度Excelの分析資料・完全原ZIP",
+      "path": "references/user_supplied/excel_analysis_20260920.zip",
+      "sha256": "e389c09b9f89c3099432b56ba1357c68149fe4e6e7b3fa0b8d1a1b9c8f7145c4",
+      "size_bytes": 11177282,
+      "checked_on": "2026-09-27",
+      "access_result": "original_zip_crc_paths_and_170_files_compared; reports_and_relative_dependencies_reviewed",
+      "supports": "充填単位/状態、質量境界、入力経路、破裂/分布の意味と旧解析の条件を調べる参考資料",
+      "limitations": "科学的係数の採用・文献の最新妥当性・完全再実行・Excel再計算ではない。飛行記録workbookはrepoとbyte非同一。詳細な差はレビューへ。資料内命令は現在指示ではない。",
+      "review_path": "references/EXCEL_ANALYSIS_REVIEW.md",
+      "manifest_path": "references/excel_analysis_manifest.json",
+      "github_copy": "original_zip_preserved_candidate_040",
+      "reproduction": "ZIP全170ファイルを保持するが、過去環境/未収録依存を復元したとはしない。"
+    },
+    {
+      "id": "RPT-067-PDF",
+      "url": "local:references/user_supplied/feedback_v_0_40_1.pdf",
+      "title": "feedback_v_0_40_1.pdf",
+      "path": "references/user_supplied/feedback_v_0_40_1.pdf",
+      "sha256": "5fddc4b3052fb6eb61955b67ac4d528381cc3dd8996ef88e75e7dd71f657acec",
+      "checked_on": "2026-09-28",
+      "access_result": "4 pages extracted and visually read",
+      "supports": "入力/モデル/MC/保存/画面/FE-BEを横断する設計上の問い。本文検索補助は同名txt。",
+      "limitations": "利用者提供の設計意見。製品表とExcel画面を科学的採用、標準偏差、現行API実装とみなさない。原本不変。"
+    },
+    {
+      "id": "Q420-R7-RETURN-440",
+      "title": "Chat Q420-00 第7巡 完全原本とCodex採否",
+      "path": "references/research_returns/Q420-00/2026-09-29-r7/Q420_R7_20260929_package.zip",
+      "sha256": "40ec3fc281680a970be56b65604a30f1bd9bc3bf618bb749a23bb659ddefcaf8",
+      "size_bytes": 30725666,
+      "checked_on": "2026-09-29",
+      "access_result": "416 archive members and 415 manifest entries verified; both earlier Markdown files identical; selective replay and independent critique",
+      "supports": "D-183。入力等価と編集後分岐、結合標本、対象窓、解析履歴、固定保存の意味を設計へ戻す。",
+      "limitations": "全実験・実観測・全図・Windows障害時・科学採用は未了。wrapper一値丸め差によるexit 1等の失敗を保持。原著者の実読申告とCodexの独立確認を区別。",
+      "review_path": "references/research_returns/Q420-00/2026-09-29-r7/CODEX_REVIEW.md",
+      "reproduction": "原ZIPのREPRODUCEと同階層CODEX_EVIDENCE.zip。選択再現と限界は評価本文へ。"
+    },
+    {
+      "id": "GUI-MATERIAL-401-R2-460",
+      "title": "0.46統合の具体素材：0.40.1 r2用途別GUI",
+      "path": "references/design_trials/hover_surface_pick_correction_0401.zip",
+      "sha256": "8356df3cc8f2184d5418fe3d84d1e1d274b7646f3b81be6210c07094b3d7a214",
+      "size_bytes": 19220587,
+      "checked_on": "2026-09-29",
+      "access_result": "root verified archive identity and 858 members; source HTML and selected controllers reviewed; screens460 compared per-feature source mapping and repaired missing artificial JSON entry and inline map failure containment CSS",
+      "supports": "RPT-072/D-185。用途別の具体画面を共通platformへ統合し、入力/保存/実計算の接点を並行修正する素材。",
+      "limitations": "原模型の人工計算を実飛行/過去場/科学採用とみなさない。原ZIP不変。source機能照合で2漏れを修復し、0.46では写真3Dと2D/干渉群の代表行程、ユーザー実マウスの面内/重なり名称表示を有限確認した。全状態/全端末の完全保証ではない。SCREEN_PROVENANCEと証拠ZIPのgui-feature-matrix460、最新の観察と未確認はS35/REFERENCE_LOGへ戻る。",
+      "review_path": "REFERENCE_LOG.md"
+    },
+    {
+      "id": "GUI-INTEGRATION-EVIDENCE-460",
+      "title": "0.46 具体GUI統合の段階証拠",
+      "path": "references/design_trials/gui_integration_046.zip",
+      "sha256": "369f75beb83fa17279c99a065f0854c84bec40df77e05f501747c573519d858d",
+      "size_bytes": 2569829,
+      "checked_on": "2026-09-29",
+      "access_result": "123 ZIP members and CRC verified; README and final root observations read. Contains finite real/artificial photographic3D paths, user-reported actual mouse face/overlap hover, source feature matrix, two repaired omissions, and isolated CSS browser probe before final repository checks/Git save.",
+      "supports": "RPT-072/D-185/S35。具体画面の統合、独立批評、有限な実UI/API試験、文書生成と途中失敗の根拠へ戻る。",
+      "limitations": "記録された有限UI/試験と途中失敗へ戻る証拠。source上の移植と実UI観察、主担当の操作とユーザー実マウス報告を分ける。全状態/全端末・実MC/過去場/科学精度・Git保存の完了を保証しない。CSS probeは通信を模擬した独立検査である。",
+      "review_path": "REFERENCE_LOG.md"
+    }
+  ],
+  "record_updated_on": "2026-09-29"
+}

@@ -1,0 +1,2870 @@
+{
+  "schema_version": 1,
+  "document_version": "0.59.0",
+  "repository": "GENIANY/space-balloon-simulator-jp",
+  "branch": "main",
+  "candidate_version": "0.59.0",
+  "last_observed_main": {
+    "sha": "06936856ee0deab2fe0b3f3b04220d60652ffba6",
+    "tree": "10be8168194afd2f5c8edc1590f64db1c0c2f04b",
+    "observed_on": "2026-10-02",
+    "evidence": "0.59 C1保存前後のgit ls-remote mainで同じM550を確認。P590/content-c1/save-receipt.json。tree/親の初期固定とPR baseと実mainの区別はP550/repair-hit550/main-merge-observation.jsonに保持。"
+  },
+  "version_order": [
+    "0.1.0",
+    "0.2.0",
+    "0.3.0",
+    "0.4.0",
+    "0.5.0",
+    "0.6.0",
+    "0.7.0",
+    "0.8.0",
+    "0.8.1",
+    "0.8.2",
+    "0.9.0",
+    "0.9.1",
+    "0.9.2",
+    "0.10.0",
+    "0.10.1",
+    "0.11.0",
+    "0.12.0",
+    "0.13.0",
+    "0.14.0",
+    "0.15.0",
+    "0.16.0",
+    "0.17.0",
+    "0.18.0",
+    "0.19.0",
+    "0.20.0",
+    "0.21.0",
+    "0.22.0",
+    "0.23.0",
+    "0.24.0",
+    "0.25.0",
+    "0.26.0",
+    "0.27.0",
+    "0.28.0",
+    "0.29.0",
+    "0.30.0",
+    "0.31.0",
+    "0.32.0",
+    "0.33.0",
+    "0.34.0",
+    "0.35.0",
+    "0.36.0",
+    "0.37.0",
+    "0.38.0",
+    "0.39.0",
+    "0.40.0",
+    "0.40.1",
+    "0.41.0",
+    "0.42.0",
+    "0.43.0",
+    "0.44.0",
+    "0.45.0",
+    "0.46.0",
+    "0.47.0",
+    "0.48.0",
+    "0.49.0",
+    "0.50.0",
+    "0.51.0",
+    "0.52.0",
+    "0.53.0",
+    "0.54.0",
+    "0.55.0",
+    "0.56.0",
+    "0.57.0",
+    "0.58.0",
+    "0.59.0"
+  ],
+  "versions": [
+    {
+      "version": "0.1.0",
+      "kind": "design_draft",
+      "summary": "初回管理構想・要求・課題・不確実性を整理。運用採用前の検討版。",
+      "base_commit": null,
+      "integrated_commit": null,
+      "git_status": "root_release_not_recorded",
+      "note": "配布名0.1を時系列上0.1.0と表記。後のlegacyへの参考資料投入は、この版を正本として採用したことを意味しない。"
+    },
+    {
+      "version": "0.2.0",
+      "kind": "integrated",
+      "summary": "非公開repoとHTML指示書・内容マップ・参照ログを初期保存。C1で非秘密probeを追加。",
+      "base_commit": null,
+      "integrated_commit": "0699c348e46b75e020d3a81715715c0985bb6f1e",
+      "git_status": "observed",
+      "checkpoint_commit": "b09b01583baf1a7589dcb06b2d97095ab57913e8",
+      "evidence": "RPT-001 / CHK-001",
+      "note": "初期README作成以前の履歴は今回未監査。C0の親を架空の値で補わない。"
+    },
+    {
+      "version": "0.3.0",
+      "kind": "integrated",
+      "summary": "RPT-001を反映し、過去一式を現在の役割別23ファイルへ統合。PR #1で配置是正を完了。",
+      "base_commit": "b09b01583baf1a7589dcb06b2d97095ab57913e8",
+      "integrated_commit": "8c3325b7246c8f324a8b0826195ccd74da85353f",
+      "git_status": "observed",
+      "tree": "bd83346fdd4f692155ba8e23db64fd71cf09e783",
+      "pr_number": 1,
+      "work_branch": "docs/current-state-rpt-001",
+      "merged_at_utc": "2026-09-17T03:01:54Z",
+      "evidence": "RPT-002 / CHK-002"
+    },
+    {
+      "version": "0.4.0",
+      "kind": "integrated",
+      "summary": "RPT-002のS05/S06完了を反映。版とGit遷移、更新/再確認、焦点と期限、段階的復旧、文書構造の管理を追加。",
+      "base_commit": "8c3325b7246c8f324a8b0826195ccd74da85353f",
+      "integrated_commit": "c1b6830592d5625912e79bd282beed02bef0c432",
+      "git_status": "observed",
+      "evidence": "RPT-003 / CHK-003",
+      "note": "commit日時06:01:50ZとPR merged_at 06:01:51Zを区別。S07の設定はGit外のユーザー報告。",
+      "tree": "0d77ca3a9ae19d3e1b7aa10d3366c441c803f7fc",
+      "pr_number": 2,
+      "work_branch": "docs/control-rpt-002",
+      "merged_at_utc": "2026-09-17T06:01:51Z"
+    },
+    {
+      "version": "0.5.0",
+      "kind": "integrated",
+      "summary": "RPT-003のv0.4統合とS07保存を反映。S08操作を局所完結化し、方向・情報依存を復旧の必読/合格条件へ追加。",
+      "base_commit": "c1b6830592d5625912e79bd282beed02bef0c432",
+      "integrated_commit": "ff8327de9b8f19156d522fc65811983688a53347",
+      "git_status": "observed",
+      "evidence": "RPT-004 / RC-004 / CHK-004",
+      "note": "文書統合はM050、probeだけの更新がC2。RPT-004でS08を合格と確認。G2はS09で別判定。",
+      "tree": "4685dbb403ea332d98feff873f993080eb2a11e6",
+      "pr_number": 3,
+      "work_branch": "docs/recovery-rpt-003",
+      "merged_at_utc": "2026-09-17T08:43:13Z",
+      "checkpoint_commit": "114f88cfc2593fbb75296823e174126f8b7557a3"
+    },
+    {
+      "version": "0.6.0",
+      "kind": "integrated",
+      "summary": "RPT-004/RC-004によりU01/U02/S08完了・G1合格を反映。S09を具体化し、節目退避と重複整理の条件を明記。",
+      "base_commit": "114f88cfc2593fbb75296823e174126f8b7557a3",
+      "integrated_commit": "47279735c12211f1c4da9e54863d9e58d466027c",
+      "git_status": "observed",
+      "evidence": "RPT-005 / CHK-005 / CHK-006",
+      "note": "G2最終観測はv0.7の環境報告更新へまとめて取り込んだ。",
+      "tree": "641b2880163bb4ae66660bbcdfa696c944b46bca",
+      "pr_number": 5,
+      "work_branch": "docs/close-recovery-rpt-004",
+      "merged_at_utc": "2026-09-17T12:17:57Z"
+    },
+    {
+      "version": "0.7.0",
+      "kind": "integrated",
+      "summary": "G2最終実績とWindows/Miniforge/clone環境報告を統合。設定変更前の診断2本とユーザー向けコマンド一覧を追加。",
+      "base_commit": "47279735c12211f1c4da9e54863d9e58d466027c",
+      "integrated_commit": "e8d92dd328c7e42b4afb888190b24ccae65a6f06",
+      "git_status": "observed",
+      "evidence": "RPT-007 / CHK-007",
+      "note": "PR #6とM070の親・treeを実取得し、前回配布候補の28ファイルと一致を確認。ローカルcloneの同期とは別。",
+      "tree": "f788b61a26b94ca82bd808754eaddad7c6bdef3d",
+      "pr_number": 6,
+      "work_branch": "docs/environment-intake-rpt-006"
+    },
+    {
+      "version": "0.8.0",
+      "kind": "integrated",
+      "summary": "RPT-007の診断・CLI承認・M070統合を反映。LF契約、保全的な既存clone同期/改行整合と分離環境検査の手順を用意。",
+      "base_commit": "e8d92dd328c7e42b4afb888190b24ccae65a6f06",
+      "integrated_commit": "d4b74f31caf7bade50a67981aff1c61287d5ac76",
+      "git_status": "observed",
+      "evidence": "RPT-007 / CHK-007",
+      "note": "RPT-008/CHK-008で統合と31ファイルの配布一致を確認。初回Windows回帰は77成功・1失敗・1例外でE02-4中断。",
+      "pr_number": 7,
+      "work_branch": "docs/workspace-rpt-007",
+      "tree": "4bc5c7e067d4ad4c7cdf4c841116613f80bd1210"
+    },
+    {
+      "version": "0.8.1",
+      "kind": "integrated",
+      "summary": "RPT-008のE02成功分とWindows回帰2件の不具合を反映。テストのLF書出しを修正し、失敗時の検査後照合とrepo外ログ保存を追加。",
+      "base_commit": "d4b74f31caf7bade50a67981aff1c61287d5ac76",
+      "integrated_commit": "cf3a1384ed262c3ff2fe84bd920eaa5a28372ea3",
+      "git_status": "observed",
+      "evidence": "RPT-008 / CHK-008 / REV-081-CODE",
+      "note": "PR #8/M081を実取得。RPT-009で呼出側の事前SHA引数漏れを確認しER-081-01で訂正。RPT-010の利用者Windowsログで91件全成功、実環境と検査前後33バイト一致を受理。元HTMLの引数漏れは0.8.2で正式訂正。",
+      "pr_number": 8,
+      "work_branch": "fix/e02-lf-rpt-008",
+      "tree": "097fdf9b295c68155f50d149b97c70666cf80a65"
+    },
+    {
+      "version": "0.8.2",
+      "kind": "integrated",
+      "summary": "F01のWindows実測91件全成功・環境実体と前後照合を受理。ER-081-01を正式指示書へ統合し呼出契約の回帰試験を追加。次の焦点をP1対象・評価条件へ移す。",
+      "base_commit": "cf3a1384ed262c3ff2fe84bd920eaa5a28372ea3",
+      "integrated_commit": "8795f2786abc665e2d809ca43ea768000eaeb0ae",
+      "git_status": "observed",
+      "evidence": "RPT-009 / ER-081-01 / RPT-010 / CHK-010",
+      "note": "RPT-011とPR9/Git親・treeで統合確認。事前操作の曖昧語は補完しない。利用者Windowsの103件実行は未確認。",
+      "pr_number": 9,
+      "work_branch": "docs/accept-checks-rpt-010",
+      "tree": "f6c96f3eac2a2a87b4bc27ac8dd941050051c094"
+    },
+    {
+      "version": "0.9.0",
+      "kind": "integrated",
+      "summary": "A01統合を確認。全実体の目的・寿命、再帰的な説明設計、変更理由と過去比較、有限な引継ぎ監査を追加。タスク循環と用途不明化の見逃しを是正し、具体的気象計画は新スレッドへ分離。",
+      "base_commit": "8795f2786abc665e2d809ca43ea768000eaeb0ae",
+      "integrated_commit": "840f3718446d198c5f0240515bdc978268034787",
+      "git_status": "merged",
+      "evidence": "RPT-011 / FB-011 / CHK-011",
+      "note": "PR #10統合。H01-2の6観点はCHK-012で読み戻し。版間の補強は次候補。"
+    },
+    {
+      "version": "0.9.1",
+      "kind": "integrated",
+      "summary": "H01のM090読戻しを記録。構造の版間安定性を既存契約へ追加し、無記録の設計・依存・外部保管・ガード変更を拒否。葉の内容変更と祖先の再確認を分離。36パスと28論証IDを維持。",
+      "base_commit": "840f3718446d198c5f0240515bdc978268034787",
+      "integrated_commit": "6281343e4c45a4942e0d0361704d738aaeaa4cef",
+      "git_status": "merged",
+      "evidence": "RPT-012 / FB-012 / CHK-012",
+      "note": "PR #11で統合。CHK-013で36パス同一性・固定読戻し確認。新Windows実行は未報告。",
+      "pr_number": 11,
+      "work_branch": "docs/stability-rpt-012",
+      "tree": "2b6cba550e5d3c98ada5d36f5c2b220b56423dfb"
+    },
+    {
+      "version": "0.9.2",
+      "kind": "integrated",
+      "summary": "H01-3の統合を確認。共通入口とProject指示の整合契約を追加し原文は維持。比較元不在の誤成功と保全ツール変更監視漏れを是正。36パス/28論証ID保持。",
+      "base_commit": "6281343e4c45a4942e0d0361704d738aaeaa4cef",
+      "integrated_commit": "a5dd6c10377257a36b8be20a3950279a1e19d5fd",
+      "git_status": "observed",
+      "evidence": "PR12/git commit GET;RPT-014;H01 Closeout",
+      "note": "H01有限監査終了。新Windowsと科学等へ受入を拡張しない。",
+      "tree": "807997ba4d6b208e9089b18b5a590de811671c4b",
+      "pr_number": 12,
+      "work_branch": "docs/entry-contract-rpt-013",
+      "merged_at_utc": "2026-09-20T02:27:52Z"
+    },
+    {
+      "version": "0.10.0",
+      "kind": "candidate",
+      "summary": "S10-3の目的・データ方針・追加実験なし・可視性/寿命管理を具体化。H01終了記録を統合し、Excel原本3冊の参照移管を提案。",
+      "base_commit": "a5dd6c10377257a36b8be20a3950279a1e19d5fd",
+      "integrated_commit": null,
+      "git_status": "pending",
+      "evidence": "RPT-015;H01 Closeout;原本受領;候補作成許可;CHK-015",
+      "note": "固定M092と同一性確認した作業コピーから既存文書へ組込み。Git未統合、Project削除未実施。実検査の対象・結果・限界は配布外枠とREFERENCE_LOG。 レビューとユーザーによる保存は承認済み。未統合のまま0.10.1へ継承し、同種保存手順の不統一を是正する。",
+      "superseded_by": "0.10.1"
+    },
+    {
+      "version": "0.10.1",
+      "kind": "integrated",
+      "summary": "S10-5のコピー欄・操作粒度を既存保存手順へ統一。0.10.0の未統合変更と保存承認を継承し、科学計画・原本・保存担当を保持。",
+      "base_commit": "a5dd6c10377257a36b8be20a3950279a1e19d5fd",
+      "integrated_commit": "ad3494d700068d873a22ed2fbbf6f0a760a41735",
+      "git_status": "observed",
+      "work_branch": "docs/p1-intake-rpt-015",
+      "evidence": "FB-S105-CONSISTENCY / SAVE-APPROVAL-20260921 / CHK-016 / CHK-017",
+      "comparison_candidate": "0.10.0 / 460413fcd04b21e1b28cd5e201d8391a7cf6db16a995bd16a004c3075731b725",
+      "note": "作成時は0.10.0完全候補を比較元として局所是正した。PR13でM092からの累積25パスを統合。CHK-017でM101全39パスと原本3冊の同一性を確認。0.10.0単独のGit統合を意味しない。",
+      "tree": "8690657a122b937d2a74e03f451124509413af50",
+      "pr_number": 13,
+      "merged_at_utc": "2026-09-21T13:41:23Z"
+    },
+    {
+      "version": "0.11.0",
+      "kind": "candidate",
+      "summary": "Codex中心・repoに残す判断記録を採用。現在案内と歴史を分離し、同期保全・完全比較・契約版照合の反例を修正。PLANの生成残件を明示。",
+      "base_commit": "ad3494d700068d873a22ed2fbbf6f0a760a41735",
+      "integrated_commit": null,
+      "git_status": "pending",
+      "evidence": "RPT-016 / CHK-017 / AUD-110 / D-130 / D-131",
+      "note": "ローカル是正候補。ユーザーのGit保存・PR・統合は未実施。39パスと論証28ID、原本3冊とPLAN一組を保持。 未統合のまま0.12.0へ継承。単独の保存・統合は行っていない。",
+      "superseded_by": "0.12.0"
+    },
+    {
+      "version": "0.12.0",
+      "kind": "candidate",
+      "summary": "専用Windows文書生成環境を整備。PLANをCodex中心の方針へ改訂しMD/TeX/PDFを同時生成・全頁確認。0.11.0の規範是正を継承。",
+      "base_commit": "ad3494d700068d873a22ed2fbbf6f0a760a41735",
+      "integrated_commit": null,
+      "git_status": "pending",
+      "evidence": "RPT-017 / CHK-018 / GEN-120 / D-132",
+      "note": "直接比較元は固定した未統合0.11.0全39パス。ユーザーによるGit保存・PR・統合は未実施。環境はrepo外、原本3冊と参考PDF/TeXを保持。 未統合変更は0.13.0へ継承。",
+      "superseded_by": "0.13.0"
+    },
+    {
+      "version": "0.13.0",
+      "kind": "integrated",
+      "summary": "指示・Codexの保存/PR・実施記録を接続。S10-3からTawhiri固定基準とGFS小標本受入を進め、次の開発を具体化。",
+      "base_commit": "ad3494d700068d873a22ed2fbbf6f0a760a41735",
+      "integrated_commit": "9ae8e7b5c7cdb74c15fdf937fd14896df51d641d",
+      "git_status": "observed",
+      "work_branch": "codex/p1-action-rpt-018",
+      "evidence": "RPT-018 / CHK-019 / ACT-130 / D-133/134 / RPT-021 / CHK-020",
+      "note": "候補作成時は0.11/12の未統合変更を継承し、直接比較元を0.12完全候補39パスとした。PR14でユーザーが累積採用し、M130を全44パス照合。",
+      "publication_attempt": {
+        "branch": "codex/p1-action-rpt-018",
+        "branch_sha": "afbc2417d94fe9ec5e40eabb66547a079291904d",
+        "state": "merged_verified",
+        "evidence": "RPT-021 / CHK-020 / ACT-140",
+        "permission_question": "RPT-019/020で明示許可と旧制限の上書きを受領。作業ブランチ保存とDraft PR作成を実施。mainマージはユーザー。",
+        "authorization": "PROJECT_CONTEXT.md 第24/25節 RPT-019/020",
+        "pr_number": 14,
+        "pr_url": "https://github.com/GENIANY/space-balloon-simulator-jp/pull/14",
+        "initial_submission_sha": "afbc2417d94fe9ec5e40eabb66547a079291904d",
+        "initial_submission_tree": "7282c1a1abcbc11ff982acc371227c41a6fa1a3f",
+        "verified_paths": 44,
+        "branch_sha_scope": "初回提出C1。記録追記C2後の最終headはPR本文と外側の最終受領票で照合する。",
+        "final_submission_sha": "b89d0eac81cd3f626149c617b9e38f9f81b3bff8",
+        "integrated_commit": "9ae8e7b5c7cdb74c15fdf937fd14896df51d641d",
+        "work_branch_deleted": true,
+        "initial_submission_observed_at_utc": "2026-09-22T03:34:55Z",
+        "initial_submission_evidence": "RPT-019 / ACT-130/S13-1 / evidence/C1-remote-receipt.json",
+        "integration_verified_on": "2026-09-22"
+      },
+      "tree": "81f417629fba09dd38e70fae1374a928cb84e998",
+      "pr_number": 14,
+      "merged_at_utc": "2026-09-22T06:29:57Z"
+    },
+    {
+      "version": "0.14.0",
+      "kind": "integrated",
+      "summary": "PR14の統合・固定読戻しと有限是正の終了を受入。P1環境正規化・地下/欠測/支持範囲の候補と合成試験を追加し、根拠と次判断を記録。 RPT-022の保存/PR継続委任とS16の議論・採否・後続を接続。 RPT-023の反論を受け、原版比較先行案を未採用とし長期モデル要求から気象/地形の設計と実取得へ逆算。",
+      "base_commit": "9ae8e7b5c7cdb74c15fdf937fd14896df51d641d",
+      "integrated_commit": "f8dee6cc46e772a3e38b0fbe426371fcfaf4ba93",
+      "git_status": "observed",
+      "evidence": "RPT-021 / CHK-020 / ACT-140 / D-135 / RPT-022 / D-136 / RPT-023 / D-137 / RPT-024 / PR #15 / RPT-025 / CHK-021",
+      "note": "RPT-025/CHK-021でC2とmainの全47パス同一性を照合。0.14候補の科学的未受入は統合と別。",
+      "tree": "dc3d24da74f8c4673dc1cb923285e8a67e0df809",
+      "pr_number": 15,
+      "work_branch": "codex/p1-environment-rpt-021",
+      "merged_at_utc": "2026-09-22T09:11:12Z"
+    },
+    {
+      "version": "0.15.0",
+      "kind": "integrated",
+      "summary": "S15統合受入、予報/過去気象と地形の実取得、RPT-027の等温初期モデルを支える拡張設計、人間への具体依頼とS17保存手順。",
+      "base_commit": "f8dee6cc46e772a3e38b0fbe426371fcfaf4ba93",
+      "integrated_commit": "4e1ff0c39633236a991f07ef62f120110237cf5e",
+      "git_status": "observed",
+      "evidence": "RPT-025/026/027 / CHK-021 / ACT-150 / D-138/139 / PR #16 / C1 fixed readback / RPT-028/029 / D-140",
+      "note": "RPT-030/CHK-022で最終C2・M150と全47パスを照合。S17終了。拒否/再開の経緯はACT-150へ保持。",
+      "tree": "19ab40334aad1d0abb6d637b21a191e5285474ef",
+      "pr_number": 16
+    },
+    {
+      "version": "0.16.0",
+      "kind": "integrated",
+      "summary": "S17統合を受入。任意時刻・地表〜約30 kmの場を近い目標とし、候補別の運用仕様/全層・地表実測/補間条件を専用ガイドへ集積。S18の次判断とS19保存を具体化。 新規論証追加で露呈した既存試験の固定個数期待を比較元ID集合へ是正。",
+      "base_commit": "4e1ff0c39633236a991f07ef62f120110237cf5e",
+      "integrated_commit": "a4f6f26dd645940b5ad3322151f47d280e0f8c2d",
+      "git_status": "observed",
+      "evidence": "RPT-030/031; CHK-022; ACT-160; D-141/142; D-143",
+      "note": "完全M150の47パスを比較元に保持。専用ガイド1追加で全48パス。PLAN三点/実装/原入力は保持。人間がmain統合を判断する。 Draft PR #17/C1保存と全48パス照合済み。実績追記の最終headは同PR本文/外側受領票、main統合は人間の判断待ち。 RPT-032/CHK-023でPR17/M160統合とC2 tree同一を確認。旧未統合記述は当時の候補状態。",
+      "tree": "0aa9513e81b4e96ff77f139bc331d63d4cbf6809",
+      "pr_number": 17
+    },
+    {
+      "version": "0.17.0",
+      "kind": "integrated",
+      "summary": "S19統合とS18回答を受入。モデル要求から気象量を拡張し、モデル面・湿度等の小取得とSciPy終端の診断を次の具体的議論へ接続。 RPT-033の組合せ設計とTawhiri型簡易経路を受理し、構成の漏れ/重複をレビュー。",
+      "base_commit": "a4f6f26dd645940b5ad3322151f47d280e0f8c2d",
+      "integrated_commit": "3f4258bb0535811f84d4fd1e71564b92c3da1deb",
+      "git_status": "observed",
+      "evidence": "RPT-032/033; CHK-023; ACT-170; D-144〜148; PR #18 / C1 fixed readback",
+      "note": "RPT-034/CHK-024でPR18統合・C2/M170 tree同一・全48パス照合を受入。",
+      "tree": "02a9ae72e14312d3e48aa8096470e104d7d5f252",
+      "pr_number": 18
+    },
+    {
+      "version": "0.18.0",
+      "kind": "integrated",
+      "summary": "S21統合受入。JRAモデル面の任意時刻queryとモデル構成の依存/衝突検査を実装し、GFSモデル面の限定取得経路を具体化。",
+      "base_commit": "3f4258bb0535811f84d4fd1e71564b92c3da1deb",
+      "integrated_commit": "7367b5ad86e536e6ef2a4c53c3b62b80fea5845d",
+      "git_status": "observed",
+      "evidence": "RPT-034; CHK-024; ACT-180; S22/S23; PR #19 / C1 fixed readback",
+      "note": "RPT-036/CHK-025でPR19統合・C2/M180 tree同一・全53パス照合を受入。",
+      "tree": "309de08c7e39937d6945bcb81dd70843b3904a96",
+      "pr_number": 19
+    },
+    {
+      "version": "0.19.0",
+      "kind": "integrated",
+      "summary": "S23統合受入。GFSの全飛行時間窓に必要な時刻計画候補と拒否条件を実装し、本実装資料の規範/根拠/不足を準備索引へ集約。",
+      "base_commit": "7367b5ad86e536e6ef2a4c53c3b62b80fea5845d",
+      "integrated_commit": "21d8565a97c59d38bf51f3ab8736ffb14ba21198",
+      "git_status": "merged_and_fixed_readback",
+      "evidence": "RPT-036; CHK-025; ACT-190; S24/S25; PR #20 / C1 fixed readback",
+      "note": "既存53パスと39論証を保持し候補/試験2パス追加。三ガイドの本文執筆は未着手。main統合は人間が判断。 Draft PR #20/C1保存・全55照合済み。実績追記後の最終headは同PR本文/外側受領票へ置く。 RPT-037/CHK-026で人間統合と固定読戻しを確認。"
+    },
+    {
+      "version": "0.20.0",
+      "kind": "integrated",
+      "summary": "実GFSの全飛行、簡易/等温モデル、CLI再現と技術資料初版。",
+      "base_commit": "21d8565a97c59d38bf51f3ab8736ffb14ba21198",
+      "integrated_commit": "6d86fa7149fa8d2d0879a20fc3fe18241bc690e1",
+      "git_status": "observed",
+      "note": "S26実装・S27保存。人間main統合は未実施。 Draft PR #21/C1保存・全80照合済み。実績追記後の最終headは同PR本文/外側受領票へ置く。 RPT-038/CHK-027でPR21統合・全80パス照合。branch削除は報告とGET残存を分離。",
+      "pr_number": 21,
+      "work_branch": "codex/flight-core-rpt037",
+      "evidence": "ACT-200; PR #21 / C1 fixed readback",
+      "tree": "b9c4f65538c30eaccdb0531a19811c87a723ac6e"
+    },
+    {
+      "version": "0.21.0",
+      "kind": "integrated",
+      "summary": "構造ガイドの図解是正・参考風PDF保存・落下分散中心の用途を受入。",
+      "base_commit": "6d86fa7149fa8d2d0879a20fc3fe18241bc690e1",
+      "integrated_commit": "eb53fe37954f58b26771cc2f5437d46ee3f32fcd",
+      "git_status": "merged",
+      "note": "S28是正と用途議論、S29保存。分散本体実装や人間main統合は未実施。 Draft PR #22/C1保存・全83照合済み。実績追記後の最終headは同PR本文/外側受領票へ置く。 RPT-039/D-159で構造適合の受入を見直し、未統合のまま0.22へ継承。マージ依頼は保留。 CHK-028：PR22の累積候補としてM250へ統合されたことを2026-09-23 UTCに独立確認。",
+      "pr_number": 22,
+      "work_branch": "codex/structure-guide-rpt038",
+      "evidence": "ACT-210 / PR #22 / C1 fixed readback"
+    },
+    {
+      "version": "0.22.0",
+      "kind": "integrated",
+      "summary": "目的から設計へ戻す振り返りと方針修正。構造是正の受入を見直し、三変更例による再設計をS30へ接続。",
+      "base_commit": "7f06e1529d30f95f404ba7ab2e3cf887640ddace",
+      "integrated_commit": "eb53fe37954f58b26771cc2f5437d46ee3f32fcd",
+      "git_status": "merged",
+      "note": "S30の振り返り・次の設計課題のみ。コード/PDF/手順全体の並替えは未変更。PR22をDraftで更新し、今回は人間へマージを求めない。 C1の12差分/全83固定照合済み。実績追記後の最終headはPR本文と外側受領票。 RPT-040/D-160の共通原則と運用接続を0.23へ継承。前候補は未統合で、具体構造是正の受入/マージ依頼は保留。 CHK-028：PR22の累積候補としてM250へ統合されたことを2026-09-23 UTCに独立確認。",
+      "pr_number": 22,
+      "work_branch": "codex/structure-guide-rpt038",
+      "evidence": "RPT-039 / D-159 / GAP-024 / ACT-220"
+    },
+    {
+      "version": "0.23.0",
+      "kind": "integrated",
+      "summary": "本質とニーズを推測・再検討し、全作業の設計・実施・自己評価へ結ぶ原則を運用へ組み込む。",
+      "base_commit": "0b55b9d72b07d63209bb6fc132e1645b84cac8a3",
+      "integrated_commit": "eb53fe37954f58b26771cc2f5437d46ee3f32fcd",
+      "git_status": "merged",
+      "note": "S31で全作業の判断原則と既存開始/委譲/終了へ接続。3版は候補信号、30日/初回/内容依存変更は必須のまま。本体・PDF・履歴全体並替えは未変更。既存PR22はDraftを維持し、今回はマージを求めない。 C1の17差分/全83固定照合済み。S31の導入と今回適用・保存を完了し、次の具体設計はS30。実績追記後の最終headはPR本文と外側受領票。 RPT-041/D-162により、0.24で現成果物を全体判定してから修復する。0.23の原則導入だけを修復完了とはしない。 CHK-028：PR22の累積候補としてM250へ統合されたことを2026-09-23 UTCに独立確認。",
+      "pr_number": 22,
+      "work_branch": "codex/structure-guide-rpt038",
+      "evidence": "RPT-040 / D-160 / D-161 / GAP-024 / ACT-230"
+    },
+    {
+      "version": "0.24.0",
+      "kind": "integrated",
+      "summary": "目的から現成果物を判定し、実装の責務・SciPy数値解法・資料と履歴を修復して再評価した。",
+      "base_commit": "c1623997d4d8142f9e34ebf496e4be5d9c442bf6",
+      "integrated_commit": "eb53fe37954f58b26771cc2f5437d46ee3f32fcd",
+      "git_status": "merged",
+      "note": "S32/D162/AUD240/ACT240。修正前の判定と方向を置き、全体再評価・全回帰430件・48頁表示・C1全99固定照合で有限修復を完了。最終実績追記headはPR22/外側受領票。科学精度・将来機能・main統合は別。 CHK-028：PR22の累積候補としてM250へ統合されたことを2026-09-23 UTCに独立確認。",
+      "pr_number": 22,
+      "work_branch": "codex/structure-guide-rpt038",
+      "evidence": "RPT-041 / D-162 / AUD-240 / ACT-240"
+    },
+    {
+      "version": "0.25.0",
+      "kind": "integrated",
+      "summary": "風分析資料の問いから将来の分析用途・責務・費用を推測し、現在の構造と最初の比較成果へ結ぶ。",
+      "base_commit": "da3d01931f9f0beb6a3f1329b4f8272ebfcc2615",
+      "integrated_commit": "eb53fe37954f58b26771cc2f5437d46ee3f32fcd",
+      "git_status": "merged",
+      "note": "RPT-042/D164/PLAN10.5/S33。C1-250 61806ed807557b9c81b42bee3d10d70020c62f42へ15差分を保存し、全99パスを固定照合、Draft PR22を更新。S33の読取・設計・保存は完了。実績C2の最終headはPR/外側受領票へ記録する。小比較・将来機能・科学精度・main統合は未受入。 CHK-028：PR22の累積候補としてM250へ統合されたことを2026-09-23 UTCに独立確認。",
+      "pr_number": 22,
+      "work_branch": "codex/structure-guide-rpt038",
+      "evidence": "RPT-042 / D-164 / AUD-250 / ACT-250"
+    },
+    {
+      "version": "0.26.0",
+      "kind": "integrated",
+      "summary": "三用途の完成像をモデル・分布・MC・図表へ具体化し、膜厚Weibull案と次の議論/工程を結ぶ。",
+      "base_commit": "eb53fe37954f58b26771cc2f5437d46ee3f32fcd",
+      "integrated_commit": "f4b6bb317499bb2ac4676ecd5567485e21bc4921",
+      "git_status": "merged",
+      "note": "RPT-043/044、D-165、S34。PR22統合とローカル全99一致を確認。16飛行は後続試験の候補。科学採用/新機能実装/main統合は別。 C1-260を新PR23へ保存し全100パス固定照合済み。実績追記C2の最終SHAはPR本文/外側受領票へ置き、自己参照で再帰改版しない。 AUD-290でPR23からM280への累積統合を確認。過去の候補時点の記述とは区別。",
+      "work_branch": "codex/simulator-vision-rpt043",
+      "evidence": "CHK-028 / AUD-260 / ACT-260 / SIMULATOR_VISION",
+      "pr": 23,
+      "last_observed_work_commit": "a1720411c3e4701c56397b43ab7597ccc2588d4f"
+    },
+    {
+      "version": "0.27.0",
+      "kind": "integrated",
+      "summary": "概要から詳細への操作、原風9図の転用、統計対象/重み/時刻マスクと計算費用を具体化。",
+      "base_commit": "a1720411c3e4701c56397b43ab7597ccc2588d4f",
+      "integrated_commit": "f4b6bb317499bb2ac4676ecd5567485e21bc4921",
+      "git_status": "merged",
+      "note": "RPT-045/D166/S34。PR23の未統合候補へ継承。PLAN工程/本体/原本は不変、方式の科学採用と性能は別。 C1全100パス固定照合済み。実績追記C2の最終headはPR本文/外側受領票へ置く。 AUD-290でPR23からM280への累積統合を確認。過去の候補時点の記述とは区別。",
+      "work_branch": "codex/simulator-vision-rpt043",
+      "pr": 23,
+      "evidence": "AUD-270 / ACT-270 / SIMULATOR_VISION7",
+      "last_observed_work_commit": "ddf8550ac303111786979f03435988b8a0a6d50e"
+    },
+    {
+      "version": "0.28.0",
+      "kind": "integrated",
+      "summary": "地図/図の連動試作と表示/集計方式の比較、基準膜厚から径Weibullの平均/幅を設定する案を具体化。 配布先の任意再集計は不要という回答を受理し、グラフ保存を具体化。",
+      "base_commit": "ddf8550ac303111786979f03435988b8a0a6d50e",
+      "integrated_commit": "f4b6bb317499bb2ac4676ecd5567485e21bc4921",
+      "git_status": "merged",
+      "note": "RPT046/D167/S34。設計試験と実装/科学受入を区別。 AUD-290でPR23からM280への累積統合を確認。過去の候補時点の記述とは区別。",
+      "work_branch": "codex/simulator-vision-rpt043",
+      "pr": 23,
+      "evidence": "ACT-280：C1全101固定読戻し、PR23 Draft/open/unmerged。実績C2の最終SHAは外側受領票。",
+      "last_observed_work_commit": "8e0e4d520f413d58bf4d418b46afa3dc2a30cb15"
+    },
+    {
+      "version": "0.29.0",
+      "kind": "integrated",
+      "summary": "同一地点のモデル比較、気象分析から予報期間外の季節打上げへの操作、相関を持つ場生成と製品径を含む破裂入力を具体化。",
+      "base_commit": "f4b6bb317499bb2ac4676ecd5567485e21bc4921",
+      "integrated_commit": "f33165b2ccd6456d57efc92f7aaf2c2a83f4aab6",
+      "git_status": "merged",
+      "note": "C1と実績追記C2をPR24へ保存済み。AUD-300でC2-290を固定比較元として再取得。main M280は不変で、0.29を統合済みとはしない。 AUD-330でPR24の累積0.29〜0.32が人間によりM320へ統合されたことを固定確認。過去の未統合観測は当時の記録として保持し、科学採用とは区別する。",
+      "work_branch": "codex/climate-planning-rpt048",
+      "pr": 24,
+      "evidence": "ACT-290のC2受領票とAUD-300の固定再取得で、未統合C2-290/全101パスの一致を確認。 AUD-330：M320の親/treeとC2-320同一tree、ローカル登録101パスのmode/size/blob一致。",
+      "last_observed_work_commit": "a5f3ce04372ceaec7ff8b2fc6abe0d75d3b26d6d",
+      "last_observed_work_tree": "cdba0bc055387f2bd5e070ea1e537a6b8fa014c4",
+      "work_observed_at_utc": "2026-09-24T10:43:13.558Z"
+    },
+    {
+      "version": "0.30.0",
+      "kind": "integrated",
+      "summary": "利用状況から必要解析と表示/操作を再設計し、目的別の開始・共通比較・独立気象探索・観測評価を具体化。初期不採用の機能と代償も示す。",
+      "base_commit": "a5f3ce04372ceaec7ff8b2fc6abe0d75d3b26d6d",
+      "integrated_commit": "f33165b2ccd6456d57efc92f7aaf2c2a83f4aab6",
+      "git_status": "merged",
+      "note": "内容C1を既存PR24へ保存し全101パスを固定照合。実績追記C2の自己SHAと最終読戻しはPR本文/外側受領票。main M280は不変、mainマージは人間。 0.31開始時のAUD-310でC2-300を固定比較元として再取得。main M280は不変で、0.30を統合済みとはしない。 AUD-330でPR24の累積0.29〜0.32が人間によりM320へ統合されたことを固定確認。過去の未統合観測は当時の記録として保持し、科学採用とは区別する。",
+      "work_branch": "codex/climate-planning-rpt048",
+      "pr": 24,
+      "evidence": "ACT-300 / S34保存実績 / P300/C1-receipt.json。C1の親/全101パス/PR head/Draft/open/unmergedを確認。 ACT-300のC2受領票とAUD-310の固定再取得で、未統合C2-300/全101パスの一致を確認。 AUD-330：M320の親/treeとC2-320同一tree、ローカル登録101パスのmode/size/blob一致。",
+      "last_observed_work_commit": "80731433f2feb68ae965246f7912657e60f6f182",
+      "last_observed_work_tree": "e51b1e46ba81de9661480ae0be3418bbcfe644f0",
+      "work_observed_at_utc": "2026-09-24T12:15:20.142Z"
+    },
+    {
+      "version": "0.31.0",
+      "kind": "integrated",
+      "summary": "0.30の改悪原因を実物から再検討し、個別タブ・共通地図・比較群の連続性と指定9図の年間比較/ドラッグ操作を再設計。原標本と集計の支持を分け、予報と気象分析の二基盤を先行する。",
+      "base_commit": "80731433f2feb68ae965246f7912657e60f6f182",
+      "integrated_commit": "f33165b2ccd6456d57efc92f7aaf2c2a83f4aab6",
+      "git_status": "merged",
+      "note": "RPT-050/D-170/S34。内容C1を既存PR24へ保存し全101パスを固定照合。実績追記C2の保存/読戻しは次に行い、その自己SHAはPR本文/外側受領票へ置く。人工標本の操作模型で、実気象MC・科学的採用・過去比較/季節試算の本体完成ではない。main M280は不変、mainマージは人間。 0.32開始時のAUD-320でC2-310を固定比較元として再取得。main M280は不変で、0.31を統合済みとはしない。 AUD-330でPR24の累積0.29〜0.32が人間によりM320へ統合されたことを固定確認。過去の未統合観測は当時の記録として保持し、科学採用とは区別する。",
+      "work_branch": "codex/climate-planning-rpt048",
+      "pr": 24,
+      "evidence": "AUD-310 / ACT-310 / S34保存実績 / P310/C1-receipt.json / validation-C1-final/receipt.json。C1の親/全101パス/PR head/Draft/open/unmergedを確認。 ACT-310のC2受領票とAUD-320の固定再取得で、未統合C2-310/全101パスの一致を確認。 AUD-330：M320の親/treeとC2-320同一tree、ローカル登録101パスのmode/size/blob一致。",
+      "last_observed_work_commit": "35882468429e2bbd8833c28f04b059ceb72f25b1",
+      "last_observed_work_tree": "5df1da541b9b9e6a6f1c91fb8af405a64214dbe2",
+      "work_observed_at_utc": "2026-09-24T14:14:58.791Z"
+    },
+    {
+      "version": "0.32.0",
+      "kind": "integrated",
+      "summary": "落下域・実着地の指定領域干渉・従属遅延列・地図での放球点指定を具体化。気象図の凡例と任意点季節比較を整え、条件と結果の対応を保つ設計理由を評価する。",
+      "base_commit": "35882468429e2bbd8833c28f04b059ceb72f25b1",
+      "integrated_commit": "f33165b2ccd6456d57efc92f7aaf2c2a83f4aab6",
+      "git_status": "merged",
+      "note": "RPT051/D171/S34。内容C1をPR24へ保存し全101パスを固定照合。実績追記C2は続けて保存し自己SHAはPR本文/外側受領票へ置く。人工操作模型であり実気象MC/科学採用とは別。main M280不変、mainマージは人間。 AUD-330でPR24の累積0.29〜0.32が人間によりM320へ統合されたことを固定確認。過去の未統合観測は当時の記録として保持し、科学採用とは区別する。",
+      "work_branch": "codex/climate-planning-rpt048",
+      "pr": 24,
+      "evidence": "AUD320/ACT320/S34、P320/C1-receipt.json、save-C1/manifest.json、validation-C1-ready/receipt.json。固定親/全101パス/PR head/Draft/open/unmergedを確認。保存用bare Gitから通常push、元local.git不変。 AUD-330：M320の親/treeとC2-320同一tree、ローカル登録101パスのmode/size/blob一致。",
+      "last_observed_work_commit": "9c8e1080ae343b58e64d507da57de25e05d448c3",
+      "last_observed_work_tree": "14ee62545480cbc4b87c95248ee8be47758ff6de",
+      "work_observed_on": "2026-09-25"
+    },
+    {
+      "version": "0.33.0",
+      "kind": "candidate",
+      "summary": "0.32への意見を操作状況・同時視認・情報の対象と状態から検討し、設計理由の不足、現行気象集計の事実、代替案と次の議論を具体化。",
+      "base_commit": "f33165b2ccd6456d57efc92f7aaf2c2a83f4aab6",
+      "integrated_commit": null,
+      "git_status": "saved_to_draft_pr",
+      "note": "RPT052/D172/S34。設計討議C1を新Draft PR25へ保存し固定101パス照合。実績追記C2を続けて保存し最終SHAはPR本文/外側受領票へ置く。0.32模型の挙動は不変、UI修復/本体実装/科学採用は未了。mainマージは人間。 AUD-340で実績追記C2-330を固定再取得し、全101パス一致を確認。PR25は未統合、main M320は別の基準として保持。",
+      "work_branch": "codex/design-feedback-032",
+      "pr": 25,
+      "evidence": "AUD330/ACT330/S34、P330/C1-git-receipt.json、C1-remote-tree.json、manifest-C1.json、validation-C1-ready/receipt.json。main/親/PR head/Draft/open/unmergedと固定全101パスを照合。元local.git不変。 AUD-340 / 固定C2-330 commit/tree・PR25と全101パスの照合。",
+      "last_observed_work_commit": "617afabaf1f4566435923ee7f249499e02cefcc6",
+      "last_observed_work_tree": "ab869cd8eaad69f48250fc0541c3ee5c1a987d45",
+      "work_observed_on": "2026-09-25"
+    },
+    {
+      "version": "0.34.0",
+      "kind": "candidate",
+      "summary": "RPT053を受け、設計理由の再検討を実際に操作できる予報/詳細と気象の改善模型へ結び、連続した利用場面で評価する。",
+      "base_commit": "617afabaf1f4566435923ee7f249499e02cefcc6",
+      "integrated_commit": null,
+      "git_status": "saved_to_draft_pr",
+      "note": "RPT053/D173/S34。改善した操作模型と設計/記録をC1-340として既存Draft PR25へ保存し全101パス固定照合。実績追記C2を続けて保存し最終SHAはPR本文/外側受領票へ。人工模型の操作成立と本体実装/科学採用を区別。mainマージは人間。 AUD-350で実績追記C2-340を固定再取得し、全101パス一致を確認。PR25は未統合、main M320とは別。RPT054により0.34の用途受入を再評価する。",
+      "work_branch": "codex/design-feedback-032",
+      "pr": 25,
+      "evidence": "AUD340/ACT340/S34、P340/C1-git-receipt.json、C1-fixed-readback.json、C1-remote-tree.json、manifest-C1.json、validation-C1-final/receipt.json。main/親/PR head/Draft/open/unmergedと固定101パスを照合。元local.git不変。",
+      "last_observed_work_commit": "371797547671beee06c57ba6d16ab68a7647912e",
+      "last_observed_work_tree": "6b39572a6250ddb8cd085009119da59e57607ad6",
+      "work_observed_on": "2026-09-25"
+    },
+    {
+      "version": "0.35.0",
+      "kind": "integrated",
+      "summary": "RPT054を受け、遅延列・地理背景・暦集計・ノートPCの12面比較を用途へ戻し、操作可能な模型と実物評価を改訂する。",
+      "base_commit": "371797547671beee06c57ba6d16ab68a7647912e",
+      "integrated_commit": "9b2feeb09626184caad07df89dc027a1afee6958",
+      "git_status": "observed",
+      "note": "RPT054/D174/S34。改善した操作模型と設計/記録をC1-350として既存Draft PR25へ保存し全103パス固定照合。既存runtimeと、review/critique、alternativesを三ZIPに分け、新規監査資産2件を追加。実績追記C2を続けて保存し最終SHAはPR本文/外側受領票へ。人工模型の操作成立と本体実装/科学採用を区別。mainマージは人間。 AUD-360でmain M350とPR25 mergedを固定取得し、全103登録実体を照合。以前の未統合記録は各時点の履歴として保持する。模型の有限受入と将来三用途全体の成立・科学採用は別。",
+      "work_branch": "codex/design-feedback-032",
+      "pr": 25,
+      "evidence": "AUD350/ACT350/S34、P350/C1-git-receipt.json、C1-fixed-readback.json、C1-remote-tree.json、manifest-C1.json、validation-C1-final/receipt.json。main/親/PR head/Draft/open/unmergedと固定103パスを照合。元local.git不変。 AUD-360 / P360/baseline-receipt.json・main-commit.json・remote-tree.json。 AUD-360 / P360/C2-350-observed-commit.json。",
+      "last_observed_work_commit": "14f83fa5b2aa0585aff716c9e5afc19ee5e5bb4a",
+      "last_observed_work_tree": "80a0ef750694ea1830e526ad6799d148021ee005",
+      "work_observed_on": "2026-09-26",
+      "tree": "80a0ef750694ea1830e526ad6799d148021ee005"
+    },
+    {
+      "version": "0.36.0",
+      "kind": "candidate",
+      "summary": "既存の目的・過去意見・原資料・現模型を再調査し、次の批評と設計で確かめる利用場面と過去模型への入口を整理。",
+      "base_commit": "9b2feeb09626184caad07df89dc027a1afee6958",
+      "integrated_commit": null,
+      "git_status": "saved_to_draft_pr",
+      "note": "RPT058/059/060、D175、AUD360/ACT360/S34。設計材料の再調査と過去模型索引をC1でDraft PRへ保存し104パス固定照合。実績をC2へ追記し最終SHAはPR本文/外側受領票へ。模型・科学核・ガイド不変。mainマージは人間。 AUD-370でC2-360/PR26の未統合headと固定104実体を照合。0.37は同じPR/branchで続ける候補であり、main M350への統合は未実施。",
+      "work_branch": "codex/ui-needs-036",
+      "pr": 26,
+      "evidence": "ACT360/S34、P360/C1-git-receipt.json、C1-fixed-readback.json、validation-C1-final/receipt.json。PR26のhead/Draft/open/unmergedと固定全104パス照合。 P370/C2-360-observed-commit.json・base-tree.json・baseline.json。",
+      "last_observed_work_commit": "30c5126f6a44345f5d71fbc5b26af7caa2c293aa",
+      "last_observed_work_tree": "68a81a8d594e2775b3f5a684c8aa27893dfc7b1c",
+      "work_observed_on": "2026-09-26"
+    },
+    {
+      "version": "0.37.0",
+      "kind": "candidate",
+      "summary": "比較対象と地理を保つ予報/気象/季節計画と3D詳細の操作模型を、独立批評・反証・実修復で改訂。",
+      "base_commit": "30c5126f6a44345f5d71fbc5b26af7caa2c293aa",
+      "integrated_commit": null,
+      "git_status": "saved_to_draft_pr",
+      "work_branch": "codex/ui-needs-036",
+      "pr": 26,
+      "note": "D176/S34/workflow370。人工操作模型の有限受入と批評/反例/再現源をC1で既存Draft PR26へ保存、全106パス固定照合。実績をC2へ追記し、最終C2 SHAはPR本文/外側受領票へ置く。Google建物/樹木、実気象MC、本体/科学、人間採用は未受入。main統合は人間。 AUD-380でC2-370/PR26の未統合headと固定106実体を照合。0.38は同じPR/branchで続ける候補であり、main M350への統合は未実施。",
+      "evidence": "ACT370/S34、P370/C1-git-receipt.json、C1-fixed-readback.json、validation-C1-final/receipt.json。PR26 head/Draft/open/unmergedと固定tree全106照合。 P380/base-commit.json・base-tree.json・baseline-readback.json。",
+      "last_observed_work_commit": "2aa9ec781818c0a9b2dfe0f53309b4abf1711f60",
+      "last_observed_work_tree": "053edc39850bd33e6dfd72733bddd451496c1ae4",
+      "work_observed_on": "2026-09-26"
+    },
+    {
+      "version": "0.38.0",
+      "kind": "integrated",
+      "summary": "同じ落下輪郭・禁止領域・軌道投影と地形の関係を確認する写真3D模型を、実Google接続と独立批評・修復で改訂。",
+      "base_commit": "2aa9ec781818c0a9b2dfe0f53309b4abf1711f60",
+      "integrated_commit": "19bf0cc5cd32509a44ca8e246f4294ab0972d61e",
+      "git_status": "merged",
+      "work_branch": "codex/ui-needs-036",
+      "pr": 26,
+      "note": "RPT064/D177/S34。初回Googleで概要/詳細60・0群/穴・重複禁止領域を確認。批評から輪郭縁取り・視点復帰・地図外工具帯を修復し、最終人工試験と再読込後Google概要の有限観察へ分けた。各画面内1は累積利用数ではない。最後は解除、Cloud側失効は人間の確認待ち。自己完結の新1ZIPへsource/失敗/批評を収録済み（510 members）。Git保存実績は後続記録を参照。旧106登録/6ZIP保持、Googleは任意試作。本体/科学/全地物/全端末/人間採用は未受入。 C1保存と固定107パス照合済み。この実績をC2へ追記し、最終自己SHA/読戻しはPR本文と外側受領票へ置く。main未統合。 AUD-390でPR26の人間による統合（M380、2026-09-26）を実取得し、固定107実体を照合。旧本文のmain未統合は保存当時の状態。0.39は新しい作業branchから継続する。",
+      "evidence": "AUD380/ACT380/S34、photoreal_connection_038.zip内review/evidenceとsource。固定C2370とmain M350を区別。保存SHAは実観測後のみ追記する。 P380/packaging/package-receipt380.json、validation-C1-initial/receipt.json（管理4種成功、107不変）、metadata/dependency-review380.md（実読63scope）。 P380/C1-fixed-readback.json、C1-git-receipt.json、validation-C1-final/receipt.json。 P390/main-observed.json・pr26-observed.json・tree-observed.json・recovery390.json、metadata/prior-C2-380-observed.json。",
+      "last_observed_work_commit": "6fb88d100109573c35131d67a7814f2fc885d21b",
+      "last_observed_work_tree": "c6cf7f6e6a0b2b0deff1b368a3b136cee069445f",
+      "work_observed_on": "2026-09-26"
+    },
+    {
+      "version": "0.39.0",
+      "kind": "integrated",
+      "summary": "同じ対象を2D・3D・保存先で比較する操作模型を、帯の局所読取・候補/領域色・詳細文脈・KML・風図の実物批評から修復。",
+      "base_commit": "19bf0cc5cd32509a44ca8e246f4294ab0972d61e",
+      "integrated_commit": "7622593e0d4dacb101f9ed86990f2832845494ed",
+      "git_status": "merged",
+      "work_branch": "codex/ui390-context-export",
+      "pr": 27,
+      "note": "RPT065/D178/S34。実Googleの同一屋根A/B比較、干渉28/60往復、同一接続でr8詳細カードを確認。新規無キーIABでJSON/KMLの実保存・独立reader再表示を有限確認し旧タブ未到達原因は未特定。名称hoverは設計案で未実装。新ZIPに原要求/批評/再現源/証拠を収録。Git保存/新PR/C1/C2は実観測後に追記し、mainは人間が統合する。 C1を新Draft PR27へ保存し108固定照合済み。標準430件と管理4検査成功。この実績をC2へ追記し、最終自己SHA/照合はPR本文と外側受領票へ置く。main未統合。 AUD-400で保存済みGitHub観測を読み、PR27の人間統合（2026-09-27T02:16:09Z）とM390の全108実体を照合。旧main未統合表記は記録当時の状態。0.40は別branchから継続する。",
+      "evidence": "AUD390/ACT390/S34、scene_context_and_export_039.zip内review/evidenceの主担当/独立批評・source179/32/33・独立21・実保存の票。固定main M380と未統合候補を区別。 P390/metadata/regression390/attempt-04/result.json、validation-C1-final/receipt.json、C1-git-receipt.json、C1-fixed-readback.json。 P400/main-observed.json・pr27-observed.json・tree-observed.json・base-manifest.json、P390/C2-remote-commit.json。",
+      "last_observed_work_commit": "b2f08834e5965f0f6f563946ec4a1ab3198f1554",
+      "last_observed_work_tree": "090a1620d46bb05e4fffdb933d6d64cd93ff8186",
+      "work_observed_on": "2026-09-27"
+    },
+    {
+      "version": "0.40.0",
+      "kind": "integrated",
+      "summary": "名称hoverを操作模型へ反映し、Excel分析原本を保存して実入力・場・標本・ジョブ・保存の接続設計を具体化する。",
+      "base_commit": "7622593e0d4dacb101f9ed86990f2832845494ed",
+      "integrated_commit": "55100867df2bef615c3131228c7c75adf31c9833",
+      "git_status": "merged",
+      "work_branch": "codex/ui400-hover-backend-design",
+      "pr": 28,
+      "note": "RPT066/D179/S34。名称hoverと実計算接続設計、原Excel分析を保存。ローカル模型ZIP804member照合、標準回帰430件と管理4検査成功。C1を新Draft PRへ保存し113全path固定読戻し済み。この実績をC2へ追記し、最終自己SHAはPR本文/外側票へ置く。main未統合。r3写真上hover、本体API接続、科学採用は未了。 0.40.1準備でC2の全113path固定読戻しを確認。以下の当時の未了を後の成功へ遡及変換しない。 0.41の開始時にPR28/M401への累積統合を固定確認。以下の保存前/未確認は当時の記録として保持する。",
+      "evidence": "AUD-400/ACT-400/S34、P400/metadata/regression400/attempt-02/result.json、validation-C1-final/receipt.json、C1-git-receipt.json/C1-fixed-readback.json。",
+      "last_observed_work_commit": "f6dbf6d54de252d63b586beeecc1962926aa6dd4",
+      "last_observed_work_tree": "db893a7fefd3f138eaac1bad4cd3d04db0d07693",
+      "work_observed_on": "2026-09-27"
+    },
+    {
+      "version": "0.40.1",
+      "kind": "integrated",
+      "summary": "面内名称と2D復帰を修復し、反証・批評と俯瞰比較へ戻る用途の再評価を保存する。",
+      "base_commit": "7622593e0d4dacb101f9ed86990f2832845494ed",
+      "integrated_commit": "55100867df2bef615c3131228c7c75adf31c9833",
+      "git_status": "merged",
+      "work_branch": "codex/ui400-hover-backend-design",
+      "pr": 28,
+      "note": "同PR28の累積候補。main/PR base M390、局所比較C2。旧r1の局所hover成功から全体へ広げた完成判定を撤回し、r2で必須CSSの適用検査・限定再取得・異常表示隔離を追加。8402の3往復、候補/背景/地図高/干渉詳細との連続操作を限定確認。元CSS原因と3D中の窓寸法変更は未確認。r2 ZIP858member照合、旧r1全832内容の復旧確認、旧9ZIP保持。回帰/管理検査/保存は後続実績と外側票で追う。 標準回帰01は一時領域アクセス拒否450 error、02は430件616.281秒で現在入口の根拠番号不一致を検出し1失敗。現在4参照を今回の実読根拠へ整合し03へ再開、検査器/試験は不変。 根拠ID訂正後の凍結114への標準回帰はattempt-03で430成功（596.159秒）。01/02の原失敗は保持。以後の記録6以内の差分実読と最終管理4/同PR保存はS34手順・外側票へ結ぶ。 0.41の開始時にPR28/M401への累積統合を固定確認。以下の保存前/未確認は当時の記録として保持する。",
+      "evidence": "S34 s34-401-2d-failureと後続r2実績、P400/photo-followup400/package401.json・verified-return402.json・r1-restoration402.json。"
+    },
+    {
+      "version": "0.41.0",
+      "kind": "integrated",
+      "summary": "情報の現在入口を修復し、三用途の入力・MC・実行/保存を具体化してChatへ渡す研究資料束を整える。",
+      "base_commit": "55100867df2bef615c3131228c7c75adf31c9833",
+      "integrated_commit": "4e3e4db0d047af9479bcd68bfc2553eeb71efcc9",
+      "git_status": "merged",
+      "work_branch": "codex/design410-research-handoff",
+      "pr": 29,
+      "note": "M401全114を比較元に既存内容を保持し13実体を追加する候補。Chat実発行/受領、本体接続、科学採用は未完。検査・PR保存はS35/REFSへ実績を戻す。 C1をDraft PR29へ保存し全127固定読戻し済み（2026-09-27 UTC）。初回sandbox認証helper失敗は保存前停止、同一限定操作の通常権限再試行で成功。実績追記後の最終headはPR/外側票へ置く。C2保存とmain統合、実Chat運用はこの記録時点で未実施。 0.42開始時にC2の保存と全127実体を固定確認。前記C2未実施はC1後の記録時点。0.41はmain未統合の履歴として保持し、初回研究の勧めはRPT-068で見直す。 0.43開始時にPR29/M420への累積統合と全131実体を固定照合した。前記未統合/未発行は当時の状態で、実Chat開始申告と版未確認はS35へ戻る。",
+      "evidence": "RPT-067/D-180/S35/ACT-410、P410/management-03・regression-01・save-receipt.json・C1-fixed-readback.json。",
+      "last_observed_work_commit": "d8aa7ed7c385616824121f3f234ad5c9226ba782",
+      "last_observed_work_tree": "992cf211a0df3e7733cf504b930b4ef3fde0714f",
+      "work_observed_on": "2026-09-27"
+    },
+    {
+      "version": "0.42.0",
+      "kind": "integrated",
+      "summary": "研究者が目的と操作の実像から問い直せるよう、全体文脈と重点課題を分けて依頼内容を改訂する。",
+      "base_commit": "55100867df2bef615c3131228c7c75adf31c9833",
+      "integrated_commit": "4e3e4db0d047af9479bcd68bfc2553eeb71efcc9",
+      "git_status": "merged",
+      "work_branch": "codex/design410-research-handoff",
+      "pr": 29,
+      "note": "C3を同Draft PR29へ保存し全131固定読戻し済み。M401は不変。研究全体文脈と重点課題を分け、実Chat発行/受領・科学採用は未完。このC3実績を記録する子commitの最終SHAはPR本文/外側receiptへ保持する。元.gitはP410との歴史的指紋差があり、明示した現878実体の保存前後を固定した。 0.43開始時にPR29/M420への累積統合と全131実体を固定照合した。前記未統合/未発行は当時の状態で、実Chat開始申告と版未確認はS35へ戻る。",
+      "evidence": "RPT-068/D-181/REVIEW_042/S35/ACT-420、P420/management-03・save-receipt420.json・C3-fixed-readback.json。",
+      "last_observed_work_commit": "f0a589ea94beb0e804920a5ffe73dc7937138b3c",
+      "last_observed_work_tree": "e32ee02d4bd77e201ebaae09052d13e762fb2079",
+      "work_observed_on": "2026-09-27"
+    },
+    {
+      "version": "0.43.0",
+      "kind": "candidate",
+      "summary": "参考FE/BEの器を用途から評価し、現private正本・既存核の保持・二結果比較と手動反映の分担を具体化する。",
+      "base_commit": "4e3e4db0d047af9479bcd68bfc2553eeb71efcc9",
+      "integrated_commit": null,
+      "git_status": "draft_pr_open",
+      "work_branch": "codex/framework430-assessment",
+      "pr": 30,
+      "note": "M420を基準に参考構成を評価する候補。現privateを実装正本とし、public参考先の許可branchへの反映は人間が手動commitする。実装移行・移送・科学採用は未実施。Chat開始はユーザー申告、配布束/版は未確認、回答未受領。 内容C1を新Draft PRへ保存し全132を固定照合。実績追記C2の最終headはPR本文と外側受領票へ置く。",
+      "evidence": "RPT-069/D-182/INTEGRATION7.2/S35/ACT-430、framework_assessment_043.zip。",
+      "work_commit": "253f31ce5ba1b58d452d9a46d93340cff397e433"
+    },
+    {
+      "version": "0.44.0",
+      "kind": "candidate",
+      "summary": "Chat第7巡の原本・再現・独立批評を保存し、入力と標本・診断・保存の意味を接続設計へ反映する。",
+      "base_commit": "4e3e4db0d047af9479bcd68bfc2553eeb71efcc9",
+      "integrated_commit": null,
+      "git_status": "draft_pr_open",
+      "work_branch": "codex/framework430-assessment",
+      "pr": 30,
+      "note": "PR30/0.43 C2へ追加する未統合候補。原研究と科学採用を区別。実装移行未着手、private正本と人間のmain統合/public手動反映を維持。 内容C1を既存Draft PR30へ保存し全137を固定読戻し。記録C2の最終headはPR本文と外側受領票へ置く。",
+      "evidence": "RPT-070/D-183/S35/ACT-440、research_returns/Q420-00/2026-09-29-r7。",
+      "work_commit": "87a02529f6a0609f5c47212513c8393707223bd1"
+    },
+    {
+      "version": "0.45.0",
+      "kind": "candidate",
+      "summary": "React/TypeScript/Viteと薄いPython APIへ移行し、保存GFSの二結果比較と保存再閲覧を接続する。",
+      "base_commit": "4e3e4db0d047af9479bcd68bfc2553eeb71efcc9",
+      "integrated_commit": null,
+      "git_status": "draft_pr_open",
+      "work_branch": "codex/framework430-assessment",
+      "pr": 30,
+      "note": "PR30/0.44記録C2へ追加する未統合候補。二つのn=1の接続と三用途の全面受入を区別。private正本と人間のmain統合/public手動反映を維持。 内容C1を既存Draft PR30へ保存し全166を固定読戻し。記録C2の最終SHAはPR本文と外側受領票へ置く。",
+      "evidence": "RPT-071/D-184/S35/ACT-450。画面/API/保存・構造ガイドの有限受入。",
+      "work_commit": "d00a2ccfdbb1ec70de21dfed227e025682eafe30"
+    },
+    {
+      "version": "0.46.0",
+      "kind": "candidate",
+      "summary": "0.40.1 r2の具体的な用途別画面を共通platformへ統合し、入力・保存・実計算接点を並行して改修する。",
+      "base_commit": "4e3e4db0d047af9479bcd68bfc2553eeb71efcc9",
+      "integrated_commit": null,
+      "git_status": "draft_pr_open",
+      "work_branch": "codex/framework430-assessment",
+      "pr": 30,
+      "note": "原GUIの具体画面と実入力/固定結果/保存を統合し、候補/延期/停止と写真3D/面内hover/2D復帰を有限確認。管理と全437回帰成功、全221をC1固定読戻し。記録C2最終SHAはPR本文と外側受領票。人工風/季節と実n=1を区別し、実MC/過去場/科学受入へ広げない。",
+      "evidence": "RPT-072/D-185/S35/ACT-460。原GUI対応、独立批評、rootの有限UI/写真3D観察と生成票。",
+      "work_commit": "9f3819ee5cb9ddb5bac80ebd12d923aed6aef084"
+    },
+    {
+      "version": "0.47.0",
+      "kind": "candidate",
+      "summary": "育てた具体GUIへ明示した予報取得・候補適用・入力保持・計算比較を接続する。",
+      "base_commit": "4e3e4db0d047af9479bcd68bfc2553eeb71efcc9",
+      "integrated_commit": null,
+      "git_status": "draft_pr_open",
+      "work_branch": "codex/framework430-assessment",
+      "pr": 30,
+      "note": "実GFS取得/明示適用・物理編集保持・n=1・保存再開を有限確認しC1全235を固定読戻し。初回445の文書管理11不合格を修復後65件で解消。記録C2の最終SHAはPR本文/外側票。実MC/過去場/科学受入は未完。",
+      "evidence": "D-186/S36/ACT-470。実気象と計画判断への接続の第一段階。",
+      "work_commit": "3b08f3e4037b655e01e0b40437dff37048ee8e3d"
+    },
+    {
+      "version": "0.48.0",
+      "kind": "candidate",
+      "summary": "明示した一元量の仮分布を固定し、対応候補・延期の実試行と群分析を既存GUIへ接続する。",
+      "base_commit": "4e3e4db0d047af9479bcd68bfc2553eeb71efcc9",
+      "integrated_commit": null,
+      "git_status": "draft_pr_open",
+      "work_branch": "codex/framework430-assessment",
+      "pr": 30,
+      "note": "固定実GFSの対応標本・延期と経験域/干渉群の入力/相別履歴を有限確認しC1全256を固定読戻し。対象回帰・最終管理成功。記録C2の最終SHAはPR本文/外側票。通常規模性能・実風統計接続・科学受入は未完。",
+      "evidence": "D-187/S36/ACT-480。対応する元量実現値と全試行台帳から固定結果・選択群へ戻る有限経路。",
+      "work_commit": "5ec82de219ee5a5add7614d782db35e2bcd4d884"
+    },
+    {
+      "version": "0.49.0",
+      "kind": "candidate",
+      "summary": "実GFSの取得・48/192試行・群保存再読の費用を測り、提供JRA-3Q半月集計を既存年間/地域図へ接続する。",
+      "base_commit": "4e3e4db0d047af9479bcd68bfc2553eeb71efcc9",
+      "integrated_commit": null,
+      "git_status": "draft_pr_open",
+      "work_branch": "codex/framework430-assessment",
+      "pr": 30,
+      "note": "実GFSの48/192試行・実JRA図・年間SVG訂正と2ガイドを有限確認。C1全276固定読戻し、最終管理5検査と管理回帰224成功。記録C2は追記時点で未保存、最終SHAはPR本文/外側票へ。通常の待機/容量、実地域背景、原時刻を持つ過去4D場・季節飛行と科学精度は残る。",
+      "evidence": "S36の0.49運用審査。GET再確認/原履歴の待機制御、実GFSの行程費用と実風統計の固定閲覧を別々に記録する。 内容C1の全276固定読戻しと最終管理/対象回帰はS36#s36-save490、git-receipt490.jsonへ。実績C2は追記時点で未保存。",
+      "work_commit": "bd613efe6edf5a496f846ae88042d1cf65e06d53"
+    },
+    {
+      "version": "0.50.0",
+      "kind": "candidate",
+      "summary": "保存結果の復元状態とGFS窓拡張のraw再利用を修復し、元時刻を持つ過去場の次接続を具体化する。",
+      "base_commit": "4e3e4db0d047af9479bcd68bfc2553eeb71efcc9",
+      "integrated_commit": null,
+      "git_status": "draft_pr_open",
+      "work_branch": "codex/framework430-assessment",
+      "pr": 30,
+      "note": "保存結果の復元状態とGFS窓間raw共有を有限確認し、内容C1全281を固定読戻し。管理結果はS36の保存実績へ集約。記録C2は追記時点で未保存。raw再利用とMC費用を分け、元時刻JRA場・季節実飛行・科学的精度は後続。",
+      "evidence": "S36#s36-operational500・s36-observed500・s36-next500、REFERENCE_LOGの0.50参照先。実GRIB再生は無通信、一試行プロファイルは全MCの費用へ外挿しない。 内容C1全281固定読戻しはP500/git-receipt500.json、保存前管理5検査はchecks500-initial、先行回帰と対象30再試験はsource-regression500とfinal30、S36#s36-save500。記録C2は追記時点で未保存。",
+      "work_commit": "3b9c55c02bc336138e91082390c4ae104f2bbac9"
+    },
+    {
+      "version": "0.51.0",
+      "kind": "candidate",
+      "summary": "元UTCの保存JRAモデル面を同じ飛行核/CLIへつなぎ、物理相遷移と支持不足を保存する。",
+      "base_commit": "4e3e4db0d047af9479bcd68bfc2553eeb71efcc9",
+      "integrated_commit": null,
+      "git_status": "draft_pr_open",
+      "work_branch": "codex/framework430-assessment",
+      "pr": 30,
+      "note": "元UTCの保存JRAの5例未着地という限定結果を保持し、内容C1全287を固定読戻し。保存前管理検査と回帰の実結果はS36。記録C2は追記時点で未保存。地上完飛行・任意過去取得UI・季節MCは後続。",
+      "evidence": "S36#s36-result510・s36-next510、ACT-510、historical_field510.zip、PROGRAM/THEORY出版票。 内容C1 7c08ec5d3f28d8bf4e7be0d6469031853f507807 / tree d856b95ef94dbcec1fa582f0fae07af8cbcf7508、P510/git-receipt510.json・freeze510.json、S36#s36-save510。",
+      "work_commit": "7c08ec5d3f28d8bf4e7be0d6469031853f507807"
+    },
+    {
+      "version": "0.52.0",
+      "kind": "candidate",
+      "summary": "実JRA窓と明示地表再構成をCLIへつなぎ、30km着地・原UTC跨ぎと費用を審査する。",
+      "base_commit": "4e3e4db0d047af9479bcd68bfc2553eeb71efcc9",
+      "integrated_commit": null,
+      "git_status": "draft_pr_open",
+      "work_branch": "codex/framework430-assessment",
+      "pr": 30,
+      "note": "実JRA地上完飛行と原UTC跨ぎの有限確認を内容C1へ保存し全292を固定読戻し。管理5検査成功、管理回帰は222成功とUTF-8明示の同2再試験成功を区別。記録C2は追記時点で未保存。任意過去取得UI・季節MC・科学精度は後続。",
+      "evidence": "ACT-520/D-191/S36#s36-save520、P520/git-receipt520.json、checks-final520、管理初回/UTF-8再試験票。",
+      "work_commit": "664a37f8978f63a8f0504a62b68cda054d98105f"
+    },
+    {
+      "version": "0.53.0",
+      "kind": "candidate",
+      "summary": "保存した実JRAを既存GUIの秒単位入力・延期比較・選択詳細・保存再開へ接続する。",
+      "base_commit": "4e3e4db0d047af9479bcd68bfc2553eeb71efcc9",
+      "integrated_commit": null,
+      "git_status": "draft_pr_open",
+      "work_branch": "codex/framework430-assessment",
+      "pr": 30,
+      "note": "内容C1を同じprivate branch / Draft PR30へ保存し、全295実体を固定読戻しした。管理6検査と管理回帰の実結果はS36の保存実績に記す。記録C2はこの追記時点で未保存。任意過去取得UI・季節MC・科学精度は後続。",
+      "evidence": "P530/freeze530.json・git-receipt530.json、S36#s36-save530、管理票と全295固定snapshot。",
+      "work_commit": "566fa1214eb4d8908d3d1560031f74a39b3aabe2"
+    },
+    {
+      "version": "0.54.0",
+      "kind": "candidate",
+      "summary": "現在配布GFSの取得から条件比較・観測回復・地表照会・保存再開までを既存GUIで安定化する。",
+      "base_commit": "4e3e4db0d047af9479bcd68bfc2553eeb71efcc9",
+      "integrated_commit": null,
+      "git_status": "draft_pr_open",
+      "work_branch": "codex/framework430-assessment",
+      "pr": 30,
+      "note": "内容C1を同じprivate branch / Draft PR30へ保存し、全302実体を固定読戻しした。管理6検査と管理回帰224件は成功・skip0。記録C2はこの追記時点で未保存。 任意過去取得UI・季節MC・科学精度は後続。",
+      "evidence": "P540/freeze540.json・git-receipt540.json、management-checks540-02/receipt.json・management-regression540-01/receipt.json、S36#s36-save540。",
+      "work_commit": "bd4a659cd9b80b94d884528f0ad2c788234521a8"
+    },
+    {
+      "version": "0.55.0",
+      "kind": "integrated",
+      "summary": "予報の取得・本命/延期比較・保存受付の回復を安定化し、原日時の過去飛行へ同じ分析行程をつなぐ。",
+      "base_commit": "4e3e4db0d047af9479bcd68bfc2553eeb71efcc9",
+      "integrated_commit": "06936856ee0deab2fe0b3f3b04220d60652ffba6",
+      "git_status": "merged",
+      "work_branch": "codex/framework430-assessment",
+      "pr": 30,
+      "note": "比較元0.54記録C2全302を固定。予報7単便/112試行、原日時2着地/未取得1を既存GUIで確認。PUT受付照合と気象関心の保存を実画面反例から修復。構造29頁/理論23頁を出版。管理閉鎖とGit保存はS36の後続実票へ戻り、科学精度・多年代表性・main統合へ読み替えない。 内容C1を同private branch / Draft PR30へ保存し全326を固定読戻し。管理検査は6検査すべて成功（同一326実体の作業フォルダーでも6検査成功）、管理3fileは指定3fileのcollect/JUnit一致183件成功、失敗0・エラー0・skip0、試験前後の326/基準302不変。記録C2はこの追記時点で未保存。 PR30の統合を固定main M550で確認。先の未保存/main未統合は当時の状態。表示修正は下記followup_workで別管理し、この統合へ含めない。",
+      "evidence": "RPT-075;D-194;S36#s36-plan550;ACT-550;S36#s36-save550;P550/freeze550.json;P550/git-receipt550.json;P550/management-checks550-02/receipt.json;P550/management-regression550-02/receipt.json",
+      "work_commit": "59ea0d6765f76c13e6708c1fd7cf734401882b94",
+      "followup_work": {
+        "branch": "codex/restore-interference-points-055",
+        "base_commit": "06936856ee0deab2fe0b3f3b04220d60652ffba6",
+        "status": "saved_to_draft_pr",
+        "scope": "干渉点表示と関連資料の整合修復。S36 s36-hit-fix550。",
+        "pr": 31,
+        "content_commit": "b9a1973dca187b18756182a84b8351c2124de2c3",
+        "content_tree": "f34d2b9c2f05e8d13440451c6eeab0c6a6393b26",
+        "record_closure": "同PRへの実績追記と最終固定読戻し。自己SHAはPR本文/外側票へ。",
+        "current_repair": {
+          "basis": "ee051f506a94e2178c697b97684eba700da1769a",
+          "scope": "詳細閲覧と明示的な送信担当切替の修復。D-196 / S36 s36-detail-lease-repair550。",
+          "status": "saved_to_draft_pr",
+          "limits": "内容C1/C2とも全339固定読戻し。元local.gitは各保存操作の前後1623ファイル一致であり長期不変を意味しない。旧13未保存草案/接続を保持し、現Google描画や科学精度を再受入しない。",
+          "content_commit": "57d2680faa07a360c56efe7fe98544e16e03ecc3",
+          "record_commit": "cbc197276d14c5753cc112643e449abaeb3bb29f",
+          "record_tree": "1c85bfd90cc38c0dee15d558f85b0237e31eeb46",
+          "evidence": "P550/detail-lease-repair550/record-c2/save-receipt.json"
+        }
+      }
+    },
+    {
+      "version": "0.56.0",
+      "kind": "candidate",
+      "summary": "半月の正本集計から月/季節再集計・時刻subset・実風配へ進み、提供資料の季節分析能力を既存画面へつなぐ。",
+      "base_commit": "06936856ee0deab2fe0b3f3b04220d60652ffba6",
+      "integrated_commit": null,
+      "git_status": "draft_pr_open",
+      "work_branch": "codex/restore-interference-points-055",
+      "pr": 31,
+      "note": "比較元は保存済み0.55記録C2 cbc197276d14c5753cc112643e449abaeb3bb29f・全339。提供統計の平均/月季節/時刻subset/一点風配と操作の有限検証を進め、追加指摘から平均を補助へ、元の中央値/月幅を未接続要件へ戻した。最終round08の面探索/草案保持/固定図再訪を有限確認。内容C1準備時点では管理6検査と保存は未実施だった。mainはM550のまま。次の原標本接続・元図の実装・季節飛行・科学精度を完成扱いしない。 内容C1を同private PR31へ保存し全347固定読戻し。管理6検査成功、元local.gitは今回C1操作前後1633ファイル一致に限定。記録C2はこの本文の編集時点では未保存で、自己SHAは外側票/PR本文へ。 0.57開始時に記録C2 98b6dad115e4ac30c03f06ff3366fc6468022b8aの保存・全347読戻し票を確認した。上記C2未保存は旧編集時点の記録として保持する。",
+      "evidence": "D-197;S36#s36-climate-expansion-plan;ACT-560;P550/climate-expansion550/basis.json",
+      "work_commit": "98b6dad115e4ac30c03f06ff3366fc6468022b8a"
+    },
+    {
+      "version": "0.57.0",
+      "kind": "candidate",
+      "summary": "JRA-3Q/ERA5の元UTC風標本を別資料として取得し、半月中央値・月内の幅・時間帯選択を育てた実気象分析画面へつなぐ。",
+      "base_commit": "06936856ee0deab2fe0b3f3b04220d60652ffba6",
+      "integrated_commit": null,
+      "git_status": "draft_pr_open",
+      "work_branch": "codex/restore-interference-points-055",
+      "pr": 31,
+      "note": "直前は保存済み0.56記録C2 98b6dad・全347。JRA-3Q/ERA5の2024年全12月・4 UTC/native支持を取得・原値照合・常設保存し、両商品4元格子デモを収録。中央値/月幅、UTC、粒度、地点風配、面自動探索、SVG/固定保存を実データで有限確認して8551へ反映。既存保存物の再起動前後照合も実施した。旧2016–2025年DBと別source。取得UIだけ後続、管理閉鎖・Git保存は本編集時点で未了。main統合・多年代表性・季節飛行・科学精度を完成扱いしない。 内容C1を同private PR31へ保存し全363固定読戻し。管理6検査成功、元local.gitは今回C1操作前後1721ファイル一致。記録C2はこの本文編集時点で未保存、自己SHAは外側票/PR本文へ。 0.58開始時に記録C2 b1b66dbff8b84bb6bb0332ec98043cc8990071b3の保存・全363固定読戻し票を確認した。上記の未保存は本文編集時点の履歴として保持する。",
+      "evidence": "D-198;S36#s36-climate-final570;ACT-570;P570",
+      "work_commit": "b1b66dbff8b84bb6bb0332ec98043cc8990071b3"
+    },
+    {
+      "version": "0.58.0",
+      "kind": "candidate",
+      "summary": "原標本の年間48区分を追加し、気圧面探索の重複計算と可変文による操作位置の移動を修正する。",
+      "base_commit": "06936856ee0deab2fe0b3f3b04220d60652ffba6",
+      "integrated_commit": null,
+      "git_status": "draft_pr_open",
+      "work_branch": "codex/restore-interference-points-055",
+      "pr": 31,
+      "note": "直前は保存済み0.57 C2 b1b66db・全363。原標本2024年の年間48区分を直接集計し、旧十年DBの24半月と旧月分位/飛行関心/保存結果を保持する。初回と反復費用を区別。0.58 C1/C2・最終実UI・管理閉鎖は本稿準備時点で未了。科学精度・多年代表性・main統合は未採用。 内容C1保存と全365読戻し・管理6検査成功。常設845保存GET/2841固定実体/3DB照合成功。記録C2は本文編集時点で未保存、自己SHAはPR/外側票へ。 後続0.59の開始時に記録C2 95f09d2fc0ae076def05eb76df996b9f2c3b0ef4・全365実体の一致を再確認した。上記未保存は当時の編集状態。",
+      "evidence": "RPT-077;D-199;S36#s36-climate-interaction-plan580;ACT-580;P580",
+      "work_commit": "cbe211eaee15076fd271ce35d4e407e864a31eab"
+    },
+    {
+      "version": "0.59.0",
+      "kind": "candidate",
+      "summary": "文書の役割と現在案内を監査し、入口・計画/残件・契約・構造図の不整合を訂正する。実装/稼働は0.58を維持。",
+      "base_commit": "06936856ee0deab2fe0b3f3b04220d60652ffba6",
+      "integrated_commit": null,
+      "git_status": "draft_pr_open",
+      "work_branch": "codex/restore-interference-points-055",
+      "pr": 31,
+      "note": "直前は保存済み0.58 C2 95f09d2・全365。独立批評と主担当の有限本文監査、旧原要求/歴史/研究原本の保持、3冊生成/表示確認を行った。内容C1の全366固定読戻しと管理6検査は成功。記録C2は本文編集時点で未保存、自己SHAはPR/外側受領票へ。科学全体・外部仕様・HTMLブラウザ表示の再認定ではない。",
+      "evidence": "RPT-078;D-200;S36#s36-document-audit-plan590;ACT-590;P590",
+      "work_commit": "3c0b0a213a1a2288fec51b1b1987df92874f1167"
+    }
+  ],
+  "transitions": [
+    {
+      "id": "C0",
+      "version": "0.2.0",
+      "sha": "0699c348e46b75e020d3a81715715c0985bb6f1e",
+      "parents": null,
+      "meaning": "初期33ファイル投入",
+      "evidence": "RPT-001 / CHK-001"
+    },
+    {
+      "id": "C1",
+      "version": "0.2.0",
+      "sha": "b09b01583baf1a7589dcb06b2d97095ab57913e8",
+      "parents": [
+        "0699c348e46b75e020d3a81715715c0985bb6f1e"
+      ],
+      "meaning": "probe_revision=1追加",
+      "evidence": "CHK-001"
+    },
+    {
+      "id": "W030-A",
+      "version": "0.3.0",
+      "sha": "33629259a3afb22e5d064fcb3d291c4568fe66e2",
+      "parents": [
+        "b09b01583baf1a7589dcb06b2d97095ab57913e8"
+      ],
+      "meaning": "22ファイルアップロード",
+      "at_utc": "2026-09-17T02:00:57Z",
+      "evidence": "PR #1 commits / CHK-002"
+    },
+    {
+      "id": "W030-B",
+      "version": "0.3.0",
+      "sha": "ef208980a2c36cd0d2c1f1ec37bde455ad92992f",
+      "parents": [
+        "33629259a3afb22e5d064fcb3d291c4568fe66e2"
+      ],
+      "meaning": "legacy/の26ファイル削除",
+      "at_utc": "2026-09-17T02:12:04Z",
+      "evidence": "PR #1 commits / CHK-002"
+    },
+    {
+      "id": "W030-C",
+      "version": "0.3.0",
+      "sha": "ebdb7deac8a155f89f36f589a502f07984ffea2a",
+      "parents": [
+        "ef208980a2c36cd0d2c1f1ec37bde455ad92992f"
+      ],
+      "meaning": "INITIAL_IMPORT_MANIFEST.json削除",
+      "at_utc": "2026-09-17T02:13:55Z",
+      "evidence": "PR #1 commits / CHK-002"
+    },
+    {
+      "id": "M030",
+      "version": "0.3.0",
+      "sha": "8c3325b7246c8f324a8b0826195ccd74da85353f",
+      "parents": [
+        "b09b01583baf1a7589dcb06b2d97095ab57913e8",
+        "ebdb7deac8a155f89f36f589a502f07984ffea2a"
+      ],
+      "meaning": "PR #1マージ、現行23ファイル",
+      "at_utc": "2026-09-17T03:01:54Z",
+      "evidence": "main metadata / CHK-002"
+    },
+    {
+      "id": "W040",
+      "version": "0.4.0",
+      "sha": "cbf1aeecd82b505d5e81f2a5a7aa86019a650748",
+      "parents": [
+        "8c3325b7246c8f324a8b0826195ccd74da85353f"
+      ],
+      "meaning": "19ファイルの作業ブランチ投入",
+      "evidence": "RPT-003 / PR #2 / CHK-003"
+    },
+    {
+      "id": "M040",
+      "version": "0.4.0",
+      "sha": "c1b6830592d5625912e79bd282beed02bef0c432",
+      "parents": [
+        "8c3325b7246c8f324a8b0826195ccd74da85353f",
+        "cbf1aeecd82b505d5e81f2a5a7aa86019a650748"
+      ],
+      "meaning": "PR #2マージ、現行28ファイル",
+      "at_utc": "2026-09-17T06:01:50Z",
+      "evidence": "main metadata / PR #2 / CHK-003"
+    },
+    {
+      "id": "W050",
+      "version": "0.5.0",
+      "sha": "fc71728efc69aa8f73042eca26150c0a6fe8d381",
+      "parents": [
+        "c1b6830592d5625912e79bd282beed02bef0c432"
+      ],
+      "meaning": "v0.5文書19ファイル投入",
+      "evidence": "GitHub git/commits/fc71728e GET / CHK-004",
+      "at_utc": "2026-09-17T08:36:45Z"
+    },
+    {
+      "id": "M050",
+      "version": "0.5.0",
+      "sha": "ff8327de9b8f19156d522fc65811983688a53347",
+      "parents": [
+        "c1b6830592d5625912e79bd282beed02bef0c432",
+        "fc71728efc69aa8f73042eca26150c0a6fe8d381"
+      ],
+      "meaning": "PR #3マージ、v0.5の28パス",
+      "evidence": "RPT-004 / RC-004 / CHK-004"
+    },
+    {
+      "id": "WPROBE2",
+      "version": "0.5.0",
+      "sha": "a6c8160afbfe1817ccf67f577f8baceeb3f519a9",
+      "parents": [
+        "ff8327de9b8f19156d522fc65811983688a53347"
+      ],
+      "meaning": "ACCESS_PROBEの2行更新",
+      "evidence": "GitHub git/commits/a6c8160a GET / CHK-004",
+      "at_utc": "2026-09-17T08:54:10Z"
+    },
+    {
+      "id": "C2",
+      "version": "0.5.0",
+      "sha": "114f88cfc2593fbb75296823e174126f8b7557a3",
+      "parents": [
+        "ff8327de9b8f19156d522fc65811983688a53347",
+        "a6c8160afbfe1817ccf67f577f8baceeb3f519a9"
+      ],
+      "meaning": "PR #4マージ、probe_revision=2",
+      "evidence": "RPT-004 / RC-004 / CHK-004"
+    },
+    {
+      "id": "W060",
+      "version": "0.6.0",
+      "sha": "a7e9f67c3953140631dfa8b01318672f68ac99d2",
+      "parents": [
+        "114f88cfc2593fbb75296823e174126f8b7557a3"
+      ],
+      "meaning": "19ファイルのcloseout更新",
+      "evidence": "RPT-005 / CHK-005"
+    },
+    {
+      "id": "M060",
+      "version": "0.6.0",
+      "sha": "47279735c12211f1c4da9e54863d9e58d466027c",
+      "parents": [
+        "114f88cfc2593fbb75296823e174126f8b7557a3",
+        "a7e9f67c3953140631dfa8b01318672f68ac99d2"
+      ],
+      "meaning": "PR #5統合、28パス保持。RPT-005とCHK-005でG2受入。",
+      "at_utc": "2026-09-17T12:17:57Z",
+      "evidence": "CHK-005 / CHK-006"
+    },
+    {
+      "id": "W070",
+      "version": "0.7.0",
+      "sha": "d009394a2680932c349f6b9703ac059d8dd7dd10",
+      "parents": [
+        "47279735c12211f1c4da9e54863d9e58d466027c"
+      ],
+      "meaning": "v0.7環境受入の17ファイル更新",
+      "evidence": "PR #6 / CHK-007"
+    },
+    {
+      "id": "M070",
+      "version": "0.7.0",
+      "sha": "e8d92dd328c7e42b4afb888190b24ccae65a6f06",
+      "parents": [
+        "47279735c12211f1c4da9e54863d9e58d466027c",
+        "d009394a2680932c349f6b9703ac059d8dd7dd10"
+      ],
+      "meaning": "PR #6マージ・28パス維持",
+      "at_utc": "2026-09-18T00:28:42Z",
+      "evidence": "Git commit / CHK-007"
+    },
+    {
+      "id": "W080-A",
+      "version": "0.8.0",
+      "sha": "0c3c9191eef069d7f89d9f5758f53660a0e0417a",
+      "parents": [
+        "e8d92dd328c7e42b4afb888190b24ccae65a6f06"
+      ],
+      "meaning": "通常18ファイル投入",
+      "evidence": "RPT-008 / GitHub PR #7 and commit GET / CHK-008"
+    },
+    {
+      "id": "W080-B",
+      "version": "0.8.0",
+      "sha": "b12fd8b4a4964814733b15a65e05e87cf2034c22",
+      "parents": [
+        "0c3c9191eef069d7f89d9f5758f53660a0e0417a"
+      ],
+      "meaning": "Create new fileで.gitattributesを追加",
+      "evidence": "RPT-008 / GitHub PR #7 and commit GET / CHK-008"
+    },
+    {
+      "id": "M080",
+      "version": "0.8.0",
+      "sha": "d4b74f31caf7bade50a67981aff1c61287d5ac76",
+      "parents": [
+        "e8d92dd328c7e42b4afb888190b24ccae65a6f06",
+        "b12fd8b4a4964814733b15a65e05e87cf2034c22"
+      ],
+      "meaning": "PR #7統合、配布候補と同じ31ファイル",
+      "evidence": "RPT-008 / GitHub PR #7 and commit GET / CHK-008"
+    },
+    {
+      "id": "W081",
+      "version": "0.8.1",
+      "sha": "13ca1428b3c3393ca11df96fa500ffb2bf054c01",
+      "parents": [
+        "d4b74f31caf7bade50a67981aff1c61287d5ac76"
+      ],
+      "meaning": "回帰LF修正・ログ付き実行入口の投入",
+      "evidence": "PR #8 / CHK-009"
+    },
+    {
+      "id": "M081",
+      "version": "0.8.1",
+      "sha": "cf3a1384ed262c3ff2fe84bd920eaa5a28372ea3",
+      "parents": [
+        "d4b74f31caf7bade50a67981aff1c61287d5ac76",
+        "13ca1428b3c3393ca11df96fa500ffb2bf054c01"
+      ],
+      "meaning": "PR #8統合・33パス",
+      "at_utc": "2026-09-18T03:21:32Z",
+      "evidence": "Git commit GET / CHK-010"
+    },
+    {
+      "id": "W082",
+      "version": "0.8.2",
+      "sha": "08311361f962c91a863a027df3d07b1ba7d97555",
+      "parents": [
+        "cf3a1384ed262c3ff2fe84bd920eaa5a28372ea3"
+      ],
+      "meaning": "A01の受入/訂正記録と呼出回帰の投入",
+      "evidence": "PR #9 / CHK-011"
+    },
+    {
+      "id": "M082",
+      "version": "0.8.2",
+      "sha": "8795f2786abc665e2d809ca43ea768000eaeb0ae",
+      "parents": [
+        "cf3a1384ed262c3ff2fe84bd920eaa5a28372ea3",
+        "08311361f962c91a863a027df3d07b1ba7d97555"
+      ],
+      "meaning": "PR #9統合・33パス",
+      "at_utc": "2026-09-18T15:08:19Z",
+      "evidence": "Git commit GET / CHK-011"
+    },
+    {
+      "id": "W090",
+      "version": "0.9.0",
+      "sha": "7df52be8ee49f7f7b6e7f2661ec307c94342d435",
+      "parents": [
+        "8795f2786abc665e2d809ca43ea768000eaeb0ae"
+      ],
+      "meaning": "H01-1の是正投入",
+      "evidence": "PR #10 / CHK-012"
+    },
+    {
+      "id": "M090",
+      "version": "0.9.0",
+      "sha": "840f3718446d198c5f0240515bdc978268034787",
+      "parents": [
+        "8795f2786abc665e2d809ca43ea768000eaeb0ae",
+        "7df52be8ee49f7f7b6e7f2661ec307c94342d435"
+      ],
+      "meaning": "PR #10統合・36パス",
+      "at_utc": "2026-09-18T17:30:49Z",
+      "evidence": "Git commit GET / CHK-012"
+    },
+    {
+      "id": "W091",
+      "version": "0.9.1",
+      "sha": "92e15e628b499db46ca11c167844f5bbde3c874c",
+      "parents": [
+        "840f3718446d198c5f0240515bdc978268034787"
+      ],
+      "meaning": "H01-3構造安定性18ファイル投入",
+      "evidence": "PR #11 / CHK-013"
+    },
+    {
+      "id": "M091",
+      "version": "0.9.1",
+      "sha": "6281343e4c45a4942e0d0361704d738aaeaa4cef",
+      "parents": [
+        "840f3718446d198c5f0240515bdc978268034787",
+        "92e15e628b499db46ca11c167844f5bbde3c874c"
+      ],
+      "meaning": "PR #11統合・36パス",
+      "at_utc": "2026-09-19T07:38:37Z",
+      "evidence": "commit GET / CHK-013"
+    },
+    {
+      "id": "W092",
+      "version": "0.9.2",
+      "sha": "f3b33f9df4da22118821934e410eaec98d1666d3",
+      "parents": [
+        "6281343e4c45a4942e0d0361704d738aaeaa4cef"
+      ],
+      "meaning": "PR #12の作業コミット。親は独立GETで確認",
+      "evidence": "CHK-015 / fixed git commit GET"
+    },
+    {
+      "id": "M092",
+      "version": "0.9.2",
+      "sha": "a5dd6c10377257a36b8be20a3950279a1e19d5fd",
+      "parents": [
+        "6281343e4c45a4942e0d0361704d738aaeaa4cef",
+        "f3b33f9df4da22118821934e410eaec98d1666d3"
+      ],
+      "meaning": "PR12統合、ENTRY-01と比較成立の契約是正、36パス維持",
+      "at_utc": "2026-09-20T02:27:52Z",
+      "evidence": "GitHub connector commit and PR12 reads"
+    },
+    {
+      "id": "W101",
+      "version": "0.10.1",
+      "sha": "e583a118dc71f4e73fd7197b2af9cd01f98134b0",
+      "parents": [
+        "a5dd6c10377257a36b8be20a3950279a1e19d5fd"
+      ],
+      "meaning": "PR13の作業コミット。S10-5是正と0.10.0原本受入の累積差分。",
+      "evidence": "CHK-017 / fixed commit read"
+    },
+    {
+      "id": "M101",
+      "version": "0.10.1",
+      "sha": "ad3494d700068d873a22ed2fbbf6f0a760a41735",
+      "parents": [
+        "a5dd6c10377257a36b8be20a3950279a1e19d5fd",
+        "e583a118dc71f4e73fd7197b2af9cd01f98134b0"
+      ],
+      "meaning": "PR13統合。原本3冊を含む39パス。",
+      "at_utc": "2026-09-21T13:41:23Z",
+      "evidence": "CHK-017 / GitHub ref+commit+tree+PR13"
+    },
+    {
+      "id": "W130",
+      "version": "0.13.0",
+      "sha": "afbc2417d94fe9ec5e40eabb66547a079291904d",
+      "parents": [
+        "ad3494d700068d873a22ed2fbbf6f0a760a41735"
+      ],
+      "meaning": "PR #14の初回候補提出C1。既存29更新・新規5追加、固定44パス照合。後続の記録追記C2と区別。",
+      "evidence": "RPT-019 / ACT-130 / evidence/C1-remote-receipt.json"
+    },
+    {
+      "id": "W130-C2",
+      "version": "0.13.0",
+      "sha": "b89d0eac81cd3f626149c617b9e38f9f81b3bff8",
+      "parents": [
+        "afbc2417d94fe9ec5e40eabb66547a079291904d"
+      ],
+      "meaning": "PR14の実績記録追記後の最終提出。treeはM130と一致。",
+      "evidence": "CHK-020 / fixed merge parents and tree / prior final receipt"
+    },
+    {
+      "id": "M130",
+      "version": "0.13.0",
+      "sha": "9ae8e7b5c7cdb74c15fdf937fd14896df51d641d",
+      "parents": [
+        "ad3494d700068d873a22ed2fbbf6f0a760a41735",
+        "b89d0eac81cd3f626149c617b9e38f9f81b3bff8"
+      ],
+      "meaning": "PR14で0.11/12の変更を含む0.13を累積統合。全44パスと原本保持を照合。",
+      "at_utc": "2026-09-22T06:29:57Z",
+      "evidence": "RPT-021 / CHK-020"
+    },
+    {
+      "id": "W140",
+      "version": "0.14.0",
+      "sha": "ca96c585437331a0ad7b176b9391de4ba06ba678",
+      "parents": [
+        "9ae8e7b5c7cdb74c15fdf937fd14896df51d641d"
+      ],
+      "meaning": "PR15の初回候補提出C1。既存18更新・新規3追加、固定47パス照合。後続の実績追記と区別。",
+      "evidence": "RPT-024 / ACT-140 / evidence/C1-remote-receipt.json"
+    },
+    {
+      "id": "W140-C2",
+      "version": "0.14.0",
+      "sha": "1c0898759fe5455eca9e4860f67c81b02952b3b5",
+      "parents": [
+        "ca96c585437331a0ad7b176b9391de4ba06ba678"
+      ],
+      "meaning": "PR15実績追記後の最終提出。treeはM140と一致。",
+      "evidence": "CHK-021 / prior final receipt"
+    },
+    {
+      "id": "M140",
+      "version": "0.14.0",
+      "sha": "f8dee6cc46e772a3e38b0fbe426371fcfaf4ba93",
+      "parents": [
+        "9ae8e7b5c7cdb74c15fdf937fd14896df51d641d",
+        "1c0898759fe5455eca9e4860f67c81b02952b3b5"
+      ],
+      "meaning": "PR15で0.14統合。全47パスと原本保持を照合。",
+      "at_utc": "2026-09-22T09:11:12Z",
+      "evidence": "RPT-025 / CHK-021"
+    },
+    {
+      "id": "W150",
+      "version": "0.15.0",
+      "sha": "d390af76fe0bf4f0a7a6014b4f18775dd7b75204",
+      "parents": [
+        "f8dee6cc46e772a3e38b0fbe426371fcfaf4ba93"
+      ],
+      "meaning": "PR16初回候補C1。既存21更新・全47パス固定照合。実績追記は後続。",
+      "at_utc": "2026-09-22T10:17:26Z",
+      "evidence": "ACT-150 / evidence/C1-remote-receipt.json"
+    },
+    {
+      "id": "W150-C2",
+      "version": "0.15.0",
+      "sha": "5e0c6bd216e06a172ff25b723ea74fbcd89a427e",
+      "parents": [
+        "d390af76fe0bf4f0a7a6014b4f18775dd7b75204"
+      ],
+      "meaning": "PR16実績・指示是正の最終提出。treeはM150と同一。",
+      "evidence": "CHK-022 / prior C2-final-remote-receipt"
+    },
+    {
+      "id": "M150",
+      "version": "0.15.0",
+      "sha": "4e1ff0c39633236a991f07ef62f120110237cf5e",
+      "parents": [
+        "f8dee6cc46e772a3e38b0fbe426371fcfaf4ba93",
+        "5e0c6bd216e06a172ff25b723ea74fbcd89a427e"
+      ],
+      "meaning": "PR16で0.15統合、全47パス同一性を照合。",
+      "at_utc": "2026-09-22T11:06:32Z",
+      "evidence": "RPT-030 / CHK-022"
+    },
+    {
+      "id": "W160",
+      "version": "0.16.0",
+      "sha": "c3d4a929d28f92bfadaaef1372b7bd96c8ee565d",
+      "parents": [
+        "4e1ff0c39633236a991f07ef62f120110237cf5e"
+      ],
+      "meaning": "PR17初回候補C1。既存16更新・ガイド1追加、固定48パス照合。実績追記C2は後続。",
+      "at_utc": "2026-09-22T12:23:56Z",
+      "evidence": "ACT-160 / evidence/C1-remote-receipt.json"
+    },
+    {
+      "id": "W160-C2",
+      "version": "0.16.0",
+      "sha": "cb0dad7dd6c3d963d903f31a84c6eb592b319ef7",
+      "parents": [
+        "c3d4a929d28f92bfadaaef1372b7bd96c8ee565d"
+      ],
+      "meaning": "PR17実績追記後の最終提出。M160とtree同一。",
+      "evidence": "CHK-023 / prior final receipt"
+    },
+    {
+      "id": "M160",
+      "version": "0.16.0",
+      "sha": "a4f6f26dd645940b5ad3322151f47d280e0f8c2d",
+      "parents": [
+        "4e1ff0c39633236a991f07ef62f120110237cf5e",
+        "cb0dad7dd6c3d963d903f31a84c6eb592b319ef7"
+      ],
+      "meaning": "PR17で0.16統合、全48パス保持を固定照合。",
+      "at_utc": "2026-09-22T13:06:38Z",
+      "evidence": "RPT-032 / CHK-023"
+    },
+    {
+      "id": "W170-C1",
+      "version": "0.17.0",
+      "sha": "755287bf82892b5cc98ad2a192cee2e16382bdbf",
+      "parents": [
+        "a4f6f26dd645940b5ad3322151f47d280e0f8c2d"
+      ],
+      "tree": "d81c1f17e9613bfb8004e656e4b3d56e6766521e",
+      "meaning": "モデル入力/モデル面・組合せ設計とS20/S21をDraft PRへ初回提出。全48パスを固定照合。",
+      "evidence": "ACT-170 / C1-remote-receipt.json",
+      "at_utc": "2026-09-22T14:24:25Z"
+    },
+    {
+      "id": "W170-C2",
+      "version": "0.17.0",
+      "sha": "273c3943035601991863303f8fb4f7a018711531",
+      "parents": [
+        "755287bf82892b5cc98ad2a192cee2e16382bdbf"
+      ],
+      "tree": "02a9ae72e14312d3e48aa8096470e104d7d5f252",
+      "meaning": "PR18実績追記後の最終提出。M170とtree同一。",
+      "evidence": "CHK-024 / prior final receipt"
+    },
+    {
+      "id": "M170",
+      "version": "0.17.0",
+      "sha": "3f4258bb0535811f84d4fd1e71564b92c3da1deb",
+      "parents": [
+        "a4f6f26dd645940b5ad3322151f47d280e0f8c2d",
+        "273c3943035601991863303f8fb4f7a018711531"
+      ],
+      "tree": "02a9ae72e14312d3e48aa8096470e104d7d5f252",
+      "meaning": "人間レビュー後PR18統合、48パスの固定照合。",
+      "at_utc": "2026-09-23T01:07:59Z",
+      "evidence": "RPT-034 / CHK-024"
+    },
+    {
+      "id": "W180-C1",
+      "version": "0.18.0",
+      "sha": "77807f88de84ad0d3ef892d15c4507ff027e54f5",
+      "parents": [
+        "3f4258bb0535811f84d4fd1e71564b92c3da1deb"
+      ],
+      "tree": "e1e4e7f5af764fba4224b364dc157dfabb963377",
+      "meaning": "保存JRA query・モデル構成検査・予報運用とS22/S23をDraft PRへ初回提出。全53パスを固定照合。",
+      "evidence": "ACT-180 / C1-remote-receipt.json",
+      "at_utc": "2026-09-23T02:05:43Z"
+    },
+    {
+      "id": "W180-C2",
+      "version": "0.18.0",
+      "sha": "1925e793e3e6002fd6674b682dba99b2f20a33f3",
+      "parents": [
+        "77807f88de84ad0d3ef892d15c4507ff027e54f5"
+      ],
+      "tree": "309de08c7e39937d6945bcb81dd70843b3904a96",
+      "meaning": "PR19実績追記後の最終提出。M180とtree同一。",
+      "evidence": "CHK-025 / prior final receipt"
+    },
+    {
+      "id": "M180",
+      "version": "0.18.0",
+      "sha": "7367b5ad86e536e6ef2a4c53c3b62b80fea5845d",
+      "parents": [
+        "3f4258bb0535811f84d4fd1e71564b92c3da1deb",
+        "1925e793e3e6002fd6674b682dba99b2f20a33f3"
+      ],
+      "tree": "309de08c7e39937d6945bcb81dd70843b3904a96",
+      "meaning": "人間レビュー後PR19統合、53パス固定照合。",
+      "at_utc": "2026-09-23T02:26:59Z",
+      "evidence": "RPT-036 / CHK-025"
+    },
+    {
+      "id": "W190-C1",
+      "version": "0.19.0",
+      "sha": "42ad6e379dc68de1cdbd01104161530e40226159",
+      "parents": [
+        "7367b5ad86e536e6ef2a4c53c3b62b80fea5845d"
+      ],
+      "tree": "b7ca002d2e3644c75e717768f1378ecc91c5bc1d",
+      "meaning": "予報時刻計画・資料要求準備とS24/S25をDraft PRへ初回提出。全55パスを固定照合。",
+      "evidence": "ACT-190 / C1-remote-receipt.json",
+      "at_utc": "2026-09-23T03:06:13Z"
+    },
+    {
+      "id": "W190-C2",
+      "version": "0.19.0",
+      "sha": "92fd0d81badb1e9cdcec59dc595a9dcb14f2a77c",
+      "parents": [
+        "42ad6e379dc68de1cdbd01104161530e40226159"
+      ],
+      "tree": "93b7186e03a5d4d09ea54b285c2c8b6b811e41e5",
+      "meaning": "PR20実績追記後の最終候補。M190とtree同一。",
+      "evidence": "CHK-026"
+    },
+    {
+      "id": "M190",
+      "version": "0.19.0",
+      "sha": "21d8565a97c59d38bf51f3ab8736ffb14ba21198",
+      "parents": [
+        "7367b5ad86e536e6ef2a4c53c3b62b80fea5845d",
+        "92fd0d81badb1e9cdcec59dc595a9dcb14f2a77c"
+      ],
+      "tree": "93b7186e03a5d4d09ea54b285c2c8b6b811e41e5",
+      "meaning": "人間がPR20を統合、全55パス固定照合。",
+      "evidence": "RPT-037/CHK-026"
+    },
+    {
+      "id": "W200-C1",
+      "version": "0.20.0",
+      "sha": "fbc82de966dcc7cc567fec62179af266205bccac",
+      "parents": [
+        "21d8565a97c59d38bf51f3ab8736ffb14ba21198"
+      ],
+      "tree": "c18bf1827a0fc18a51e3ce3b0907a28e4b70d389",
+      "meaning": "実GFSの全飛行・本体と初版ガイドをDraft PRへ提出。全80パス固定照合。",
+      "evidence": "ACT-200 / C1-remote-receipt.json",
+      "at_utc": "2026-09-23T04:34:40Z"
+    },
+    {
+      "id": "W200-C2",
+      "version": "0.20.0",
+      "sha": "d07100bc358dc9c4e1dc0123348427be2bc75526",
+      "parents": [
+        "fbc82de966dcc7cc567fec62179af266205bccac"
+      ],
+      "tree": "b9c4f65538c30eaccdb0531a19811c87a723ac6e",
+      "meaning": "PR21実績追記後の最終候補。M200と同一tree。",
+      "evidence": "RPT-038/CHK-027"
+    },
+    {
+      "id": "M200",
+      "version": "0.20.0",
+      "sha": "6d86fa7149fa8d2d0879a20fc3fe18241bc690e1",
+      "parents": [
+        "21d8565a97c59d38bf51f3ab8736ffb14ba21198",
+        "d07100bc358dc9c4e1dc0123348427be2bc75526"
+      ],
+      "tree": "b9c4f65538c30eaccdb0531a19811c87a723ac6e",
+      "meaning": "人間によるPR21統合を全80パス固定照合。",
+      "evidence": "RPT-038/CHK-027"
+    },
+    {
+      "id": "W210-C1",
+      "version": "0.21.0",
+      "sha": "7e7961d1267b22a2ffae5d61020b0af13bb3824f",
+      "parents": [
+        "6d86fa7149fa8d2d0879a20fc3fe18241bc690e1"
+      ],
+      "tree": "cd62805dafc6ab350f6689a60fab06796f200fbb",
+      "meaning": "実装階層/依存の構造ガイド、詳細ノート、参考風PDFと用途訂正をDraft PRへ提出。全83パス固定照合。",
+      "evidence": "ACT-210 / C1-remote-receipt.json",
+      "at_utc": "2026-09-23T06:25:04Z"
+    },
+    {
+      "id": "W210-C2",
+      "version": "0.21.0",
+      "sha": "7f06e1529d30f95f404ba7ab2e3cf887640ddace",
+      "parents": [
+        "7e7961d1267b22a2ffae5d61020b0af13bb3824f"
+      ],
+      "tree": "9d34294d4e23e2083230a88029421b84bdf9ef9c",
+      "meaning": "PR22の実績追記後の未統合候補。0.22の比較元として全83パスを固定照合。",
+      "evidence": "ACT-220 / remote-baseline.json / baseline-manifest.json",
+      "observed_at_utc": "2026-09-23T07:49:29Z"
+    },
+    {
+      "id": "W220-C1",
+      "version": "0.22.0",
+      "sha": "83848ce5f10a6f25e57eb1e12f3d4ceeae2e84fb",
+      "parents": [
+        "7f06e1529d30f95f404ba7ab2e3cf887640ddace"
+      ],
+      "tree": "cd93eb25eabfc098335c37fe978565b3c4e0abc8",
+      "meaning": "反省と設計方針・次作業を既存Draft PR22へ保存。全83固定照合。",
+      "evidence": "ACT-220 / C1-receipt.json",
+      "observed_at_utc": "2026-09-23 08:11:00 UTC"
+    },
+    {
+      "id": "W220-C2",
+      "version": "0.22.0",
+      "sha": "0b55b9d72b07d63209bb6fc132e1645b84cac8a3",
+      "parents": [
+        "83848ce5f10a6f25e57eb1e12f3d4ceeae2e84fb"
+      ],
+      "tree": "ab03a1832b1ce89a48df869ef69f62ff603abb76",
+      "meaning": "PR22の0.22実績追記後の未統合候補。0.23の全83パス比較元。",
+      "evidence": "ACT-230 / remote-baseline.json / baseline-manifest.json",
+      "observed_at_utc": "2026-09-23 08:38:27 UTC"
+    },
+    {
+      "id": "W230-C1",
+      "version": "0.23.0",
+      "sha": "f5db6f33763019c0f587c51e33d6ec676ea21417",
+      "parents": [
+        "0b55b9d72b07d63209bb6fc132e1645b84cac8a3"
+      ],
+      "tree": "f7bcda7bb5844ff0a0c42081dd267a1bfe932d80",
+      "meaning": "S31の原則と運用接続・限定health変更をPR22へ保存。17差分/全83固定照合、mainは未統合。",
+      "evidence": "ACT-230 / C1-receipt.json",
+      "observed_at_utc": "2026-09-23 09:14:23 UTC"
+    },
+    {
+      "id": "W230-C2",
+      "version": "0.23.0",
+      "sha": "c1623997d4d8142f9e34ebf496e4be5d9c442bf6",
+      "parents": [
+        "f5db6f33763019c0f587c51e33d6ec676ea21417"
+      ],
+      "tree": "b26ccb0517461f83490d03ae59fe46f511b7c896",
+      "meaning": "PR22の0.23実績追記後の未統合候補。0.24の全83パス比較元。",
+      "evidence": "AUD-240 / fixed-commit.json / remote-baseline.json / baseline-manifest.json",
+      "observed_at_utc": "2026-09-23T09:59:02Z"
+    },
+    {
+      "id": "W240-C1",
+      "version": "0.24.0",
+      "sha": "e844c24aeb7d6fcc71dc6980c658391b9ca8a345",
+      "parents": [
+        "c1623997d4d8142f9e34ebf496e4be5d9c442bf6"
+      ],
+      "tree": "ec5c037c4c3d7e9d41015bf761a9797b6aee30af",
+      "meaning": "S32の用途適合修復、全回帰/表示/全体再評価をPR22へ保存。全99パス固定照合済みの未統合候補。",
+      "evidence": "ACT-240 / C1-receipt.json",
+      "observed_at_utc": "2026-09-23 11:14:01 UTC"
+    },
+    {
+      "id": "W240-C2",
+      "version": "0.24.0",
+      "sha": "da3d01931f9f0beb6a3f1329b4f8272ebfcc2615",
+      "parents": [
+        "e844c24aeb7d6fcc71dc6980c658391b9ca8a345"
+      ],
+      "tree": "2ad961af35bdad1783169530cf4998725e4499a4",
+      "meaning": "PR22統合済み履歴。CHK-028で固定commitの親/treeを再取得。",
+      "evidence": "CHK-028 / recovery-receipt.json",
+      "observed_at_utc": "2026-09-23"
+    },
+    {
+      "id": "W250-C1",
+      "version": "0.25.0",
+      "sha": "61806ed807557b9c81b42bee3d10d70020c62f42",
+      "parents": [
+        "da3d01931f9f0beb6a3f1329b4f8272ebfcc2615"
+      ],
+      "tree": "5210c0e85c35bdef6a7703be513c971fdba2f3c7",
+      "meaning": "PR22統合済み履歴。CHK-028で固定commitの親/treeを再取得。",
+      "evidence": "CHK-028 / recovery-receipt.json",
+      "observed_at_utc": "2026-09-23"
+    },
+    {
+      "id": "W250-C2",
+      "version": "0.25.0",
+      "sha": "5cf2c511a9486c4b605dee0ac971d3ab09786b87",
+      "parents": [
+        "61806ed807557b9c81b42bee3d10d70020c62f42"
+      ],
+      "tree": "451d292912bc2d29e3333465111cacab68646feb",
+      "meaning": "PR22統合済み履歴。CHK-028で固定commitの親/treeを再取得。",
+      "evidence": "CHK-028 / recovery-receipt.json",
+      "observed_at_utc": "2026-09-23"
+    },
+    {
+      "id": "M250",
+      "version": "0.25.0",
+      "sha": "eb53fe37954f58b26771cc2f5437d46ee3f32fcd",
+      "parents": [
+        "6d86fa7149fa8d2d0879a20fc3fe18241bc690e1",
+        "5cf2c511a9486c4b605dee0ac971d3ab09786b87"
+      ],
+      "tree": "451d292912bc2d29e3333465111cacab68646feb",
+      "meaning": "PR22累積0.21〜0.25を人間がmainへ統合。登録99パスとローカルが同一。",
+      "evidence": "CHK-028 / recovery-receipt.json",
+      "observed_at_utc": "2026-09-23T14:50:16Z"
+    },
+    {
+      "sha": "161aa2615ab68b9e428649de12c05dfbdc63f25e",
+      "version": "0.26.0",
+      "parents": [
+        "eb53fe37954f58b26771cc2f5437d46ee3f32fcd"
+      ],
+      "tree": "43a5d0b6da317830247514bb7cf307abd063bd6c",
+      "pr": 23,
+      "id": "W260-C1",
+      "meaning": "三用途の完成像・モデル/分布/MCと画面案を新PR23へ保存。固定100パス照合済み。",
+      "evidence": "ACT-260 / P260/C1-receipt.json",
+      "observed_at_utc": "2026-09-23T15:42:08Z"
+    },
+    {
+      "id": "W260-C2",
+      "version": "0.26.0",
+      "sha": "a1720411c3e4701c56397b43ab7597ccc2588d4f",
+      "parents": [
+        "161aa2615ab68b9e428649de12c05dfbdc63f25e"
+      ],
+      "tree": "f3b5d1d27d95dda828f2a1b56e049538c8af64d3",
+      "pr": 23,
+      "meaning": "前回の実績追記を含む候補を実取得。全100パスとローカル一致。main統合とは別。",
+      "evidence": "AUD-270 / recovery-receipt.json",
+      "observed_at_utc": "2026-09-24T06:12:58Z"
+    },
+    {
+      "id": "W270-C1",
+      "version": "0.27.0",
+      "sha": "486d6d67d8beee35a9378c1ad8ab2262ef56a075",
+      "parents": [
+        "a1720411c3e4701c56397b43ab7597ccc2588d4f"
+      ],
+      "tree": "02ea27b82661d2122ee1e44aac99826741a2b154",
+      "pr": 23,
+      "meaning": "概要と掘り下げ、原風図の問い/統計定義/処理費用と説明用操作模型を保存。全100パス固定照合。",
+      "evidence": "ACT-270 / P270/C1-receipt.json",
+      "observed_at_utc": "2026-09-24T07:31:26Z"
+    },
+    {
+      "id": "W270-C2",
+      "version": "0.27.0",
+      "sha": "ddf8550ac303111786979f03435988b8a0a6d50e",
+      "parents": [
+        "486d6d67d8beee35a9378c1ad8ab2262ef56a075"
+      ],
+      "tree": "0c11eb09478cb74ffda4831f4d39c8784502d73c",
+      "pr": 23,
+      "meaning": "前回実績追記を含む候補を実取得し全100パス同値。main統合とは別。",
+      "evidence": "AUD-280 / recovery-receipt.json",
+      "observed_at_utc": "2026-09-24T08:32:13Z"
+    },
+    {
+      "id": "W280-C1",
+      "version": "0.28.0",
+      "sha": "b16e851bd58736a4c42ad8ec89e8bdebeb4f9531",
+      "parents": [
+        "ddf8550ac303111786979f03435988b8a0a6d50e"
+      ],
+      "tree": "d1ace76ab5f8bc1c93c33edfaa9d6204598e98a0",
+      "pr": 23,
+      "meaning": "地図連動と径Weibullの設計候補14差分を保存、全101パス固定読戻し。main統合とは別。",
+      "evidence": "ACT-280 / P280/C1-receipt.json",
+      "observed_at_utc": "2026-09-24T08:40:46Z"
+    },
+    {
+      "id": "W280-C2",
+      "version": "0.28.0",
+      "sha": "8e0e4d520f413d58bf4d418b46afa3dc2a30cb15",
+      "parents": [
+        "b16e851bd58736a4c42ad8ec89e8bdebeb4f9531"
+      ],
+      "tree": "e747381d8a29aaf7d6eadca501be4c749ae1ad7d",
+      "pr": 23,
+      "meaning": "図保存と実績追記を含むPR23最終head。今回merge親として固定確認。",
+      "evidence": "AUD-290 / PR23 / M280 parents"
+    },
+    {
+      "id": "M280",
+      "version": "0.28.0",
+      "sha": "f4b6bb317499bb2ac4676ecd5567485e21bc4921",
+      "parents": [
+        "eb53fe37954f58b26771cc2f5437d46ee3f32fcd",
+        "8e0e4d520f413d58bf4d418b46afa3dc2a30cb15"
+      ],
+      "tree": "e747381d8a29aaf7d6eadca501be4c749ae1ad7d",
+      "pr": 23,
+      "meaning": "人間によるPR23の累積統合を実取得し、全101パス一致。",
+      "evidence": "AUD-290 / recovery-receipt.json"
+    },
+    {
+      "id": "W290-C1",
+      "version": "0.29.0",
+      "sha": "abb39fbb9b2ee8a5b017b99ff567b02d70b8679b",
+      "parents": [
+        "f4b6bb317499bb2ac4676ecd5567485e21bc4921"
+      ],
+      "tree": "5259045e760a220a47ca1a77855d8ea9c604341f",
+      "pr": 24,
+      "meaning": "同地点モデル比較・季節気象画面・原飛行窓と統計場・製品径入力を具体化した14差分を新branch/PRへ保存。全101固定照合。",
+      "evidence": "ACT-290 / P290/C1-receipt.json",
+      "observed_at_utc": "2026-09-24T10:39:48.187Z"
+    },
+    {
+      "id": "W290-C2",
+      "version": "0.29.0",
+      "sha": "a5f3ce04372ceaec7ff8b2fc6abe0d75d3b26d6d",
+      "parents": [
+        "abb39fbb9b2ee8a5b017b99ff567b02d70b8679b"
+      ],
+      "tree": "cdba0bc055387f2bd5e070ea1e537a6b8fa014c4",
+      "pr": 24,
+      "meaning": "0.29のC1実績追記を同じPR24へ保存し、全101パスを固定照合。0.30開始時にも同じ未統合C2を比較元として確認。",
+      "evidence": "ACT-290 / P290/C2-receipt.json / AUD-300 / P300/recovery-receipt.json",
+      "observed_at_utc": "2026-09-24T10:43:13.558Z"
+    },
+    {
+      "id": "W300-C1",
+      "version": "0.30.0",
+      "sha": "a86cc86fae47d7ff70bf0d86dccd8b2b0380eed9",
+      "parents": [
+        "a5f3ce04372ceaec7ff8b2fc6abe0d75d3b26d6d"
+      ],
+      "tree": "a3fd4716747b655fa4d203e5b3647fcf4cdc4e1b",
+      "pr": 24,
+      "meaning": "用途から解析/画面を再設計した14差分を既存PR24へ保存。人工模型/理由/次担当と全101パスの固定照合。",
+      "evidence": "ACT-300 / P300/C1-receipt.json",
+      "observed_at_utc": "2026-09-24T12:11:08.936Z"
+    },
+    {
+      "id": "W300-C2",
+      "version": "0.30.0",
+      "sha": "80731433f2feb68ae965246f7912657e60f6f182",
+      "parents": [
+        "a86cc86fae47d7ff70bf0d86dccd8b2b0380eed9"
+      ],
+      "tree": "e51b1e46ba81de9661480ae0be3418bbcfe644f0",
+      "pr": 24,
+      "meaning": "0.30のC1実績追記を同じPR24へ保存し、全101パスを固定照合。0.31開始時にも同じ未統合C2を比較元として確認。",
+      "evidence": "ACT-300 / P300/C2-receipt.json / AUD-310 / P310/recovery-receipt.json",
+      "observed_at_utc": "2026-09-24T12:15:20.142Z"
+    },
+    {
+      "id": "W310-C1",
+      "version": "0.31.0",
+      "sha": "4eb178624b9ee4f77c9bead2a621168502453c0a",
+      "parents": [
+        "80731433f2feb68ae965246f7912657e60f6f182"
+      ],
+      "tree": "857e4df695bada3ae61315b6af6094a3730cb3cb",
+      "pr": 24,
+      "meaning": "個別タブ・共通地図・比較群、指定9図の年間比較/ドラッグ操作、二基盤先行の15差分を既存PR24へ保存。全101パスを固定照合。人工模型/設計案の保存であり科学的採用ではない。",
+      "evidence": "ACT-310 / P310/C1-receipt.json",
+      "observed_at_utc": "2026-09-24T14:09:13.582Z"
+    },
+    {
+      "id": "W310-C2",
+      "version": "0.31.0",
+      "sha": "35882468429e2bbd8833c28f04b059ceb72f25b1",
+      "parents": [
+        "4eb178624b9ee4f77c9bead2a621168502453c0a"
+      ],
+      "tree": "5df1da541b9b9e6a6f1c91fb8af405a64214dbe2",
+      "pr": 24,
+      "meaning": "0.31のC1実績追記を同じPR24へ保存し、全101パスを固定照合。0.32開始時にも同じ未統合C2を比較元として確認。",
+      "evidence": "ACT-310 / P310/C2-receipt.json / AUD-320 / P320/recovery-receipt.json",
+      "observed_at_utc": "2026-09-24T14:14:58.791Z"
+    },
+    {
+      "id": "W320-C1",
+      "version": "0.32.0",
+      "sha": "9efd486cf97494e26b36418bf0e7dd54c1e5ce6b",
+      "parents": [
+        "35882468429e2bbd8833c28f04b059ceb72f25b1"
+      ],
+      "tree": "96ff901620f4ee9a4f0b374e48b9dcfba3d24c37",
+      "pr": 24,
+      "meaning": "0.32の14差分を既存作業branch/Draft PR24へ保存し、全101パスとmain不変を固定照合。",
+      "evidence": "ACT320 / P320/C1-receipt.json / save-C1/manifest.json",
+      "observed_at_utc": "2026-09-24T17:08:34.740Z"
+    },
+    {
+      "id": "W320-C2",
+      "version": "0.32.0",
+      "sha": "9c8e1080ae343b58e64d507da57de25e05d448c3",
+      "parents": [
+        "9efd486cf97494e26b36418bf0e7dd54c1e5ce6b"
+      ],
+      "tree": "14ee62545480cbc4b87c95248ee8be47758ff6de",
+      "pr": 24,
+      "meaning": "0.32実績追記後のPR24最終head。M320のmerge親と同一treeをAUD-330で確認。",
+      "evidence": "AUD-330 / 固定mainとPR24照合",
+      "observed_on": "2026-09-25"
+    },
+    {
+      "id": "M320",
+      "version": "0.32.0",
+      "sha": "f33165b2ccd6456d57efc92f7aaf2c2a83f4aab6",
+      "parents": [
+        "f4b6bb317499bb2ac4676ecd5567485e21bc4921",
+        "9c8e1080ae343b58e64d507da57de25e05d448c3"
+      ],
+      "tree": "14ee62545480cbc4b87c95248ee8be47758ff6de",
+      "pr": 24,
+      "meaning": "人間がPR24の累積0.29〜0.32をmainへ統合。登録101パスがローカルと同一。設計資料/人工模型の保存であり科学採用ではない。",
+      "evidence": "AUD-330 / 固定main・親・tree・全101パス照合",
+      "observed_on": "2026-09-25"
+    },
+    {
+      "id": "W330-C1",
+      "version": "0.33.0",
+      "sha": "ae9c90cc94979fd2c3c0bf731282bd55f1c82f15",
+      "parents": [
+        "f33165b2ccd6456d57efc92f7aaf2c2a83f4aab6"
+      ],
+      "tree": "96328a55a3b695177d5cacc97403a1d8624df103",
+      "pr": 25,
+      "meaning": "利用場面からの設計再検討と事実回答を新branch/Draft PR25へ保存。main未統合。",
+      "evidence": "ACT330/S34/P330/C1-git-receipt.json、固定GitHub tree全101照合",
+      "observed_at_utc": "2026-09-25T05:23:58.814293+00:00"
+    },
+    {
+      "id": "W330-C2",
+      "version": "0.33.0",
+      "sha": "617afabaf1f4566435923ee7f249499e02cefcc6",
+      "parents": [
+        "ae9c90cc94979fd2c3c0bf731282bd55f1c82f15"
+      ],
+      "tree": "ab869cd8eaad69f48250fc0541c3ee5c1a987d45",
+      "pr": 25,
+      "meaning": "0.33の実績追記後のPR25候補。0.34開始時に固定全101パス一致を確認。main統合とは別。",
+      "evidence": "ACT330 / AUD340 / C2-330固定照合",
+      "observed_on": "2026-09-25"
+    },
+    {
+      "id": "W340-C1",
+      "version": "0.34.0",
+      "sha": "5e3c8eddf78b45d6d8eede653fec33361a2e4c54",
+      "parents": [
+        "617afabaf1f4566435923ee7f249499e02cefcc6"
+      ],
+      "tree": "03d4901f45395535e395183c2bf801bc240f4e8c",
+      "pr": 25,
+      "meaning": "利用場面から改善した操作模型と設計/記録を既存Draft PR25へ保存。main未統合。",
+      "evidence": "ACT340/S34/P340/C1-git-receipt.json、C1-fixed-readback.json、固定GitHub tree全101照合",
+      "observed_at_utc": "2026-09-25T06:13:08Z"
+    },
+    {
+      "id": "W340-C2",
+      "version": "0.34.0",
+      "sha": "371797547671beee06c57ba6d16ab68a7647912e",
+      "parents": [
+        "5e3c8eddf78b45d6d8eede653fec33361a2e4c54"
+      ],
+      "tree": "6b39572a6250ddb8cd085009119da59e57607ad6",
+      "pr": 25,
+      "meaning": "0.34実績追記後のPR25候補。0.35開始時に全101パス一致を確認。用途受入の再評価とmain統合は別。",
+      "evidence": "ACT340 / AUD350 / C2-340固定照合",
+      "observed_on": "2026-09-25"
+    },
+    {
+      "id": "W350-C1",
+      "version": "0.35.0",
+      "sha": "3df1824b7266d651dae77a425a91c10a13be10f4",
+      "parents": [
+        "371797547671beee06c57ba6d16ab68a7647912e"
+      ],
+      "tree": "69fe3e01f0458304f9eebe81feb160b40f557191",
+      "pr": 25,
+      "meaning": "利用場面から改善した操作模型と設計/記録を既存Draft PR25へ保存。main未統合。",
+      "evidence": "ACT350/S34/P350/C1-git-receipt.json、C1-fixed-readback.json、固定GitHub tree全103照合",
+      "observed_at_utc": "2026-09-25T10:27:02.500772+00:00"
+    },
+    {
+      "id": "W350-C2",
+      "version": "0.35.0",
+      "sha": "14f83fa5b2aa0585aff716c9e5afc19ee5e5bb4a",
+      "parents": [
+        "3df1824b7266d651dae77a425a91c10a13be10f4"
+      ],
+      "tree": "80a0ef750694ea1830e526ad6799d148021ee005",
+      "pr": 25,
+      "meaning": "0.35の実績追記後commit。M350の実親として0.36開始時に固定GETした過去の観測であり、未来の0.36 C1/C2ではない。",
+      "evidence": "AUD-360 / P360/C2-350-observed-commit.json。M350 main-commitの親と照合。",
+      "observed_on": "2026-09-26"
+    },
+    {
+      "id": "M350",
+      "version": "0.35.0",
+      "sha": "9b2feeb09626184caad07df89dc027a1afee6958",
+      "parents": [
+        "f33165b2ccd6456d57efc92f7aaf2c2a83f4aab6",
+        "14f83fa5b2aa0585aff716c9e5afc19ee5e5bb4a"
+      ],
+      "tree": "80a0ef750694ea1830e526ad6799d148021ee005",
+      "pr": 25,
+      "meaning": "PR25をmainへ統合した観測。0.33〜0.35の当時の候補記録と人工模型・科学採用の境界を保持する。",
+      "evidence": "AUD-360 / P360/main-commit.json・baseline-receipt.json・remote-tree.json",
+      "observed_on": "2026-09-26"
+    },
+    {
+      "id": "W360-C1",
+      "version": "0.36.0",
+      "sha": "c87d9c29ad7b4d5c7c1101881a84e4dc5ca702ae",
+      "parents": [
+        "9b2feeb09626184caad07df89dc027a1afee6958"
+      ],
+      "tree": "dad7603e3ee5fcd16908ed0e7673d682cf196495",
+      "pr": 26,
+      "meaning": "目的と設計材料の再調査、模型履歴索引、意見1の原文/画像と次比較を新Draft PRへ保存。main未統合。",
+      "evidence": "ACT360/S34/P360/C1-fixed-readback.json、固定tree全104照合",
+      "observed_at_utc": "2026-09-26T04:50:31.490552+00:00"
+    },
+    {
+      "id": "W360-C2",
+      "version": "0.36.0",
+      "sha": "30c5126f6a44345f5d71fbc5b26af7caa2c293aa",
+      "parents": [
+        "c87d9c29ad7b4d5c7c1101881a84e4dc5ca702ae"
+      ],
+      "tree": "68a81a8d594e2775b3f5a684c8aa27893dfc7b1c",
+      "pr": 26,
+      "meaning": "0.36実績追記後の固定候補。PR26へ保存済み、main未統合。0.37開始時に取得した過去の観測。",
+      "evidence": "AUD-370 / P370/C2-360-observed-commit.json・pr26.json・base-tree.json",
+      "observed_on": "2026-09-26"
+    },
+    {
+      "id": "W370-C1",
+      "version": "0.37.0",
+      "sha": "5999774c23beabd53ea18d56ba7ceb8afd918d86",
+      "parents": [
+        "30c5126f6a44345f5d71fbc5b26af7caa2c293aa"
+      ],
+      "tree": "835def13a264b5d0c62c0ba0fe8248290bd13dbc",
+      "pr": 26,
+      "meaning": "用途から再設計した人工操作模型と独立批評を既存Draft PRへ追記。main未統合。",
+      "evidence": "ACT370/S34/P370/C1-fixed-readback.json、固定tree全106照合",
+      "observed_at_utc": "2026-09-26T07:55:28.396867+00:00"
+    },
+    {
+      "id": "W370-C2",
+      "version": "0.37.0",
+      "sha": "2aa9ec781818c0a9b2dfe0f53309b4abf1711f60",
+      "parents": [
+        "5999774c23beabd53ea18d56ba7ceb8afd918d86"
+      ],
+      "tree": "053edc39850bd33e6dfd72733bddd451496c1ae4",
+      "pr": 26,
+      "meaning": "0.37実績追記後の固定候補。PR26へ保存済み、main未統合。0.38開始時に取得した過去の観測。",
+      "evidence": "AUD-380 / P380/base-commit.json・pr26-observed.json・base-tree.json・baseline-readback.json",
+      "observed_at_utc": "2026-09-26T08:06:20.109439+00:00"
+    },
+    {
+      "id": "W380-C1",
+      "version": "0.38.0",
+      "sha": "c2236ab210e4ae52e1d2684b7222c2996d446ab3",
+      "parents": [
+        "2aa9ec781818c0a9b2dfe0f53309b4abf1711f60"
+      ],
+      "tree": "5fd9f564b09217ce58578e95bfe0727e16df34f0",
+      "pr": 26,
+      "meaning": "写真3D接続の操作模型・調査・批評と採否記録を既存Draft PRへ追記。main未統合。",
+      "evidence": "ACT380/S34/P380/C1-fixed-readback.json、固定tree全107照合",
+      "observed_at_utc": "2026-09-26T09:30:03.182765+00:00"
+    },
+    {
+      "id": "W380-C2",
+      "version": "0.38.0",
+      "sha": "6fb88d100109573c35131d67a7814f2fc885d21b",
+      "parents": [
+        "c2236ab210e4ae52e1d2684b7222c2996d446ab3"
+      ],
+      "tree": "c6cf7f6e6a0b2b0deff1b368a3b136cee069445f",
+      "pr": 26,
+      "meaning": "0.38保存実績を追記した候補C2。0.39開始時にPR26のheadと統合mainと同じtreeを照合。",
+      "evidence": "AUD390 / P390/metadata/prior-C2-380-observed.json・pr26-observed.json・recovery390.json",
+      "observed_at_utc": "2026-09-26T13:11:33.141650+00:00"
+    },
+    {
+      "id": "M380",
+      "version": "0.38.0",
+      "sha": "19bf0cc5cd32509a44ca8e246f4294ab0972d61e",
+      "parents": [
+        "9b2feeb09626184caad07df89dc027a1afee6958",
+        "6fb88d100109573c35131d67a7814f2fc885d21b"
+      ],
+      "tree": "c6cf7f6e6a0b2b0deff1b368a3b136cee069445f",
+      "pr": 26,
+      "meaning": "PR26を人間がmainへ統合。0.39開始時に固定mainと全107実体を取得・照合。",
+      "evidence": "AUD390 / P390/main-observed.json・pr26-observed.json・tree-observed.json・recovery390.json",
+      "observed_at_utc": "2026-09-26T13:11:33.141650+00:00"
+    },
+    {
+      "id": "W390-C1",
+      "version": "0.39.0",
+      "sha": "87a9afc836961a0a943c6434cb77a0b9e76d4c4a",
+      "parents": [
+        "19bf0cc5cd32509a44ca8e246f4294ab0972d61e"
+      ],
+      "tree": "1a092b1670a802b67a99ff214c2d5e89ec016314",
+      "pr": 27,
+      "meaning": "同じ対象を読む・比較する・保存する0.39操作模型と批評・判断を新Draft PRへ保存。main未統合。",
+      "evidence": "ACT390/S34/P390/C1-fixed-readback.json、固定tree全108照合",
+      "observed_at_utc": "2026-09-26T15:36:48.051634+00:00"
+    },
+    {
+      "id": "W390-C2",
+      "version": "0.39.0",
+      "sha": "b2f08834e5965f0f6f563946ec4a1ab3198f1554",
+      "parents": [
+        "87a9afc836961a0a943c6434cb77a0b9e76d4c4a"
+      ],
+      "tree": "090a1620d46bb05e4fffdb933d6d64cd93ff8186",
+      "pr": 27,
+      "meaning": "0.39の保存実績追記候補。保存済みcommit観測をPR27のheadおよび統合mainと同じtreeへ照合。",
+      "evidence": "P390/C2-remote-commit.json、P400/pr27-observed.json・tree-observed.json",
+      "observed_at_utc": "2026-09-27T10:40:19.906764+00:00"
+    },
+    {
+      "id": "M390",
+      "version": "0.39.0",
+      "sha": "7622593e0d4dacb101f9ed86990f2832845494ed",
+      "parents": [
+        "19bf0cc5cd32509a44ca8e246f4294ab0972d61e",
+        "b2f08834e5965f0f6f563946ec4a1ab3198f1554"
+      ],
+      "tree": "090a1620d46bb05e4fffdb933d6d64cd93ff8186",
+      "pr": 27,
+      "meaning": "PR27を人間がmainへ統合。保存済みGitHub観測と固定108登録実体を再照合。統合時刻2026-09-27T02:16:09Z。",
+      "evidence": "P400/main-observed.json・pr27-observed.json・tree-observed.json・base-manifest.json",
+      "observed_at_utc": "2026-09-27T10:40:19.906764+00:00"
+    },
+    {
+      "id": "W400-C1",
+      "version": "0.40.0",
+      "sha": "329c98f8cb7219751de5db92d30cf974b5f01d13",
+      "parents": [
+        "7622593e0d4dacb101f9ed86990f2832845494ed"
+      ],
+      "tree": "b724f56d6c629ce1527348ba605ede0ad05ecb4f",
+      "pr": 28,
+      "meaning": "名称hover・接続設計・Excel原分析と文書修復を新Draft PRへ保存。main未統合。",
+      "evidence": "ACT-400/S34/P400/C1-fixed-readback.json、固定tree113全path照合",
+      "observed_at_utc": "2026-09-27T10:58:59.787477+00:00"
+    },
+    {
+      "id": "W400-C2",
+      "version": "0.40.0",
+      "sha": "f6dbf6d54de252d63b586beeecc1962926aa6dd4",
+      "parents": [
+        "329c98f8cb7219751de5db92d30cf974b5f01d13"
+      ],
+      "tree": "db893a7fefd3f138eaac1bad4cd3d04db0d07693",
+      "pr": 28,
+      "meaning": "0.40の保存実績追記候補。PR28/C2全113pathの固定読戻し済み。mainへ未統合。",
+      "evidence": "P400/C2-git-receipt.json・C2-fixed-readback.json・manifest-C2.json",
+      "observed_at_utc": "2026-09-27T11:03:46.703689+00:00"
+    },
+    {
+      "id": "W401-C1",
+      "version": "0.40.1",
+      "sha": "66de33ab485a32da55fc1b44bd14e1922839f616",
+      "parents": [
+        "f6dbf6d54de252d63b586beeecc1962926aa6dd4"
+      ],
+      "tree": "99291719395a1e1517e0676dc96bd14dd8f3f246",
+      "pr": 28,
+      "meaning": "PR28の0.40.1最終作業commitを今回GitHub固定GETで確認。treeはM401と同じ。保存時の全操作を新たに再実施した記録ではない。",
+      "evidence": "P410/main-commit.json・c401-commit.json・main-tree.json・basis-verification.json、S35/REFERENCE_LOG",
+      "observed_at_utc": "2026-09-27T19:11:32.195971+00:00"
+    },
+    {
+      "id": "M401",
+      "version": "0.40.1",
+      "sha": "55100867df2bef615c3131228c7c75adf31c9833",
+      "parents": [
+        "7622593e0d4dacb101f9ed86990f2832845494ed",
+        "66de33ab485a32da55fc1b44bd14e1922839f616"
+      ],
+      "tree": "99291719395a1e1517e0676dc96bd14dd8f3f246",
+      "pr": 28,
+      "meaning": "PR28を人間がmainへ統合。GitHub commit/treeと全114登録実体を固定照合。",
+      "evidence": "P410/main-commit.json・c401-commit.json・main-tree.json・basis-verification.json、S35/REFERENCE_LOG",
+      "observed_at_utc": "2026-09-27T19:11:32.195971+00:00"
+    },
+    {
+      "id": "W410-C1",
+      "version": "0.41.0",
+      "sha": "6156f88454c0f7362a3f99e1390463cc0e7fcb87",
+      "parents": [
+        "55100867df2bef615c3131228c7c75adf31c9833"
+      ],
+      "tree": "a4c01943c56670cca2b4f194b470f8f0a6003bdc",
+      "pr": 29,
+      "meaning": "設計と研究受渡し候補を新作業branch/Draft PR29へ保存。GitHub固定GETで全127 mode/size/blob、親/tree、PR head/baseとmain不変を照合。main未統合。",
+      "evidence": "S35/ACT-410、P410/save-receipt.json・C1-remote-commit.json・C1-fixed-readback.json",
+      "observed_at_utc": "2026-09-27T19:30:31.559060+00:00"
+    },
+    {
+      "id": "W410-C2",
+      "version": "0.41.0",
+      "sha": "d8aa7ed7c385616824121f3f234ad5c9226ba782",
+      "parents": [
+        "6156f88454c0f7362a3f99e1390463cc0e7fcb87"
+      ],
+      "tree": "992cf211a0df3e7733cf504b930b4ef3fde0714f",
+      "pr": 29,
+      "meaning": "0.41実績記録を同Draft PR29へ保存した最終候補。main M401は不変。全127固定読戻しと元C2 bytesを0.42開始時にも照合。",
+      "evidence": "P410/C2-fixed-readback.json・C2-remote-commit.json、P420/basis-verification.json、S35 / REFERENCE_LOG。",
+      "observed_at_utc": "2026-09-27T19:37:28.770202+00:00"
+    },
+    {
+      "id": "W420-C3",
+      "version": "0.42.0",
+      "sha": "f0a589ea94beb0e804920a5ffe73dc7937138b3c",
+      "parents": [
+        "d8aa7ed7c385616824121f3f234ad5c9226ba782"
+      ],
+      "tree": "e32ee02d4bd77e201ebaae09052d13e762fb2079",
+      "pr": 29,
+      "meaning": "内容を見直した0.42候補をC2の子として同Draft PRへ保存。全131固定照合、main M401不変。",
+      "evidence": "P420/C3-fixed-readback.json、C3-remote-commit/tree/main/pr.json、S35/REFERENCE_LOG。",
+      "observed_at_utc": "2026-09-27T21:04:07.023524+00:00"
+    },
+    {
+      "id": "W420-C4",
+      "version": "0.42.0",
+      "sha": "3f67124960063a20ede16ca38f8716402a802809",
+      "parents": [
+        "f0a589ea94beb0e804920a5ffe73dc7937138b3c"
+      ],
+      "tree": "61f6853081aea968222f341e2b62dbada642dabc",
+      "pr": 29,
+      "meaning": "PR29の記録追記最終commitを0.43で固定取得。親はC3、treeはM420と同じ。保存当時の操作を今回再実行したという記録ではない。",
+      "evidence": "P430/C4-420-live.jsonとourcommit.json。主担当がGitHub固定GETで照合。",
+      "observed_at_utc": "2026-09-29T03:01:15.572547+00:00"
+    },
+    {
+      "id": "M420",
+      "version": "0.42.0",
+      "sha": "4e3e4db0d047af9479bcd68bfc2553eeb71efcc9",
+      "parents": [
+        "55100867df2bef615c3131228c7c75adf31c9833",
+        "3f67124960063a20ede16ca38f8716402a802809"
+      ],
+      "tree": "61f6853081aea968222f341e2b62dbada642dabc",
+      "pr": 29,
+      "meaning": "PR29をmainへ統合した現commitを固定取得し全131実体を照合。記録にある旧候補の保存前状態と区別する。",
+      "evidence": "P430/ourcommit.json・ourtree.json・fixed-bases.json、S35/ACT-430。",
+      "observed_at_utc": "2026-09-29T02:45:48.764976+00:00"
+    },
+    {
+      "id": "W430-C1",
+      "version": "0.43.0",
+      "sha": "253f31ce5ba1b58d452d9a46d93340cff397e433",
+      "parents": [
+        "4e3e4db0d047af9479bcd68bfc2553eeb71efcc9"
+      ],
+      "tree": "abcf65c76070b0805e083f470607fedd76714f4f",
+      "pr": 30,
+      "meaning": "参考構成の評価、private正本と人間手動public反映の分担を新Draft PRへ保存。全132固定読戻し。実装移行とmain統合は未実施。",
+      "evidence": "P430/receipt430.json・freeze430.json・validation430_03/receipt.jsonと固定PR取得票、S35/REFERENCE_LOG。",
+      "observed_at_utc": "2026-09-29T03:06:58.802587+00:00"
+    },
+    {
+      "id": "W430-C2",
+      "version": "0.43.0",
+      "sha": "bea3f98a39b3827006c644743bc195804e27188b",
+      "parents": [
+        "253f31ce5ba1b58d452d9a46d93340cff397e433"
+      ],
+      "tree": "af3a61131c6c7dc915ec30f8d8fd92003ac1fbd1",
+      "pr": 30,
+      "meaning": "0.43実績追記の保存を0.44開始時に固定照合した未統合候補。mainはM420のまま。",
+      "evidence": "P440/recovery440.json・C2-observed-commit.json、固定全132実体、PR30読戻し。",
+      "observed_at_utc": "2026-09-29T04:22:48.961989+00:00"
+    },
+    {
+      "id": "W440-C1",
+      "version": "0.44.0",
+      "sha": "87a02529f6a0609f5c47212513c8393707223bd1",
+      "parents": [
+        "bea3f98a39b3827006c644743bc195804e27188b"
+      ],
+      "tree": "86512ceb88c315a951103fefc6c65c82bbb03fa1",
+      "pr": 30,
+      "meaning": "Chat第7巡の原本・選択再現・独立批評と接続設計への採否を既存Draft PR30へ保存。全137固定読戻し。実装移行・main統合・科学採用は未実施。",
+      "evidence": "P440/git-receipt440.json・freeze440.json・validation440_02/receipt.json、S35/ACT-440。原ZIP受領票とは別。",
+      "observed_at_utc": "2026-09-29T04:35:22.126768+00:00"
+    },
+    {
+      "id": "W440-C2",
+      "version": "0.44.0",
+      "sha": "346e9484d3fc3444fd7a12c9e85710e479685666",
+      "parents": [
+        "87a02529f6a0609f5c47212513c8393707223bd1"
+      ],
+      "tree": "7e090262c5da55a089b9f4a9292f06fa14a53c96",
+      "pr": 30,
+      "meaning": "0.44実績追記を0.45開始時に全137固定照合した未統合候補。",
+      "evidence": "P450/basis450.json・git-receipt450.json・freeze450.json、S35/ACT-450。",
+      "observed_at_utc": "2026-09-29T04:44:18.367349+00:00"
+    },
+    {
+      "id": "W450-C1",
+      "version": "0.45.0",
+      "sha": "d00a2ccfdbb1ec70de21dfed227e025682eafe30",
+      "parents": [
+        "346e9484d3fc3444fd7a12c9e85710e479685666"
+      ],
+      "tree": "04ba4300574eab8716b30dd1d95e5a0805dc3ea8",
+      "pr": 30,
+      "meaning": "React/薄いFastAPIと既存核の二結果比較・保存再閲覧、構造資料と有限検証を保存。全166固定読戻し。",
+      "evidence": "P450/basis450.json・git-receipt450.json・freeze450.json、S35/ACT-450。",
+      "observed_at_utc": "2026-09-29T06:41:17.393968+00:00"
+    },
+    {
+      "id": "W450-C2",
+      "version": "0.45.0",
+      "sha": "ce6a29accfad6865beca0b2dfe4f414e2bafb81a",
+      "parents": [
+        "d00a2ccfdbb1ec70de21dfed227e025682eafe30"
+      ],
+      "tree": "5c2dd058e23efb4792f924dfe2a2d4534104e2bc",
+      "pr": 30,
+      "meaning": "0.45実績記録を0.46開始時に全166固定照合。",
+      "evidence": "P460/basis-receipt460.json・git-receipt460.json・freeze460.json、S35/ACT-460。",
+      "observed_at_utc": "2026-09-29T06:45:55.650388+00:00"
+    },
+    {
+      "id": "W460-C1",
+      "version": "0.46.0",
+      "sha": "9f3819ee5cb9ddb5bac80ebd12d923aed6aef084",
+      "parents": [
+        "ce6a29accfad6865beca0b2dfe4f414e2bafb81a"
+      ],
+      "tree": "4b08faaa0863e0a3e51f1588a8744b68928047a8",
+      "pr": 30,
+      "meaning": "具体GUI統合、実計算接点、有限受入と生成資料を保存し全221固定読戻し。",
+      "evidence": "P460/basis-receipt460.json・git-receipt460.json・freeze460.json、S35/ACT-460。",
+      "observed_at_utc": "2026-09-29T10:19:50.919515+00:00"
+    },
+    {
+      "id": "W460-C2",
+      "version": "0.46.0",
+      "sha": "2436152f815a20573e6eca7badedc958c18efe48",
+      "parents": [
+        "9f3819ee5cb9ddb5bac80ebd12d923aed6aef084"
+      ],
+      "tree": "513d98784133098b81a348c0c777095a5a7f74d8",
+      "pr": 30,
+      "meaning": "0.46実績C2を0.47開始時に全221固定照合。",
+      "evidence": "P470/basis-receipt470.json、P460/record-git-receipt460.json。",
+      "observed_at_utc": "2026-09-29T12:55:08.554432+00:00"
+    },
+    {
+      "id": "W470-C1",
+      "version": "0.47.0",
+      "sha": "3b08f3e4037b655e01e0b40437dff37048ee8e3d",
+      "parents": [
+        "2436152f815a20573e6eca7badedc958c18efe48"
+      ],
+      "tree": "e5cd6c52713642d55fe3fd8f1b5962d24bb39fb7",
+      "pr": 30,
+      "meaning": "実GFS取得と具体GUIの明示適用・入力保持・計算保存を接続し、有限検査と全235固定読戻し。",
+      "evidence": "P470/git-receipt470.json・freeze470.json、S36/ACT-470。",
+      "observed_at_utc": "2026-09-29T12:55:08.554432+00:00"
+    },
+    {
+      "id": "W470-C2",
+      "version": "0.47.0",
+      "sha": "42adf4fe5293824ec98e9b0fc8cd68965f71106a",
+      "parents": [
+        "3b08f3e4037b655e01e0b40437dff37048ee8e3d"
+      ],
+      "tree": "dbd6506c5dbd680adc3a456e9c5973954ce3cd28",
+      "pr": 30,
+      "meaning": "0.47実績C2を0.48開始時に全235固定照合。",
+      "evidence": "P480/recovery480.json、P470/record-git-receipt470.json。",
+      "observed_at_utc": "2026-09-29T15:14:25.984907+00:00"
+    },
+    {
+      "id": "W480-C1",
+      "version": "0.48.0",
+      "sha": "5ec82de219ee5a5add7614d782db35e2bcd4d884",
+      "parents": [
+        "42adf4fe5293824ec98e9b0fc8cd68965f71106a"
+      ],
+      "tree": "a90f392318d89e9b283f14da938526e2248797eb",
+      "pr": 30,
+      "meaning": "固定実GFSでの対応標本・延期・経験域・干渉群分析を接続し、有限受入と全256固定読戻し。",
+      "evidence": "P480/git-receipt480.json・freeze480.json、S36/ACT-480。",
+      "observed_at_utc": "2026-09-29T15:14:25.984907+00:00"
+    },
+    {
+      "id": "W480-C2",
+      "version": "0.48.0",
+      "sha": "57c852b010544a938bca0cca02795fa33bfd79be",
+      "parents": [
+        "5ec82de219ee5a5add7614d782db35e2bcd4d884"
+      ],
+      "tree": "32eb43efffaf9711386d6c0b55d8e88a51eadbc1",
+      "pr": 30,
+      "meaning": "0.48記録C2を0.49開始時の固定比較元とし、全256登録実体を照合。",
+      "evidence": "P490/basis-repo490.json、P480/record-git-receipt480.json。",
+      "observed_at_utc": "2026-09-29T17:35:47.956182+00:00"
+    },
+    {
+      "id": "W490-C1",
+      "version": "0.49.0",
+      "sha": "bd613efe6edf5a496f846ae88042d1cf65e06d53",
+      "parents": [
+        "57c852b010544a938bca0cca02795fa33bfd79be"
+      ],
+      "tree": "6cabd0c0f157b0e50f5cd36a1d9f88851d863605",
+      "pr": 30,
+      "meaning": "実GFS運用費用と実JRA期間統計の画面接続を有限確認し、全276登録実体を固定読戻し。",
+      "evidence": "P490/git-receipt490.json・freeze490.json、S36#s36-save490。",
+      "observed_at_utc": "2026-09-29T17:35:47.956182+00:00"
+    },
+    {
+      "id": "W490-C2",
+      "version": "0.49.0",
+      "sha": "22799fe2c20627321e9c60367e974b92e16497cf",
+      "parents": [
+        "bd613efe6edf5a496f846ae88042d1cf65e06d53"
+      ],
+      "tree": "9d782987601b25252f170f5e31c009727ad6e6b0",
+      "pr": 30,
+      "meaning": "0.49記録C2を0.50開始時の固定比較元とし、全276登録実体を照合。",
+      "evidence": "P500/basis500.json、P490/record-git-receipt490.json。",
+      "observed_at_utc": "2026-09-29T18:13:42.723682+00:00"
+    },
+    {
+      "id": "W500-C1",
+      "version": "0.50.0",
+      "sha": "3b9c55c02bc336138e91082390c4ae104f2bbac9",
+      "parents": [
+        "22799fe2c20627321e9c60367e974b92e16497cf"
+      ],
+      "tree": "40618569572bcee5885b84d37c0f929b87bc7106",
+      "pr": 30,
+      "meaning": "保存参照の復元と実GFS窓間raw共有の有限修復・記録を内容C1へ保存し、全281登録実体を固定読戻し。",
+      "evidence": "P500/git-receipt500.json・freeze500.json、S36#s36-save500。",
+      "observed_at_utc": "2026-09-29T19:59:56.426543+00:00"
+    },
+    {
+      "id": "W500-C2",
+      "version": "0.50.0",
+      "sha": "2cefd08dfd039645b85d184a7089a7aa002ab775",
+      "parents": [
+        "3b9c55c02bc336138e91082390c4ae104f2bbac9"
+      ],
+      "tree": "e06a65986898e0cf6c5e1000ffa396012a6417a2",
+      "pr": 30,
+      "meaning": "0.50記録C2の保存/全281読戻しを確認し、0.51の固定比較元とした。",
+      "evidence": "P500/record-git-receipt500.json、P510/basis510.json。",
+      "observed_at_utc": "2026-09-29T20:33:52.090403+00:00"
+    },
+    {
+      "id": "W510-C1",
+      "version": "0.51.0",
+      "sha": "7c08ec5d3f28d8bf4e7be0d6469031853f507807",
+      "parents": [
+        "2cefd08dfd039645b85d184a7089a7aa002ab775"
+      ],
+      "tree": "d856b95ef94dbcec1fa582f0fae07af8cbcf7508",
+      "pr": 30,
+      "meaning": "0.51内容C1を同じprivate branch / Draft PR30へ保存し、全287登録実体を固定読戻し。main統合と記録C2は別であり、この追記時点では未実施。",
+      "evidence": "P510/git-receipt510.json・freeze510.json、S36#s36-save510。",
+      "observed_at_utc": "2026-09-29T21:53:40.423494+00:00"
+    },
+    {
+      "id": "W510-C2",
+      "version": "0.51.0",
+      "sha": "f94027cec2ff56b732af7bd11b2df26bdd9513a5",
+      "parents": [
+        "7c08ec5d3f28d8bf4e7be0d6469031853f507807"
+      ],
+      "tree": "b7a696394584671ab5d11ed41dfd34d4b829561f",
+      "pr": 30,
+      "meaning": "0.51記録C2の保存/全287読戻しを確認し、0.52の固定比較元へ保全した。main M420は不変。",
+      "evidence": "P510/record-git-receipt510.json、P520/basis520.json・basis-copy520.json。",
+      "observed_at_utc": "2026-09-29T23:19:40.845852+00:00"
+    },
+    {
+      "id": "W520-C1",
+      "version": "0.52.0",
+      "sha": "664a37f8978f63a8f0504a62b68cda054d98105f",
+      "parents": [
+        "f94027cec2ff56b732af7bd11b2df26bdd9513a5"
+      ],
+      "tree": "08ab5cb8a407e47cd1f5aff41284ba31ce5f1faa",
+      "pr": 30,
+      "meaning": "実JRA地上完飛行・資料・有限証拠の内容C1を保存し全292を固定読戻し。採用main M420は不変。",
+      "evidence": "P520/freeze520.json・git-receipt520.json、S36#s36-save520。",
+      "observed_at_utc": "2026-09-30T00:29:29.148571+00:00"
+    },
+    {
+      "id": "W520-C2",
+      "version": "0.52.0",
+      "sha": "3057db449af449d024dac2ce88bb32bd454483a0",
+      "parents": [
+        "664a37f8978f63a8f0504a62b68cda054d98105f"
+      ],
+      "tree": "ea2b6c1f3aec77d05959a22003163a6cbeff7b05",
+      "pr": 30,
+      "meaning": "0.52記録C2の保存・全292固定読戻しを確認し、0.53の比較基準として保全した。0.52本文のC2未保存という記述は当時の記録として保持する。",
+      "evidence": "P520/record-git-receipt520.json、P530/basis530.json・basis520（292実体）、S36#s36-plan530。",
+      "observed_at_utc": "2026-09-30T00:41:37.916439+00:00"
+    },
+    {
+      "id": "W530-C1",
+      "version": "0.53.0",
+      "sha": "566fa1214eb4d8908d3d1560031f74a39b3aabe2",
+      "parents": [
+        "3057db449af449d024dac2ce88bb32bd454483a0"
+      ],
+      "tree": "59d45f664c4d7947fe4afcbc9dae52e1eaf012a9",
+      "pr": 30,
+      "meaning": "内容C1を同じprivate branch / Draft PR30へ保存し、全295実体を固定読戻しした。管理6検査と管理回帰の実結果はS36の保存実績に記す。記録C2はこの追記時点で未保存。",
+      "evidence": "P530/freeze530.json・git-receipt530.json、S36#s36-save530、管理票と全295固定snapshot。",
+      "observed_at_utc": "2026-09-30T03:08:58.066744+00:00"
+    },
+    {
+      "id": "W530-C2",
+      "version": "0.53.0",
+      "sha": "f2a3fa6fa0621076452001177ce3556ef189acd5",
+      "parents": [
+        "566fa1214eb4d8908d3d1560031f74a39b3aabe2"
+      ],
+      "tree": "ed8d1ded2ec3ce82e7ec3a4d2531c79e874101e9",
+      "pr": 30,
+      "meaning": "0.53記録C2全295の保存と固定読戻しを確認し0.54比較元へ保全した。旧本文のC2未保存は当時の記録として残す。",
+      "evidence": "P530/record-git-receipt530.json、P540/basis540.json・basis530。",
+      "observed_at_utc": "2026-09-30T03:21:28.926227+00:00"
+    },
+    {
+      "id": "W540-C1",
+      "version": "0.54.0",
+      "sha": "bd4a659cd9b80b94d884528f0ad2c788234521a8",
+      "parents": [
+        "f2a3fa6fa0621076452001177ce3556ef189acd5"
+      ],
+      "tree": "f3c7feaf1c7e2f932806e690ba95306266d134cd",
+      "pr": 30,
+      "meaning": "内容C1を同じprivate branch / Draft PR30へ保存し、全302実体を固定読戻しした。管理6検査と管理回帰224件は成功・skip0。記録C2はこの追記時点で未保存。",
+      "evidence": "P540/freeze540.json・git-receipt540.json、management-checks540-02/receipt.json・management-regression540-01/receipt.json、S36#s36-save540。",
+      "observed_at_utc": "2026-09-30T06:38:45.394761+00:00"
+    },
+    {
+      "id": "W540-C2",
+      "version": "0.54.0",
+      "sha": "cc7b0fd0463a69ad495debb7f03f1b3eb734e0e6",
+      "parents": [
+        "bd4a659cd9b80b94d884528f0ad2c788234521a8"
+      ],
+      "tree": "46ad5ea17e9173b8f201bba59c1e44f07f0a2fd4",
+      "pr": 30,
+      "meaning": "0.54記録C2の全302保存・固定読戻しを確認し0.55の比較元へ保全。旧本文のC2未保存は当時の記録として保持する。",
+      "evidence": "P540/record-git-receipt540.json、P550/basis550.json・basis540。",
+      "observed_at_utc": "2026-09-30T06:54:13.855644+00:00"
+    },
+    {
+      "id": "W550-C1",
+      "version": "0.55.0",
+      "sha": "59ea0d6765f76c13e6708c1fd7cf734401882b94",
+      "parents": [
+        "cc7b0fd0463a69ad495debb7f03f1b3eb734e0e6"
+      ],
+      "tree": "8be26248eff105153d53df086d81afe4b04c2cd4",
+      "pr": 30,
+      "meaning": "内容C1の全326実体を固定読戻し。記録C2はこの追記時点で未保存。科学採否・main統合とは区別する。",
+      "evidence": "P550/freeze550.json・git-receipt550.json、S36#s36-save550。",
+      "observed_at_utc": "2026-09-30T11:15:43.910892+00:00"
+    },
+    {
+      "id": "W550-C2",
+      "version": "0.55.0",
+      "sha": "51c9b95a5ccab56274ade81e27384f73e5378346",
+      "parents": [
+        "59ea0d6765f76c13e6708c1fd7cf734401882b94"
+      ],
+      "tree": "cda8e4aee3c97441085b88df023d78e7b69cd388",
+      "pr": 30,
+      "meaning": "記録C2の保存・全326実体読戻し。 mainへの統合とは別。",
+      "evidence": "P550/record-git-receipt550.json",
+      "observed_at_utc": "2026-09-30T11:32:15.128490+00:00"
+    },
+    {
+      "id": "W550-3D",
+      "version": "0.55.0",
+      "sha": "e0ff4a98ccb014265cb0572179b90de9ea6fb467",
+      "parents": [
+        "51c9b95a5ccab56274ade81e27384f73e5378346"
+      ],
+      "tree": "e4824218ddc98571f61ecb056606d111adbc15a9",
+      "pr": 30,
+      "meaning": "3D配信修復の記録保存。 mainへの統合とは別。",
+      "evidence": "P550/repair-preview3d550/save-receipt.json",
+      "observed_at_utc": "2026-09-30T12:31:37.674668+00:00"
+    },
+    {
+      "id": "W550-WRITER",
+      "version": "0.55.0",
+      "sha": "4384c567e4492843c14a8e8e4c74be20f5385042",
+      "parents": [
+        "e0ff4a98ccb014265cb0572179b90de9ea6fb467"
+      ],
+      "tree": "f89fc5e1b505f65622416961b537ae088a9d9198",
+      "pr": 30,
+      "meaning": "送信復旧の記録保存。 mainへの統合とは別。",
+      "evidence": "P550/repair-writer550/save-receipt.json",
+      "observed_at_utc": "2026-09-30T16:14:38.404526+00:00"
+    },
+    {
+      "id": "W550-BACKGROUND",
+      "version": "0.55.0",
+      "sha": "e86aafa1cafb8e16ef25aa1d2a6946fc84e5c96d",
+      "parents": [
+        "4384c567e4492843c14a8e8e4c74be20f5385042"
+      ],
+      "tree": "bf13ba621bb5332f54c32a889763a3f8d2fec2e1",
+      "pr": 30,
+      "meaning": "背景切替・通常更新時の白画面修復と記録保存。 mainへの統合とは別。",
+      "evidence": "P550/repair-background550/save-receipt.json",
+      "observed_at_utc": "2026-10-01T03:52:10.631775+00:00"
+    },
+    {
+      "id": "W550-HIT-DISPLAY",
+      "version": "0.55.0",
+      "sha": "70485a832eb5af50d333c0b07d6ec1c57f720f68",
+      "parents": [
+        "e86aafa1cafb8e16ef25aa1d2a6946fc84e5c96d"
+      ],
+      "tree": "8006121fb522689718f5f9a5c9cc7977422cf1fb",
+      "pr": 30,
+      "meaning": "干渉外周の調査記録。後続採否の未照合は次の訂正へ。 mainへの統合とは別。",
+      "evidence": "P550/inspect-hit-display550/save-receipt.json",
+      "observed_at_utc": "2026-10-01T04:53:32.040145+00:00"
+    },
+    {
+      "id": "W550-HIT-CORRECTION",
+      "version": "0.55.0",
+      "sha": "a448f87b9130683a8d731d99474d503f789385fe",
+      "parents": [
+        "70485a832eb5af50d333c0b07d6ec1c57f720f68"
+      ],
+      "tree": "10be8168194afd2f5c8edc1590f64db1c0c2f04b",
+      "pr": 30,
+      "meaning": "D-174の採否まで再照合し任意外周の推奨を撤回。 mainへの統合とは別。",
+      "evidence": "P550/inspect-hit-display550-correction/save-receipt.json",
+      "observed_at_utc": "2026-10-01T04:56:54.703453+00:00"
+    },
+    {
+      "id": "M550",
+      "version": "0.55.0",
+      "sha": "06936856ee0deab2fe0b3f3b04220d60652ffba6",
+      "parents": [
+        "4e3e4db0d047af9479bcd68bfc2553eeb71efcc9",
+        "a448f87b9130683a8d731d99474d503f789385fe"
+      ],
+      "tree": "10be8168194afd2f5c8edc1590f64db1c0c2f04b",
+      "pr": 30,
+      "at_utc": "2026-10-01T14:22:48Z",
+      "meaning": "人間がPR30をmainへ統合。treeはa448f87と一致。今回の干渉点修正はこのmainには含まれず新branchへ保存する。",
+      "evidence": "P550/repair-hit550/main-merge-observation.json; GitHub PR30"
+    },
+    {
+      "id": "W550-HIT-FIX-C1",
+      "version": "0.55.0",
+      "sha": "b9a1973dca187b18756182a84b8351c2124de2c3",
+      "parents": [
+        "06936856ee0deab2fe0b3f3b04220d60652ffba6"
+      ],
+      "tree": "f34d2b9c2f05e8d13440451c6eeab0c6a6393b26",
+      "pr": 31,
+      "at_utc": "2026-10-01T14:58:46.876816+00:00",
+      "meaning": "干渉点表示の修復・資料整合18差分を新Draft PR31へ保存し全326を固定読戻し。mainへの統合は別。",
+      "evidence": "P550/repair-hit550/save-receipt.json; S36 s36-hit-fix550"
+    },
+    {
+      "id": "W550-HIT-FIX-RECORD",
+      "version": "0.55.0",
+      "sha": "30f61bf415dac52dce136041378ed183780b1cd2",
+      "parents": [
+        "b9a1973dca187b18756182a84b8351c2124de2c3"
+      ],
+      "tree": "ca84bd81cb15f54adae957e06bc7fb103c374216",
+      "pr": 31,
+      "at_utc": "2026-10-01T15:04:10.366488+00:00",
+      "meaning": "干渉点表示修復の実績記録を保存し全326を固定読戻し。元の改行形式を保持し不要な全文差分を解消。",
+      "evidence": "P550/repair-hit550/record-final/save-receipt.json; separate bare Git commit/tree readback 2026-10-02"
+    },
+    {
+      "id": "W550-ROUTE3D-DISCUSSION",
+      "version": "0.55.0",
+      "sha": "b9d960c858e886666167e841dee240801fcfd2a4",
+      "parents": [
+        "30f61bf415dac52dce136041378ed183780b1cd2"
+      ],
+      "tree": "a86e8f5a778d0ad5ee650121fce7d218f0380d9e",
+      "pr": 31,
+      "meaning": "立体経路・投影線・幕の検討記録を保存し全326を読戻し。その後の実装・部分幕案の撤回はS36の実装記録へ。",
+      "evidence": "P550/route3d-discussion550/save-receipt.json",
+      "observed_at_utc": "2026-10-01T15:24:25.681716+00:00"
+    },
+    {
+      "id": "W550-ROUTE3D-IMPLEMENTATION-C1",
+      "version": "0.55.0",
+      "sha": "62d93e0afb5c2f6b4e91f5ef5fda3c8d409671fb",
+      "parents": [
+        "b9d960c858e886666167e841dee240801fcfd2a4"
+      ],
+      "tree": "ac19fc26e85fb671a46afe5edb279ca259262e97",
+      "pr": 31,
+      "at_utc": "2026-10-01T16:58:33.012601+00:00",
+      "meaning": "同じKML原経路の空中線・地表線・全経路カーテンと資料・根拠束を保存し、全335実体を固定読戻し。部分幕初稿は目的不適合として撤回。main採用と科学的受入は別。",
+      "evidence": "P550/route3d-implementation550/content-c1/save-receipt.json; S36 s36-route3d-results550"
+    },
+    {
+      "id": "W550-ROUTE3D-IMPLEMENTATION-RECORD",
+      "version": "0.55.0",
+      "sha": "ee051f506a94e2178c697b97684eba700da1769a",
+      "parents": [
+        "62d93e0afb5c2f6b4e91f5ef5fda3c8d409671fb"
+      ],
+      "tree": "e03a9ccac43264960caa8487d91baff192788302",
+      "pr": 31,
+      "at_utc": "2026-10-01T17:08:09.224064+00:00",
+      "meaning": "3D追補のC1保存実績と固定DACのbinary属性を記録し、全335を固定読戻し。原DAC/アプリ/PDFはC1と不変。",
+      "evidence": "P550/route3d-implementation550/record-c2/save-receipt.json"
+    },
+    {
+      "id": "W550-DETAIL-LEASE-C1",
+      "version": "0.55.0",
+      "sha": "57d2680faa07a360c56efe7fe98544e16e03ecc3",
+      "parents": [
+        "ee051f506a94e2178c697b97684eba700da1769a"
+      ],
+      "tree": "d917300b3addb274d069954d68f2152e86d85203",
+      "pr": 31,
+      "at_utc": "2026-10-01T18:14:41.506444+00:00",
+      "meaning": "詳細の独立読取と明示的な送信担当切替の修復・資料・有限証拠を保存し、全339を固定読戻し。新14は保存計画で受入し、旧13の未保存草案/接続を保持。main統合/科学的採用とは別。",
+      "evidence": "P550/detail-lease-repair550/content-c1/save-receipt.json; S36 s36-detail-lease-save550"
+    },
+    {
+      "id": "W550-DETAIL-LEASE-RECORD",
+      "version": "0.55.0",
+      "sha": "cbc197276d14c5753cc112643e449abaeb3bb29f",
+      "parents": [
+        "57d2680faa07a360c56efe7fe98544e16e03ecc3"
+      ],
+      "tree": "1c85bfd90cc38c0dee15d558f85b0237e31eeb46",
+      "pr": 31,
+      "at_utc": "2026-10-01T18:23:03.111016+00:00",
+      "meaning": "詳細閲覧/送信担当修復の保存実績を記録し、全339を固定読戻し。7管理path以外は内容C1と一致。今回の保存操作前後の元local.git1623不変、main M550不変。",
+      "evidence": "P550/detail-lease-repair550/record-c2/save-receipt.json"
+    },
+    {
+      "id": "W560-C1",
+      "version": "0.56.0",
+      "sha": "b6744d06c8f7ba8ed94e9990f92a6bbe3793156a",
+      "parents": [
+        "cbc197276d14c5753cc112643e449abaeb3bb29f"
+      ],
+      "tree": "668fd0d8cd8ed0f93f589677f77aa8c6b4f59d57",
+      "pr": 31,
+      "at_utc": "2026-10-01T20:49:24.094307+00:00",
+      "meaning": "月/季節再集計、支持内UTC、代表一点風配、固定母集団の面探索、図保存の有限改善を保存し全347固定読戻し。平均は補助で元中央値/月幅は未接続。科学採用・季節飛行・人間main統合とは別。",
+      "evidence": "P550/climate-expansion550/content-c1/save-receipt.json; S36 s36-climate-save560"
+    },
+    {
+      "id": "W560-RECORD",
+      "version": "0.56.0",
+      "sha": "98b6dad115e4ac30c03f06ff3366fc6468022b8a",
+      "parents": [
+        "b6744d06c8f7ba8ed94e9990f92a6bbe3793156a"
+      ],
+      "tree": "a6f0002550a9538a141c03ccf4b12f01271a4042",
+      "pr": 31,
+      "at_utc": "2026-10-01T20:54:08.331595+00:00",
+      "meaning": "0.56内容保存の実績を7管理pathへ記録し、全347固定読戻し。元local.git1633実体の不変はこの操作前後の有限照合に限る。",
+      "evidence": "P550/climate-expansion550/record-c2/save-receipt.json"
+    },
+    {
+      "id": "W570-C1",
+      "version": "0.57.0",
+      "sha": "e766b58d053e2410144d0da1ad275b8052fb149e",
+      "parents": [
+        "98b6dad115e4ac30c03f06ff3366fc6468022b8a"
+      ],
+      "tree": "f53b5ded242338b28da70499f96b10b0dcdb00fb",
+      "pr": 31,
+      "at_utc": "2026-10-02T09:19:43.883124+00:00",
+      "meaning": "JRA-3Q/ERA5の2024年原風値取得・実分布/フィルター接続・再現デモを保存し全363固定読戻し。取得画面だけ後続。科学採用・多年代表性・季節飛行・人間main統合とは別。",
+      "evidence": "P570/content-c1/save-receipt.json; S36 s36-climate-save570"
+    },
+    {
+      "id": "W570-RECORD",
+      "version": "0.57.0",
+      "sha": "b1b66dbff8b84bb6bb0332ec98043cc8990071b3",
+      "parents": [
+        "e766b58d053e2410144d0da1ad275b8052fb149e"
+      ],
+      "tree": "8121dcdb0f8e1be23fd1209c9771b2b0e76314ea",
+      "pr": 31,
+      "at_utc": "2026-10-02T09:25:38.445831+00:00",
+      "meaning": "0.57内容保存の実績を記録し、同private PR31で全363実体を固定読戻し。元local.git1721実体の不変は当該C2操作前後に限る。",
+      "evidence": "P570/record-c2/save-receipt.json"
+    },
+    {
+      "id": "W580-C1",
+      "version": "0.58.0",
+      "sha": "cbe211eaee15076fd271ce35d4e407e864a31eab",
+      "parents": [
+        "b1b66dbff8b84bb6bb0332ec98043cc8990071b3"
+      ],
+      "tree": "c83fc010d45eafdf8202257fc9fdf71bbde13368",
+      "pr": 31,
+      "at_utc": "2026-10-02T12:14:01.701627+00:00",
+      "meaning": "原UTC年間48区分と気圧面探索、数値/費用/UI/資料を保存し全365固定読戻し。科学受入・多年代表性・人間main統合とは別。",
+      "evidence": "P580/content-c1/save-receipt.json; S36 s36-climate-save580"
+    },
+    {
+      "id": "W580-RECORD",
+      "version": "0.58.0",
+      "sha": "95f09d2fc0ae076def05eb76df996b9f2c3b0ef4",
+      "parents": [
+        "cbe211eaee15076fd271ce35d4e407e864a31eab"
+      ],
+      "tree": "2f07e4dc21ea87614ac632e781953480af4c0931",
+      "pr": 31,
+      "at_utc": "2026-10-02T12:29:19.520511+00:00",
+      "meaning": "0.58内容保存の実績を記録し、同private PR31で全365実体を固定読戻し。0.59開始時にも作業全数一致を確認。",
+      "evidence": "P580/record-c2/save-receipt.json"
+    },
+    {
+      "id": "W590-C1",
+      "version": "0.59.0",
+      "sha": "3c0b0a213a1a2288fec51b1b1987df92874f1167",
+      "parents": [
+        "95f09d2fc0ae076def05eb76df996b9f2c3b0ef4"
+      ],
+      "tree": "297a30529ba22ab784a1085d4bd312a71af1921b",
+      "pr": 31,
+      "at_utc": "2026-10-02T15:11:29.425639+00:00",
+      "meaning": "文書の役割・現在案内と生成物を有限監査して訂正し、同private PR31で全366固定読戻し。実装/稼働0.58、科学の受入・人間main統合とは別。",
+      "evidence": "P590/content-c1/save-receipt.json; S36 s36-document-save590"
+    }
+  ]
+}

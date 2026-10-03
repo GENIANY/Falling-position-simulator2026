@@ -1,0 +1,617 @@
+{
+  "schema": "research-packet/1",
+  "version": "0.55.0",
+  "basis_commit": "4e3e4db0d047af9479bcd68bfc2553eeb71efcc9",
+  "snapshot_status": "candidate_content_not_merge_sha",
+  "spec_sha256": "5f83c796b4ce37fc337c18b8a25670780270ef59eba134a08be05c084702bab0",
+  "tasks": {
+    "Q420-00": {
+      "packet_sha256": "cc48178ccc885b492e862d05c9bd4b3d17a653e8e74f0e8ddcdd4c71b8bdcca0",
+      "bytes": 134404,
+      "sources": [
+        {
+          "path": "docs/research/README.md",
+          "selection": "## どう読むと研究の判断材料が得られるか",
+          "source_sha256": "68832d02bccd707341b68995cc84d3c8dbcc10fa8fb1e460817fe71c9e82c991",
+          "excerpt_sha256": "7b5e044d9c2d07b6ad9e801904884d852752f6756035ec1c5a81a8bef858b90f"
+        },
+        {
+          "path": "docs/research/README.md",
+          "selection": "## PR13から来た読者へ：何が変わったか",
+          "source_sha256": "68832d02bccd707341b68995cc84d3c8dbcc10fa8fb1e460817fe71c9e82c991",
+          "excerpt_sha256": "f1c9ffd1acc709d0f1d306c9f26f1b98039f24e5bea7fd3cb8ca857ae9bae289"
+        },
+        {
+          "path": "docs/research/BRIEF.md",
+          "selection": "全文",
+          "source_sha256": "87ab3176ee03d7998bf50ba89a69c90737a5474aa2945d84e444a9a96cb05322",
+          "excerpt_sha256": "87ab3176ee03d7998bf50ba89a69c90737a5474aa2945d84e444a9a96cb05322"
+        },
+        {
+          "path": "docs/research/UI_WALKTHROUGH.md",
+          "selection": "全文",
+          "source_sha256": "edf8a427356f6850f8e4804d890c2b6f04aa29081c14039f6b7f8b10846575f2",
+          "excerpt_sha256": "edf8a427356f6850f8e4804d890c2b6f04aa29081c14039f6b7f8b10846575f2"
+        },
+        {
+          "path": "docs/research/TASKS.md",
+          "selection": "## 全体から焦点を選ぶ",
+          "source_sha256": "5b2c034009ad3188afc78e87027075ee332c661158f672bebe34e9e6f8f2f1e7",
+          "excerpt_sha256": "0f9b4ba17d87f794f630884df5b0955f422a41da826216ab08dd266d3166b804"
+        },
+        {
+          "path": "docs/research/TASKS.md",
+          "selection": "## Q420-00：全体を理解し、最も効く設計判断を進める",
+          "source_sha256": "5b2c034009ad3188afc78e87027075ee332c661158f672bebe34e9e6f8f2f1e7",
+          "excerpt_sha256": "a9134f247a65b92d7037753f6dc11d1d52181d313d326dd60083aa1fc66b461d"
+        },
+        {
+          "path": "docs/INTEGRATION_DESIGN.html",
+          "selection": "project-story",
+          "source_sha256": "282acd24992f4b7d3cf74f78be973ea579eb500c56c003a9926b786167dcad20",
+          "excerpt_sha256": "b94d6fb94123f366ebaea9d0ea557269c88f47fc333aa12bac2a3c226ca328ec"
+        },
+        {
+          "path": "docs/INTEGRATION_DESIGN.html",
+          "selection": "gui-integration460",
+          "source_sha256": "282acd24992f4b7d3cf74f78be973ea579eb500c56c003a9926b786167dcad20",
+          "excerpt_sha256": "635492843da42277b26e206351c5ad8497511e200414f8210f2f7bae5e9be2fd"
+        },
+        {
+          "path": "docs/SIMULATOR_VISION.html",
+          "selection": "models",
+          "source_sha256": "54bc890ef6e5d14fddaf2ef56b1409550ba478113765be81ab11aa4f88cf2b2d",
+          "excerpt_sha256": "9363f23db1dbad163647938f87061aedcc93cfc6c1109e15cdd1e7956d023af1"
+        },
+        {
+          "path": "docs/SIMULATOR_VISION.html",
+          "selection": "distributions",
+          "source_sha256": "54bc890ef6e5d14fddaf2ef56b1409550ba478113765be81ab11aa4f88cf2b2d",
+          "excerpt_sha256": "dfecdabc845ffddca8f6c5601374540df6886f008af78eb625a34ef2c8a3f3e2"
+        },
+        {
+          "path": "docs/SIMULATOR_VISION.html",
+          "selection": "uncertainty",
+          "source_sha256": "54bc890ef6e5d14fddaf2ef56b1409550ba478113765be81ab11aa4f88cf2b2d",
+          "excerpt_sha256": "4b9131e626ccf10068c411e37c29f5e3f2b54c9bab59818c34d05b186709798c"
+        },
+        {
+          "path": "docs/INTEGRATION_DESIGN.html",
+          "selection": "inputs",
+          "source_sha256": "282acd24992f4b7d3cf74f78be973ea579eb500c56c003a9926b786167dcad20",
+          "excerpt_sha256": "b756e6ff70875b5c842f7013b14a7035ffc81d2bcbe7b989ecb982da549aef53"
+        },
+        {
+          "path": "docs/INTEGRATION_DESIGN.html",
+          "selection": "gaps",
+          "source_sha256": "282acd24992f4b7d3cf74f78be973ea579eb500c56c003a9926b786167dcad20",
+          "excerpt_sha256": "1e571a178b5ab0b541a357fce6fe07523907f66e6bc55c3f0628612bf309f475"
+        },
+        {
+          "path": "docs/SIMULATOR_VISION.html",
+          "selection": "climate-path290",
+          "source_sha256": "54bc890ef6e5d14fddaf2ef56b1409550ba478113765be81ab11aa4f88cf2b2d",
+          "excerpt_sha256": "d3a98131d67bda5f8a2a5b08e753a378422a271c570af5816f230bf5040eec6e"
+        },
+        {
+          "path": "references/WIND_REPORT_REVIEW.md",
+          "selection": "## 11. 0.31：指定9図の比較軸を再読し、再集計に必要な原標本を区別する",
+          "source_sha256": "f41566d2b56acf54bf3bbf3f9a54cad16f621574b9de281068349e9e1d57c36f",
+          "excerpt_sha256": "c97077b074156bb664472d7950818eea255ccfb39ae14e2fd09e4ac21f51b80f"
+        },
+        {
+          "path": "references/EXCEL_ANALYSIS_REVIEW.md",
+          "selection": "## 5. 結論を採用せず残すべき境界",
+          "source_sha256": "f14ca20cc1836ed2eaccd2196e0c43df0ccc8764671bc4b688d1cb21a8859ef9",
+          "excerpt_sha256": "17ae32b2c6702cafeaad3876a5b69e5d9feea8fbb72b8768c0e77b6194dfc142"
+        },
+        {
+          "path": "docs/SIMULATOR_VISION.html",
+          "selection": "sources",
+          "source_sha256": "54bc890ef6e5d14fddaf2ef56b1409550ba478113765be81ab11aa4f88cf2b2d",
+          "excerpt_sha256": "c7e1103c15a6c9fe37f112d6d0e268b96711dd59e5f0726bb8229ca8d09a5400"
+        },
+        {
+          "path": "docs/research/RESPONSE_TEMPLATE.md",
+          "selection": "全文",
+          "source_sha256": "5274568eb8162e9842e4d11da1b03abf01eb81b966f70855800a645b2d83da00",
+          "excerpt_sha256": "5274568eb8162e9842e4d11da1b03abf01eb81b966f70855800a645b2d83da00"
+        }
+      ],
+      "additional_reading": [
+        "docs/research/TASKS.md（Q410-01〜05の具体研究。焦点が決まったら対応packetも追加できる）",
+        "docs/INTEGRATION_DESIGN.html（気象支持・標本対応・実行/保存の詳細）",
+        "references/user_supplied/feedback_v_0_40_1.pdf（入力・分布・保存の人間側の考え、図付き原本）",
+        "references/user_supplied/wind_analysis_report.pdf（指定9図はWIND_REPORT_REVIEW第10/11節から戻る）",
+        "references/user_supplied/excel_analysis_20260920.zip（README.htmlから式と検証の適用範囲へ）"
+      ]
+    },
+    "Q410-01": {
+      "packet_sha256": "50b29ef74e65c43eff249da3efbd2e953f05dc111791dc0ead4be6912cbe3f9b",
+      "bytes": 148390,
+      "sources": [
+        {
+          "path": "docs/research/README.md",
+          "selection": "## どう読むと研究の判断材料が得られるか",
+          "source_sha256": "68832d02bccd707341b68995cc84d3c8dbcc10fa8fb1e460817fe71c9e82c991",
+          "excerpt_sha256": "7b5e044d9c2d07b6ad9e801904884d852752f6756035ec1c5a81a8bef858b90f"
+        },
+        {
+          "path": "docs/research/README.md",
+          "selection": "## PR13から来た読者へ：何が変わったか",
+          "source_sha256": "68832d02bccd707341b68995cc84d3c8dbcc10fa8fb1e460817fe71c9e82c991",
+          "excerpt_sha256": "f1c9ffd1acc709d0f1d306c9f26f1b98039f24e5bea7fd3cb8ca857ae9bae289"
+        },
+        {
+          "path": "docs/research/BRIEF.md",
+          "selection": "全文",
+          "source_sha256": "87ab3176ee03d7998bf50ba89a69c90737a5474aa2945d84e444a9a96cb05322",
+          "excerpt_sha256": "87ab3176ee03d7998bf50ba89a69c90737a5474aa2945d84e444a9a96cb05322"
+        },
+        {
+          "path": "docs/research/UI_WALKTHROUGH.md",
+          "selection": "全文",
+          "source_sha256": "edf8a427356f6850f8e4804d890c2b6f04aa29081c14039f6b7f8b10846575f2",
+          "excerpt_sha256": "edf8a427356f6850f8e4804d890c2b6f04aa29081c14039f6b7f8b10846575f2"
+        },
+        {
+          "path": "docs/research/TASKS.md",
+          "selection": "## Q410-01：持っている情報から、整合した一標本を作る",
+          "source_sha256": "5b2c034009ad3188afc78e87027075ee332c661158f672bebe34e9e6f8f2f1e7",
+          "excerpt_sha256": "a2d06125478d9fc3fb3d7bd3af9ed7173c923dd5b0cfe48a1d3a4731ebcb04ff"
+        },
+        {
+          "path": "docs/SIMULATOR_VISION.html",
+          "selection": "models",
+          "source_sha256": "54bc890ef6e5d14fddaf2ef56b1409550ba478113765be81ab11aa4f88cf2b2d",
+          "excerpt_sha256": "9363f23db1dbad163647938f87061aedcc93cfc6c1109e15cdd1e7956d023af1"
+        },
+        {
+          "path": "docs/SIMULATOR_VISION.html",
+          "selection": "burst",
+          "source_sha256": "54bc890ef6e5d14fddaf2ef56b1409550ba478113765be81ab11aa4f88cf2b2d",
+          "excerpt_sha256": "74ef8e5f4b4a4e8f69a3f84179eddfd5123f1297040370e85c0c88df4fe415f0"
+        },
+        {
+          "path": "docs/INTEGRATION_DESIGN.html",
+          "selection": "inputs",
+          "source_sha256": "282acd24992f4b7d3cf74f78be973ea579eb500c56c003a9926b786167dcad20",
+          "excerpt_sha256": "b756e6ff70875b5c842f7013b14a7035ffc81d2bcbe7b989ecb982da549aef53"
+        },
+        {
+          "path": "docs/INTEGRATION_DESIGN.html",
+          "selection": "input-changes",
+          "source_sha256": "282acd24992f4b7d3cf74f78be973ea579eb500c56c003a9926b786167dcad20",
+          "excerpt_sha256": "5d1683f2f2ce319cd641125a1ac0024000d90716f0e8ebce6c1f6bd5f1568834"
+        },
+        {
+          "path": "docs/INTEGRATION_DESIGN.html",
+          "selection": "distribution",
+          "source_sha256": "282acd24992f4b7d3cf74f78be973ea579eb500c56c003a9926b786167dcad20",
+          "excerpt_sha256": "1428cb2acabb9d853f55b89fce26f971d6a0b5f3adbba463fcea780b6b50444b"
+        },
+        {
+          "path": "docs/ENVIRONMENT_CONTRACT.md",
+          "selection": "### 本体が扱うモデルと未達の境界",
+          "source_sha256": "7dbdd3f54c236b7aa54b1bc285f4c2d0e158cef4086f285b27e60bcd99e5b069",
+          "excerpt_sha256": "b64af33990c3cfe6a5cfd351a3032bc7efa7e810413f58cc88c55e6f421936e5"
+        },
+        {
+          "path": "docs/ENVIRONMENT_CONTRACT.md",
+          "selection": "### 操作模型から一標本の実入力へ進む境界",
+          "source_sha256": "7dbdd3f54c236b7aa54b1bc285f4c2d0e158cef4086f285b27e60bcd99e5b069",
+          "excerpt_sha256": "18e8f4fd2f7cb926d251a82a2bdbdc800f08f76851a9dafb487bc2b8af9d7fa6"
+        },
+        {
+          "path": "references/EXCEL_ANALYSIS_REVIEW.md",
+          "selection": "## 4. backend設計へ移す知見",
+          "source_sha256": "f14ca20cc1836ed2eaccd2196e0c43df0ccc8764671bc4b688d1cb21a8859ef9",
+          "excerpt_sha256": "f65de310851f1a462cc186110294a9c2b8b03359dcd8e195e30974722f9a437a"
+        },
+        {
+          "path": "references/EXCEL_ANALYSIS_REVIEW.md",
+          "selection": "## 5. 結論を採用せず残すべき境界",
+          "source_sha256": "f14ca20cc1836ed2eaccd2196e0c43df0ccc8764671bc4b688d1cb21a8859ef9",
+          "excerpt_sha256": "17ae32b2c6702cafeaad3876a5b69e5d9feea8fbb72b8768c0e77b6194dfc142"
+        },
+        {
+          "path": "balloon_sim/flight/config.py",
+          "selection": "全文",
+          "source_sha256": "4fe3681aa018dcdfe1c580ac3fa608517cac8c650931430ed6f7cef3ad8acee3",
+          "excerpt_sha256": "4fe3681aa018dcdfe1c580ac3fa608517cac8c650931430ed6f7cef3ad8acee3"
+        },
+        {
+          "path": "docs/SIMULATOR_VISION.html",
+          "selection": "sources",
+          "source_sha256": "54bc890ef6e5d14fddaf2ef56b1409550ba478113765be81ab11aa4f88cf2b2d",
+          "excerpt_sha256": "c7e1103c15a6c9fe37f112d6d0e268b96711dd59e5f0726bb8229ca8d09a5400"
+        },
+        {
+          "path": "docs/research/RESPONSE_TEMPLATE.md",
+          "selection": "全文",
+          "source_sha256": "5274568eb8162e9842e4d11da1b03abf01eb81b966f70855800a645b2d83da00",
+          "excerpt_sha256": "5274568eb8162e9842e4d11da1b03abf01eb81b966f70855800a645b2d83da00"
+        }
+      ],
+      "additional_reading": [
+        "references/user_supplied/excel_analysis_20260920.zip (README.html → balloon_handbook.html / cell_audit.html / technical_report.html; references/excel_analysis_manifest.jsonに内部path一覧)",
+        "references/user_supplied/ascent_burst_gas_a.xlsx",
+        "references/user_supplied/ascent_burst_gas_b.xlsx",
+        "references/user_supplied/feedback_v_0_40_1.pdf p2–3"
+      ]
+    },
+    "Q410-02": {
+      "packet_sha256": "5c5c11318cfa5631835b555bb5b36d2c7c344eb80ff65a81c968df76d2a62a6f",
+      "bytes": 143519,
+      "sources": [
+        {
+          "path": "docs/research/README.md",
+          "selection": "## どう読むと研究の判断材料が得られるか",
+          "source_sha256": "68832d02bccd707341b68995cc84d3c8dbcc10fa8fb1e460817fe71c9e82c991",
+          "excerpt_sha256": "7b5e044d9c2d07b6ad9e801904884d852752f6756035ec1c5a81a8bef858b90f"
+        },
+        {
+          "path": "docs/research/README.md",
+          "selection": "## PR13から来た読者へ：何が変わったか",
+          "source_sha256": "68832d02bccd707341b68995cc84d3c8dbcc10fa8fb1e460817fe71c9e82c991",
+          "excerpt_sha256": "f1c9ffd1acc709d0f1d306c9f26f1b98039f24e5bea7fd3cb8ca857ae9bae289"
+        },
+        {
+          "path": "docs/research/BRIEF.md",
+          "selection": "全文",
+          "source_sha256": "87ab3176ee03d7998bf50ba89a69c90737a5474aa2945d84e444a9a96cb05322",
+          "excerpt_sha256": "87ab3176ee03d7998bf50ba89a69c90737a5474aa2945d84e444a9a96cb05322"
+        },
+        {
+          "path": "docs/research/UI_WALKTHROUGH.md",
+          "selection": "全文",
+          "source_sha256": "edf8a427356f6850f8e4804d890c2b6f04aa29081c14039f6b7f8b10846575f2",
+          "excerpt_sha256": "edf8a427356f6850f8e4804d890c2b6f04aa29081c14039f6b7f8b10846575f2"
+        },
+        {
+          "path": "docs/research/TASKS.md",
+          "selection": "## Q410-02：どの気象の不確かさを、どの場として飛ばすか",
+          "source_sha256": "5b2c034009ad3188afc78e87027075ee332c661158f672bebe34e9e6f8f2f1e7",
+          "excerpt_sha256": "4fc8ae0ba046a02362efdba82b51087be40daac0251f07a9cccdec078ad0a47d"
+        },
+        {
+          "path": "docs/INTEGRATION_DESIGN.html",
+          "selection": "weather",
+          "source_sha256": "282acd24992f4b7d3cf74f78be973ea579eb500c56c003a9926b786167dcad20",
+          "excerpt_sha256": "813bc3acc12ba9dcb906a0782090c0bcc31f1d1b240cdabf387ec99bcbeacaef"
+        },
+        {
+          "path": "docs/INTEGRATION_DESIGN.html",
+          "selection": "distribution",
+          "source_sha256": "282acd24992f4b7d3cf74f78be973ea579eb500c56c003a9926b786167dcad20",
+          "excerpt_sha256": "1428cb2acabb9d853f55b89fce26f971d6a0b5f3adbba463fcea780b6b50444b"
+        },
+        {
+          "path": "docs/SIMULATOR_VISION.html",
+          "selection": "climate-path290",
+          "source_sha256": "54bc890ef6e5d14fddaf2ef56b1409550ba478113765be81ab11aa4f88cf2b2d",
+          "excerpt_sha256": "d3a98131d67bda5f8a2a5b08e753a378422a271c570af5816f230bf5040eec6e"
+        },
+        {
+          "path": "docs/ENVIRONMENT_CONTRACT.md",
+          "selection": "## 拡張の用途：落下分散を判断に使う（0.21設計、未実装）",
+          "source_sha256": "7dbdd3f54c236b7aa54b1bc285f4c2d0e158cef4086f285b27e60bcd99e5b069",
+          "excerpt_sha256": "94f7c92ea32204c3b2fb6905cf8d0e57f3c8b524d4f6650ab1e5c9926e2b3984"
+        },
+        {
+          "path": "docs/WEATHER_DATA_GUIDE.md",
+          "selection": "## 拡張の用途：落下分散に必要な気象情報（0.21設計、未実装）",
+          "source_sha256": "7450d61f0faf51fc500f8296b9733c9ab05562b52a96775cc8213980d2f73933",
+          "excerpt_sha256": "ada1cb0b068f5aa2c1980cd720eba53c33bebc270168a4c5ce4896bef506b9f9"
+        },
+        {
+          "path": "references/WIND_REPORT_REVIEW.md",
+          "selection": "## 3. 確定した説明と実体の不一致",
+          "source_sha256": "f41566d2b56acf54bf3bbf3f9a54cad16f621574b9de281068349e9e1d57c36f",
+          "excerpt_sha256": "f9aa0c5192564fd2cbb03b3edc62eabfd74b6254ab78c0dfccef655ac4dc7e42"
+        },
+        {
+          "path": "references/WIND_REPORT_REVIEW.md",
+          "selection": "## 10. 画面設計のための指定図再読（0.27.0 / RPT-045）",
+          "source_sha256": "f41566d2b56acf54bf3bbf3f9a54cad16f621574b9de281068349e9e1d57c36f",
+          "excerpt_sha256": "02ebf7c7f4aca15dc0f993eeba1ce3ab7297f3d3823bb3ab172f65db78baa705"
+        },
+        {
+          "path": "docs/SIMULATOR_VISION.html",
+          "selection": "sources",
+          "source_sha256": "54bc890ef6e5d14fddaf2ef56b1409550ba478113765be81ab11aa4f88cf2b2d",
+          "excerpt_sha256": "c7e1103c15a6c9fe37f112d6d0e268b96711dd59e5f0726bb8229ca8d09a5400"
+        },
+        {
+          "path": "docs/research/RESPONSE_TEMPLATE.md",
+          "selection": "全文",
+          "source_sha256": "5274568eb8162e9842e4d11da1b03abf01eb81b966f70855800a645b2d83da00",
+          "excerpt_sha256": "5274568eb8162e9842e4d11da1b03abf01eb81b966f70855800a645b2d83da00"
+        }
+      ],
+      "additional_reading": [
+        "references/user_supplied/wind_analysis_report.pdf (WIND_REPORT_REVIEWの対象頁/不一致を併読)",
+        "docs/WEATHER_DATA_GUIDE.md 提供元別"
+      ]
+    },
+    "Q410-03": {
+      "packet_sha256": "96f825bbc3e67293a3d983a2b9215dfe4942ce8bc308b36dee063e9292097b46",
+      "bytes": 107666,
+      "sources": [
+        {
+          "path": "docs/research/README.md",
+          "selection": "## どう読むと研究の判断材料が得られるか",
+          "source_sha256": "68832d02bccd707341b68995cc84d3c8dbcc10fa8fb1e460817fe71c9e82c991",
+          "excerpt_sha256": "7b5e044d9c2d07b6ad9e801904884d852752f6756035ec1c5a81a8bef858b90f"
+        },
+        {
+          "path": "docs/research/README.md",
+          "selection": "## PR13から来た読者へ：何が変わったか",
+          "source_sha256": "68832d02bccd707341b68995cc84d3c8dbcc10fa8fb1e460817fe71c9e82c991",
+          "excerpt_sha256": "f1c9ffd1acc709d0f1d306c9f26f1b98039f24e5bea7fd3cb8ca857ae9bae289"
+        },
+        {
+          "path": "docs/research/BRIEF.md",
+          "selection": "全文",
+          "source_sha256": "87ab3176ee03d7998bf50ba89a69c90737a5474aa2945d84e444a9a96cb05322",
+          "excerpt_sha256": "87ab3176ee03d7998bf50ba89a69c90737a5474aa2945d84e444a9a96cb05322"
+        },
+        {
+          "path": "docs/research/UI_WALKTHROUGH.md",
+          "selection": "全文",
+          "source_sha256": "edf8a427356f6850f8e4804d890c2b6f04aa29081c14039f6b7f8b10846575f2",
+          "excerpt_sha256": "edf8a427356f6850f8e4804d890c2b6f04aa29081c14039f6b7f8b10846575f2"
+        },
+        {
+          "path": "docs/research/TASKS.md",
+          "selection": "## Q410-03：輪郭と干渉を、比較可能な統計として読む",
+          "source_sha256": "5b2c034009ad3188afc78e87027075ee332c661158f672bebe34e9e6f8f2f1e7",
+          "excerpt_sha256": "ae77d22dc2c903a09532e08aacb1f23c9d80abb495315e8b6ee2aca18bac086e"
+        },
+        {
+          "path": "docs/INTEGRATION_DESIGN.html",
+          "selection": "distribution",
+          "source_sha256": "282acd24992f4b7d3cf74f78be973ea579eb500c56c003a9926b786167dcad20",
+          "excerpt_sha256": "1428cb2acabb9d853f55b89fce26f971d6a0b5f3adbba463fcea780b6b50444b"
+        },
+        {
+          "path": "docs/INTEGRATION_DESIGN.html",
+          "selection": "lifetime",
+          "source_sha256": "282acd24992f4b7d3cf74f78be973ea579eb500c56c003a9926b786167dcad20",
+          "excerpt_sha256": "e5a266b4d5584983a0b4957a3d2d72af49101b1ed6ae08ca46ced727ad9eb5c2"
+        },
+        {
+          "path": "docs/SIMULATOR_VISION.html",
+          "selection": "model-compare290",
+          "source_sha256": "54bc890ef6e5d14fddaf2ef56b1409550ba478113765be81ab11aa4f88cf2b2d",
+          "excerpt_sha256": "ac67c6e6be427cad38052bae721b1e6319f337f2d00fa87540d2fe48a7974a50"
+        },
+        {
+          "path": "references/WIND_REPORT_REVIEW.md",
+          "selection": "## 11. 0.31：指定9図の比較軸を再読し、再集計に必要な原標本を区別する",
+          "source_sha256": "f41566d2b56acf54bf3bbf3f9a54cad16f621574b9de281068349e9e1d57c36f",
+          "excerpt_sha256": "c97077b074156bb664472d7950818eea255ccfb39ae14e2fd09e4ac21f51b80f"
+        },
+        {
+          "path": "docs/IMPLEMENTATION_NOTES.md",
+          "selection": "### 返値を読む順序",
+          "source_sha256": "57e5b421b46a78a7d8300090d9dd8dbba47f6594e3e58b9a8f4345f268f35d6e",
+          "excerpt_sha256": "e34d11c18270f242f822f9e683967df02786a4e69765a8306b2a6ca29041efef"
+        },
+        {
+          "path": "docs/SIMULATOR_VISION.html",
+          "selection": "sources",
+          "source_sha256": "54bc890ef6e5d14fddaf2ef56b1409550ba478113765be81ab11aa4f88cf2b2d",
+          "excerpt_sha256": "c7e1103c15a6c9fe37f112d6d0e268b96711dd59e5f0726bb8229ca8d09a5400"
+        },
+        {
+          "path": "docs/research/RESPONSE_TEMPLATE.md",
+          "selection": "全文",
+          "source_sha256": "5274568eb8162e9842e4d11da1b03abf01eb81b966f70855800a645b2d83da00",
+          "excerpt_sha256": "5274568eb8162e9842e4d11da1b03abf01eb81b966f70855800a645b2d83da00"
+        }
+      ],
+      "additional_reading": [
+        "references/user_supplied/wind_analysis_report.pdf 図29等",
+        "docs/SIMULATOR_VISION.html 表示量/予測域の定義"
+      ]
+    },
+    "Q410-04": {
+      "packet_sha256": "fc27cade9279617f779100a1014d422220666ea14263b80ed3853a61c1c40950",
+      "bytes": 140769,
+      "sources": [
+        {
+          "path": "docs/research/README.md",
+          "selection": "## どう読むと研究の判断材料が得られるか",
+          "source_sha256": "68832d02bccd707341b68995cc84d3c8dbcc10fa8fb1e460817fe71c9e82c991",
+          "excerpt_sha256": "7b5e044d9c2d07b6ad9e801904884d852752f6756035ec1c5a81a8bef858b90f"
+        },
+        {
+          "path": "docs/research/README.md",
+          "selection": "## PR13から来た読者へ：何が変わったか",
+          "source_sha256": "68832d02bccd707341b68995cc84d3c8dbcc10fa8fb1e460817fe71c9e82c991",
+          "excerpt_sha256": "f1c9ffd1acc709d0f1d306c9f26f1b98039f24e5bea7fd3cb8ca857ae9bae289"
+        },
+        {
+          "path": "docs/research/BRIEF.md",
+          "selection": "全文",
+          "source_sha256": "87ab3176ee03d7998bf50ba89a69c90737a5474aa2945d84e444a9a96cb05322",
+          "excerpt_sha256": "87ab3176ee03d7998bf50ba89a69c90737a5474aa2945d84e444a9a96cb05322"
+        },
+        {
+          "path": "docs/research/UI_WALKTHROUGH.md",
+          "selection": "全文",
+          "source_sha256": "edf8a427356f6850f8e4804d890c2b6f04aa29081c14039f6b7f8b10846575f2",
+          "excerpt_sha256": "edf8a427356f6850f8e4804d890c2b6f04aa29081c14039f6b7f8b10846575f2"
+        },
+        {
+          "path": "docs/research/TASKS.md",
+          "selection": "## Q410-04：三用途の飛行を支える気象取得を、費用から選ぶ",
+          "source_sha256": "5b2c034009ad3188afc78e87027075ee332c661158f672bebe34e9e6f8f2f1e7",
+          "excerpt_sha256": "a041779e230d383a40f9cdbaef297ae94faaac315a9684c8505586876f20de36"
+        },
+        {
+          "path": "docs/INTEGRATION_DESIGN.html",
+          "selection": "weather",
+          "source_sha256": "282acd24992f4b7d3cf74f78be973ea579eb500c56c003a9926b786167dcad20",
+          "excerpt_sha256": "813bc3acc12ba9dcb906a0782090c0bcc31f1d1b240cdabf387ec99bcbeacaef"
+        },
+        {
+          "path": "docs/WEATHER_DATA_GUIDE.md",
+          "selection": "## 必要量と支持：共通の考え方と試作の境界",
+          "source_sha256": "7450d61f0faf51fc500f8296b9733c9ab05562b52a96775cc8213980d2f73933",
+          "excerpt_sha256": "c10bbaf5e9dc173db107bdf2f1026a34f3b1ca1c4f9e5d27eb7ef531c14bb66e"
+        },
+        {
+          "path": "docs/WEATHER_DATA_GUIDE.md",
+          "selection": "## 時刻：run・valid・取得・打上げを分ける",
+          "source_sha256": "7450d61f0faf51fc500f8296b9733c9ab05562b52a96775cc8213980d2f73933",
+          "excerpt_sha256": "b4439ea471f559ef95bad3dc062c55017ee9d8c8999169e5a729c8c807cf629a"
+        },
+        {
+          "path": "docs/WEATHER_DATA_GUIDE.md",
+          "selection": "## 高さ：再構成の根拠とモデル面研究",
+          "source_sha256": "7450d61f0faf51fc500f8296b9733c9ab05562b52a96775cc8213980d2f73933",
+          "excerpt_sha256": "d1c6cc7f1c12acca07d1f29793b0e5a9f3febe8e9ff999755637be0d44cba17b"
+        },
+        {
+          "path": "docs/WEATHER_DATA_GUIDE.md",
+          "selection": "## 提供元別：指定できる条件と取得観測",
+          "source_sha256": "7450d61f0faf51fc500f8296b9733c9ab05562b52a96775cc8213980d2f73933",
+          "excerpt_sha256": "9287587630e11acdb89bedc63ff54adb4cf0f7185552a11f9554ed316c1f904d"
+        },
+        {
+          "path": "docs/WEATHER_DATA_GUIDE.md",
+          "selection": "## 取得器：安定運用へつなぐ設計と試作履歴",
+          "source_sha256": "7450d61f0faf51fc500f8296b9733c9ab05562b52a96775cc8213980d2f73933",
+          "excerpt_sha256": "d4bdb3c69bd60713d67c854c1b6d5727ee91d9bb90b4b141e4ffd5ca748e43d3"
+        },
+        {
+          "path": "docs/research/RESPONSE_TEMPLATE.md",
+          "selection": "全文",
+          "source_sha256": "5274568eb8162e9842e4d11da1b03abf01eb81b966f70855800a645b2d83da00",
+          "excerpt_sha256": "5274568eb8162e9842e4d11da1b03abf01eb81b966f70855800a645b2d83da00"
+        }
+      ],
+      "additional_reading": [
+        "docs/WEATHER_DATA_GUIDE.md 証拠節（外部Tempの観測原票はGitコピーに未同梱）",
+        "references/SOURCES.json",
+        "references/flight_fixture/manifest.json",
+        "references/jra3q_model_fixture/source_bundle.json"
+      ]
+    },
+    "Q410-05": {
+      "packet_sha256": "42087d031377d0c03fe8ca5701ab8a7496aff4ef28eba0ae56b56b9ca723c4f5",
+      "bytes": 131538,
+      "sources": [
+        {
+          "path": "docs/research/README.md",
+          "selection": "## どう読むと研究の判断材料が得られるか",
+          "source_sha256": "68832d02bccd707341b68995cc84d3c8dbcc10fa8fb1e460817fe71c9e82c991",
+          "excerpt_sha256": "7b5e044d9c2d07b6ad9e801904884d852752f6756035ec1c5a81a8bef858b90f"
+        },
+        {
+          "path": "docs/research/README.md",
+          "selection": "## PR13から来た読者へ：何が変わったか",
+          "source_sha256": "68832d02bccd707341b68995cc84d3c8dbcc10fa8fb1e460817fe71c9e82c991",
+          "excerpt_sha256": "f1c9ffd1acc709d0f1d306c9f26f1b98039f24e5bea7fd3cb8ca857ae9bae289"
+        },
+        {
+          "path": "docs/research/BRIEF.md",
+          "selection": "全文",
+          "source_sha256": "87ab3176ee03d7998bf50ba89a69c90737a5474aa2945d84e444a9a96cb05322",
+          "excerpt_sha256": "87ab3176ee03d7998bf50ba89a69c90737a5474aa2945d84e444a9a96cb05322"
+        },
+        {
+          "path": "docs/research/UI_WALKTHROUGH.md",
+          "selection": "全文",
+          "source_sha256": "edf8a427356f6850f8e4804d890c2b6f04aa29081c14039f6b7f8b10846575f2",
+          "excerpt_sha256": "edf8a427356f6850f8e4804d890c2b6f04aa29081c14039f6b7f8b10846575f2"
+        },
+        {
+          "path": "docs/research/TASKS.md",
+          "selection": "## Q410-05：編集・計算・保存が並行しても、同じ結果を読み直せるか",
+          "source_sha256": "5b2c034009ad3188afc78e87027075ee332c661158f672bebe34e9e6f8f2f1e7",
+          "excerpt_sha256": "0ea3564fb5ded9427ecafbbf50681d2e388a405d891457e4c22a477d28a1c10d"
+        },
+        {
+          "path": "docs/INTEGRATION_DESIGN.html",
+          "selection": "project-story",
+          "source_sha256": "282acd24992f4b7d3cf74f78be973ea579eb500c56c003a9926b786167dcad20",
+          "excerpt_sha256": "b94d6fb94123f366ebaea9d0ea557269c88f47fc333aa12bac2a3c226ca328ec"
+        },
+        {
+          "path": "docs/INTEGRATION_DESIGN.html",
+          "selection": "lifetime",
+          "source_sha256": "282acd24992f4b7d3cf74f78be973ea579eb500c56c003a9926b786167dcad20",
+          "excerpt_sha256": "e5a266b4d5584983a0b4957a3d2d72af49101b1ed6ae08ca46ced727ad9eb5c2"
+        },
+        {
+          "path": "docs/INTEGRATION_DESIGN.html",
+          "selection": "save-and-reopen",
+          "source_sha256": "282acd24992f4b7d3cf74f78be973ea579eb500c56c003a9926b786167dcad20",
+          "excerpt_sha256": "037dea2650c0779a6906f9650a3475c210d002dd955dd4d5a10fd5b24edba7df"
+        },
+        {
+          "path": "docs/INTEGRATION_DESIGN.html",
+          "selection": "gaps",
+          "source_sha256": "282acd24992f4b7d3cf74f78be973ea579eb500c56c003a9926b786167dcad20",
+          "excerpt_sha256": "1e571a178b5ab0b541a357fce6fe07523907f66e6bc55c3f0628612bf309f475"
+        },
+        {
+          "path": "docs/INTEGRATION_DESIGN.html",
+          "selection": "technology",
+          "source_sha256": "282acd24992f4b7d3cf74f78be973ea579eb500c56c003a9926b786167dcad20",
+          "excerpt_sha256": "cdc3018442122452d5eb7e06c16e310ebe99e9f902c10d70f09031533651a8c6"
+        },
+        {
+          "path": "docs/INTEGRATION_DESIGN.html",
+          "selection": "framework-candidate",
+          "source_sha256": "282acd24992f4b7d3cf74f78be973ea579eb500c56c003a9926b786167dcad20",
+          "excerpt_sha256": "b27a2141cb71b0e7f03054c726b6058ceb7ed747084c755a600db045caa1884b"
+        },
+        {
+          "path": "docs/INTEGRATION_DESIGN.html",
+          "selection": "gui-integration460",
+          "source_sha256": "282acd24992f4b7d3cf74f78be973ea579eb500c56c003a9926b786167dcad20",
+          "excerpt_sha256": "635492843da42277b26e206351c5ad8497511e200414f8210f2f7bae5e9be2fd"
+        },
+        {
+          "path": "docs/INTEGRATION_DESIGN.html",
+          "selection": "service-boundary",
+          "source_sha256": "282acd24992f4b7d3cf74f78be973ea579eb500c56c003a9926b786167dcad20",
+          "excerpt_sha256": "5b2c612bfefbb2b090353e5adced6ad45cd27f9252e50cbc39cc3ce53d61cffc"
+        },
+        {
+          "path": "docs/INTEGRATION_DESIGN.html",
+          "selection": "gates",
+          "source_sha256": "282acd24992f4b7d3cf74f78be973ea579eb500c56c003a9926b786167dcad20",
+          "excerpt_sha256": "c29693897f383d6f1dfd5356eb761b660f67788b435da1e5de83bfcdc1ffe8c3"
+        },
+        {
+          "path": "docs/IMPLEMENTATION_NOTES.md",
+          "selection": "### 返値を読む順序",
+          "source_sha256": "57e5b421b46a78a7d8300090d9dd8dbba47f6594e3e58b9a8f4345f268f35d6e",
+          "excerpt_sha256": "e34d11c18270f242f822f9e683967df02786a4e69765a8306b2a6ca29041efef"
+        },
+        {
+          "path": "docs/IMPLEMENTATION_NOTES.md",
+          "selection": "## CLIと保存：利用者の一回の操作を再現可能にする",
+          "source_sha256": "57e5b421b46a78a7d8300090d9dd8dbba47f6594e3e58b9a8f4345f268f35d6e",
+          "excerpt_sha256": "f6cba8e057a29f358d4cc360a60979b49ac45336d2988b68f4424aab9cda3ab0"
+        },
+        {
+          "path": "docs/research/RESPONSE_TEMPLATE.md",
+          "selection": "全文",
+          "source_sha256": "5274568eb8162e9842e4d11da1b03abf01eb81b966f70855800a645b2d83da00",
+          "excerpt_sha256": "5274568eb8162e9842e4d11da1b03abf01eb81b966f70855800a645b2d83da00"
+        }
+      ],
+      "additional_reading": [
+        "docs/PROGRAM_GUIDE.pdf 現実装の階層（未来APIとは別）",
+        "docs/INTEGRATION_DESIGN.html 元SVG図",
+        "references/design_trials/hover_surface_pick_correction_0401.zip (画面操作必須でなく必要時のみ)"
+      ]
+    }
+  }
+}
