@@ -1,0 +1,33 @@
+{
+  "schema": "balloon.flight.config/1",
+  "label": "wakayama-isothermal",
+  "purpose": "Numerical demonstration only; not an operational launch plan",
+  "launch": {
+    "time_utc": "2026-09-23T03:30:00+00:00",
+    "latitude_deg": 33.8,
+    "longitude_deg": 135.2,
+    "altitude_m": 66.30796495924767
+  },
+  "ascent": {
+    "mode": "isothermal_buoyancy",
+    "gas_mass_kg": 0.5,
+    "envelope_mass_kg": 1.0,
+    "payload_mass_kg": 1.0,
+    "drag_coefficient": 0.47
+  },
+  "burst": {
+    "mode": "altitude",
+    "altitude_m": 30000
+  },
+  "descent": {
+    "mode": "rated_speed",
+    "reference_speed_m_s": 5,
+    "density_model": "weather",
+    "reference_density_kg_m3": 1.225
+  },
+  "integration": {
+    "max_step_s": 10,
+    "max_duration_s": 14400,
+    "event_tolerance_s": 0.001
+  }
+}

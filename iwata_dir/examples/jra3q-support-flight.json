@@ -1,0 +1,41 @@
+{
+  "schema": "balloon.flight.config/1",
+  "label": "JRA保存場・地表支持不足を読む飛行例",
+  "purpose": "Saved real analysis field, airborne diagnostic launch and artificial 1500 m burst; not a ground-flight or an operational launch plan.",
+  "launch": {
+    "time_utc": "2024-01-01T02:17:13+00:00",
+    "latitude_deg": 34.838688086410954,
+    "longitude_deg": 137.0625,
+    "altitude_m": 311.66371556900197
+  },
+  "ascent": {
+    "mode": "isothermal_buoyancy",
+    "gas_mass_kg": 0.5,
+    "envelope_mass_kg": 1.0,
+    "payload_mass_kg": 1.0,
+    "drag_coefficient": 0.47,
+    "gas_constant_j_kg_k": 2077.1
+  },
+  "burst": {
+    "mode": "altitude",
+    "altitude_m": 1500.0
+  },
+  "descent": {
+    "mode": "rated_speed",
+    "reference_speed_m_s": 5.0,
+    "density_model": "weather",
+    "reference_density_kg_m3": 1.225
+  },
+  "integration": {
+    "max_step_s": 10.0,
+    "max_duration_s": 3600.0,
+    "event_tolerance_s": 0.001,
+    "max_steps": 200000,
+    "relative_tolerance": 1e-09,
+    "absolute_tolerance": {
+      "latitude_deg": 1e-09,
+      "longitude_deg": 1e-09,
+      "altitude_m": 0.001
+    }
+  }
+}
