@@ -1,0 +1,33 @@
+別リポジトリの新規ブランチへ配置する場合：前の手順の訂正
+2026-10-03 / アプリ0.58.0 / 文書0.59.0 / 全体配布
+
+ブランチ名は先ほどの codex/balloon-analysis-app を引き続き使用できます。
+このZIPには非公開repoの登録全366ファイルが入っています。
+公開repoのブランチへ置くと、開発記録・原資料も公開されます。
+
+1. ZIPを新しい場所に展開してください。
+   展開フォルダー名は space-balloon-simulator-jp-0.59.0 です。
+   古い配布物や既に起動した作業フォルダーと重ねないでください。
+
+2. 前のPowerShell手順の $source を、今回展開したフォルダーへ変更します。
+   例：$source = (Resolve-Path 'C:\Balloon\import-059\space-balloon-simulator-jp-0.59.0').Path
+   このフォルダーの中に README.md、START_HERE.html、backend、frontend、docs、
+   references が並んでいることを確認してください。
+
+3. 前の手順の新規clone → git switch -c → 作業場所/branchの確認 →
+   git rm（配置先のLICENSEは残す）→ 内容のコピー、の流れを使います。
+   同名ブランチや取得先が既にある場合は「新規作成」手順を繰り返さず、
+   現在のブランチと未コミット変更を確認してから更新します。
+
+4. 前の手順にあった、簡易READMEをSet-Contentで作る部分は実行しません。
+   今回は元のREADME.mdが含まれているため、そのまま保持します。
+   git add --all / git status --short / git diff --cached --stat で内容を確認します。
+
+5. コミットして、この新規ブランチだけをpushします。
+   mainへ切り替えたり、マージしたり、--forceを使用したりする必要はありません。
+   メッセージ例：Import full Balloon Lab snapshot 0.59.0 with operation guide
+
+重要：この大きなZIPファイル自体をGitに追加するのではありません。
+展開したフォルダーの中身をリポジトリのルートへ配置します。
+別repoの.gitをコピー/上書きしません。このZIPに.gitは含まれていません。
+PythonやNodeの実行環境、APIキー、利用者stateは配布に追加しません。

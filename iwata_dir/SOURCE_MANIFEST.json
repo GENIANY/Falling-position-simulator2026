@@ -1,0 +1,2576 @@
+{
+  "repository": "GENIANY/space-balloon-simulator-jp",
+  "commit": "6e417ea3bd9206d1be4663a83e01159fb0acfff4",
+  "tree": "ca20841a9075aea3829343a4e51a93503f735ac8",
+  "source_file_count": 366,
+  "source_sha256": {
+    ".gitattributes": "a8c50256e34079ad8bb0a9433d18374480e731a09af7d25ff2f0009fb606a272",
+    ".gitignore": "b1014a7aeb9e57d8bffbbc6ef29ee119dc9d0a23cad0d6ae2a497ac96da62713",
+    "ACCESS_PROBE.md": "3920c828187f30ab5e25aab1abb76db31535e22f67471000f1e988f3808dca58",
+    "AGENTS.md": "521ed5116b1db74b5b66df82eb4b6f404e178350d08f903cb90756097f24862b",
+    "BOOTSTRAP_RUNBOOK.html": "95dc8651edc06a82a0a5fd8da98ac6dd00bb3c44bb1236f550c2be9bdee3cd8d",
+    "CONTENT_MAP.md": "eff7c4bbcf6c11e238be78e9cb8c88648c9b9e9ca015d7305f7fce8de83f16a7",
+    "PROJECT_CONTEXT.md": "c99e141bd57fd07623270fed0792d3c90707f1f83721e249ca443988cedf8f8c",
+    "README.md": "28c9d66e69732034cdf012dbbbe8a7da1a5ca2cdd53225ff96921e3951edfc98",
+    "REFERENCE_LOG.md": "246af6941668e322f0007a1ec9160ba70effa0cddc47845658a3cee2980396e0",
+    "backend/README.md": "546f914537c04a4afc587167514acf10dc3ddd63ff231a6c377359ccc5b130a2",
+    "backend/__init__.py": "90bc5785b30ce7edd5dabee2a8cd5b200bd59473e1fcacd3d522aa67bb15c003",
+    "backend/app.py": "9cf4a031ecf0e51c7b5265d36ff4b035d0a1293e5f9a092b18bdfe148acd0a05",
+    "backend/application.py": "dc99f9f8ebde7ecfac44bcc6349f733f35135f8974e85e07d6dcf6e9ac9ec695",
+    "backend/climate/__init__.py": "5beaf037f40930f8d4cdbd418c62851bbf3223951c39dde4796de4d0a2172c3b",
+    "backend/climate/aggregation.py": "1eebdc6b976b8cc98cd9f1b1dfacfc136e96f584cdec602e88761858f9229045",
+    "backend/climate/archive.py": "5a634436d8270b7376fd7fa15a50fdbcd7f5b765c911d72fcca25ff0424b184b",
+    "backend/climate/contracts.py": "3fd4d0a74aa35154f881f51fabce4672f851747b63b85d5292ec410b740792c8",
+    "backend/climate/extensions.py": "786085588c340b7bb8574c882c6ef3b3c32bc06725ab7578d4ae42aad17c59ad",
+    "backend/climate/periods.py": "94a4366e8399b1965de750eade55490231f7405a8d83f069383eba5d03b63379",
+    "backend/climate/samples.py": "e839d8c2f13564ceb0439233902395513ec234d4a90945bbcbe45f28fca6d050",
+    "backend/climate/service.py": "495a0996b3d65e48ce44fe563bce2e02c7b325c4fec5c31c278d47e3a2195b3a",
+    "backend/climate/source.py": "ac9396e9586516f29a6dd44d30bcf03f9401d1cfecc15b28a0d2f007871efd64",
+    "backend/climate/statistics.py": "8d28bff0d4e0f2c7fe2bc4e36dfb25cdb99ce76308881e3fac5de83d39483fff",
+    "backend/contracts.py": "59123143e7c56e2eecacb98ee23c08146c3009e70552c250b85f37e069c1fec4",
+    "backend/ensemble/__init__.py": "32284a9ba2e29468f2b286a80729070e8390deea43c9beee2f2ac5dff1937ec9",
+    "backend/ensemble/contracts.py": "271a7db0c498204a9b5b0462e23dff2ed227d10a0798548608be0506852c5d35",
+    "backend/ensemble/historical_planning.py": "3d9a5aec28b28f4e7a33eead3cd7178adb623a9a22bea3927a01778cc566f7ca",
+    "backend/ensemble/planning.py": "9cd53f8ad14d05f7d4cfcf6519ed134d00edc3ff4ca884c2dbcf96aa9b17ad53",
+    "backend/ensemble/service.py": "e3c66e75f063f51dd0f4752224facdc0f0f9923139acaad2bd4897bc45614560",
+    "backend/ensemble/storage.py": "e83734f24e3f21339b33351e3450f420630c452076b606b7baf16687e50cb794",
+    "backend/ensemble/views.py": "12c0e922f4d8276df6b7a1499621b07ff745b455c8f47039b5a1efd976f656c7",
+    "backend/errors.py": "6935e7efd323507b08d4c22d4601f136468aee05cd10b106da03cc92616e050c",
+    "backend/historical_catalog.py": "398cc2a017f4c195fa98b41613c4af44015641b64c13512c69102060a029c7ff",
+    "backend/pyproject.toml": "f0536dc23e9edc0effa3ea7cc2ea345242b9a130625881afa9b024be65c0362f",
+    "backend/requirements.lock": "e37f6da2e2905f4bcef9037de69622fd5fe09d0369d270a4768c22cbc3c75ab8",
+    "backend/storage.py": "d3bdb3333641d9d51f8d97a0bdd05790e685c72af83b35be8d29b07fa24aeea4",
+    "backend/tests/test_application.py": "40e848c7cc2182a2e7d240b3d31f87dd87d4be3cc78c61c1d7ec10d9aedd975b",
+    "backend/tests/test_climate.py": "1ef4bc5a4d54b344a997a6848a6d77516917ab0078ed0586d08f85e35357688a",
+    "backend/tests/test_climate_api.py": "e7d537e2b8db3e192f823c726adac3c697e659df0b334c807f139d30090e0593",
+    "backend/tests/test_climate_archive.py": "bed81a63d0c5180b5751788c7151b1d5eb4d688cd2bc89230b6d04f39990088d",
+    "backend/tests/test_climate_archive_interaction.py": "ca8f0423de6f2126dffbed4d2686344e872de59bbc44cb804db96542ec5ad902",
+    "backend/tests/test_climate_periods.py": "e1d0c295d9e8d2c249ee6ab522b48d626d2bdf4a4d6220bcb0dd11f99c20b34e",
+    "backend/tests/test_climate_samples.py": "d60a265965dc0f9d10731afdb28988f9e6b02f6aa0bae13600fc4d92d5678918",
+    "backend/tests/test_climate_service.py": "439a565ea3b18a8fd112d42b30379fc4c6122d4bf5ea1d38b2f7c2779e210dd9",
+    "backend/tests/test_ensemble.py": "ebba6457646f8fe1e084ec362c2eb966a830aca51779d00c76cbc1b3e5b45fe3",
+    "backend/tests/test_historical_ensemble.py": "7386de131c77ca02c7021469082d76a1e66f773d7e45fd7b078312ec805acc8f",
+    "backend/tests/test_recovery550.py": "7d4e163b1503c168d46a2588ce26350152b82215c3eb4a7b09657e0f42cba051",
+    "backend/tests/test_weather.py": "239a3bac11bedbc41a5608a335aa3620e88cf4716f549d849da92e62c69a9082",
+    "backend/tests/test_weather_ground.py": "93c327defc9a88fd81a9a152fe1c0849bff14437d7dd668ed8210cef578f9225",
+    "backend/tests/test_weather_inventory_partial.py": "00af46525cfff3251631155598c1f85412f761be750c58835a5161761a0fef99",
+    "backend/tests/test_weather_raw_reuse.py": "b768b9a06989dec2d70b80ad1a3098a7e2f50e27ab0bcb6ba4bdfe73126245dd",
+    "backend/tests/test_weather_region.py": "ee274e0a8df8a802d046ca42de60fe6e7f0d0f082dc12532726eeef513d6cc45",
+    "backend/weather/__init__.py": "0935047b5a174270d14ce2f759dedda8ca2cf71ce870810cc5c4d2de175ea121",
+    "backend/weather/catalog.py": "0dd5b672811f4ccb6f6795229e7b0f0e8f07764a63e418908175e577f13053df",
+    "backend/weather/contracts.py": "8d3145c6ba2d9d3cb282ba6de0a20a1df6ae9d2002085bb1397d5ea74e3755d7",
+    "backend/weather/planning.py": "203fd9a6b3086f9825624208be93e624b059108ed118e126b901f159210fcc3f",
+    "backend/weather/service.py": "826b0271210a42a95d9c3a3d9ed2db10711a541a4e84baaa70e16126eacf5ec9",
+    "backend/worker.py": "c84e328810e79629893dc7e3eb8008a998281cb0ac258336247f87a88bc98b65",
+    "balloon_sim/__init__.py": "e3e06998346e4b7f1cec987997ed21f1d23e0f2a2b0c7ffc15d862f3f95a95f7",
+    "balloon_sim/__main__.py": "6a170fc866c867a1e5812daad308396f0940a23f2ecf55e56be39d5d67d23f10",
+    "balloon_sim/cli.py": "dc0d2bc06eed8cfdfd3cdf93e1a8990bc2d040bc824844d4ae6bd993b359723f",
+    "balloon_sim/dynamics.py": "cb4d7d73fb3f69d44a7da4897c3933ae6b6c170ab72825068c0443a389851f69",
+    "balloon_sim/ensemble/__init__.py": "77fb836feac4633ffc5c5e709b56a62ab2698108ed64f129fdb16b19797eeb74",
+    "balloon_sim/ensemble/geography.py": "ea46068561388280117388705cd0810598b19fa2b02085c1da663929093ae0d4",
+    "balloon_sim/ensemble/histories.py": "8e85a5c4928c70f873ef67076f5d064f28f85a6cdeb62e14e6179961d8bf6eec",
+    "balloon_sim/ensemble/landing.py": "a9a16b8baed7d6ae1652a224784ad2b4e3b6c36ccfd7d96bd6db5d144f87bb62",
+    "balloon_sim/ensemble/sampling.py": "7a651a17b737435f8c3964d2cc205c65fa582ac5511916f0b597cc3e412b4144",
+    "balloon_sim/ensemble/statistics.py": "9a7b63790d1e2ec6b5d7dd773d250d0f4e31f14a055d2e60c9fab6ee30f08893",
+    "balloon_sim/environment/__init__.py": "d3b79cb3526df3b96c82363ec6ea2da9e93959d42d467d5a3724472d48bbe7ec",
+    "balloon_sim/environment/bundle.py": "f1909619e1c15044adfd5fff77aed66f8542d17c23c2a41c5c7d70a3412dd093",
+    "balloon_sim/environment/fields.py": "3052d82b0fa96d31380ef6d4f9f4af49a005dffa5a7bb7267f695395fca374f0",
+    "balloon_sim/environment/gfs.py": "9ef1df8cd0ce75424ac7addd4990d0da5157a0cc422c3a5e8d2733e08c2fbf38",
+    "balloon_sim/environment/gfs_contract.py": "3216b14934bdd7f99ce6294daf9cb79436c0fc8aadbd1a6f23dde0863aefb3c5",
+    "balloon_sim/environment/jra3q.py": "fbae435777e36ba7bd746966850550855649c5415d633c6e3b80c79a88f2c8a4",
+    "balloon_sim/environment/model_levels.py": "173a0816d3883877de47bbdb5b88d607df464babbb9b92bd3b908b33e8b15dc6",
+    "balloon_sim/environment/model_surface.py": "949808abd8ed46dfa98aaa9551cc35ef499898c5aa1e2077c8d2c575b2327886",
+    "balloon_sim/environment/nomads.py": "16bdb7add04d25fd919ce25571938ab0e18ddecfcb1c79813a53d6e0e6a9d3d4",
+    "balloon_sim/environment/storage.py": "3afc21a9c1a4535843bfe8a8590293eee52986feeccd362373595b0591499995",
+    "balloon_sim/flight/__init__.py": "a4b2bc90cae208f211de66f4cc2e809165f1def2bbd7ad098b0e60971d5d4606",
+    "balloon_sim/flight/config.py": "4fe3681aa018dcdfe1c580ac3fa608517cac8c650931430ed6f7cef3ad8acee3",
+    "balloon_sim/flight/events.py": "d72dd60c620905d642ebf8611192a1d52f68c51ca0ebfb7c53caee56a5e03a85",
+    "balloon_sim/flight/models.py": "2f1dc2e2ac1a5baef1ebf86c7ec8809401eeed6e1666be380b11e7e9d851fe99",
+    "balloon_sim/flight/numerics.py": "c31b043f85fe210a87f31978de25068b2f442ce3d696adf2f2a32a85568aee08",
+    "balloon_sim/flight/trajectory.py": "e51130d19f99d6a078f46305fd11673883db7688d2e1caecbff955993b031527",
+    "balloon_sim/results/__init__.py": "716a02ff8a64a374214cf723a1dfa8900c6a49de6057263df335a1e66bcfae0d",
+    "balloon_sim/results/export.py": "c0cd2c65279bbbb1206b9feb97683e89ecfe979a4ca00d963188f25433162b38",
+    "balloon_sim/results/report.py": "eff795edd7d2f58b14193c61797a5337837c387c4719b8151cae4fe75099bf70",
+    "balloon_sim/weather.py": "052b2eb4605ee151f039aa9c48c14a5342cbfd1ee6e461e7985d64a479cfe5f4",
+    "docs/BACKLOG.csv": "aaf5c3b875ad0f0170e0ad7395b1003bff29966d9913b98a06c8c472b4823f49",
+    "docs/BUILD.md": "9b203369969b9793bd52b84e145eee3cc0c2bab8d38d871fe7cf3c93563d992d",
+    "docs/COMMANDS.md": "d9fdd55fafde02120bddad8998a1549b0f00b757a8f0546ac28ecbcc8064d1ec",
+    "docs/CONTENT_HEALTH.json": "186b40e0e197d92e72b7d6d378a3768e1e9a827a1f6c0df479e1fc407092eeeb",
+    "docs/CONTINUITY_CONTRACT.json": "27c55fc7363e34a9c4e005741dfb240184427b4896a4add592fc0fb20f0b4667",
+    "docs/DECISIONS.md": "e7ab433136d7464180050593532d1a5060e8ecd6bd925e6169fa2a288834035e",
+    "docs/DOCUMENT_CONTROL.md": "90ef3439ae9e76274a8d1819d384ccb0863c7d1f710ad5e03e2072fcbcd208f9",
+    "docs/ENVIRONMENT_CONTRACT.md": "7dbdd3f54c236b7aa54b1bc285f4c2d0e158cef4086f285b27e60bcd99e5b069",
+    "docs/IMPLEMENTATION_INDEX.json": "9e1d0735567686d2ba65d9215234855cda28121ce5e0a47c5ece7762f7df3b50",
+    "docs/IMPLEMENTATION_NOTES.md": "57e5b421b46a78a7d8300090d9dd8dbba47f6594e3e58b9a8f4345f268f35d6e",
+    "docs/INTEGRATION_DESIGN.html": "282acd24992f4b7d3cf74f78be973ea579eb500c56c003a9926b786167dcad20",
+    "docs/LESSONS.md": "74f15511b59a157b7a71d499d216b648b3fb8b40338da2a1ed16529476ff040a",
+    "docs/PROGRAM_GUIDE.pdf": "af8dbfb8b358918660910ea3a328feeb8419870c811ac67d6ba528ed1430454b",
+    "docs/PROGRAM_GUIDE.tex": "24544261aa671a72cf81b4308a62ec1c7aa8154860f78beadb6c7813711a9601",
+    "docs/PROGRAM_GUIDE.txt": "449978dbabed917c71342c9c4a947f4f3ee076bd0a21b3a9524f04c6350ff9f1",
+    "docs/PROJECT_PLAN.md": "c40ea1e957b3ece52f3b7f56628877dba8e3dbceb339d941ef86fa61c8680ee4",
+    "docs/PROJECT_PLAN.pdf": "7551b9d82fab152dd0c932998277082ef7fb277f18697ff8aa424634eb375255",
+    "docs/PROJECT_PLAN.tex": "98794e81c60c13117aa147136a95ec78007d92f0e01753af94b3e472220c5398",
+    "docs/SIMULATOR_VISION.html": "54bc890ef6e5d14fddaf2ef56b1409550ba478113765be81ab11aa4f88cf2b2d",
+    "docs/THEORY_GUIDE.pdf": "d41ff33cd868e5355b2b218c82bf27331821f8d7be729a72578fe18360aaad6e",
+    "docs/THEORY_GUIDE.tex": "5c526badb343f4dc2a7e2401e1c81c376554c0e0e080b97364f0f16023093b5e",
+    "docs/THEORY_GUIDE.txt": "e81aac9cedb343ddc143145a95d1ae0be14f947d9542e944221260b0f1127a8a",
+    "docs/UNCERTAINTIES.csv": "dd309fb220111fbebf89499dd441fb61f98bbc2f380b3a09b7bf18bb66b3198d",
+    "docs/VERSION_HISTORY.json": "3b7411bb0216a8955d180f5e13362c33169d896d6ab62dd7416e4ae782281ad8",
+    "docs/WEATHER_DATA_GUIDE.md": "7450d61f0faf51fc500f8296b9733c9ab05562b52a96775cc8213980d2f73933",
+    "docs/WORK_ORDER_TEMPLATE.md": "307e62ee751fa3665eb682780cfba9ac259745d9043d6dd7facc03d747606e98",
+    "docs/research/BRIEF.md": "87ab3176ee03d7998bf50ba89a69c90737a5474aa2945d84e444a9a96cb05322",
+    "docs/research/README.md": "68832d02bccd707341b68995cc84d3c8dbcc10fa8fb1e460817fe71c9e82c991",
+    "docs/research/RESPONSE_TEMPLATE.md": "5274568eb8162e9842e4d11da1b03abf01eb81b966f70855800a645b2d83da00",
+    "docs/research/REVIEW_042.md": "245787df831035b99987701bbb5bfc157501f46789a182f70c7055ca562d63dd",
+    "docs/research/TASKS.md": "5b2c034009ad3188afc78e87027075ee332c661158f672bebe34e9e6f8f2f1e7",
+    "docs/research/UI_WALKTHROUGH.md": "edf8a427356f6850f8e4804d890c2b6f04aa29081c14039f6b7f8b10846575f2",
+    "docs/research/packet_sources.json": "1d726105e710c37316f702054b2a5d833daf679b316d98d318ad42909968c87d",
+    "docs/research/packets/Q410-01.md": "50b29ef74e65c43eff249da3efbd2e953f05dc111791dc0ead4be6912cbe3f9b",
+    "docs/research/packets/Q410-02.md": "5c5c11318cfa5631835b555bb5b36d2c7c344eb80ff65a81c968df76d2a62a6f",
+    "docs/research/packets/Q410-03.md": "96f825bbc3e67293a3d983a2b9215dfe4942ce8bc308b36dee063e9292097b46",
+    "docs/research/packets/Q410-04.md": "fc27cade9279617f779100a1014d422220666ea14263b80ed3853a61c1c40950",
+    "docs/research/packets/Q410-05.md": "42087d031377d0c03fe8ca5701ab8a7496aff4ef28eba0ae56b56b9ca723c4f5",
+    "docs/research/packets/Q420-00.md": "cc48178ccc885b492e862d05c9bd4b3d17a653e8e74f0e8ddcdd4c71b8bdcca0",
+    "docs/research/packets/manifest.json": "46d1d8e4f8d21eca134073f906e29e1883ed71f3b9f0d88f55f16c5d99c77d4b",
+    "examples/gfs-japan-request.json": "0908527c63294152792982c338cd0873edd3d952a4f812aa9f4ee2b24c243340",
+    "examples/hokkaido-simple.json": "cd3205fdf4f9c245e9ebb475cb7bdeb1fc7726f54ed84da8aa9404d2d679bfb9",
+    "examples/jra3q-ground-flight.json": "72ce511f08eeb22300daa10f8bf1ed24c8c45dd19702ae14e8edb6d16e019af2",
+    "examples/jra3q-support-flight.json": "17f6bded04a4f5805afe7788a3d0ba7d395e0f586dd4fbf68406fde3a2ddfc35",
+    "examples/wakayama-isothermal.json": "f9ec570b730072035794547f4927f06b02af979f302c49596a603fd065fa128d",
+    "frontend/SCREEN_PROVENANCE.md": "85856f0b51d59a81e2a2ff3f56cee1c9e12a428e81d45508eafb5fe2d8ffa0a4",
+    "frontend/index.html": "476fb3952261656e862cf86492a9323c107f46bf92a037bef735cc180f11b59c",
+    "frontend/package-lock.json": "a7caec5c0901a6043182e8f7b2f7cbed68c5a86c87cbfd3eea998a17d301bcc8",
+    "frontend/package.json": "b0ec06e509802d294bbe7ddf9d39f6b8470d6c4acca2b81ae480c13337692a53",
+    "frontend/scene3d/THIRD_PARTY_NOTICES.txt": "43cd084226dcfd5151989334f4a62183012ab3e14f6e2a8e60796558d1be3156",
+    "frontend/scene3d/data/README.md": "6631979645f2e1765da5ffb7d9fe84734bc8822bf3047f3ab7c2d8a7855f16ea",
+    "frontend/scene3d/data/WW15MGH.DAC": "9dcaf4efd6857aaa2e1e2e2c574d3f5264eacf47024cdcd5291c40ddad5e5acc",
+    "frontend/scene3d/fixtures/surface.glb": "3311dbaf80d2fe6f8ea62c0c7fb560357880e021369688f4884c4225f3f31805",
+    "frontend/scene3d/fixtures/tileset.json": "2d22e79d51cbc0c4319c877829ad68bec43c799b56a0964621776d9900d00819",
+    "frontend/scene3d/index.html": "932479dc6798407e0a0ae786f99e73cc0813854179e193baaa38f680161f3a1b",
+    "frontend/scene3d/src/band-readout.js": "ca46e0876a45b88510ee968bdffba20f7eb6cae63b10d421b65fd7bb1bef25b0",
+    "frontend/scene3d/src/camera-fit.js": "f9f7a71b93c891680ffe78c85dd9710e7c299c8975c672e2b014975c3950ed49",
+    "frontend/scene3d/src/catalog.js": "5a66948a232305e2ba8b5cc530ec93ad4900088cedc6cc2cc5209c99b3220a62",
+    "frontend/scene3d/src/colors.js": "a5ff525de1d31a6eb11540b7f7f82768944928aea969ede971b15863c8c72101",
+    "frontend/scene3d/src/fixture.js": "270c5863076b44190b92bc37f4023d91aaa811cfcece586baa14b4a1929636ec",
+    "frontend/scene3d/src/hover-controller.js": "6bc46d66fc09bfcd04337b97a0c32e254a9da0abb19e6811a84966b4fd80b86a",
+    "frontend/scene3d/src/hover-labels.js": "2ebbf8cf40d6149e332600957ac763d442e67caaa2035be5de5f6411c9d9da8e",
+    "frontend/scene3d/src/main.js": "c4fc03057ac30800da5e8d52dfeafc5cb2102502086b16fed49873bee2cc047d",
+    "frontend/scene3d/src/overlay-store.js": "11a689eb6656043aba39ed77cface29e2b3156035b6b6e039318f3f5749bcd3d",
+    "frontend/scene3d/src/overlays.js": "b7c5990ea74b4faa3bc7fa55fdcb201c0b1de80fe846ffce985cdd5a7a349e57",
+    "frontend/scene3d/src/protocol.js": "f7fa87730a028cedc10c82e8138715945bbcb74bd2c4cdbc1f65a437e54e2741",
+    "frontend/scene3d/src/provider.js": "f6d80bdd90b0b95fdfe4f7cd22a0e6f673510ede74f3f6c31767d43a3c3d0ca2",
+    "frontend/scene3d/src/receipt-status.js": "f9512bf09b96c5d9c18cff3329f7565fd7c621caf33bebf50ea90e4901a77466",
+    "frontend/scene3d/src/route-geometry.js": "b4162fdd7dd2b871160fffa692079758399d66281399c85be2765810fe3a15a0",
+    "frontend/scene3d/src/route-layer.js": "495bc0c481e3ba73e8ffeeca963847d1abb35b4d998047ddbc0c56e66dfcdf12",
+    "frontend/scene3d/src/surface-pick.js": "9432556b68fbe2d91d1ad6bc0a452de871e98d51fc2028f42735ae4fb74e600a",
+    "frontend/scene3d/src/surface-session.js": "f084411d93ea8864ae99c3e0b241f548866e74302443607fb30c4393d83955d2",
+    "frontend/scene3d/src/vertical-datum.js": "5a02373eb48fb5cc92defc77efbaf89f6c74c6840f701adc839d723d07c71285",
+    "frontend/scene3d/src/view-memory.js": "bf46a92a7e0e738fc7b26021c098b291a3dd446f8ca2d08e057672c995aec6ac",
+    "frontend/scene3d/src/view-stability.js": "a8dd03a7b0ecf2f7afc5718df56cc90845de0dc1e0f82967d5d041b47ab12658",
+    "frontend/scene3d/style.css": "e6276f940daf172581f0a9e8da6d8c120224e475d12aa5e6b06c9f57d38a4bdd",
+    "frontend/src/App.tsx": "ea1d4983c9f638056cf2814f0e32e2d2ff2d317ba49054c5ddb50145e3c49548",
+    "frontend/src/ClimateFlightHandoff.tsx": "f7ac61ea826987d37d021177fd48aeaa3c29f62aa33bcfaf02371a81ee8e91e2",
+    "frontend/src/ConfigEditor.tsx": "afdb0c188f9bbf68c6c797b4b3c8c1155df03d0c12ba6bfc663db1180b90973f",
+    "frontend/src/GroundPreparation.tsx": "7a5e284d92e9800c17ad2a119bfd2076c671374dcd79cdfaaa181c4def89ded5",
+    "frontend/src/HistoricalEntry.tsx": "b5929a209c149cb47ceeb69db522a2af0a04aa6fefaf2d3b45306d1ab66b5785",
+    "frontend/src/HistoricalPreparation.tsx": "4a91927f5d50830e0e8972c049e57f3e09b6d05869e974dea2350536cf29c5aa",
+    "frontend/src/HistoryPanel.tsx": "25cb7a954f668595bcbeaabb14a0b5a521f15401c0793a44e5db3e310df3c4e5",
+    "frontend/src/MapPanel.tsx": "31ccdbeb8c9225640484496d764ff7fea46cf950bebddbfff6b1cbde383de5a0",
+    "frontend/src/SamplingEditor.tsx": "393c72a5ca773b3225339dfa2484516e2add9d0ae03f46f77e65eb8522d60c5c",
+    "frontend/src/WeatherPreparation.tsx": "e1c4c9bdb19f47ff8c3540dbce9a7270292e847c970213959aa7fe395f1fb1c6",
+    "frontend/src/acquisition.test.ts": "bdf6f410bed9434156828194dcc446bc5b01d524e5f2eb98ed047e94f4b366e2",
+    "frontend/src/api.ts": "ede1efc7e6f725d33dc3f9123eae349b9b02495967ddbec60109b150105dadb0",
+    "frontend/src/climate-expansion.test.ts": "08dbbe129baf5551913e0cdc56e05ab4999e7b84f5ab78c2dbec63b4487519c5",
+    "frontend/src/climate-quantiles.test.ts": "01eb47ac618f012207a2493484adee5046c6cca64b9446ddf65b19e868bbad88",
+    "frontend/src/climate.test.ts": "17949be7c3d07efea06e8678819c8c812820fe8786bf28072388df2206fd5d6e",
+    "frontend/src/climateApi.ts": "f8b0c95c235abcf13df2cbad2e7f3856120b3e1a35c5d189f7507d293d9b2c86",
+    "frontend/src/climateDomain.ts": "124b52656e34a48f94cea632c7ac90d6567e33343c359de938047a4bddf4e60e",
+    "frontend/src/domain.test.ts": "bdf7e91406581c30d98a1359bfc9aef39abaf6fbe6ba5836af5e14f01f07fce5",
+    "frontend/src/domain.ts": "eaac036bf24ba7c92e9b287eacb3e32e69c69c6fcf864ea33cb5d1d29abae841",
+    "frontend/src/ensemble.test.ts": "574733e2e15cc418c9f46b4283c53833da3fb6dca3d4f1c3d5b853bed11e6464",
+    "frontend/src/ensembleApi.ts": "eb2e157d5f143963f7dbf3962a0f986160fa57f5510d46e0cf2c741e7cb471cb",
+    "frontend/src/ensembleDomain.ts": "096e243265bd60cba63f3b95c6f3724481c022d7c2f5100e1b67caf8e711ccbe",
+    "frontend/src/fixedResultRead.ts": "3ce32f5b23721fb3f18bf5ad3cf0103a4efe9fb0c49721867f8b84bd524009ce",
+    "frontend/src/ground-preparation.test.tsx": "5c624aecaa2717a7733a5ed8ce2b4639d8edc7a24db40c1157e838472f78dc4f",
+    "frontend/src/historical.test.ts": "1d8b380adc6e676081165def6a562a1b09d16284565f9fbfca7bf5f1dc65d4b7",
+    "frontend/src/historicalDomain.ts": "d00545fb67f19013ae88c1be26eb7f9d774f864e5a02700d2f69cdf720cc4268",
+    "frontend/src/historicalTypes.ts": "6694b90b46b45b6d5a88f7f6b358fc9d9e4fe9650121d4264d7c502f4fb3e155",
+    "frontend/src/historicalWorkspace.ts": "060a622ba811c5b17e1fe5c4044b7c8a22edfd7843b25da8de3889cf4966ff14",
+    "frontend/src/jobObservation.ts": "f36e88c3747849ab95bec213d532052faee188ba6061acba4f320ccb12280f67",
+    "frontend/src/jra-weather.test.ts": "f24b338d5e0c7a088806f7065e1f14e9529668b5178ac2ab583ae3fb6df87fa1",
+    "frontend/src/main.tsx": "7dc6dc0fc15338dad65f73526ee69b178b40991fcb4c762a5e9d82b339b93889",
+    "frontend/src/modelDrafts.ts": "91ff49be7e4d70842cebac0fb92a42d72b67377bb1918f2dfedd04676d08517d",
+    "frontend/src/operational-observation.test.tsx": "633e9636a63502b87856b628e4c2ceccdb846a58a023d647c93dc626f6a096a2",
+    "frontend/src/platform.css": "7c23383dea47540d512fb3ac25098ce69798b0294a57e84415db6a5fd1a44d61",
+    "frontend/src/recordedMutation.ts": "29f5028b5a29205d61af091e5eae906f267c5f36a98f2dd1deaac4810813105e",
+    "frontend/src/restoration.test.ts": "4bb4cae7b7acb424f9ec4afa3083fb20a7b294e4a71834d1df780d15e6ae26b9",
+    "frontend/src/scene3d-datum.test.ts": "427caf30237af6a6cbb1e301fed5a9db581facd74627f10232632762e751acc3",
+    "frontend/src/scene3d-geometry.test.ts": "3038d2fd14e06c3c0c2b34580072537fef13be290da213a707e851e815a494a4",
+    "frontend/src/scene3d-routes.test.ts": "3cc59a50718f376e51c390b7d3594635b4841ac9a563c824d18949f26b8ea962",
+    "frontend/src/screen-contracts.test.ts": "52eeac00b5b4705d4158763c1890c30512a9051bd38d4d072bd3a65043106eb6",
+    "frontend/src/screens/ForecastScreen.tsx": "9a5d6f8e2609a17242362650c5800bd89f44b15f3407a6dd6e24e82fa7e576c8",
+    "frontend/src/screens/WeatherScreen.tsx": "b5ee71f5e3a92994c37ecb7aec94ad47dbaa7b033039fb79cb005ca65d1e16d6",
+    "frontend/src/screens/forecast/analysisLoadState.test.ts": "162f6bd9c0b66fc7344deb4dbb352b8893f2082cc1cd5ae0040eb98613c2e0f7",
+    "frontend/src/screens/forecast/analysisLoadState.ts": "1db7d7d8896ba14b13497f9bb13d7b592c608ff96355ccf8e4711cda011d9c7e",
+    "frontend/src/screens/forecast/appearance390.js": "6e7a275ba331d7fcab9621c7d325440bb74fa4eb94d22eaf1b69cd276b6dd0a8",
+    "frontend/src/screens/forecast/controller.js": "0df9c3dd26a8cde0245c605d335e5c1943d658ae1f878d2ed2d83d1d1c28af69",
+    "frontend/src/screens/forecast/core340.js": "b9e5417c556b9cf36fbb66e05942b5f3f169ccfc0b774e7e39cde44f0ba9e813",
+    "frontend/src/screens/forecast/data.js": "6219c465187c7aeb90e51c1d9d230ecef07466e76a79910611af2aa2eeb3c04a",
+    "frontend/src/screens/forecast/ensembleProjection.ts": "fa468ea949c0be85e75d5159657edb14cb018436c9c2a02212e0a1abb66d2b34",
+    "frontend/src/screens/forecast/export-context.test.ts": "31dba7c72940460b74cd2e7a0cf025ef51fa4cf75d3b0dbc9ba28faf8e74280d",
+    "frontend/src/screens/forecast/export390.js": "057e1ced50522db515555cb56c2266892e00bb59c506d9c4ed11e19fea924771",
+    "frontend/src/screens/forecast/exportContext.ts": "25a4c6c21ace99be4e556b3c4cdbf81d4ff6eec927ae021d72c3f613e449dc7a",
+    "frontend/src/screens/forecast/historyLoadQueue.test.ts": "10c1fa81d50b40a5d0d7514d350448c64d5cd98b28e4c33c5238104ca69d775a",
+    "frontend/src/screens/forecast/historyLoadQueue.ts": "af233a4b7ef97e77370176a47c31d195d4f5ceaae356cb460a4e32a326322b7b",
+    "frontend/src/screens/forecast/hover-geometry400.mjs": "8ed2e1bc60f08cba0fc291d22c832e0b2a736dbd4d30f736a77ffd76e6a7757f",
+    "frontend/src/screens/forecast/hover400.mjs": "b160235e160ab4ec9fc5011c328f195f59dbb350c2db622e9d97d6b5f0e2e427",
+    "frontend/src/screens/forecast/map-style-guard401.js": "ca04d2952a739f967ecc15b922828a6142b2dd097eccaddd0df737ba338e8dff",
+    "frontend/src/screens/forecast/markup.html": "f3e8d8cf390e568ad7185b265ce53c993561500d6900722d8ae1ff56e0e2457e",
+    "frontend/src/screens/forecast/math.js": "0db1f087330499b3a419b3a1ca35442b80569fcb0520a6b22bc7ad7772ee5255",
+    "frontend/src/screens/forecast/projection.ts": "67b0d1182dfc08468ddec9c58981193641cc6413559ca0b3d7a925ea954e7282",
+    "frontend/src/screens/forecast/runtime.ts": "a4f9e0183650e5b059c436a52347fe3d3d06ffab84f13c35eb412d7ce6a85226",
+    "frontend/src/screens/forecast/scene-document.js": "43d28e2684332e64316c26bda1e3cf321b4413db17045c452ec05ced4854a9be",
+    "frontend/src/screens/forecast/screen.css": "c7d0ce57b3ca5d7a52c41c704022258b853bb70adee905ed2599d4491d080560",
+    "frontend/src/screens/forecast/season-adapter.js": "aa226cf3de83de1611021f060520dd2261c0c0d309331adf8361ff60fc999c37",
+    "frontend/src/screens/lifecycle.ts": "4ecd7637c42b89ad89d755cdea9df284d4aa233c29cda857bc49f4a8199ba5c4",
+    "frontend/src/screens/shared/band-readout.mjs": "ca46e0876a45b88510ee968bdffba20f7eb6cae63b10d421b65fd7bb1bef25b0",
+    "frontend/src/screens/shared/hover-labels.mjs": "1222e0ca8347259ab8a613a170764573e47f8a16b611610d25199d72d4d7f59c",
+    "frontend/src/screens/shared/scene-style.js": "612c6edb5d7c51ea9787eeb252edfe3dc4a882136d0474274e8887ba2f98773e",
+    "frontend/src/screens/vendor.d.ts": "a7a7788ee3041096b3616269970e1fe07c9f45a9385c83d6218273b4bb83b70a",
+    "frontend/src/screens/weather/climateController.js": "e7e6f9b92ca4403f05d0b8c0d69a9f465e728c919ac1d481cc4f95cd0bca954d",
+    "frontend/src/screens/weather/climateDistributions.ts": "6903bee6512f8a2fc7e64ec6641b910c6ecabf4c26ee0ea546dba10119f54f70",
+    "frontend/src/screens/weather/controller.js": "3b9ef966b108003c986178920a114c5ba92ff01b88e1e3cfa86d8e539c51c83e",
+    "frontend/src/screens/weather/direction-key.js": "1ceda5de551cbc0c9f8afd9e31d9ee20058108022ffbec1d2b109e80ab7af732",
+    "frontend/src/screens/weather/export.ts": "df738f8bf50f4c3ccbffa55034dd508bb2fbaa6e085c2a3e52bc095835254c12",
+    "frontend/src/screens/weather/fixture.js": "215a94c30db67ee1c166a8649f67b05e677693e7ed5012a9d7155e31eafdac5b",
+    "frontend/src/screens/weather/impact-map.js": "ca4b5a47eeebb2d303b2e283cd1167cdfd7f19fa2d20865612b934851d1fd037",
+    "frontend/src/screens/weather/markup.html": "d68dfe49a4a3badf584cae2254e77aaacb2b08572f5370c6fba96fc8a870c0a8",
+    "frontend/src/screens/weather/monthlyProfiles.ts": "7718bff01a564a28cc6eb0da7bbe53dd13ef6eca3d3c67a5a8c21a87221c6ad7",
+    "frontend/src/screens/weather/plots.ts": "e662cea82d52e997b1e587b1223e4acdc8e619b820eb664405ea1811b8278c65",
+    "frontend/src/screens/weather/runtime.ts": "d5cc392f1652cb365e1a253160baa437018d4306fbeeac8c9f1ba4419a9a818b",
+    "frontend/src/screens/weather/screen.css": "2c538b45af1998291d84652342f720c20b5a8658047573621be8ca502c95c90b",
+    "frontend/src/screens/weather/sources/climateSummary.ts": "115213ba37b82a7edf81871da1a067fb86c788bae79661f56f24decaec2e85f8",
+    "frontend/src/screens/weather/sources/fixtureSummary.ts": "2be00fb218cd638cc34781678bcd85de5ce7980dbb0c05b8ab80acde12732a30",
+    "frontend/src/screens/weather/viewModel.ts": "2a462d33fc650444b367ca03813184924e21df14de237d18065d79f624aa80eb",
+    "frontend/src/service-identity.test.ts": "3b9253daccf0ac829df79b664848b6194dac83c4f0757c0682dcc391f55057e9",
+    "frontend/src/serviceIdentity.ts": "b0dde4cc650410fb8e87c23cd4cae310c9da38d168aebfb962b5c0c11b714861",
+    "frontend/src/singleSubmission.ts": "a162ede20f92171e432313ca55a25f4574417c0e70ae99bfed1c6b12705cc49e",
+    "frontend/src/style.css": "756ebc58dbc3588519839bc705ba6be04aea65d0bdaa8e5386aa8c4037c626c9",
+    "frontend/src/submission-recovery.test.ts": "64ee3eb27b00d7f657aa21c14da59e46005d0ef104a9c3b2268bcfcb99590dca",
+    "frontend/src/submissionLedger.ts": "57816fb047c63472811fff578b524ad97922d047aba949f30bc00ebeacd40977",
+    "frontend/src/useClimateWorkspace.ts": "2991ac3b8adb2a25eee5dc11bce41537f0292647bf5609d825e83e22833875f8",
+    "frontend/src/useEnsembleWorkspace.ts": "d2a94af77fc19806a5cdc20ff01f3932d014ef6739b43e0c91e4d9143c6ea5df",
+    "frontend/src/useWorkspace.ts": "580d9b8e5c12292af631dae32d17e6aab3209bd5aa6b9be7aecac0d89b91f002",
+    "frontend/src/weather-observation.test.tsx": "abf1eb01f4300fe2aaa132dd547fd8da59fc70a2ad2cdb69c6a864c0a9050f29",
+    "frontend/src/weatherAcquisition.ts": "eb51d71a9974f0e44c1fef994f9c1ebc7c26df889911fbc2832f6ed16a572214",
+    "frontend/src/workspace-recovery.test.tsx": "fb8de418df9d7d254d3c6fdf0c8a7c9dd08384d9785ee3e1897f8fbc67a52d34",
+    "frontend/src/workspaceState.test.ts": "6c053bf33f9996c1074bb75c3ccfc3082ad7b7bf50d8438b074dfdaec690dbb5",
+    "frontend/src/workspaceState.ts": "69c740f45e87ab784fbdca73c0f05c1d82696a001c25fc2a8ef93cf1b8042b8b",
+    "frontend/src/write-lease.test.ts": "97c948e57d4df628081923cc817075e5c61d54c211e843d07ed044450516aaf1",
+    "frontend/src/write-operation-guard.test.tsx": "aaf351561a0a24fcb3885c3f0cf57f262f49fb49a628dd87f14a6a54321dfabe",
+    "frontend/src/writeLease.ts": "3bd34096296d7d97be2b3560affea7dc326252960e00eb64a8f0b5f4dfb069ba",
+    "frontend/tsconfig.json": "c9aaee41e2f6ff5e4c63337b35e7836b7de220bc70b2eebcbda2a79fa6551275",
+    "frontend/vite.config.ts": "1fa66a4c93005969a1967c78a60b05abdebe6e778bfd9b8cb6abeeb92ee6976b",
+    "references/EXCEL_ANALYSIS_REVIEW.md": "f14ca20cc1836ed2eaccd2196e0c43df0ccc8764671bc4b688d1cb21a8859ef9",
+    "references/Program_Guide_FractalJP_Settings.pdf": "25b876aa508ee813aa1dff969671430c2315f7062d2930d63c0c65bb714ef08b",
+    "references/Program_Guide_FractalJP_Settings.tex": "7f7408dee151a38eb082dc85a77508d725b72ea62c79273a57aa8917ca6c1310",
+    "references/SOURCES.json": "f84d7712adeaefdd0811da7a05be2635dc9fe8948554cb32300caf425a8521f1",
+    "references/WIND_REPORT_REVIEW.md": "f41566d2b56acf54bf3bbf3f9a54cad16f621574b9de281068349e9e1d57c36f",
+    "references/climate_demo_057/README.md": "bfa7db461fb95d3cfc869bf52510e4a5ffa1ef6679ae5f3de9606acf3c3551bc",
+    "references/climate_demo_057/archive.json": "3dadc1419b7a246832b8f8d043b5c865546a37382d2790c7a693f0120db19673",
+    "references/climate_demo_057/jra3q-native-basis.json": "dcde165002cdb314821b43f1e988f7318207ed1290fac7b62e7617bb8419d0db",
+    "references/climate_demo_057/wind-samples.zip": "83b9a8c68b73938acd2163fd9e3c6ba11a756470083143e6129a70c8449d9f32",
+    "references/design_trials/framework_assessment_043.zip": "e40e53d318f6d919e373507db4674781bf7c57496d4b97ff34d6fc59d0ada625",
+    "references/design_trials/framework_integration_045.zip": "b5dfe54261063a7a3a70e0d531a70181668e9df5c1484c4d2a193179c3b63097",
+    "references/design_trials/gui_integration_046.zip": "369f75beb83fa17279c99a065f0854c84bec40df77e05f501747c573519d858d",
+    "references/design_trials/hover_and_backend_design_040.zip": "d253aa5d5857671dd0793ea04d9715c697526bd0cad55cfd1ef2ac72d0ab7f30",
+    "references/design_trials/hover_surface_pick_correction_0401.zip": "8356df3cc8f2184d5418fe3d84d1e1d274b7646f3b81be6210c07094b3d7a214",
+    "references/design_trials/interaction_and_burst.zip": "ac76a8d34d77454c07ae5aa8eaf30a649b4a496a74fe59a6bce38fa506e29a15",
+    "references/design_trials/interaction_and_burst_alternatives_035.zip": "3b0a4a5d5ac3eb970b4b7da527e1682fcfae6eb0626e8ae6385e0ce92f1e31d1",
+    "references/design_trials/interaction_and_burst_review_035.zip": "c509eb87085ac6fa25db8025e001c40c8e07571338581044a6bf1662df15e414",
+    "references/design_trials/interaction_workflow_037.zip": "f4e93e6e3fc8c7bc4dc1c7492a1250b1fd35fe9e7bd9ef0f0a17c3e564609c55",
+    "references/design_trials/interaction_workflow_review_037.zip": "87bc7d2df10ec69afec5642e6e3080786d6997a979469aff1bf93a72a88668f8",
+    "references/design_trials/needs_review_036.zip": "3f0d87ba50aca175a1fbeafd116ba577a76d58676449b08c80d46002ff7bfc21",
+    "references/design_trials/photoreal_connection_038.zip": "10b0c1ac4aa83eafb90ce8c625dba766f7b98d58ac5f466d764923b6df5d6134",
+    "references/design_trials/scene_context_and_export_039.zip": "003983400909aa1382c0d3a6a0ae0a728123315617416195a6b122e97fb45ef8",
+    "references/design_trials/weather_acquisition_047.zip": "3467c9114480198319f57d425e6e0ff9bcbb08e0fadb60569f7540cf2b9e2b6f",
+    "references/development_evidence/climate_expansion_0560_evidence.zip": "6b48a51b71a0a43f0ae3085552369e2f9cba9469707e00fb0d386fcb91f78494",
+    "references/development_evidence/climate_interaction_0580_evidence.zip": "4a918a03772b60fb4456e0dc73bacb6c5aa8da731bb7655e690c2f734d0b6ab9",
+    "references/development_evidence/climate_quantiles_0570_evidence.zip": "37a843b3b4482c06fda735a1205e8243b969ccdf3bfdc58cb9ed7da094dcc610",
+    "references/development_evidence/detail_lease_0550_evidence.zip": "3efb3b7a2c9086212752f62fc8c3acba6ec8b4432ed04ff9e13d10698b56d280",
+    "references/development_evidence/document_role_audit_0590_evidence.zip": "b15d11646faa40bee807b8a23e5712be1df6cb394ffefc3a958862da087362db",
+    "references/development_evidence/ensemble_connection480.zip": "551d3b1c59c0f660589a40dec8beae9f725829f1f2329347111b9dda889c8412",
+    "references/development_evidence/historical_field510.zip": "27752039ec2109a3cdd7959a335d3e9a107ac2d124e52f9ebd41dba6ce5648a7",
+    "references/development_evidence/historical_surface520.zip": "bed4ff61a5916784ac7cb97f6b2a692aa1ce3c9c07fbd291d72164653c82dc4c",
+    "references/development_evidence/operational_continuity500.zip": "2ce8cab4b09450cab2961157a66278b3c69bf9b64df855600a715285297853a9",
+    "references/development_evidence/operational_weather490.zip": "7e3b5c02b757e9a841348aae219a66f6ada9d56452af061775c8ee9c8a3a74ae",
+    "references/development_evidence/practical_forecast550.zip": "422dcc2c11b4d3dcdbd62b7ba5df2d8fe49c7f23a08ae3c396a9f7c9f194e07b",
+    "references/development_evidence/practical_weather540.zip": "dcba3f1ea29c77180fbeff6b7f1f306bfbf1aea2fccf14575531a008af5c46c1",
+    "references/development_evidence/route3d_0550_evidence.zip": "a2c4e63c9db03313f620d4caf8fc65a8f363bba321707dad658d26b3b0fe98c0",
+    "references/development_evidence/saved_jra_gui530.zip": "b7468cf793e0c5a6fcc0c317112cb4b79b11c5e3a8edd65bc08f4fb22e9ed188",
+    "references/excel_analysis_manifest.json": "0030beb81d11380e3c371b4f4aa701b46f27ba5c33a7051cc588c39c2cd5dcb6",
+    "references/flight_fixture/hokkaido-weather.json.gz": "69b4b0c23919eeb2e645e6a632d05824a892e301295bec4645013e0df13545a9",
+    "references/flight_fixture/jra3q-weather.json.gz": "17acf33d243843ce91b3c1f8e8266355bf5a4dfccba652796d0b69d2216aea91",
+    "references/flight_fixture/manifest.json": "88c8d0a5b29622e186c09eb9a776ce60ae1641ef213160581a0fce3d92fc26ba",
+    "references/flight_fixture/wakayama-weather.json.gz": "de3c00643092b34a50451d7263987014030b1d760c2e3da6f03a5245cf8c1739",
+    "references/gfs_p1_fixture/f000.grib2": "4baefb0af3ed2924e11c0610b26fdc5d6d2c21759dc7c63380818bb8c40e628c",
+    "references/gfs_p1_fixture/f001.grib2": "1f0a29b6855fcbad942a82440f6b8a3d8b1cde1b3db8c946172804212231332d",
+    "references/gfs_p1_fixture/f002.grib2": "547b2402efd47eb51c9ea03c516edd59696fbd1b20b687083da95395a43cb13e",
+    "references/gfs_p1_fixture/manifest.json": "53052493ff216e4cc82bf05f8de1eda135c3ea4e55b5db2e63c7dd3b363519ba",
+    "references/jra3q_model_fixture/source_bundle.json": "81bf2a10759d8f92a9576f3285bc810bedbe30a6f3675df78416f3ccf8295811",
+    "references/research_returns/Q420-00/2026-09-29-r7/CODEX_EVIDENCE.zip": "70c96189ac32a77268a0409c1bf4ae75f0d66f254fafce12e8b63f2534691820",
+    "references/research_returns/Q420-00/2026-09-29-r7/CODEX_RESEARCH_REPORT.md": "cc03de270d7f4aab668d2287ab7e05095cb9997be9f361749ee484684fa293e9",
+    "references/research_returns/Q420-00/2026-09-29-r7/CODEX_REVIEW.md": "854428551288e75884cb0ff3a44a1387012f4953b5672a050820ae9a297d38fe",
+    "references/research_returns/Q420-00/2026-09-29-r7/Q420_R7_20260929_package.zip": "40ec3fc281680a970be56b65604a30f1bd9bc3bf618bb749a23bb659ddefcaf8",
+    "references/research_returns/Q420-00/2026-09-29-r7/READING_AND_EVIDENCE_LOG.md": "c4e36eb38db4a6ebe70fa5b5ff9e9d230983326e06d7541c51957704d47cadec",
+    "references/user_supplied/ascent_burst_gas_a.xlsx": "9e2323b1c1723833e3a1135ffbb17e2b789a79a21083d5b99e0f3f91f0faf7bd",
+    "references/user_supplied/ascent_burst_gas_b.xlsx": "adb79c4fe2cf08ff4aa389f6bcbe39c20af723e1487c6bc1f331ef199079662b",
+    "references/user_supplied/excel_analysis_20260920.zip": "e389c09b9f89c3099432b56ba1357c68149fe4e6e7b3fa0b8d1a1b9c8f7145c4",
+    "references/user_supplied/feedback_v_0_40_1.pdf": "5fddc4b3052fb6eb61955b67ac4d528381cc3dd8996ef88e75e7dd71f657acec",
+    "references/user_supplied/feedback_v_0_40_1.txt": "487fca2141af1f65dc03a8ef6aee702194067f1f5a462d4a3fdc14194f73a1a4",
+    "references/user_supplied/flight_records.xlsx": "f90248dda366afa2825bdf2bf93c86aa4179df47b914adb1b76965804717b127",
+    "references/user_supplied/wind_analysis_report.pdf": "d2430f5399311c767198cfa4197985b7108b4d909eff24e44e77ecf3194168d4",
+    "references/user_supplied/wind_analysis_report.txt": "71932c48409c54bd4e3c03951ac451677e1a87a71dc2234461d21edf6fe0d6fb",
+    "tests/test_acquire_era5_climate_samples.py": "a95de89480043b258ac30635970c1426b395c5342b24e338c2a38437b1d6548a",
+    "tests/test_acquire_jra3q_climate_samples.py": "67fef11b22dfe670929bdead9ce63bb946de106913649a519f292b275bba537b",
+    "tests/test_check_run.py": "98570d7d689c77d2e01ac88885e51104ae9da3501edab8d5233cdec06b25f1d4",
+    "tests/test_contract.py": "1011143fa0462350bfce8298b059296dc06abd4155d6b3effafe5b55df5b7250",
+    "tests/test_ensemble.py": "1a9c9f7200835ee193774e815baa7617d1c3bf099bd2b7c2dca96718924823db",
+    "tests/test_environment.py": "9f238e22e05982254b64b51dcb493b490e7c81cc478a01d584f28cc8e58a4e5a",
+    "tests/test_flight_cli.py": "ea1a5dcf217e9c4ed5e89d35530b65a3abeca0489048158d0274cb727d04c257",
+    "tests/test_flight_numerics.py": "ab7a30556885ae9f19fbadadd9c25cb9a7ebf89ce6cb26eacff7264bc7b079db",
+    "tests/test_flight_weather.py": "2bdd0eba35a0a27f84b376eaf016c157822826f05c3eff08a04a0365035a0fb2",
+    "tests/test_gfs_acquisition.py": "1b628de33902ede205bc0e89bcc1ae2d1e975bf62bad8d3952382587782b86a8",
+    "tests/test_gfs_forecast_plan.py": "4aebe06e58fe55c783edeef5da26d8a2982b4a96c49faf8484d80ae02c20e85c",
+    "tests/test_gfs_raw_reuse.py": "9545ec6e3327e3ae144e4da44b51ab21a46463bcde85b619c608c78ffac58482",
+    "tests/test_health.py": "671196242414bb9161a4e16cfc7ba4c113690a4c800b68d637c9100fa3884f5d",
+    "tests/test_jra3q_flight_field.py": "dc063a9a846b72526f5fbe1751c61ceeda7f2374327a549756bddcf3abebc146",
+    "tests/test_jra3q_model_environment.py": "bdffc1dd271106684d61ebb166a368cbc713e23bb8f19018a739f575f9e02bcd",
+    "tests/test_jra3q_surface_field.py": "887f7ef57d69e50c8f84bd3c9a3be5ab42cc8d28edd9c550e98f95db10af4764",
+    "tests/test_model_composition.py": "d91737e3efa9706c4478af2b2065755a9cc4421da994a3ff44af787f4a852797",
+    "tests/test_state.py": "85d7e7464fb689228517a93b81930e44f5a92e698a756cf831c475228db1b9d8",
+    "tests/test_trajectory.py": "aa1815d647b5290af203e9905163111b8d67378d414b02521f7837bf3322b59e",
+    "tests/test_workspace.py": "10985007d061af9343b970c9e1053f0074942f996f1f07151dc8d2869a192961",
+    "tools/acquire_era5_climate_samples.py": "d4a25c52de79ef016de45929cc5f87259bab0170b60cd04d8e928ac91506b074",
+    "tools/acquire_jra3q_climate_samples.py": "5960e88a04657f3bf2aa21da8be339fd411fb9e8c0ee4085ae71b6e6ca19ecbf",
+    "tools/build_docs.py": "f03aa8cd8c6383156027c8c970f8d625b47ab94c97ba7cd48220d18d4085c4e8",
+    "tools/build_guides.py": "ad3388abb312786f338afe627b4665f57bdd6c0b193796354b1c48039c66e6a2",
+    "tools/build_research_packet.py": "d20dd3e24e88731268b2319c140e04508676ecba35475752705d8abf85210367",
+    "tools/check_contract.py": "43718e6e0b009b291220c13eb551c7e8831b9358ef44eae3d4500a455a6fe668",
+    "tools/check_health.py": "3898245493dea0d4183170eeaf5997a51037fb3cf8c30b6a88ab0d59dc5c68e1",
+    "tools/check_state.py": "94ae47ee06fe15bcd0d121fff2778a11316b72e1f95df649c7e5c0aaad6ba7ba",
+    "tools/compose_model.py": "288015dcfe5fd163e4122aa2d960cf65d8854d8e004d43c450ee16b18289270c",
+    "tools/inspect_gfs_fixture.py": "febcc4675147be861044ad26fb657bf44e90fe39938d4dc54b75ac0e61ecd234",
+    "tools/make_flight_fixture.py": "1973f804a702b3206d244806286932916cb234443f21cc515603f857fec35dd3",
+    "tools/normalize_gfs_fixture.py": "2f041a6145bf5ec1be4dfb8bd58837c179e30b59bbcee21fbf8648617c2c2ff0",
+    "tools/normalize_jra3q_model_fixture.py": "04cd56848fb5fad3af9a30556f20cdfd409b223cabc68014e5dd0bec68115970",
+    "tools/plan_gfs_forecast.py": "ad74113c5b58becb1ebc1df355a90eb26ef8f070fddd702e59f804715d738e28",
+    "tools/prepare_climate_demo.py": "d4f5eced9302c55b4f135d4a89e4cd3b7816ee3e44b052ee8e7640963bb0efbf",
+    "tools/prepare_jra3q_flight_fixture.py": "0289381e83611b26ebfa9ebab1d42ce734f7bf5d319a159ed6059798a392d635",
+    "tools/prepare_workspace.py": "c2c3a108ff5cccee50dde536c26000f2c51c4b8cf210cf41206ed45f659001e1",
+    "tools/run_checks.py": "dbbb50ded6f5e16e6bf491e9cc368b801bfc627a27131db02547926265bacd37",
+    "tools/template.tex": "a10e663faac6bb6fde3957b3f03fc94e05452c62a50942cfab84ce0a1875f7ff"
+  },
+  "entries": [
+    {
+      "path": ".gitattributes",
+      "bytes": 509,
+      "git_blob_sha": "fa11abc27cad38ef6b29a1d447009d8530d71f2b",
+      "sha256": "a8c50256e34079ad8bb0a9433d18374480e731a09af7d25ff2f0009fb606a272"
+    },
+    {
+      "path": ".gitignore",
+      "bytes": 149,
+      "git_blob_sha": "67474800dd7bfa2438ac8e11f808afa173166eda",
+      "sha256": "b1014a7aeb9e57d8bffbbc6ef29ee119dc9d0a23cad0d6ae2a497ac96da62713"
+    },
+    {
+      "path": "ACCESS_PROBE.md",
+      "bytes": 188,
+      "git_blob_sha": "15fe93206a27c956890390227cb11be69760ca11",
+      "sha256": "3920c828187f30ab5e25aab1abb76db31535e22f67471000f1e988f3808dca58"
+    },
+    {
+      "path": "AGENTS.md",
+      "bytes": 4285,
+      "git_blob_sha": "ee1e5aeac5a297122425e64524a6d97577dd5ac4",
+      "sha256": "521ed5116b1db74b5b66df82eb4b6f404e178350d08f903cb90756097f24862b"
+    },
+    {
+      "path": "BOOTSTRAP_RUNBOOK.html",
+      "bytes": 1066872,
+      "git_blob_sha": "9d619cc7aabb39c2857a3880c768235308c77eb4",
+      "sha256": "95dc8651edc06a82a0a5fd8da98ac6dd00bb3c44bb1236f550c2be9bdee3cd8d"
+    },
+    {
+      "path": "CONTENT_MAP.md",
+      "bytes": 251866,
+      "git_blob_sha": "554a7d1b6940d7dc812cb8a7248e0cdbd0ad5a86",
+      "sha256": "eff7c4bbcf6c11e238be78e9cb8c88648c9b9e9ca015d7305f7fce8de83f16a7"
+    },
+    {
+      "path": "PROJECT_CONTEXT.md",
+      "bytes": 140039,
+      "git_blob_sha": "8d1db0981811d5fdf2d5196cdfcfea9872baafcc",
+      "sha256": "c99e141bd57fd07623270fed0792d3c90707f1f83721e249ca443988cedf8f8c"
+    },
+    {
+      "path": "README.md",
+      "bytes": 15953,
+      "git_blob_sha": "f3da60e831246dd39a7a903e92be2f3124070744",
+      "sha256": "28c9d66e69732034cdf012dbbbe8a7da1a5ca2cdd53225ff96921e3951edfc98"
+    },
+    {
+      "path": "REFERENCE_LOG.md",
+      "bytes": 400633,
+      "git_blob_sha": "7131eacccf98bb0e8096ee6d4dcc2bf2b591f066",
+      "sha256": "246af6941668e322f0007a1ec9160ba70effa0cddc47845658a3cee2980396e0"
+    },
+    {
+      "path": "backend/README.md",
+      "bytes": 39825,
+      "git_blob_sha": "6b32b5b7205849c92a5834e528ff95e47afe991b",
+      "sha256": "546f914537c04a4afc587167514acf10dc3ddd63ff231a6c377359ccc5b130a2"
+    },
+    {
+      "path": "backend/__init__.py",
+      "bytes": 76,
+      "git_blob_sha": "9c09b3f7290115125fc06267f583a5cf0b1ca841",
+      "sha256": "90bc5785b30ce7edd5dabee2a8cd5b200bd59473e1fcacd3d522aa67bb15c003"
+    },
+    {
+      "path": "backend/app.py",
+      "bytes": 10603,
+      "git_blob_sha": "80a550d8205e0baefe7cd507366c5162c340a7ce",
+      "sha256": "9cf4a031ecf0e51c7b5265d36ff4b035d0a1293e5f9a092b18bdfe148acd0a05"
+    },
+    {
+      "path": "backend/application.py",
+      "bytes": 32626,
+      "git_blob_sha": "3a9d9d9f92f0f1a489ec7fa2dd075b081439249d",
+      "sha256": "dc99f9f8ebde7ecfac44bcc6349f733f35135f8974e85e07d6dcf6e9ac9ec695"
+    },
+    {
+      "path": "backend/climate/__init__.py",
+      "bytes": 80,
+      "git_blob_sha": "90bf504a38eae743b40691046c859ae58990a051",
+      "sha256": "5beaf037f40930f8d4cdbd418c62851bbf3223951c39dde4796de4d0a2172c3b"
+    },
+    {
+      "path": "backend/climate/aggregation.py",
+      "bytes": 4419,
+      "git_blob_sha": "0cbeb63406179b70c3aada6c0aab7ad3ad065bb4",
+      "sha256": "1eebdc6b976b8cc98cd9f1b1dfacfc136e96f584cdec602e88761858f9229045"
+    },
+    {
+      "path": "backend/climate/archive.py",
+      "bytes": 17169,
+      "git_blob_sha": "c994139261cfd7f43d99ecb6f139dd3ef70bac35",
+      "sha256": "5a634436d8270b7376fd7fa15a50fdbcd7f5b765c911d72fcca25ff0424b184b"
+    },
+    {
+      "path": "backend/climate/contracts.py",
+      "bytes": 4218,
+      "git_blob_sha": "c63bb32ccfb67bd3e06eed7cd22ac7645781e968",
+      "sha256": "3fd4d0a74aa35154f881f51fabce4672f851747b63b85d5292ec410b740792c8"
+    },
+    {
+      "path": "backend/climate/extensions.py",
+      "bytes": 8469,
+      "git_blob_sha": "330604352a29d23a301f6d779555ae78f8c65960",
+      "sha256": "786085588c340b7bb8574c882c6ef3b3c32bc06725ab7578d4ae42aad17c59ad"
+    },
+    {
+      "path": "backend/climate/periods.py",
+      "bytes": 2732,
+      "git_blob_sha": "0b35eeaafd3f3cf816041fb36e5a59e2a330740f",
+      "sha256": "94a4366e8399b1965de750eade55490231f7405a8d83f069383eba5d03b63379"
+    },
+    {
+      "path": "backend/climate/samples.py",
+      "bytes": 11806,
+      "git_blob_sha": "9b3aff2a8926672a3658888beeff2307dbeb4c14",
+      "sha256": "e839d8c2f13564ceb0439233902395513ec234d4a90945bbcbe45f28fca6d050"
+    },
+    {
+      "path": "backend/climate/service.py",
+      "bytes": 18128,
+      "git_blob_sha": "d272539cc44ddb037b5734fae79cac190f12674f",
+      "sha256": "495a0996b3d65e48ce44fe563bce2e02c7b325c4fec5c31c278d47e3a2195b3a"
+    },
+    {
+      "path": "backend/climate/source.py",
+      "bytes": 24317,
+      "git_blob_sha": "ada60c7e15f60427d2672a35c8d18ba9b72c9e69",
+      "sha256": "ac9396e9586516f29a6dd44d30bcf03f9401d1cfecc15b28a0d2f007871efd64"
+    },
+    {
+      "path": "backend/climate/statistics.py",
+      "bytes": 3302,
+      "git_blob_sha": "a9ebeb9115d5e258c4252d3952e10a00fb173252",
+      "sha256": "8d28bff0d4e0f2c7fe2bc4e36dfb25cdb99ce76308881e3fac5de83d39483fff"
+    },
+    {
+      "path": "backend/contracts.py",
+      "bytes": 2371,
+      "git_blob_sha": "305009e09531b06e942d310115c23c6aceff96a1",
+      "sha256": "59123143e7c56e2eecacb98ee23c08146c3009e70552c250b85f37e069c1fec4"
+    },
+    {
+      "path": "backend/ensemble/__init__.py",
+      "bytes": 69,
+      "git_blob_sha": "cf6cd7cdea6bc67c48e85df440788957f33a73fb",
+      "sha256": "32284a9ba2e29468f2b286a80729070e8390deea43c9beee2f2ac5dff1937ec9"
+    },
+    {
+      "path": "backend/ensemble/contracts.py",
+      "bytes": 3275,
+      "git_blob_sha": "cee739d531426215dd2afba59d7c8775d0fb1983",
+      "sha256": "271a7db0c498204a9b5b0462e23dff2ed227d10a0798548608be0506852c5d35"
+    },
+    {
+      "path": "backend/ensemble/historical_planning.py",
+      "bytes": 7857,
+      "git_blob_sha": "3cf88f89e6ece9609362a98d642d86e01b8671f1",
+      "sha256": "3d9a5aec28b28f4e7a33eead3cd7178adb623a9a22bea3927a01778cc566f7ca"
+    },
+    {
+      "path": "backend/ensemble/planning.py",
+      "bytes": 7482,
+      "git_blob_sha": "c35f68e2be51f4d53dc1ed5776eb0fcf03c8b88d",
+      "sha256": "9cd53f8ad14d05f7d4cfcf6519ed134d00edc3ff4ca884c2dbcf96aa9b17ad53"
+    },
+    {
+      "path": "backend/ensemble/service.py",
+      "bytes": 34739,
+      "git_blob_sha": "fe9092ce04a6b79a1f1f333278ff83f6c4bb04d2",
+      "sha256": "e3c66e75f063f51dd0f4752224facdc0f0f9923139acaad2bd4897bc45614560"
+    },
+    {
+      "path": "backend/ensemble/storage.py",
+      "bytes": 3386,
+      "git_blob_sha": "7009caab8af1d22bc26c18f62f27637ae2ace2a4",
+      "sha256": "e83734f24e3f21339b33351e3450f420630c452076b606b7baf16687e50cb794"
+    },
+    {
+      "path": "backend/ensemble/views.py",
+      "bytes": 1898,
+      "git_blob_sha": "2c2cd2a3bc584bd368ac226ff7a1ab2c87f559a7",
+      "sha256": "12c0e922f4d8276df6b7a1499621b07ff745b455c8f47039b5a1efd976f656c7"
+    },
+    {
+      "path": "backend/errors.py",
+      "bytes": 234,
+      "git_blob_sha": "0da4a0d21e69596aa4c8c58e6a824e26b349bed7",
+      "sha256": "6935e7efd323507b08d4c22d4601f136468aee05cd10b106da03cc92616e050c"
+    },
+    {
+      "path": "backend/historical_catalog.py",
+      "bytes": 3847,
+      "git_blob_sha": "c5ca8cd1baef638c4603bbb8e8e27b9007d5dbd3",
+      "sha256": "398cc2a017f4c195fa98b41613c4af44015641b64c13512c69102060a029c7ff"
+    },
+    {
+      "path": "backend/pyproject.toml",
+      "bytes": 573,
+      "git_blob_sha": "c561cd11e2bc514642204e1f08b767757d1658a8",
+      "sha256": "f0536dc23e9edc0effa3ea7cc2ea345242b9a130625881afa9b024be65c0362f"
+    },
+    {
+      "path": "backend/requirements.lock",
+      "bytes": 675,
+      "git_blob_sha": "070025e28a0ea162a80e19a8a537b2205df7c26c",
+      "sha256": "e37f6da2e2905f4bcef9037de69622fd5fe09d0369d270a4768c22cbc3c75ab8"
+    },
+    {
+      "path": "backend/storage.py",
+      "bytes": 8627,
+      "git_blob_sha": "d23ddf083552922f5f416d8ab8a50c24a4861f1d",
+      "sha256": "d3bdb3333641d9d51f8d97a0bdd05790e685c72af83b35be8d29b07fa24aeea4"
+    },
+    {
+      "path": "backend/tests/test_application.py",
+      "bytes": 23334,
+      "git_blob_sha": "557a20d46c935bf41858d0ba0a076c7cc33b7fa2",
+      "sha256": "40e848c7cc2182a2e7d240b3d31f87dd87d4be3cc78c61c1d7ec10d9aedd975b"
+    },
+    {
+      "path": "backend/tests/test_climate.py",
+      "bytes": 17063,
+      "git_blob_sha": "5c3dfaf730fad96bf55a2ba989ce3abac0ad5c4c",
+      "sha256": "1ef4bc5a4d54b344a997a6848a6d77516917ab0078ed0586d08f85e35357688a"
+    },
+    {
+      "path": "backend/tests/test_climate_api.py",
+      "bytes": 4371,
+      "git_blob_sha": "dd7f0e57cb8e27a2bc8978af3995925c7669b566",
+      "sha256": "e7d537e2b8db3e192f823c726adac3c697e659df0b334c807f139d30090e0593"
+    },
+    {
+      "path": "backend/tests/test_climate_archive.py",
+      "bytes": 14116,
+      "git_blob_sha": "3887eb0b9da781c700a9c6103e394eb50ce4300f",
+      "sha256": "bed81a63d0c5180b5751788c7151b1d5eb4d688cd2bc89230b6d04f39990088d"
+    },
+    {
+      "path": "backend/tests/test_climate_archive_interaction.py",
+      "bytes": 10957,
+      "git_blob_sha": "ec117f6f16ec7e12557c5049c821c2dfea1d3427",
+      "sha256": "ca8f0423de6f2126dffbed4d2686344e872de59bbc44cb804db96542ec5ad902"
+    },
+    {
+      "path": "backend/tests/test_climate_periods.py",
+      "bytes": 7121,
+      "git_blob_sha": "98a591a8a5dcf299058f849fa0839b7d709b831a",
+      "sha256": "e1d0c295d9e8d2c249ee6ab522b48d626d2bdf4a4d6220bcb0dd11f99c20b34e"
+    },
+    {
+      "path": "backend/tests/test_climate_samples.py",
+      "bytes": 6342,
+      "git_blob_sha": "c8a0f8a08654cbf05d12a3d8e5cdceea521627ea",
+      "sha256": "d60a265965dc0f9d10731afdb28988f9e6b02f6aa0bae13600fc4d92d5678918"
+    },
+    {
+      "path": "backend/tests/test_climate_service.py",
+      "bytes": 12832,
+      "git_blob_sha": "b24db81edad50c11ef5977d0d0e30cfefeb216b8",
+      "sha256": "439a565ea3b18a8fd112d42b30379fc4c6122d4bf5ea1d38b2f7c2779e210dd9"
+    },
+    {
+      "path": "backend/tests/test_ensemble.py",
+      "bytes": 23481,
+      "git_blob_sha": "d63c28b52421084acb22d249013ff61279bab08c",
+      "sha256": "ebba6457646f8fe1e084ec362c2eb966a830aca51779d00c76cbc1b3e5b45fe3"
+    },
+    {
+      "path": "backend/tests/test_historical_ensemble.py",
+      "bytes": 6215,
+      "git_blob_sha": "9f4f788d902b7ff6a619b53e7229c29ac51896b0",
+      "sha256": "7386de131c77ca02c7021469082d76a1e66f773d7e45fd7b078312ec805acc8f"
+    },
+    {
+      "path": "backend/tests/test_recovery550.py",
+      "bytes": 17499,
+      "git_blob_sha": "8dc6f7137c4de3ebc29acd2516a714c853ad9974",
+      "sha256": "7d4e163b1503c168d46a2588ce26350152b82215c3eb4a7b09657e0f42cba051"
+    },
+    {
+      "path": "backend/tests/test_weather.py",
+      "bytes": 26382,
+      "git_blob_sha": "2da542d09c3a9a80e845b0b6515fb5ffc93839a8",
+      "sha256": "239a3bac11bedbc41a5608a335aa3620e88cf4716f549d849da92e62c69a9082"
+    },
+    {
+      "path": "backend/tests/test_weather_ground.py",
+      "bytes": 6154,
+      "git_blob_sha": "228f7cd798d8173673fac49b97ec1ffe6007d066",
+      "sha256": "93c327defc9a88fd81a9a152fe1c0849bff14437d7dd668ed8210cef578f9225"
+    },
+    {
+      "path": "backend/tests/test_weather_inventory_partial.py",
+      "bytes": 4426,
+      "git_blob_sha": "9a5cbd71ad00483debf7dba26a0537d903829526",
+      "sha256": "00af46525cfff3251631155598c1f85412f761be750c58835a5161761a0fef99"
+    },
+    {
+      "path": "backend/tests/test_weather_raw_reuse.py",
+      "bytes": 7163,
+      "git_blob_sha": "a461cedbd4f34f76fd58851813b1f8f8b43d97e5",
+      "sha256": "b768b9a06989dec2d70b80ad1a3098a7e2f50e27ab0bcb6ba4bdfe73126245dd"
+    },
+    {
+      "path": "backend/tests/test_weather_region.py",
+      "bytes": 5065,
+      "git_blob_sha": "e8ce246b64906439d9aa9008d2164414a73e99d7",
+      "sha256": "ee274e0a8df8a802d046ca42de60fe6e7f0d0f082dc12532726eeef513d6cc45"
+    },
+    {
+      "path": "backend/weather/__init__.py",
+      "bytes": 84,
+      "git_blob_sha": "90b21dc9b4ced513580798a2b98a69948adab351",
+      "sha256": "0935047b5a174270d14ce2f759dedda8ca2cf71ce870810cc5c4d2de175ea121"
+    },
+    {
+      "path": "backend/weather/catalog.py",
+      "bytes": 4484,
+      "git_blob_sha": "c0803f92a8de9b3852e17112b76864e6300673b1",
+      "sha256": "0dd5b672811f4ccb6f6795229e7b0f0e8f07764a63e418908175e577f13053df"
+    },
+    {
+      "path": "backend/weather/contracts.py",
+      "bytes": 2377,
+      "git_blob_sha": "6e56344799442e883a84f573e6f471f550f1187f",
+      "sha256": "8d3145c6ba2d9d3cb282ba6de0a20a1df6ae9d2002085bb1397d5ea74e3755d7"
+    },
+    {
+      "path": "backend/weather/planning.py",
+      "bytes": 6211,
+      "git_blob_sha": "68b266bc70672b2b1d3a8d118e6050ad128985b0",
+      "sha256": "203fd9a6b3086f9825624208be93e624b059108ed118e126b901f159210fcc3f"
+    },
+    {
+      "path": "backend/weather/service.py",
+      "bytes": 28425,
+      "git_blob_sha": "3a3b00c484b015be5d38438c49059464c4b548ce",
+      "sha256": "826b0271210a42a95d9c3a3d9ed2db10711a541a4e84baaa70e16126eacf5ec9"
+    },
+    {
+      "path": "backend/worker.py",
+      "bytes": 2603,
+      "git_blob_sha": "ef799cd56b1f168aed1fab89325f97d8a6b88865",
+      "sha256": "c84e328810e79629893dc7e3eb8008a998281cb0ac258336247f87a88bc98b65"
+    },
+    {
+      "path": "balloon_sim/__init__.py",
+      "bytes": 111,
+      "git_blob_sha": "d56832aca354f6aa39b85f4df786014ee62b96ab",
+      "sha256": "e3e06998346e4b7f1cec987997ed21f1d23e0f2a2b0c7ffc15d862f3f95a95f7"
+    },
+    {
+      "path": "balloon_sim/__main__.py",
+      "bytes": 80,
+      "git_blob_sha": "1daf8814b0a9cda4a24d862eca4d8021b9e74823",
+      "sha256": "6a170fc866c867a1e5812daad308396f0940a23f2ecf55e56be39d5d67d23f10"
+    },
+    {
+      "path": "balloon_sim/cli.py",
+      "bytes": 3252,
+      "git_blob_sha": "c7e09494d3c739d13418a23579600eca640f449b",
+      "sha256": "dc0d2bc06eed8cfdfd3cdf93e1a8990bc2d040bc824844d4ae6bd993b359723f"
+    },
+    {
+      "path": "balloon_sim/dynamics.py",
+      "bytes": 738,
+      "git_blob_sha": "344bc22825b0b8aefb76bbcd634ea18ae6861ab0",
+      "sha256": "cb4d7d73fb3f69d44a7da4897c3933ae6b6c170ab72825068c0443a389851f69"
+    },
+    {
+      "path": "balloon_sim/ensemble/__init__.py",
+      "bytes": 427,
+      "git_blob_sha": "213989e94e2d33ebe74290d52c1011f7888f3e78",
+      "sha256": "77fb836feac4633ffc5c5e709b56a62ab2698108ed64f129fdb16b19797eeb74"
+    },
+    {
+      "path": "balloon_sim/ensemble/geography.py",
+      "bytes": 1284,
+      "git_blob_sha": "1db2028f032835cb860ea32db89c4156a907a0f9",
+      "sha256": "ea46068561388280117388705cd0810598b19fa2b02085c1da663929093ae0d4"
+    },
+    {
+      "path": "balloon_sim/ensemble/histories.py",
+      "bytes": 5997,
+      "git_blob_sha": "a07165e14700dcfc993f76c1869907c2649136ce",
+      "sha256": "8e85a5c4928c70f873ef67076f5d064f28f85a6cdeb62e14e6179961d8bf6eec"
+    },
+    {
+      "path": "balloon_sim/ensemble/landing.py",
+      "bytes": 5873,
+      "git_blob_sha": "31e1fd83e2e86d1e9e045e37eb91aca038104135",
+      "sha256": "a9a16b8baed7d6ae1652a224784ad2b4e3b6c36ccfd7d96bd6db5d144f87bb62"
+    },
+    {
+      "path": "balloon_sim/ensemble/sampling.py",
+      "bytes": 4112,
+      "git_blob_sha": "7de3c06b20e8f35c61c8aceef99892590a112b18",
+      "sha256": "7a651a17b737435f8c3964d2cc205c65fa582ac5511916f0b597cc3e412b4144"
+    },
+    {
+      "path": "balloon_sim/ensemble/statistics.py",
+      "bytes": 2351,
+      "git_blob_sha": "b3cd32b073a250e13e53f8514014742c8550d02a",
+      "sha256": "9a7b63790d1e2ec6b5d7dd773d250d0f4e31f14a055d2e60c9fab6ee30f08893"
+    },
+    {
+      "path": "balloon_sim/environment/__init__.py",
+      "bytes": 81,
+      "git_blob_sha": "e5dbe42dc4e751934c4f6a70511a3a270246777a",
+      "sha256": "d3b79cb3526df3b96c82363ec6ea2da9e93959d42d467d5a3724472d48bbe7ec"
+    },
+    {
+      "path": "balloon_sim/environment/bundle.py",
+      "bytes": 806,
+      "git_blob_sha": "dbbe3fe5d18fa5132b47035556f3ff92f19116df",
+      "sha256": "f1909619e1c15044adfd5fff77aed66f8542d17c23c2a41c5c7d70a3412dd093"
+    },
+    {
+      "path": "balloon_sim/environment/fields.py",
+      "bytes": 13604,
+      "git_blob_sha": "8015ec571b7441025527083bda7ec4d68d2191bb",
+      "sha256": "3052d82b0fa96d31380ef6d4f9f4af49a005dffa5a7bb7267f695395fca374f0"
+    },
+    {
+      "path": "balloon_sim/environment/gfs.py",
+      "bytes": 25547,
+      "git_blob_sha": "3a313b9c6aab6688c5324498f9efc092acb9486c",
+      "sha256": "9ef1df8cd0ce75424ac7addd4990d0da5157a0cc422c3a5e8d2733e08c2fbf38"
+    },
+    {
+      "path": "balloon_sim/environment/gfs_contract.py",
+      "bytes": 1213,
+      "git_blob_sha": "13c274d20bad1b9f1c7d389b94d019c02a7ebfbb",
+      "sha256": "3216b14934bdd7f99ce6294daf9cb79436c0fc8aadbd1a6f23dde0863aefb3c5"
+    },
+    {
+      "path": "balloon_sim/environment/jra3q.py",
+      "bytes": 7469,
+      "git_blob_sha": "9e52290fa738e360aa8fbc70d62762faf544b42f",
+      "sha256": "fbae435777e36ba7bd746966850550855649c5415d633c6e3b80c79a88f2c8a4"
+    },
+    {
+      "path": "balloon_sim/environment/model_levels.py",
+      "bytes": 7935,
+      "git_blob_sha": "4f9125cef15812895dd201fed84cd6c2f63ec1ec",
+      "sha256": "173a0816d3883877de47bbdb5b88d607df464babbb9b92bd3b908b33e8b15dc6"
+    },
+    {
+      "path": "balloon_sim/environment/model_surface.py",
+      "bytes": 10762,
+      "git_blob_sha": "c7c3f843d5fddda2f1e68ebba3d9bc2004b55530",
+      "sha256": "949808abd8ed46dfa98aaa9551cc35ef499898c5aa1e2077c8d2c575b2327886"
+    },
+    {
+      "path": "balloon_sim/environment/nomads.py",
+      "bytes": 8795,
+      "git_blob_sha": "f6fd28d2641dc92eece9b667890e31b5c430f981",
+      "sha256": "16bdb7add04d25fd919ce25571938ab0e18ddecfcb1c79813a53d6e0e6a9d3d4"
+    },
+    {
+      "path": "balloon_sim/environment/storage.py",
+      "bytes": 2142,
+      "git_blob_sha": "185e7afa18c492f35982525d39c138739e2bfd35",
+      "sha256": "3afc21a9c1a4535843bfe8a8590293eee52986feeccd362373595b0591499995"
+    },
+    {
+      "path": "balloon_sim/flight/__init__.py",
+      "bytes": 79,
+      "git_blob_sha": "c9eae6802ef1901d835b5fdc631a0d9812bbd4ec",
+      "sha256": "a4b2bc90cae208f211de66f4cc2e809165f1def2bbd7ad098b0e60971d5d4606"
+    },
+    {
+      "path": "balloon_sim/flight/config.py",
+      "bytes": 8958,
+      "git_blob_sha": "8b17dcdeb183fd140bad2e04d594088bce7cd0aa",
+      "sha256": "4fe3681aa018dcdfe1c580ac3fa608517cac8c650931430ed6f7cef3ad8acee3"
+    },
+    {
+      "path": "balloon_sim/flight/events.py",
+      "bytes": 1392,
+      "git_blob_sha": "1f55d54a2338add8c24c35a8490890baf4873e9e",
+      "sha256": "d72dd60c620905d642ebf8611192a1d52f68c51ca0ebfb7c53caee56a5e03a85"
+    },
+    {
+      "path": "balloon_sim/flight/models.py",
+      "bytes": 7675,
+      "git_blob_sha": "09d311ea8753164d547af9421176ca57b89ee11b",
+      "sha256": "2f1dc2e2ac1a5baef1ebf86c7ec8809401eeed6e1666be380b11e7e9d851fe99"
+    },
+    {
+      "path": "balloon_sim/flight/numerics.py",
+      "bytes": 4114,
+      "git_blob_sha": "4455e506d45288696d94d44d979af2b8dc8dde7f",
+      "sha256": "c31b043f85fe210a87f31978de25068b2f442ce3d696adf2f2a32a85568aee08"
+    },
+    {
+      "path": "balloon_sim/flight/trajectory.py",
+      "bytes": 14242,
+      "git_blob_sha": "ee97f8e63d9028087430a3bea4ca4ab1817214a0",
+      "sha256": "e51130d19f99d6a078f46305fd11673883db7688d2e1caecbff955993b031527"
+    },
+    {
+      "path": "balloon_sim/results/__init__.py",
+      "bytes": 70,
+      "git_blob_sha": "9be799a34809020ee651e3aeb5fb896ef6183706",
+      "sha256": "716a02ff8a64a374214cf723a1dfa8900c6a49de6057263df335a1e66bcfae0d"
+    },
+    {
+      "path": "balloon_sim/results/export.py",
+      "bytes": 3979,
+      "git_blob_sha": "a8ee9654e62bbbb58c34f9bfe46cec9793d8142e",
+      "sha256": "c0cd2c65279bbbb1206b9feb97683e89ecfe979a4ca00d963188f25433162b38"
+    },
+    {
+      "path": "balloon_sim/results/report.py",
+      "bytes": 8361,
+      "git_blob_sha": "d3a75d2a9f8a7a5a17aa099b69b383e695a1ce6f",
+      "sha256": "eff795edd7d2f58b14193c61797a5337837c387c4719b8151cae4fe75099bf70"
+    },
+    {
+      "path": "balloon_sim/weather.py",
+      "bytes": 1004,
+      "git_blob_sha": "dc03c30cd327d36b65c62f3ad765437bfb0b4ed5",
+      "sha256": "052b2eb4605ee151f039aa9c48c14a5342cbfd1ee6e461e7985d64a479cfe5f4"
+    },
+    {
+      "path": "docs/BACKLOG.csv",
+      "bytes": 30424,
+      "git_blob_sha": "b68bf19d9fbe88f0432c8a1f30d8e2d06571bcc0",
+      "sha256": "aaf5c3b875ad0f0170e0ad7395b1003bff29966d9913b98a06c8c472b4823f49"
+    },
+    {
+      "path": "docs/BUILD.md",
+      "bytes": 70120,
+      "git_blob_sha": "41610d90402fe6cfa5bb70397d35e4be54c08081",
+      "sha256": "9b203369969b9793bd52b84e145eee3cc0c2bab8d38d871fe7cf3c93563d992d"
+    },
+    {
+      "path": "docs/COMMANDS.md",
+      "bytes": 100020,
+      "git_blob_sha": "9ae429025d9f397251fd428642bc6b9cb9c40d2e",
+      "sha256": "d9fdd55fafde02120bddad8998a1549b0f00b757a8f0546ac28ecbcc8064d1ec"
+    },
+    {
+      "path": "docs/CONTENT_HEALTH.json",
+      "bytes": 3047061,
+      "git_blob_sha": "5a5f4c2664b083e68f2da00d5200fcd24d025af3",
+      "sha256": "186b40e0e197d92e72b7d6d378a3768e1e9a827a1f6c0df479e1fc407092eeeb"
+    },
+    {
+      "path": "docs/CONTINUITY_CONTRACT.json",
+      "bytes": 3683490,
+      "git_blob_sha": "c6b7d1fdb85606de487ecfd1c2afad631f21efa1",
+      "sha256": "27c55fc7363e34a9c4e005741dfb240184427b4896a4add592fc0fb20f0b4667"
+    },
+    {
+      "path": "docs/DECISIONS.md",
+      "bytes": 263435,
+      "git_blob_sha": "499ed5bedd271794cf6ce5b976759ab119a4d0ca",
+      "sha256": "e7ab433136d7464180050593532d1a5060e8ecd6bd925e6169fa2a288834035e"
+    },
+    {
+      "path": "docs/DOCUMENT_CONTROL.md",
+      "bytes": 64508,
+      "git_blob_sha": "9dd9a7843470dde1163cbc44216e3e8cd3107487",
+      "sha256": "90ef3439ae9e76274a8d1819d384ccb0863c7d1f710ad5e03e2072fcbcd208f9"
+    },
+    {
+      "path": "docs/ENVIRONMENT_CONTRACT.md",
+      "bytes": 115470,
+      "git_blob_sha": "8207ca9cdeb7efddc66a6be8788cea56c5a88588",
+      "sha256": "7dbdd3f54c236b7aa54b1bc285f4c2d0e158cef4086f285b27e60bcd99e5b069"
+    },
+    {
+      "path": "docs/IMPLEMENTATION_INDEX.json",
+      "bytes": 1099830,
+      "git_blob_sha": "de87a3476851ac82514d53484a95c1f5e6eb33da",
+      "sha256": "9e1d0735567686d2ba65d9215234855cda28121ce5e0a47c5ece7762f7df3b50"
+    },
+    {
+      "path": "docs/IMPLEMENTATION_NOTES.md",
+      "bytes": 129124,
+      "git_blob_sha": "c8b88e47791c49bdd378320668000ff9385aebce",
+      "sha256": "57e5b421b46a78a7d8300090d9dd8dbba47f6594e3e58b9a8f4345f268f35d6e"
+    },
+    {
+      "path": "docs/INTEGRATION_DESIGN.html",
+      "bytes": 87655,
+      "git_blob_sha": "f3ed33eeb92199064c9d35c03c7e05e301f21c2f",
+      "sha256": "282acd24992f4b7d3cf74f78be973ea579eb500c56c003a9926b786167dcad20"
+    },
+    {
+      "path": "docs/LESSONS.md",
+      "bytes": 51382,
+      "git_blob_sha": "f49b2fe9723a1b7cd0bf4be958e647d55a3cfe3e",
+      "sha256": "74f15511b59a157b7a71d499d216b648b3fb8b40338da2a1ed16529476ff040a"
+    },
+    {
+      "path": "docs/PROGRAM_GUIDE.pdf",
+      "bytes": 333040,
+      "git_blob_sha": "0e62e8393a3c458209e3dd6dc814f95a6382bf6a",
+      "sha256": "af8dbfb8b358918660910ea3a328feeb8419870c811ac67d6ba528ed1430454b"
+    },
+    {
+      "path": "docs/PROGRAM_GUIDE.tex",
+      "bytes": 85915,
+      "git_blob_sha": "a262f7c596bce62471c30c953bc04740ed59589a",
+      "sha256": "24544261aa671a72cf81b4308a62ec1c7aa8154860f78beadb6c7813711a9601"
+    },
+    {
+      "path": "docs/PROGRAM_GUIDE.txt",
+      "bytes": 66891,
+      "git_blob_sha": "4ba95c5f94f237bce17538f5232625804f429674",
+      "sha256": "449978dbabed917c71342c9c4a947f4f3ee076bd0a21b3a9524f04c6350ff9f1"
+    },
+    {
+      "path": "docs/PROJECT_PLAN.md",
+      "bytes": 106951,
+      "git_blob_sha": "e42d424d0a30e1a1118e20c839fa2e66de2e34a8",
+      "sha256": "c40ea1e957b3ece52f3b7f56628877dba8e3dbceb339d941ef86fa61c8680ee4"
+    },
+    {
+      "path": "docs/PROJECT_PLAN.pdf",
+      "bytes": 379583,
+      "git_blob_sha": "8aacbee39f76655181dab6b32424d4ae76d0705d",
+      "sha256": "7551b9d82fab152dd0c932998277082ef7fb277f18697ff8aa424634eb375255"
+    },
+    {
+      "path": "docs/PROJECT_PLAN.tex",
+      "bytes": 125551,
+      "git_blob_sha": "f52b5b4b93f9623db777cd18e2690f16a7a4510c",
+      "sha256": "98794e81c60c13117aa147136a95ec78007d92f0e01753af94b3e472220c5398"
+    },
+    {
+      "path": "docs/SIMULATOR_VISION.html",
+      "bytes": 819388,
+      "git_blob_sha": "dca7a1431f457644cd86356f875566bc88d0d8cb",
+      "sha256": "54bc890ef6e5d14fddaf2ef56b1409550ba478113765be81ab11aa4f88cf2b2d"
+    },
+    {
+      "path": "docs/THEORY_GUIDE.pdf",
+      "bytes": 369106,
+      "git_blob_sha": "c9e666924a79acb865d77801930ca4f22b25451c",
+      "sha256": "d41ff33cd868e5355b2b218c82bf27331821f8d7be729a72578fe18360aaad6e"
+    },
+    {
+      "path": "docs/THEORY_GUIDE.tex",
+      "bytes": 90175,
+      "git_blob_sha": "4f0d9df2d041ef971c2cd3aa4cd0f0f91d131a99",
+      "sha256": "5c526badb343f4dc2a7e2401e1c81c376554c0e0e080b97364f0f16023093b5e"
+    },
+    {
+      "path": "docs/THEORY_GUIDE.txt",
+      "bytes": 83695,
+      "git_blob_sha": "70106a32c5f1ddea9c1905fd2b2019cc1156796c",
+      "sha256": "e81aac9cedb343ddc143145a95d1ae0be14f947d9542e944221260b0f1127a8a"
+    },
+    {
+      "path": "docs/UNCERTAINTIES.csv",
+      "bytes": 23315,
+      "git_blob_sha": "06f722109d7508ebe743b4300d7ebe7f6c0a7028",
+      "sha256": "dd309fb220111fbebf89499dd441fb61f98bbc2f380b3a09b7bf18bb66b3198d"
+    },
+    {
+      "path": "docs/VERSION_HISTORY.json",
+      "bytes": 153426,
+      "git_blob_sha": "f8003e8f4b7287af161747a809253b1a596d1dd7",
+      "sha256": "3b7411bb0216a8955d180f5e13362c33169d896d6ab62dd7416e4ae782281ad8"
+    },
+    {
+      "path": "docs/WEATHER_DATA_GUIDE.md",
+      "bytes": 119065,
+      "git_blob_sha": "24358321fa6e613cce5674bc1cbab9d0e9518e72",
+      "sha256": "7450d61f0faf51fc500f8296b9733c9ab05562b52a96775cc8213980d2f73933"
+    },
+    {
+      "path": "docs/WORK_ORDER_TEMPLATE.md",
+      "bytes": 8567,
+      "git_blob_sha": "b2eb46019e9dcb1cf4c65fda5afc342b9c4ef852",
+      "sha256": "307e62ee751fa3665eb682780cfba9ac259745d9043d6dd7facc03d747606e98"
+    },
+    {
+      "path": "docs/research/BRIEF.md",
+      "bytes": 32738,
+      "git_blob_sha": "f5f10e83c41962dd13370828c3ee6edf79bc96a7",
+      "sha256": "87ab3176ee03d7998bf50ba89a69c90737a5474aa2945d84e444a9a96cb05322"
+    },
+    {
+      "path": "docs/research/README.md",
+      "bytes": 21769,
+      "git_blob_sha": "28639ec6c67dd880c7d62de061d82eeeeddff5ad",
+      "sha256": "68832d02bccd707341b68995cc84d3c8dbcc10fa8fb1e460817fe71c9e82c991"
+    },
+    {
+      "path": "docs/research/RESPONSE_TEMPLATE.md",
+      "bytes": 5434,
+      "git_blob_sha": "a6736395a4db2d88cf681ab1c899b61b7d836e58",
+      "sha256": "5274568eb8162e9842e4d11da1b03abf01eb81b966f70855800a645b2d83da00"
+    },
+    {
+      "path": "docs/research/REVIEW_042.md",
+      "bytes": 10626,
+      "git_blob_sha": "036deb8f7bd3223dcfcfee2a82bdb84e8019b444",
+      "sha256": "245787df831035b99987701bbb5bfc157501f46789a182f70c7055ca562d63dd"
+    },
+    {
+      "path": "docs/research/TASKS.md",
+      "bytes": 34230,
+      "git_blob_sha": "cd813215964eae8c7d495b46637d7d2fe1a215ac",
+      "sha256": "5b2c034009ad3188afc78e87027075ee332c661158f672bebe34e9e6f8f2f1e7"
+    },
+    {
+      "path": "docs/research/UI_WALKTHROUGH.md",
+      "bytes": 29542,
+      "git_blob_sha": "f79b464003446232925b8672c69d43170217a8d0",
+      "sha256": "edf8a427356f6850f8e4804d890c2b6f04aa29081c14039f6b7f8b10846575f2"
+    },
+    {
+      "path": "docs/research/packet_sources.json",
+      "bytes": 12201,
+      "git_blob_sha": "430910c532e9e5ec1389d61c20ca161007c897f6",
+      "sha256": "1d726105e710c37316f702054b2a5d833daf679b316d98d318ad42909968c87d"
+    },
+    {
+      "path": "docs/research/packets/Q410-01.md",
+      "bytes": 148390,
+      "git_blob_sha": "a8a87c4b923bc19b5671a62c257ee9257e3dfd31",
+      "sha256": "50b29ef74e65c43eff249da3efbd2e953f05dc111791dc0ead4be6912cbe3f9b"
+    },
+    {
+      "path": "docs/research/packets/Q410-02.md",
+      "bytes": 143519,
+      "git_blob_sha": "15603b06c2c7f6c51da07cac127778ea99eac295",
+      "sha256": "5c5c11318cfa5631835b555bb5b36d2c7c344eb80ff65a81c968df76d2a62a6f"
+    },
+    {
+      "path": "docs/research/packets/Q410-03.md",
+      "bytes": 107666,
+      "git_blob_sha": "ab30afdf286e67828c1d630e25f02210c3465317",
+      "sha256": "96f825bbc3e67293a3d983a2b9215dfe4942ce8bc308b36dee063e9292097b46"
+    },
+    {
+      "path": "docs/research/packets/Q410-04.md",
+      "bytes": 140769,
+      "git_blob_sha": "cf23b937d47b8a48d500c7b1a4e0de7e0483ed97",
+      "sha256": "fc27cade9279617f779100a1014d422220666ea14263b80ed3853a61c1c40950"
+    },
+    {
+      "path": "docs/research/packets/Q410-05.md",
+      "bytes": 131538,
+      "git_blob_sha": "0f74ec6d68af188fbef23d17ee6137dafff90852",
+      "sha256": "42087d031377d0c03fe8ca5701ab8a7496aff4ef28eba0ae56b56b9ca723c4f5"
+    },
+    {
+      "path": "docs/research/packets/Q420-00.md",
+      "bytes": 134404,
+      "git_blob_sha": "a00ce5e0472c66a350370371697bab52c0fc026a",
+      "sha256": "cc48178ccc885b492e862d05c9bd4b3d17a653e8e74f0e8ddcdd4c71b8bdcca0"
+    },
+    {
+      "path": "docs/research/packets/manifest.json",
+      "bytes": 31802,
+      "git_blob_sha": "8e549f9c3cd541b9e4ec66377c136afe0cbb1b8b",
+      "sha256": "46d1d8e4f8d21eca134073f906e29e1883ed71f3b9f0d88f55f16c5d99c77d4b"
+    },
+    {
+      "path": "examples/gfs-japan-request.json",
+      "bytes": 262,
+      "git_blob_sha": "09742f0d0b90f8ba38dcea25a0003d74c3b1969f",
+      "sha256": "0908527c63294152792982c338cd0873edd3d952a4f812aa9f4ee2b24c243340"
+    },
+    {
+      "path": "examples/hokkaido-simple.json",
+      "bytes": 719,
+      "git_blob_sha": "6315d8dbb83d68e5fc626faabaa228ce86f6b568",
+      "sha256": "cd3205fdf4f9c245e9ebb475cb7bdeb1fc7726f54ed84da8aa9404d2d679bfb9"
+    },
+    {
+      "path": "examples/jra3q-ground-flight.json",
+      "bytes": 990,
+      "git_blob_sha": "a8217a6d1f6e3af66318831dd909baea4158aea7",
+      "sha256": "72ce511f08eeb22300daa10f8bf1ed24c8c45dd19702ae14e8edb6d16e019af2"
+    },
+    {
+      "path": "examples/jra3q-support-flight.json",
+      "bytes": 1172,
+      "git_blob_sha": "624c29052d22527ccff0f7acc9674e1ded91b955",
+      "sha256": "17f6bded04a4f5805afe7788a3d0ba7d395e0f586dd4fbf68406fde3a2ddfc35"
+    },
+    {
+      "path": "examples/wakayama-isothermal.json",
+      "bytes": 822,
+      "git_blob_sha": "3dbc725a7dc8c5100c5f1d220db973963384a528",
+      "sha256": "f9ec570b730072035794547f4927f06b02af979f302c49596a603fd065fa128d"
+    },
+    {
+      "path": "frontend/SCREEN_PROVENANCE.md",
+      "bytes": 17624,
+      "git_blob_sha": "1a2e4b7c391eb8d81c92d615ebe9e344ca5b3ba5",
+      "sha256": "85856f0b51d59a81e2a2ff3f56cee1c9e12a428e81d45508eafb5fe2d8ffa0a4"
+    },
+    {
+      "path": "frontend/index.html",
+      "bytes": 328,
+      "git_blob_sha": "28870b9efdcf2ed2b9a48ccd1165cec5e8cd91db",
+      "sha256": "476fb3952261656e862cf86492a9323c107f46bf92a037bef735cc180f11b59c"
+    },
+    {
+      "path": "frontend/package-lock.json",
+      "bytes": 57935,
+      "git_blob_sha": "c9e4cc85003c93f2ce7cb06f0b3378fa2de58134",
+      "sha256": "a7caec5c0901a6043182e8f7b2f7cbed68c5a86c87cbfd3eea998a17d301bcc8"
+    },
+    {
+      "path": "frontend/package.json",
+      "bytes": 809,
+      "git_blob_sha": "d9752463e9862d34ab5610eb5738e6a6f38fa33b",
+      "sha256": "b0ec06e509802d294bbe7ddf9d39f6b8470d6c4acca2b81ae480c13337692a53"
+    },
+    {
+      "path": "frontend/scene3d/THIRD_PARTY_NOTICES.txt",
+      "bytes": 67265,
+      "git_blob_sha": "e83f6ec967523ab8c8cd3164e3b5b33953ded619",
+      "sha256": "43cd084226dcfd5151989334f4a62183012ab3e14f6e2a8e60796558d1be3156"
+    },
+    {
+      "path": "frontend/scene3d/data/README.md",
+      "bytes": 8270,
+      "git_blob_sha": "abc05f5f8dc4f3f2c310e951e44fa10ee3b42d92",
+      "sha256": "6631979645f2e1765da5ffb7d9fe84734bc8822bf3047f3ab7c2d8a7855f16ea"
+    },
+    {
+      "path": "frontend/scene3d/data/WW15MGH.DAC",
+      "bytes": 2076480,
+      "git_blob_sha": "894449e1a32e39311a44094ab7a8eaef2e52ea71",
+      "sha256": "9dcaf4efd6857aaa2e1e2e2c574d3f5264eacf47024cdcd5291c40ddad5e5acc"
+    },
+    {
+      "path": "frontend/scene3d/fixtures/surface.glb",
+      "bytes": 3764,
+      "git_blob_sha": "56e447ca622ac10def0fff14100a550f8c4576dd",
+      "sha256": "3311dbaf80d2fe6f8ea62c0c7fb560357880e021369688f4884c4225f3f31805"
+    },
+    {
+      "path": "frontend/scene3d/fixtures/tileset.json",
+      "bytes": 827,
+      "git_blob_sha": "edfc3883f92dd8b91c95b0340959c734e6382c42",
+      "sha256": "2d22e79d51cbc0c4319c877829ad68bec43c799b56a0964621776d9900d00819"
+    },
+    {
+      "path": "frontend/scene3d/index.html",
+      "bytes": 5939,
+      "git_blob_sha": "c554323c5ddb7545eaa06f8ea1765e53bb509559",
+      "sha256": "932479dc6798407e0a0ae786f99e73cc0813854179e193baaa38f680161f3a1b"
+    },
+    {
+      "path": "frontend/scene3d/src/band-readout.js",
+      "bytes": 4608,
+      "git_blob_sha": "815e2d901c424bde49c8ff9dfaceb49393edb112",
+      "sha256": "ca46e0876a45b88510ee968bdffba20f7eb6cae63b10d421b65fd7bb1bef25b0"
+    },
+    {
+      "path": "frontend/scene3d/src/camera-fit.js",
+      "bytes": 1450,
+      "git_blob_sha": "4c6f24fae4dc5e0826880fab367fd6c84304e2f0",
+      "sha256": "f9f7a71b93c891680ffe78c85dd9710e7c299c8975c672e2b014975c3950ed49"
+    },
+    {
+      "path": "frontend/scene3d/src/catalog.js",
+      "bytes": 4761,
+      "git_blob_sha": "3fecc6b489491e21a956d01f519abdb59c651a3c",
+      "sha256": "5a66948a232305e2ba8b5cc530ec93ad4900088cedc6cc2cc5209c99b3220a62"
+    },
+    {
+      "path": "frontend/scene3d/src/colors.js",
+      "bytes": 1420,
+      "git_blob_sha": "887c909c950cc62689181a1f483e68b73474fe9c",
+      "sha256": "a5ff525de1d31a6eb11540b7f7f82768944928aea969ede971b15863c8c72101"
+    },
+    {
+      "path": "frontend/scene3d/src/fixture.js",
+      "bytes": 2772,
+      "git_blob_sha": "ebd84ffd60afdbbc6a62a40bf1ae48a00439c8e4",
+      "sha256": "270c5863076b44190b92bc37f4023d91aaa811cfcece586baa14b4a1929636ec"
+    },
+    {
+      "path": "frontend/scene3d/src/hover-controller.js",
+      "bytes": 3769,
+      "git_blob_sha": "4b9748578f07903376f9e0b06b9ec69dfa6e63c8",
+      "sha256": "6bc46d66fc09bfcd04337b97a0c32e254a9da0abb19e6811a84966b4fd80b86a"
+    },
+    {
+      "path": "frontend/scene3d/src/hover-labels.js",
+      "bytes": 3713,
+      "git_blob_sha": "ee357ea1cdef1fd3e64e3e9c644290dfff1de065",
+      "sha256": "2ebbf8cf40d6149e332600957ac763d442e67caaa2035be5de5f6411c9d9da8e"
+    },
+    {
+      "path": "frontend/scene3d/src/main.js",
+      "bytes": 33658,
+      "git_blob_sha": "27286872736103207fd42c15038da211feb7d88d",
+      "sha256": "c4fc03057ac30800da5e8d52dfeafc5cb2102502086b16fed49873bee2cc047d"
+    },
+    {
+      "path": "frontend/scene3d/src/overlay-store.js",
+      "bytes": 1321,
+      "git_blob_sha": "2cf06467cd4d30d8fde7523782284ddccdf292f8",
+      "sha256": "11a689eb6656043aba39ed77cface29e2b3156035b6b6e039318f3f5749bcd3d"
+    },
+    {
+      "path": "frontend/scene3d/src/overlays.js",
+      "bytes": 2848,
+      "git_blob_sha": "62f20e59dc56f2871a9471ee4792cef90af35bb6",
+      "sha256": "b7c5990ea74b4faa3bc7fa55fdcb201c0b1de80fe846ffce985cdd5a7a349e57"
+    },
+    {
+      "path": "frontend/scene3d/src/protocol.js",
+      "bytes": 10413,
+      "git_blob_sha": "b9f92a9ca51ebf402c8ba7d59ed31b867a61479b",
+      "sha256": "f7fa87730a028cedc10c82e8138715945bbcb74bd2c4cdbc1f65a437e54e2741"
+    },
+    {
+      "path": "frontend/scene3d/src/provider.js",
+      "bytes": 1465,
+      "git_blob_sha": "98a07c5dc0dd458d263089fbd24ee2b32ca9337e",
+      "sha256": "f6d80bdd90b0b95fdfe4f7cd22a0e6f673510ede74f3f6c31767d43a3c3d0ca2"
+    },
+    {
+      "path": "frontend/scene3d/src/receipt-status.js",
+      "bytes": 336,
+      "git_blob_sha": "2a7f0ae99c6daa15eb5a4f0e38b59447632d92f3",
+      "sha256": "f9512bf09b96c5d9c18cff3329f7565fd7c621caf33bebf50ea90e4901a77466"
+    },
+    {
+      "path": "frontend/scene3d/src/route-geometry.js",
+      "bytes": 4059,
+      "git_blob_sha": "fb7e5e0677d359e77bfec978c0242279ea9fd597",
+      "sha256": "b4162fdd7dd2b871160fffa692079758399d66281399c85be2765810fe3a15a0"
+    },
+    {
+      "path": "frontend/scene3d/src/route-layer.js",
+      "bytes": 5880,
+      "git_blob_sha": "00cad108ef56d52fd4e78e58e1ad428a241e8483",
+      "sha256": "495bc0c481e3ba73e8ffeeca963847d1abb35b4d998047ddbc0c56e66dfcdf12"
+    },
+    {
+      "path": "frontend/scene3d/src/surface-pick.js",
+      "bytes": 1558,
+      "git_blob_sha": "223194b129d2ac8b0cd16d4cb1c1f838119e61a1",
+      "sha256": "9432556b68fbe2d91d1ad6bc0a452de871e98d51fc2028f42735ae4fb74e600a"
+    },
+    {
+      "path": "frontend/scene3d/src/surface-session.js",
+      "bytes": 2525,
+      "git_blob_sha": "bf382088e36a8e749124fffe60e4179a1a6b5b29",
+      "sha256": "f084411d93ea8864ae99c3e0b241f548866e74302443607fb30c4393d83955d2"
+    },
+    {
+      "path": "frontend/scene3d/src/vertical-datum.js",
+      "bytes": 2741,
+      "git_blob_sha": "8749bff4b261effa36a169ea551904d39b282cc7",
+      "sha256": "5a02373eb48fb5cc92defc77efbaf89f6c74c6840f701adc839d723d07c71285"
+    },
+    {
+      "path": "frontend/scene3d/src/view-memory.js",
+      "bytes": 1286,
+      "git_blob_sha": "1079154a541f6336b110fa8326d2af20a85807f1",
+      "sha256": "bf46a92a7e0e738fc7b26021c098b291a3dd446f8ca2d08e057672c995aec6ac"
+    },
+    {
+      "path": "frontend/scene3d/src/view-stability.js",
+      "bytes": 2004,
+      "git_blob_sha": "e0b3aad711208461b5f24fe89d7d230cd1eb4af3",
+      "sha256": "a8dd03a7b0ecf2f7afc5718df56cc90845de0dc1e0f82967d5d041b47ab12658"
+    },
+    {
+      "path": "frontend/scene3d/style.css",
+      "bytes": 4380,
+      "git_blob_sha": "325a4e6d22969a2f207426d4440195112e877c3a",
+      "sha256": "e6276f940daf172581f0a9e8da6d8c120224e475d12aa5e6b06c9f57d38a4bdd"
+    },
+    {
+      "path": "frontend/src/App.tsx",
+      "bytes": 20509,
+      "git_blob_sha": "baa31ec4b9ce0a61a3b58d58a22990285f3e7099",
+      "sha256": "ea1d4983c9f638056cf2814f0e32e2d2ff2d317ba49054c5ddb50145e3c49548"
+    },
+    {
+      "path": "frontend/src/ClimateFlightHandoff.tsx",
+      "bytes": 3304,
+      "git_blob_sha": "577a2e0cdc7587fafe8cbeb7f150c53cc602e9fc",
+      "sha256": "f7ac61ea826987d37d021177fd48aeaa3c29f62aa33bcfaf02371a81ee8e91e2"
+    },
+    {
+      "path": "frontend/src/ConfigEditor.tsx",
+      "bytes": 8406,
+      "git_blob_sha": "804f709de613c5c1ebce92628999f4e9c4413139",
+      "sha256": "afdb0c188f9bbf68c6c797b4b3c8c1155df03d0c12ba6bfc663db1180b90973f"
+    },
+    {
+      "path": "frontend/src/GroundPreparation.tsx",
+      "bytes": 5220,
+      "git_blob_sha": "956a72947b8c43755fddae8c570360989faf0ee4",
+      "sha256": "7a5e284d92e9800c17ad2a119bfd2076c671374dcd79cdfaaa181c4def89ded5"
+    },
+    {
+      "path": "frontend/src/HistoricalEntry.tsx",
+      "bytes": 1590,
+      "git_blob_sha": "73a68a8c83c238410067ac9e8826bb5a9ffdc4f6",
+      "sha256": "b5929a209c149cb47ceeb69db522a2af0a04aa6fefaf2d3b45306d1ab66b5785"
+    },
+    {
+      "path": "frontend/src/HistoricalPreparation.tsx",
+      "bytes": 9827,
+      "git_blob_sha": "2391408e154c0c20665bdbdfbd526ec4ffe84a07",
+      "sha256": "4a91927f5d50830e0e8972c049e57f3e09b6d05869e974dea2350536cf29c5aa"
+    },
+    {
+      "path": "frontend/src/HistoryPanel.tsx",
+      "bytes": 8375,
+      "git_blob_sha": "d7775502e93cc3efa2e238f91a269ac98182e57e",
+      "sha256": "25cb7a954f668595bcbeaabb14a0b5a521f15401c0793a44e5db3e310df3c4e5"
+    },
+    {
+      "path": "frontend/src/MapPanel.tsx",
+      "bytes": 7800,
+      "git_blob_sha": "bdab4b391184d4fbb54083694a9a9def7a0abd55",
+      "sha256": "31ccdbeb8c9225640484496d764ff7fea46cf950bebddbfff6b1cbde383de5a0"
+    },
+    {
+      "path": "frontend/src/SamplingEditor.tsx",
+      "bytes": 9237,
+      "git_blob_sha": "15a391e78b4e82c38d1c10d1b51ea70f0318a627",
+      "sha256": "393c72a5ca773b3225339dfa2484516e2add9d0ae03f46f77e65eb8522d60c5c"
+    },
+    {
+      "path": "frontend/src/WeatherPreparation.tsx",
+      "bytes": 32729,
+      "git_blob_sha": "a2cf3328d3661bc6effbf89c70a5e3f0b9fecf68",
+      "sha256": "e1c4c9bdb19f47ff8c3540dbce9a7270292e847c970213959aa7fe395f1fb1c6"
+    },
+    {
+      "path": "frontend/src/acquisition.test.ts",
+      "bytes": 9795,
+      "git_blob_sha": "a25cd4a2f82af13dfaf9a0bab96ad9dcdfae2bfa",
+      "sha256": "bdf6f410bed9434156828194dcc446bc5b01d524e5f2eb98ed047e94f4b366e2"
+    },
+    {
+      "path": "frontend/src/api.ts",
+      "bytes": 7889,
+      "git_blob_sha": "2f31796137f4aed0cbe797e2469176420058494c",
+      "sha256": "ede1efc7e6f725d33dc3f9123eae349b9b02495967ddbec60109b150105dadb0"
+    },
+    {
+      "path": "frontend/src/climate-expansion.test.ts",
+      "bytes": 23603,
+      "git_blob_sha": "060e8bba6b5396fb1978f9e9ef0715830e2b3f99",
+      "sha256": "08dbbe129baf5551913e0cdc56e05ab4999e7b84f5ab78c2dbec63b4487519c5"
+    },
+    {
+      "path": "frontend/src/climate-quantiles.test.ts",
+      "bytes": 15203,
+      "git_blob_sha": "fabb9565b89d8dd0b27c2c78af544e42f74197c5",
+      "sha256": "01eb47ac618f012207a2493484adee5046c6cca64b9446ddf65b19e868bbad88"
+    },
+    {
+      "path": "frontend/src/climate.test.ts",
+      "bytes": 42986,
+      "git_blob_sha": "3befbc5d4b4617377b126a9fd970b169ab0e30a1",
+      "sha256": "17949be7c3d07efea06e8678819c8c812820fe8786bf28072388df2206fd5d6e"
+    },
+    {
+      "path": "frontend/src/climateApi.ts",
+      "bytes": 671,
+      "git_blob_sha": "0e1d9e986d9fa2d6caa5700f78c1e468bf608796",
+      "sha256": "f8b0c95c235abcf13df2cbad2e7f3856120b3e1a35c5d189f7507d293d9b2c86"
+    },
+    {
+      "path": "frontend/src/climateDomain.ts",
+      "bytes": 12411,
+      "git_blob_sha": "144ff02be770f383afd971be5a5c16887694fcae",
+      "sha256": "124b52656e34a48f94cea632c7ac90d6567e33343c359de938047a4bddf4e60e"
+    },
+    {
+      "path": "frontend/src/domain.test.ts",
+      "bytes": 3324,
+      "git_blob_sha": "108f98abe3f431556ece6842954c6cd5e59840dd",
+      "sha256": "bdf7e91406581c30d98a1359bfc9aef39abaf6fbe6ba5836af5e14f01f07fce5"
+    },
+    {
+      "path": "frontend/src/domain.ts",
+      "bytes": 14394,
+      "git_blob_sha": "e5d90121689eb58273efb26e7d386ffa31893292",
+      "sha256": "eaac036bf24ba7c92e9b287eacb3e32e69c69c6fcf864ea33cb5d1d29abae841"
+    },
+    {
+      "path": "frontend/src/ensemble.test.ts",
+      "bytes": 26633,
+      "git_blob_sha": "e5a7613df3fb09c5e309da9bcab725ab64bb5c3a",
+      "sha256": "574733e2e15cc418c9f46b4283c53833da3fb6dca3d4f1c3d5b853bed11e6464"
+    },
+    {
+      "path": "frontend/src/ensembleApi.ts",
+      "bytes": 3529,
+      "git_blob_sha": "752b23d6686d6c9923f8619b4d63bc2572c782bf",
+      "sha256": "eb2e157d5f143963f7dbf3962a0f986160fa57f5510d46e0cf2c741e7cb471cb"
+    },
+    {
+      "path": "frontend/src/ensembleDomain.ts",
+      "bytes": 9238,
+      "git_blob_sha": "f9e9c7a0405c3a27221310fcdadedb9b3e95bbbb",
+      "sha256": "096e243265bd60cba63f3b95c6f3724481c022d7c2f5100e1b67caf8e711ccbe"
+    },
+    {
+      "path": "frontend/src/fixedResultRead.ts",
+      "bytes": 1148,
+      "git_blob_sha": "9a3eaf550681bc6be72fdf6ba37f4b9c6abb2c8e",
+      "sha256": "3ce32f5b23721fb3f18bf5ad3cf0103a4efe9fb0c49721867f8b84bd524009ce"
+    },
+    {
+      "path": "frontend/src/ground-preparation.test.tsx",
+      "bytes": 4211,
+      "git_blob_sha": "846a7a0c2fd3ebbb33da6382579d548af381eb2c",
+      "sha256": "5c624aecaa2717a7733a5ed8ce2b4639d8edc7a24db40c1157e838472f78dc4f"
+    },
+    {
+      "path": "frontend/src/historical.test.ts",
+      "bytes": 5701,
+      "git_blob_sha": "a78c5bf6da9a2747c27a354686f10d721813c1ad",
+      "sha256": "1d8b380adc6e676081165def6a562a1b09d16284565f9fbfca7bf5f1dc65d4b7"
+    },
+    {
+      "path": "frontend/src/historicalDomain.ts",
+      "bytes": 4556,
+      "git_blob_sha": "922042de0d3a85c27d7057fe85a2bdc189f5aa52",
+      "sha256": "d00545fb67f19013ae88c1be26eb7f9d774f864e5a02700d2f69cdf720cc4268"
+    },
+    {
+      "path": "frontend/src/historicalTypes.ts",
+      "bytes": 529,
+      "git_blob_sha": "f98e297d08b02f3dc01a229ea8ac827ef909e2ad",
+      "sha256": "6694b90b46b45b6d5a88f7f6b358fc9d9e4fe9650121d4264d7c502f4fb3e155"
+    },
+    {
+      "path": "frontend/src/historicalWorkspace.ts",
+      "bytes": 2966,
+      "git_blob_sha": "bfd17104706a97a88f7ab3fb8f42fed10084ec72",
+      "sha256": "060a622ba811c5b17e1fe5c4044b7c8a22edfd7843b25da8de3889cf4966ff14"
+    },
+    {
+      "path": "frontend/src/jobObservation.ts",
+      "bytes": 2534,
+      "git_blob_sha": "1428da93b090c39583b0fd964536356da78a281e",
+      "sha256": "f36e88c3747849ab95bec213d532052faee188ba6061acba4f320ccb12280f67"
+    },
+    {
+      "path": "frontend/src/jra-weather.test.ts",
+      "bytes": 9883,
+      "git_blob_sha": "20cffc331e35cd8a8f9ac6d0a315bba4c4c09e9f",
+      "sha256": "f24b338d5e0c7a088806f7065e1f14e9529668b5178ac2ab583ae3fb6df87fa1"
+    },
+    {
+      "path": "frontend/src/main.tsx",
+      "bytes": 781,
+      "git_blob_sha": "b7fab76c5dbed78d435c29f08344f64ede8843fb",
+      "sha256": "7dc6dc0fc15338dad65f73526ee69b178b40991fcb4c762a5e9d82b339b93889"
+    },
+    {
+      "path": "frontend/src/modelDrafts.ts",
+      "bytes": 2291,
+      "git_blob_sha": "d15f26cda823d2b7bace84dfcdb78ce7d2a81ea7",
+      "sha256": "91ff49be7e4d70842cebac0fb92a42d72b67377bb1918f2dfedd04676d08517d"
+    },
+    {
+      "path": "frontend/src/operational-observation.test.tsx",
+      "bytes": 20395,
+      "git_blob_sha": "60214a03d148fc384c39acf970cafba98639495c",
+      "sha256": "633e9636a63502b87856b628e4c2ceccdb846a58a023d647c93dc626f6a096a2"
+    },
+    {
+      "path": "frontend/src/platform.css",
+      "bytes": 8512,
+      "git_blob_sha": "464612f6b1d97a896ddaccc6dc4695063eb039ce",
+      "sha256": "7c23383dea47540d512fb3ac25098ce69798b0294a57e84415db6a5fd1a44d61"
+    },
+    {
+      "path": "frontend/src/recordedMutation.ts",
+      "bytes": 1173,
+      "git_blob_sha": "6805ee857ce4ba46f43ada0218e608387ab5e8af",
+      "sha256": "29f5028b5a29205d61af091e5eae906f267c5f36a98f2dd1deaac4810813105e"
+    },
+    {
+      "path": "frontend/src/restoration.test.ts",
+      "bytes": 10696,
+      "git_blob_sha": "b8f25b2de23b1defa608b1adbe43114a2fd91f0d",
+      "sha256": "4bb4cae7b7acb424f9ec4afa3083fb20a7b294e4a71834d1df780d15e6ae26b9"
+    },
+    {
+      "path": "frontend/src/scene3d-datum.test.ts",
+      "bytes": 5266,
+      "git_blob_sha": "bc2997cdb116a199d5bd397dbbbbfdadf8a0b07c",
+      "sha256": "427caf30237af6a6cbb1e301fed5a9db581facd74627f10232632762e751acc3"
+    },
+    {
+      "path": "frontend/src/scene3d-geometry.test.ts",
+      "bytes": 18836,
+      "git_blob_sha": "25290d5890ff61c1aba208bfcb06979c58ae2873",
+      "sha256": "3038d2fd14e06c3c0c2b34580072537fef13be290da213a707e851e815a494a4"
+    },
+    {
+      "path": "frontend/src/scene3d-routes.test.ts",
+      "bytes": 10798,
+      "git_blob_sha": "9ced4c7f6add8b532dfb4c3afeda38f66cc44e02",
+      "sha256": "3cc59a50718f376e51c390b7d3594635b4841ac9a563c824d18949f26b8ea962"
+    },
+    {
+      "path": "frontend/src/screen-contracts.test.ts",
+      "bytes": 10385,
+      "git_blob_sha": "63d9a774ffe34ab5c011adb4e83c34be2a165969",
+      "sha256": "52eeac00b5b4705d4158763c1890c30512a9051bd38d4d072bd3a65043106eb6"
+    },
+    {
+      "path": "frontend/src/screens/ForecastScreen.tsx",
+      "bytes": 15241,
+      "git_blob_sha": "1f829b0b27b2e0130b28a679047dc6022497340b",
+      "sha256": "9a5d6f8e2609a17242362650c5800bd89f44b15f3407a6dd6e24e82fa7e576c8"
+    },
+    {
+      "path": "frontend/src/screens/WeatherScreen.tsx",
+      "bytes": 10752,
+      "git_blob_sha": "60af8be70f72f7198cf1be626e7e4c0c8cdb3307",
+      "sha256": "b5ee71f5e3a92994c37ecb7aec94ad47dbaa7b033039fb79cb005ca65d1e16d6"
+    },
+    {
+      "path": "frontend/src/screens/forecast/analysisLoadState.test.ts",
+      "bytes": 7973,
+      "git_blob_sha": "470f69cf86a7a370579449a7c04effe7da6e35d3",
+      "sha256": "162f6bd9c0b66fc7344deb4dbb352b8893f2082cc1cd5ae0040eb98613c2e0f7"
+    },
+    {
+      "path": "frontend/src/screens/forecast/analysisLoadState.ts",
+      "bytes": 2813,
+      "git_blob_sha": "248e36588efe332d925de58b466c3366a54b2cb9",
+      "sha256": "1db7d7d8896ba14b13497f9bb13d7b592c608ff96355ccf8e4711cda011d9c7e"
+    },
+    {
+      "path": "frontend/src/screens/forecast/appearance390.js",
+      "bytes": 3426,
+      "git_blob_sha": "23d94a1c7f1121568affd467a02efb9dbc2ef524",
+      "sha256": "6e7a275ba331d7fcab9621c7d325440bb74fa4eb94d22eaf1b69cd276b6dd0a8"
+    },
+    {
+      "path": "frontend/src/screens/forecast/controller.js",
+      "bytes": 152335,
+      "git_blob_sha": "57df645fc0bed861d008a5ddc96a35f329f9946c",
+      "sha256": "0df9c3dd26a8cde0245c605d335e5c1943d658ae1f878d2ed2d83d1d1c28af69"
+    },
+    {
+      "path": "frontend/src/screens/forecast/core340.js",
+      "bytes": 6238,
+      "git_blob_sha": "c5379dc4501b963e57e8a02c306947e07badcd43",
+      "sha256": "b9e5417c556b9cf36fbb66e05942b5f3f169ccfc0b774e7e39cde44f0ba9e813"
+    },
+    {
+      "path": "frontend/src/screens/forecast/data.js",
+      "bytes": 1847561,
+      "git_blob_sha": "ff930ecb3fc54b3b0adaebd991e44f20a3c38e67",
+      "sha256": "6219c465187c7aeb90e51c1d9d230ecef07466e76a79910611af2aa2eeb3c04a"
+    },
+    {
+      "path": "frontend/src/screens/forecast/ensembleProjection.ts",
+      "bytes": 6729,
+      "git_blob_sha": "725b5e77ff6dc9c029fb03a9f21fb0460401d68c",
+      "sha256": "fa468ea949c0be85e75d5159657edb14cb018436c9c2a02212e0a1abb66d2b34"
+    },
+    {
+      "path": "frontend/src/screens/forecast/export-context.test.ts",
+      "bytes": 3174,
+      "git_blob_sha": "b4019385bb47c43371f4ad6bde25695f0eca8a01",
+      "sha256": "31dba7c72940460b74cd2e7a0cf025ef51fa4cf75d3b0dbc9ba28faf8e74280d"
+    },
+    {
+      "path": "frontend/src/screens/forecast/export390.js",
+      "bytes": 6214,
+      "git_blob_sha": "3df479fac301f2a4b3d805dd9f1ddc0566209912",
+      "sha256": "057e1ced50522db515555cb56c2266892e00bb59c506d9c4ed11e19fea924771"
+    },
+    {
+      "path": "frontend/src/screens/forecast/exportContext.ts",
+      "bytes": 4181,
+      "git_blob_sha": "7047ba27ae9a8a0237aeafdb15bbb71ef2d328be",
+      "sha256": "25a4c6c21ace99be4e556b3c4cdbf81d4ff6eec927ae021d72c3f613e449dc7a"
+    },
+    {
+      "path": "frontend/src/screens/forecast/historyLoadQueue.test.ts",
+      "bytes": 7095,
+      "git_blob_sha": "ad0efbb9d723b47e267d5a7114316139afbe66c0",
+      "sha256": "10c1fa81d50b40a5d0d7514d350448c64d5cd98b28e4c33c5238104ca69d775a"
+    },
+    {
+      "path": "frontend/src/screens/forecast/historyLoadQueue.ts",
+      "bytes": 3340,
+      "git_blob_sha": "9f4af886b90462b8c3f4566230900a9deb684540",
+      "sha256": "af233a4b7ef97e77370176a47c31d195d4f5ceaae356cb460a4e32a326322b7b"
+    },
+    {
+      "path": "frontend/src/screens/forecast/hover-geometry400.mjs",
+      "bytes": 1097,
+      "git_blob_sha": "b4928893d405a015bb09691314ac23b9d6264cf1",
+      "sha256": "8ed2e1bc60f08cba0fc291d22c832e0b2a736dbd4d30f736a77ffd76e6a7757f"
+    },
+    {
+      "path": "frontend/src/screens/forecast/hover400.mjs",
+      "bytes": 3779,
+      "git_blob_sha": "00ed225c7e8d92be2ce62a49af34c18c36911344",
+      "sha256": "b160235e160ab4ec9fc5011c328f195f59dbb350c2db622e9d97d6b5f0e2e427"
+    },
+    {
+      "path": "frontend/src/screens/forecast/map-style-guard401.js",
+      "bytes": 9020,
+      "git_blob_sha": "64e22a370137a9c3076597b146ed78fc71551296",
+      "sha256": "ca04d2952a739f967ecc15b922828a6142b2dd097eccaddd0df737ba338e8dff"
+    },
+    {
+      "path": "frontend/src/screens/forecast/markup.html",
+      "bytes": 16388,
+      "git_blob_sha": "2aa565bd825df39cb427867d2f9d6c7fc3da3461",
+      "sha256": "f3e8d8cf390e568ad7185b265ce53c993561500d6900722d8ae1ff56e0e2457e"
+    },
+    {
+      "path": "frontend/src/screens/forecast/math.js",
+      "bytes": 5734,
+      "git_blob_sha": "1c4d12d66abd85ea7cfca9b76929dd94f9baab29",
+      "sha256": "0db1f087330499b3a419b3a1ca35442b80569fcb0520a6b22bc7ad7772ee5255"
+    },
+    {
+      "path": "frontend/src/screens/forecast/projection.ts",
+      "bytes": 4389,
+      "git_blob_sha": "b21ecc1cfd4a5b3fea9bccb994fa064a1fab2243",
+      "sha256": "67b0d1182dfc08468ddec9c58981193641cc6413559ca0b3d7a925ea954e7282"
+    },
+    {
+      "path": "frontend/src/screens/forecast/runtime.ts",
+      "bytes": 1634,
+      "git_blob_sha": "f191281f0ab0a08423bd474e27886f89a34f47bb",
+      "sha256": "a4f9e0183650e5b059c436a52347fe3d3d06ffab84f13c35eb412d7ce6a85226"
+    },
+    {
+      "path": "frontend/src/screens/forecast/scene-document.js",
+      "bytes": 5365,
+      "git_blob_sha": "4de06b410f7922872e07010e571c801d13ee3080",
+      "sha256": "43d28e2684332e64316c26bda1e3cf321b4413db17045c452ec05ced4854a9be"
+    },
+    {
+      "path": "frontend/src/screens/forecast/screen.css",
+      "bytes": 30627,
+      "git_blob_sha": "db91e037682d647163e05ad969de1792d48c649e",
+      "sha256": "c7d0ce57b3ca5d7a52c41c704022258b853bb70adee905ed2599d4491d080560"
+    },
+    {
+      "path": "frontend/src/screens/forecast/season-adapter.js",
+      "bytes": 636,
+      "git_blob_sha": "3f536383304298007c9aa30517809e8579ba134e",
+      "sha256": "aa226cf3de83de1611021f060520dd2261c0c0d309331adf8361ff60fc999c37"
+    },
+    {
+      "path": "frontend/src/screens/lifecycle.ts",
+      "bytes": 3424,
+      "git_blob_sha": "d8070d529c71834dc29a340b92a27d7e775cb426",
+      "sha256": "4ecd7637c42b89ad89d755cdea9df284d4aa233c29cda857bc49f4a8199ba5c4"
+    },
+    {
+      "path": "frontend/src/screens/shared/band-readout.mjs",
+      "bytes": 4608,
+      "git_blob_sha": "815e2d901c424bde49c8ff9dfaceb49393edb112",
+      "sha256": "ca46e0876a45b88510ee968bdffba20f7eb6cae63b10d421b65fd7bb1bef25b0"
+    },
+    {
+      "path": "frontend/src/screens/shared/hover-labels.mjs",
+      "bytes": 3714,
+      "git_blob_sha": "939f170aa0833e523a036bb88a9e80be3def054d",
+      "sha256": "1222e0ca8347259ab8a613a170764573e47f8a16b611610d25199d72d4d7f59c"
+    },
+    {
+      "path": "frontend/src/screens/shared/scene-style.js",
+      "bytes": 3127,
+      "git_blob_sha": "829a801b79c172484fca056277ef475bea36b543",
+      "sha256": "612c6edb5d7c51ea9787eeb252edfe3dc4a882136d0474274e8887ba2f98773e"
+    },
+    {
+      "path": "frontend/src/screens/vendor.d.ts",
+      "bytes": 80,
+      "git_blob_sha": "3c8470bedb4ddf7f178a4e8f1f199820ede3fc55",
+      "sha256": "a7a7788ee3041096b3616269970e1fe07c9f45a9385c83d6218273b4bb83b70a"
+    },
+    {
+      "path": "frontend/src/screens/weather/climateController.js",
+      "bytes": 26552,
+      "git_blob_sha": "1e5a4bc08b958116ec764818f0111613ff7975de",
+      "sha256": "e7e6f9b92ca4403f05d0b8c0d69a9f465e728c919ac1d481cc4f95cd0bca954d"
+    },
+    {
+      "path": "frontend/src/screens/weather/climateDistributions.ts",
+      "bytes": 10886,
+      "git_blob_sha": "d8167479330b07df0e187deac8822ab8c031f57e",
+      "sha256": "6903bee6512f8a2fc7e64ec6641b910c6ecabf4c26ee0ea546dba10119f54f70"
+    },
+    {
+      "path": "frontend/src/screens/weather/controller.js",
+      "bytes": 41645,
+      "git_blob_sha": "16492e6a2b9586948aabd5744d64b083f265a362",
+      "sha256": "3b9ef966b108003c986178920a114c5ba92ff01b88e1e3cfa86d8e539c51c83e"
+    },
+    {
+      "path": "frontend/src/screens/weather/direction-key.js",
+      "bytes": 2859,
+      "git_blob_sha": "3e2d4f3e4bce35cc20d2d0a892f6ee7bc39a0b01",
+      "sha256": "1ceda5de551cbc0c9f8afd9e31d9ee20058108022ffbec1d2b109e80ab7af732"
+    },
+    {
+      "path": "frontend/src/screens/weather/export.ts",
+      "bytes": 8520,
+      "git_blob_sha": "fe4051aa94aa056f33c4fed5ec5910d265efd0fb",
+      "sha256": "df738f8bf50f4c3ccbffa55034dd508bb2fbaa6e085c2a3e52bc095835254c12"
+    },
+    {
+      "path": "frontend/src/screens/weather/fixture.js",
+      "bytes": 9940,
+      "git_blob_sha": "3c7f8ad9456e105f08bcd7fcf6d707c1c8b02941",
+      "sha256": "215a94c30db67ee1c166a8649f67b05e677693e7ed5012a9d7155e31eafdac5b"
+    },
+    {
+      "path": "frontend/src/screens/weather/impact-map.js",
+      "bytes": 13716,
+      "git_blob_sha": "3437124a65d52399a8f67a68441e31c1ddf73d2b",
+      "sha256": "ca4b5a47eeebb2d303b2e283cd1167cdfd7f19fa2d20865612b934851d1fd037"
+    },
+    {
+      "path": "frontend/src/screens/weather/markup.html",
+      "bytes": 12372,
+      "git_blob_sha": "2b6c61816ef3e06a0abdcd07f3df5ef322974d1c",
+      "sha256": "d68dfe49a4a3badf584cae2254e77aaacb2b08572f5370c6fba96fc8a870c0a8"
+    },
+    {
+      "path": "frontend/src/screens/weather/monthlyProfiles.ts",
+      "bytes": 8790,
+      "git_blob_sha": "7f156cd0757163593fc741533cdd3cf437b6d2ec",
+      "sha256": "7718bff01a564a28cc6eb0da7bbe53dd13ef6eca3d3c67a5a8c21a87221c6ad7"
+    },
+    {
+      "path": "frontend/src/screens/weather/plots.ts",
+      "bytes": 9575,
+      "git_blob_sha": "18ef7ddaf5073314c230bf6e76feb9a640191a7a",
+      "sha256": "e662cea82d52e997b1e587b1223e4acdc8e619b820eb664405ea1811b8278c65"
+    },
+    {
+      "path": "frontend/src/screens/weather/runtime.ts",
+      "bytes": 1233,
+      "git_blob_sha": "ab3ca48984df67ea5ae62364513c79c788d7446d",
+      "sha256": "d5cc392f1652cb365e1a253160baa437018d4306fbeeac8c9f1ba4419a9a818b"
+    },
+    {
+      "path": "frontend/src/screens/weather/screen.css",
+      "bytes": 20299,
+      "git_blob_sha": "ddbd544aa65db5049433dffe38539a888545a946",
+      "sha256": "2c538b45af1998291d84652342f720c20b5a8658047573621be8ca502c95c90b"
+    },
+    {
+      "path": "frontend/src/screens/weather/sources/climateSummary.ts",
+      "bytes": 9960,
+      "git_blob_sha": "fa0600251d78b5697e399d6b2bf8b5b304076e22",
+      "sha256": "115213ba37b82a7edf81871da1a067fb86c788bae79661f56f24decaec2e85f8"
+    },
+    {
+      "path": "frontend/src/screens/weather/sources/fixtureSummary.ts",
+      "bytes": 3776,
+      "git_blob_sha": "d0fe4c5ed818e468c29c9dcbc18e6cb33dc99cc9",
+      "sha256": "2be00fb218cd638cc34781678bcd85de5ce7980dbb0c05b8ab80acde12732a30"
+    },
+    {
+      "path": "frontend/src/screens/weather/viewModel.ts",
+      "bytes": 1491,
+      "git_blob_sha": "e23ef49a963ab3a16ff65a818d33e844e52d0614",
+      "sha256": "2a462d33fc650444b367ca03813184924e21df14de237d18065d79f624aa80eb"
+    },
+    {
+      "path": "frontend/src/service-identity.test.ts",
+      "bytes": 3326,
+      "git_blob_sha": "da4c4afcfad2888568aa48b61d199b778dc8b7a3",
+      "sha256": "3b9253daccf0ac829df79b664848b6194dac83c4f0757c0682dcc391f55057e9"
+    },
+    {
+      "path": "frontend/src/serviceIdentity.ts",
+      "bytes": 647,
+      "git_blob_sha": "e13045df1fb1450347c2573f7ebb1306ab80d1d9",
+      "sha256": "b0dde4cc650410fb8e87c23cd4cae310c9da38d168aebfb962b5c0c11b714861"
+    },
+    {
+      "path": "frontend/src/singleSubmission.ts",
+      "bytes": 5488,
+      "git_blob_sha": "8d04211e3e393396d5b63d990d0f217c35a01e14",
+      "sha256": "a162ede20f92171e432313ca55a25f4574417c0e70ae99bfed1c6b12705cc49e"
+    },
+    {
+      "path": "frontend/src/style.css",
+      "bytes": 7840,
+      "git_blob_sha": "06af31f803e5a7cd1bd3f639c283fbe240068dfc",
+      "sha256": "756ebc58dbc3588519839bc705ba6be04aea65d0bdaa8e5386aa8c4037c626c9"
+    },
+    {
+      "path": "frontend/src/submission-recovery.test.ts",
+      "bytes": 7592,
+      "git_blob_sha": "96681732a78ee085fac884d0320c8a73713521a2",
+      "sha256": "64ee3eb27b00d7f657aa21c14da59e46005d0ef104a9c3b2268bcfcb99590dca"
+    },
+    {
+      "path": "frontend/src/submissionLedger.ts",
+      "bytes": 4781,
+      "git_blob_sha": "4383ddb2072b819ff875e05390cecc7a0cb7a772",
+      "sha256": "57816fb047c63472811fff578b524ad97922d047aba949f30bc00ebeacd40977"
+    },
+    {
+      "path": "frontend/src/useClimateWorkspace.ts",
+      "bytes": 16039,
+      "git_blob_sha": "e8480c0fc78c3dcbf29abd1f76912a6742e27fd3",
+      "sha256": "2991ac3b8adb2a25eee5dc11bce41537f0292647bf5609d825e83e22833875f8"
+    },
+    {
+      "path": "frontend/src/useEnsembleWorkspace.ts",
+      "bytes": 18107,
+      "git_blob_sha": "7a29f15d2c4495a1aacf61b7df06063ddab6675b",
+      "sha256": "d2a94af77fc19806a5cdc20ff01f3932d014ef6739b43e0c91e4d9143c6ea5df"
+    },
+    {
+      "path": "frontend/src/useWorkspace.ts",
+      "bytes": 23003,
+      "git_blob_sha": "496e640cdddf6b93c60dacf153043aec1672edea",
+      "sha256": "580d9b8e5c12292af631dae32d17e6aab3209bd5aa6b9be7aecac0d89b91f002"
+    },
+    {
+      "path": "frontend/src/weather-observation.test.tsx",
+      "bytes": 4252,
+      "git_blob_sha": "dba567d67d70ac777399b5cb7360c8572ced25ec",
+      "sha256": "abf1eb01f4300fe2aaa132dd547fd8da59fc70a2ad2cdb69c6a864c0a9050f29"
+    },
+    {
+      "path": "frontend/src/weatherAcquisition.ts",
+      "bytes": 8038,
+      "git_blob_sha": "d2f1c9d5567020d8a524bd1c8f51a6341fb45091",
+      "sha256": "eb51d71a9974f0e44c1fef994f9c1ebc7c26df889911fbc2832f6ed16a572214"
+    },
+    {
+      "path": "frontend/src/workspace-recovery.test.tsx",
+      "bytes": 16464,
+      "git_blob_sha": "090476930c09d0336bf17c0409161102ab95ea12",
+      "sha256": "fb8de418df9d7d254d3c6fdf0c8a7c9dd08384d9785ee3e1897f8fbc67a52d34"
+    },
+    {
+      "path": "frontend/src/workspaceState.test.ts",
+      "bytes": 10235,
+      "git_blob_sha": "798ec030dea01aa678befa087d08655e336983bc",
+      "sha256": "6c053bf33f9996c1074bb75c3ccfc3082ad7b7bf50d8438b074dfdaec690dbb5"
+    },
+    {
+      "path": "frontend/src/workspaceState.ts",
+      "bytes": 6952,
+      "git_blob_sha": "4f6c005068b3a86ec688a785ee769fc2bf3eff1b",
+      "sha256": "69c740f45e87ab784fbdca73c0f05c1d82696a001c25fc2a8ef93cf1b8042b8b"
+    },
+    {
+      "path": "frontend/src/write-lease.test.ts",
+      "bytes": 6070,
+      "git_blob_sha": "8305315ea47271379ce8f3c637154ab2a2c7e980",
+      "sha256": "97c948e57d4df628081923cc817075e5c61d54c211e843d07ed044450516aaf1"
+    },
+    {
+      "path": "frontend/src/write-operation-guard.test.tsx",
+      "bytes": 11092,
+      "git_blob_sha": "fdea203b559190d398fceae61f990c8fa2a2f411",
+      "sha256": "aaf351561a0a24fcb3885c3f0cf57f262f49fb49a628dd87f14a6a54321dfabe"
+    },
+    {
+      "path": "frontend/src/writeLease.ts",
+      "bytes": 6279,
+      "git_blob_sha": "5c4c95c2e23ac0de9d9f6d1f1db9cf3623b0028a",
+      "sha256": "3bd34096296d7d97be2b3560affea7dc326252960e00eb64a8f0b5f4dfb069ba"
+    },
+    {
+      "path": "frontend/tsconfig.json",
+      "bytes": 561,
+      "git_blob_sha": "1923e29e652988319a74dc886b0251be6f4c612c",
+      "sha256": "c9aaee41e2f6ff5e4c63337b35e7836b7de220bc70b2eebcbda2a79fa6551275"
+    },
+    {
+      "path": "frontend/vite.config.ts",
+      "bytes": 1715,
+      "git_blob_sha": "45cb1654148a48cb4ae98455ec64461263ed1928",
+      "sha256": "1fa66a4c93005969a1967c78a60b05abdebe6e778bfd9b8cb6abeeb92ee6976b"
+    },
+    {
+      "path": "references/EXCEL_ANALYSIS_REVIEW.md",
+      "bytes": 17057,
+      "git_blob_sha": "c7f1e32991f507f126b1356cd0ede6d33a3dfe9a",
+      "sha256": "f14ca20cc1836ed2eaccd2196e0c43df0ccc8764671bc4b688d1cb21a8859ef9"
+    },
+    {
+      "path": "references/Program_Guide_FractalJP_Settings.pdf",
+      "bytes": 438226,
+      "git_blob_sha": "558b1d79e6eca9526536ee034797eb1256e8bde6",
+      "sha256": "25b876aa508ee813aa1dff969671430c2315f7062d2930d63c0c65bb714ef08b"
+    },
+    {
+      "path": "references/Program_Guide_FractalJP_Settings.tex",
+      "bytes": 260629,
+      "git_blob_sha": "a6c35a3cba5679b275cad4c82ce66303c8bed778",
+      "sha256": "7f7408dee151a38eb082dc85a77508d725b72ea62c79273a57aa8917ca6c1310"
+    },
+    {
+      "path": "references/SOURCES.json",
+      "bytes": 53792,
+      "git_blob_sha": "58cd2686224c4c8a5bdcd0f1b7150ea3d33c7280",
+      "sha256": "f84d7712adeaefdd0811da7a05be2635dc9fe8948554cb32300caf425a8521f1"
+    },
+    {
+      "path": "references/WIND_REPORT_REVIEW.md",
+      "bytes": 32884,
+      "git_blob_sha": "3a58b0fe57c55cdaf6cc80aefd9c633183387ff5",
+      "sha256": "f41566d2b56acf54bf3bbf3f9a54cad16f621574b9de281068349e9e1d57c36f"
+    },
+    {
+      "path": "references/climate_demo_057/README.md",
+      "bytes": 5604,
+      "git_blob_sha": "5a5918b1e33e780ecfa0251ef1ba04c141cdc9ee",
+      "sha256": "bfa7db461fb95d3cfc869bf52510e4a5ffa1ef6679ae5f3de9606acf3c3551bc"
+    },
+    {
+      "path": "references/climate_demo_057/archive.json",
+      "bytes": 9665,
+      "git_blob_sha": "9abe08121472cca345e52c6a80531d3df2fc4c16",
+      "sha256": "3dadc1419b7a246832b8f8d043b5c865546a37382d2790c7a693f0120db19673"
+    },
+    {
+      "path": "references/climate_demo_057/jra3q-native-basis.json",
+      "bytes": 67321,
+      "git_blob_sha": "c7e969c0f190df700c6cc4bdf6be953498db1272",
+      "sha256": "dcde165002cdb314821b43f1e988f7318207ed1290fac7b62e7617bb8419d0db"
+    },
+    {
+      "path": "references/climate_demo_057/wind-samples.zip",
+      "bytes": 2994432,
+      "git_blob_sha": "ad10d7486749617c8dc44f99fb2ef520aa3b6460",
+      "sha256": "83b9a8c68b73938acd2163fd9e3c6ba11a756470083143e6129a70c8449d9f32"
+    },
+    {
+      "path": "references/design_trials/framework_assessment_043.zip",
+      "bytes": 983086,
+      "git_blob_sha": "82c9fd0631ec19961dba7b47edd6577db5fd9775",
+      "sha256": "e40e53d318f6d919e373507db4674781bf7c57496d4b97ff34d6fc59d0ada625"
+    },
+    {
+      "path": "references/design_trials/framework_integration_045.zip",
+      "bytes": 2627923,
+      "git_blob_sha": "2ff5a0b60adff3fbf8a37f19d1aa08ad69ea237d",
+      "sha256": "b5dfe54261063a7a3a70e0d531a70181668e9df5c1484c4d2a193179c3b63097"
+    },
+    {
+      "path": "references/design_trials/gui_integration_046.zip",
+      "bytes": 2569829,
+      "git_blob_sha": "f45ed264eed7d59249d1227b8a31cab449f0b2d6",
+      "sha256": "369f75beb83fa17279c99a065f0854c84bec40df77e05f501747c573519d858d"
+    },
+    {
+      "path": "references/design_trials/hover_and_backend_design_040.zip",
+      "bytes": 17844971,
+      "git_blob_sha": "2085c7599dbbe4d4ec6e94ae0f32fc589a540d17",
+      "sha256": "d253aa5d5857671dd0793ea04d9715c697526bd0cad55cfd1ef2ac72d0ab7f30"
+    },
+    {
+      "path": "references/design_trials/hover_surface_pick_correction_0401.zip",
+      "bytes": 19220587,
+      "git_blob_sha": "3cf0e3ac8e56edc49f066102e3415833dd083813",
+      "sha256": "8356df3cc8f2184d5418fe3d84d1e1d274b7646f3b81be6210c07094b3d7a214"
+    },
+    {
+      "path": "references/design_trials/interaction_and_burst.zip",
+      "bytes": 87767595,
+      "git_blob_sha": "c63b04ac8e72ba9e1765d42fa020dfb9842f2094",
+      "sha256": "ac76a8d34d77454c07ae5aa8eaf30a649b4a496a74fe59a6bce38fa506e29a15"
+    },
+    {
+      "path": "references/design_trials/interaction_and_burst_alternatives_035.zip",
+      "bytes": 40034775,
+      "git_blob_sha": "96fc22d67ec3a728f755adf7c20d2526479bf222",
+      "sha256": "3b0a4a5d5ac3eb970b4b7da527e1682fcfae6eb0626e8ae6385e0ce92f1e31d1"
+    },
+    {
+      "path": "references/design_trials/interaction_and_burst_review_035.zip",
+      "bytes": 80478008,
+      "git_blob_sha": "a6c5be66d853c47ef7d7bacc59745f9cd0a14318",
+      "sha256": "c509eb87085ac6fa25db8025e001c40c8e07571338581044a6bf1662df15e414"
+    },
+    {
+      "path": "references/design_trials/interaction_workflow_037.zip",
+      "bytes": 92073041,
+      "git_blob_sha": "d313403cf3ed3b8ad25a42a5fec5152ba4a8f586",
+      "sha256": "f4e93e6e3fc8c7bc4dc1c7492a1250b1fd35fe9e7bd9ef0f0a17c3e564609c55"
+    },
+    {
+      "path": "references/design_trials/interaction_workflow_review_037.zip",
+      "bytes": 100527680,
+      "git_blob_sha": "9f92be56edb9f22facb254d5e03b12dfa3884377",
+      "sha256": "87bc7d2df10ec69afec5642e6e3080786d6997a979469aff1bf93a72a88668f8"
+    },
+    {
+      "path": "references/design_trials/needs_review_036.zip",
+      "bytes": 2734498,
+      "git_blob_sha": "3b5817a1aefca8e0e599f632d833e90442f17cf1",
+      "sha256": "3f0d87ba50aca175a1fbeafd116ba577a76d58676449b08c80d46002ff7bfc21"
+    },
+    {
+      "path": "references/design_trials/photoreal_connection_038.zip",
+      "bytes": 11279467,
+      "git_blob_sha": "8458cc083c20cb710f0f0eb60aba08b5b3b88c6c",
+      "sha256": "10b0c1ac4aa83eafb90ce8c625dba766f7b98d58ac5f466d764923b6df5d6134"
+    },
+    {
+      "path": "references/design_trials/scene_context_and_export_039.zip",
+      "bytes": 15487079,
+      "git_blob_sha": "2f5f695244cbfe7874776ec41d4409c0c498d89a",
+      "sha256": "003983400909aa1382c0d3a6a0ae0a728123315617416195a6b122e97fb45ef8"
+    },
+    {
+      "path": "references/design_trials/weather_acquisition_047.zip",
+      "bytes": 3152013,
+      "git_blob_sha": "1d07c96b3ee8ab76c8a2db440cd1ab5676d6e6ef",
+      "sha256": "3467c9114480198319f57d425e6e0ff9bcbb08e0fadb60569f7540cf2b9e2b6f"
+    },
+    {
+      "path": "references/development_evidence/climate_expansion_0560_evidence.zip",
+      "bytes": 3127883,
+      "git_blob_sha": "802b7674718c8d66bbc2cb8bc822f82b99eca8a1",
+      "sha256": "6b48a51b71a0a43f0ae3085552369e2f9cba9469707e00fb0d386fcb91f78494"
+    },
+    {
+      "path": "references/development_evidence/climate_interaction_0580_evidence.zip",
+      "bytes": 197305,
+      "git_blob_sha": "70a60a77e1262afe94d6148f5ed602005b297116",
+      "sha256": "4a918a03772b60fb4456e0dc73bacb6c5aa8da731bb7655e690c2f734d0b6ab9"
+    },
+    {
+      "path": "references/development_evidence/climate_quantiles_0570_evidence.zip",
+      "bytes": 2541008,
+      "git_blob_sha": "7b1dee897ebef66ed95705caa87a8d27c359b3c8",
+      "sha256": "37a843b3b4482c06fda735a1205e8243b969ccdf3bfdc58cb9ed7da094dcc610"
+    },
+    {
+      "path": "references/development_evidence/detail_lease_0550_evidence.zip",
+      "bytes": 315587,
+      "git_blob_sha": "c26a2f6ccf623acbd681144e050c1d011a8ce8ae",
+      "sha256": "3efb3b7a2c9086212752f62fc8c3acba6ec8b4432ed04ff9e13d10698b56d280"
+    },
+    {
+      "path": "references/development_evidence/document_role_audit_0590_evidence.zip",
+      "bytes": 1396877,
+      "git_blob_sha": "4b575e3f5b7388805b733ad784d60ab9ac89c2b9",
+      "sha256": "b15d11646faa40bee807b8a23e5712be1df6cb394ffefc3a958862da087362db"
+    },
+    {
+      "path": "references/development_evidence/ensemble_connection480.zip",
+      "bytes": 26712272,
+      "git_blob_sha": "475307867ce90fbb0353b2b5ea6c4083cc8a9953",
+      "sha256": "551d3b1c59c0f660589a40dec8beae9f725829f1f2329347111b9dda889c8412"
+    },
+    {
+      "path": "references/development_evidence/historical_field510.zip",
+      "bytes": 1014078,
+      "git_blob_sha": "c0c061666c351b96e03b9a6b7ec712be28b2c7db",
+      "sha256": "27752039ec2109a3cdd7959a335d3e9a107ac2d124e52f9ebd41dba6ce5648a7"
+    },
+    {
+      "path": "references/development_evidence/historical_surface520.zip",
+      "bytes": 14273956,
+      "git_blob_sha": "e3aebdbc1944edaba162227f7ed58f601488d9f6",
+      "sha256": "bed4ff61a5916784ac7cb97f6b2a692aa1ce3c9c07fbd291d72164653c82dc4c"
+    },
+    {
+      "path": "references/development_evidence/operational_continuity500.zip",
+      "bytes": 3795156,
+      "git_blob_sha": "9f11e85c36eb628673d35d773f90e22438a5a350",
+      "sha256": "2ce8cab4b09450cab2961157a66278b3c69bf9b64df855600a715285297853a9"
+    },
+    {
+      "path": "references/development_evidence/operational_weather490.zip",
+      "bytes": 97537763,
+      "git_blob_sha": "a671287a72f0fbe948f3327d9f6e757d8ff7ce1f",
+      "sha256": "7e3b5c02b757e9a841348aae219a66f6ada9d56452af061775c8ee9c8a3a74ae"
+    },
+    {
+      "path": "references/development_evidence/practical_forecast550.zip",
+      "bytes": 65454340,
+      "git_blob_sha": "592434ed162e0434d89f8bb3a7d20f10a0aa9f42",
+      "sha256": "422dcc2c11b4d3dcdbd62b7ba5df2d8fe49c7f23a08ae3c396a9f7c9f194e07b"
+    },
+    {
+      "path": "references/development_evidence/practical_weather540.zip",
+      "bytes": 39717459,
+      "git_blob_sha": "b71a2c65b6f9e6234f40385eda58ffb59895edb2",
+      "sha256": "dcba3f1ea29c77180fbeff6b7f1f306bfbf1aea2fccf14575531a008af5c46c1"
+    },
+    {
+      "path": "references/development_evidence/route3d_0550_evidence.zip",
+      "bytes": 3440484,
+      "git_blob_sha": "9f01a72e48ca7ae0b0850e216cadd168d85a2902",
+      "sha256": "a2c4e63c9db03313f620d4caf8fc65a8f363bba321707dad658d26b3b0fe98c0"
+    },
+    {
+      "path": "references/development_evidence/saved_jra_gui530.zip",
+      "bytes": 23989555,
+      "git_blob_sha": "93923f0647e49830000fa0bbb17b5b85ce25e90c",
+      "sha256": "b7468cf793e0c5a6fcc0c317112cb4b79b11c5e3a8edd65bc08f4fb22e9ed188"
+    },
+    {
+      "path": "references/excel_analysis_manifest.json",
+      "bytes": 157594,
+      "git_blob_sha": "86e31659094408d7d29fcce9161c01e1b89027a2",
+      "sha256": "0030beb81d11380e3c371b4f4aa701b46f27ba5c33a7051cc588c39c2cd5dcb6"
+    },
+    {
+      "path": "references/flight_fixture/hokkaido-weather.json.gz",
+      "bytes": 296340,
+      "git_blob_sha": "4a7f843041a880d58a41f1f698abf5050d748a30",
+      "sha256": "69b4b0c23919eeb2e645e6a632d05824a892e301295bec4645013e0df13545a9"
+    },
+    {
+      "path": "references/flight_fixture/jra3q-weather.json.gz",
+      "bytes": 6882657,
+      "git_blob_sha": "425a688f4896314452b00ee8e93405cb2bb227d0",
+      "sha256": "17acf33d243843ce91b3c1f8e8266355bf5a4dfccba652796d0b69d2216aea91"
+    },
+    {
+      "path": "references/flight_fixture/manifest.json",
+      "bytes": 11111,
+      "git_blob_sha": "60250c8024f6bdf7037e574653a462bbfc8e6dc1",
+      "sha256": "88c8d0a5b29622e186c09eb9a776ce60ae1641ef213160581a0fce3d92fc26ba"
+    },
+    {
+      "path": "references/flight_fixture/wakayama-weather.json.gz",
+      "bytes": 156112,
+      "git_blob_sha": "a7c3b4d20b40563d8e09b0a910b10dd89d29273d",
+      "sha256": "de3c00643092b34a50451d7263987014030b1d760c2e3da6f03a5245cf8c1739"
+    },
+    {
+      "path": "references/gfs_p1_fixture/f000.grib2",
+      "bytes": 37870,
+      "git_blob_sha": "9abe97c2df4ea3b2a3c0cfd45f78a6d7c4bb1bbb",
+      "sha256": "4baefb0af3ed2924e11c0610b26fdc5d6d2c21759dc7c63380818bb8c40e628c"
+    },
+    {
+      "path": "references/gfs_p1_fixture/f001.grib2",
+      "bytes": 37861,
+      "git_blob_sha": "34adb9233b1719a9f251efae4ce2d7fb9e55a834",
+      "sha256": "1f0a29b6855fcbad942a82440f6b8a3d8b1cde1b3db8c946172804212231332d"
+    },
+    {
+      "path": "references/gfs_p1_fixture/f002.grib2",
+      "bytes": 37859,
+      "git_blob_sha": "338ef9e1fd086b6f7e0be8aada0c2ace1193955f",
+      "sha256": "547b2402efd47eb51c9ea03c516edd59696fbd1b20b687083da95395a43cb13e"
+    },
+    {
+      "path": "references/gfs_p1_fixture/manifest.json",
+      "bytes": 11962,
+      "git_blob_sha": "304c75058de0e740939f191dbfd8e9ee6e63da1f",
+      "sha256": "53052493ff216e4cc82bf05f8de1eda135c3ea4e55b5db2e63c7dd3b363519ba"
+    },
+    {
+      "path": "references/jra3q_model_fixture/source_bundle.json",
+      "bytes": 340890,
+      "git_blob_sha": "534f01f0af24ba20999dc0845d237b6f49317160",
+      "sha256": "81bf2a10759d8f92a9576f3285bc810bedbe30a6f3675df78416f3ccf8295811"
+    },
+    {
+      "path": "references/research_returns/Q420-00/2026-09-29-r7/CODEX_EVIDENCE.zip",
+      "bytes": 1457911,
+      "git_blob_sha": "4003c8e3c96fa428d5b42d35ada1dd000cbc939d",
+      "sha256": "70c96189ac32a77268a0409c1bf4ae75f0d66f254fafce12e8b63f2534691820"
+    },
+    {
+      "path": "references/research_returns/Q420-00/2026-09-29-r7/CODEX_RESEARCH_REPORT.md",
+      "bytes": 156566,
+      "git_blob_sha": "31738554e1a7e6f7ac58715b48909803a8b07f11",
+      "sha256": "cc03de270d7f4aab668d2287ab7e05095cb9997be9f361749ee484684fa293e9"
+    },
+    {
+      "path": "references/research_returns/Q420-00/2026-09-29-r7/CODEX_REVIEW.md",
+      "bytes": 10399,
+      "git_blob_sha": "f741ec47af916a93f6c75bd8e6df4cd13b03c8c2",
+      "sha256": "854428551288e75884cb0ff3a44a1387012f4953b5672a050820ae9a297d38fe"
+    },
+    {
+      "path": "references/research_returns/Q420-00/2026-09-29-r7/Q420_R7_20260929_package.zip",
+      "bytes": 30725666,
+      "git_blob_sha": "4d1bb94e81d50b84a8f1997aea187d08f179060e",
+      "sha256": "40ec3fc281680a970be56b65604a30f1bd9bc3bf618bb749a23bb659ddefcaf8"
+    },
+    {
+      "path": "references/research_returns/Q420-00/2026-09-29-r7/READING_AND_EVIDENCE_LOG.md",
+      "bytes": 61473,
+      "git_blob_sha": "22647e3c0b5dc413ec0ee68c7c5160d9ca1a8185",
+      "sha256": "c4e36eb38db4a6ebe70fa5b5ff9e9d230983326e06d7541c51957704d47cadec"
+    },
+    {
+      "path": "references/user_supplied/ascent_burst_gas_a.xlsx",
+      "bytes": 393248,
+      "git_blob_sha": "2893be42b2c9aa74d6fca743145c5de2a53e3499",
+      "sha256": "9e2323b1c1723833e3a1135ffbb17e2b789a79a21083d5b99e0f3f91f0faf7bd"
+    },
+    {
+      "path": "references/user_supplied/ascent_burst_gas_b.xlsx",
+      "bytes": 314863,
+      "git_blob_sha": "347db055fd14ab09cf454d97f9c26d69a31d9f95",
+      "sha256": "adb79c4fe2cf08ff4aa389f6bcbe39c20af723e1487c6bc1f331ef199079662b"
+    },
+    {
+      "path": "references/user_supplied/excel_analysis_20260920.zip",
+      "bytes": 11177282,
+      "git_blob_sha": "c1e6ba664e21fa953c41ea51d7c36d50b6c5908c",
+      "sha256": "e389c09b9f89c3099432b56ba1357c68149fe4e6e7b3fa0b8d1a1b9c8f7145c4"
+    },
+    {
+      "path": "references/user_supplied/feedback_v_0_40_1.pdf",
+      "bytes": 792151,
+      "git_blob_sha": "94855e33a4a5f70bd8851d456e6fe4a0338b5ea3",
+      "sha256": "5fddc4b3052fb6eb61955b67ac4d528381cc3dd8996ef88e75e7dd71f657acec"
+    },
+    {
+      "path": "references/user_supplied/feedback_v_0_40_1.txt",
+      "bytes": 8388,
+      "git_blob_sha": "49c9c71880545914f06aa999f9dbbd2127e780c4",
+      "sha256": "487fca2141af1f65dc03a8ef6aee702194067f1f5a462d4a3fdc14194f73a1a4"
+    },
+    {
+      "path": "references/user_supplied/flight_records.xlsx",
+      "bytes": 24588,
+      "git_blob_sha": "37fb99652f2d6c998a5b533ea0d98fac46f72245",
+      "sha256": "f90248dda366afa2825bdf2bf93c86aa4179df47b914adb1b76965804717b127"
+    },
+    {
+      "path": "references/user_supplied/wind_analysis_report.pdf",
+      "bytes": 15759118,
+      "git_blob_sha": "69beab537034f3ff4b61e3f04d0ee746f7e32ed4",
+      "sha256": "d2430f5399311c767198cfa4197985b7108b4d909eff24e44e77ecf3194168d4"
+    },
+    {
+      "path": "references/user_supplied/wind_analysis_report.txt",
+      "bytes": 206920,
+      "git_blob_sha": "7d65e82771a3cfeaaf3ec1e2b50acc85c0c4a0e8",
+      "sha256": "71932c48409c54bd4e3c03951ac451677e1a87a71dc2234461d21edf6fe0d6fb"
+    },
+    {
+      "path": "tests/test_acquire_era5_climate_samples.py",
+      "bytes": 23778,
+      "git_blob_sha": "3e4fd8cf1870cc3b950dd9d307391455ef1669ae",
+      "sha256": "a95de89480043b258ac30635970c1426b395c5342b24e338c2a38437b1d6548a"
+    },
+    {
+      "path": "tests/test_acquire_jra3q_climate_samples.py",
+      "bytes": 19922,
+      "git_blob_sha": "a1395ce98de49d3c9dfc4dd06cabb69885ce55db",
+      "sha256": "67fef11b22dfe670929bdead9ce63bb946de106913649a519f292b275bba537b"
+    },
+    {
+      "path": "tests/test_check_run.py",
+      "bytes": 3596,
+      "git_blob_sha": "4ddc50311d37d2931b608ae16ede6d0d3a7539ab",
+      "sha256": "98570d7d689c77d2e01ac88885e51104ae9da3501edab8d5233cdec06b25f1d4"
+    },
+    {
+      "path": "tests/test_contract.py",
+      "bytes": 32411,
+      "git_blob_sha": "eb37c5100ce8b1ca89e42c9054eaaceb6b9e4bbb",
+      "sha256": "1011143fa0462350bfce8298b059296dc06abd4155d6b3effafe5b55df5b7250"
+    },
+    {
+      "path": "tests/test_ensemble.py",
+      "bytes": 8499,
+      "git_blob_sha": "fd3bca5e23567b7daae042a982dc2472004873bf",
+      "sha256": "1a9c9f7200835ee193774e815baa7617d1c3bf099bd2b7c2dca96718924823db"
+    },
+    {
+      "path": "tests/test_environment.py",
+      "bytes": 18289,
+      "git_blob_sha": "7b2948127409774e670b35fbb596763dbead1ebc",
+      "sha256": "9f238e22e05982254b64b51dcb493b490e7c81cc478a01d584f28cc8e58a4e5a"
+    },
+    {
+      "path": "tests/test_flight_cli.py",
+      "bytes": 7449,
+      "git_blob_sha": "2255af3d3cb046ff0d49d2f379b4961c33108e73",
+      "sha256": "ea1a5dcf217e9c4ed5e89d35530b65a3abeca0489048158d0274cb727d04c257"
+    },
+    {
+      "path": "tests/test_flight_numerics.py",
+      "bytes": 6181,
+      "git_blob_sha": "efd0f10122f618d3005a59ca680be4ec42bd07b6",
+      "sha256": "ab7a30556885ae9f19fbadadd9c25cb9a7ebf89ce6cb26eacff7264bc7b079db"
+    },
+    {
+      "path": "tests/test_flight_weather.py",
+      "bytes": 18700,
+      "git_blob_sha": "5982f73845bf3c94515af0c2246cb14f0e06e6f4",
+      "sha256": "2bdd0eba35a0a27f84b376eaf016c157822826f05c3eff08a04a0365035a0fb2"
+    },
+    {
+      "path": "tests/test_gfs_acquisition.py",
+      "bytes": 9552,
+      "git_blob_sha": "b06ed5a0b9df4f86f4f6e6c1b7a39c90c82d1067",
+      "sha256": "1b628de33902ede205bc0e89bcc1ae2d1e975bf62bad8d3952382587782b86a8"
+    },
+    {
+      "path": "tests/test_gfs_forecast_plan.py",
+      "bytes": 16490,
+      "git_blob_sha": "b1914cb5ae49c9cedeb96a095ecee7e6807809ab",
+      "sha256": "4aebe06e58fe55c783edeef5da26d8a2982b4a96c49faf8484d80ae02c20e85c"
+    },
+    {
+      "path": "tests/test_gfs_raw_reuse.py",
+      "bytes": 12457,
+      "git_blob_sha": "c37cf24bb91923377c54a722c146eba786479f8e",
+      "sha256": "9545ec6e3327e3ae144e4da44b51ab21a46463bcde85b619c608c78ffac58482"
+    },
+    {
+      "path": "tests/test_health.py",
+      "bytes": 30169,
+      "git_blob_sha": "d801b2a9ccb1fc86bd2c1d1f3809834254a7a977",
+      "sha256": "671196242414bb9161a4e16cfc7ba4c113690a4c800b68d637c9100fa3884f5d"
+    },
+    {
+      "path": "tests/test_jra3q_flight_field.py",
+      "bytes": 20391,
+      "git_blob_sha": "5b9d1b2f86bf176cff9f735e0e5b5af7638c1df6",
+      "sha256": "dc063a9a846b72526f5fbe1751c61ceeda7f2374327a549756bddcf3abebc146"
+    },
+    {
+      "path": "tests/test_jra3q_model_environment.py",
+      "bytes": 17310,
+      "git_blob_sha": "c06f5f5bd8e16e7d214aaa7c23cd04b3fa38a3e8",
+      "sha256": "bdffc1dd271106684d61ebb166a368cbc713e23bb8f19018a739f575f9e02bcd"
+    },
+    {
+      "path": "tests/test_jra3q_surface_field.py",
+      "bytes": 14027,
+      "git_blob_sha": "8f628fc89687aeb403b72659f9d5de0eaddf7c3a",
+      "sha256": "887f7ef57d69e50c8f84bd3c9a3be5ab42cc8d28edd9c550e98f95db10af4764"
+    },
+    {
+      "path": "tests/test_model_composition.py",
+      "bytes": 16733,
+      "git_blob_sha": "8d29bd68e41002502e1d53e56a572183912b396f",
+      "sha256": "d91737e3efa9706c4478af2b2065755a9cc4421da994a3ff44af787f4a852797"
+    },
+    {
+      "path": "tests/test_state.py",
+      "bytes": 12884,
+      "git_blob_sha": "bdaf0e374399ba716910ad55764560a9d3dd3b3e",
+      "sha256": "85d7e7464fb689228517a93b81930e44f5a92e698a756cf831c475228db1b9d8"
+    },
+    {
+      "path": "tests/test_trajectory.py",
+      "bytes": 26904,
+      "git_blob_sha": "74ad39e92a9bf5505cdc52ddbc80b71232e14b9e",
+      "sha256": "aa1815d647b5290af203e9905163111b8d67378d414b02521f7837bf3322b59e"
+    },
+    {
+      "path": "tests/test_workspace.py",
+      "bytes": 16252,
+      "git_blob_sha": "d59ad6f61ddc6c4c522c888920a70c73682dc8c8",
+      "sha256": "10985007d061af9343b970c9e1053f0074942f996f1f07151dc8d2869a192961"
+    },
+    {
+      "path": "tools/acquire_era5_climate_samples.py",
+      "bytes": 36266,
+      "git_blob_sha": "d635ce3b5b8ea210133861cd6fa0ed87d046aa71",
+      "sha256": "d4a25c52de79ef016de45929cc5f87259bab0170b60cd04d8e928ac91506b074"
+    },
+    {
+      "path": "tools/acquire_jra3q_climate_samples.py",
+      "bytes": 33990,
+      "git_blob_sha": "61a6d980bd25f625a040b1705d784c55b11a9e80",
+      "sha256": "5960e88a04657f3bf2aa21da8be339fd411fb9e8c0ee4085ae71b6e6ca19ecbf"
+    },
+    {
+      "path": "tools/build_docs.py",
+      "bytes": 2697,
+      "git_blob_sha": "125811fe06999e0a1b6d707daff53f7c1b75d692",
+      "sha256": "f03aa8cd8c6383156027c8c970f8d625b47ab94c97ba7cd48220d18d4085c4e8"
+    },
+    {
+      "path": "tools/build_guides.py",
+      "bytes": 3204,
+      "git_blob_sha": "925ffa2fbbed45d68f0cb0f4d9f4e4ccfb7788e3",
+      "sha256": "ad3388abb312786f338afe627b4665f57bdd6c0b193796354b1c48039c66e6a2"
+    },
+    {
+      "path": "tools/build_research_packet.py",
+      "bytes": 10452,
+      "git_blob_sha": "724e3b763ab1d6bfe717ccb03cc1e4ac0938069f",
+      "sha256": "d20dd3e24e88731268b2319c140e04508676ecba35475752705d8abf85210367"
+    },
+    {
+      "path": "tools/check_contract.py",
+      "bytes": 28495,
+      "git_blob_sha": "3ebe1e8c2059c7b7b22fcf0b426e87f4fbdd0903",
+      "sha256": "43718e6e0b009b291220c13eb551c7e8831b9358ef44eae3d4500a455a6fe668"
+    },
+    {
+      "path": "tools/check_health.py",
+      "bytes": 26126,
+      "git_blob_sha": "2285af724a6b00a11eed5e53060f0902216b396f",
+      "sha256": "3898245493dea0d4183170eeaf5997a51037fb3cf8c30b6a88ab0d59dc5c68e1"
+    },
+    {
+      "path": "tools/check_state.py",
+      "bytes": 17769,
+      "git_blob_sha": "e1f70796cb5b86c2ea88c46ac278eed1e058b39a",
+      "sha256": "94ae47ee06fe15bcd0d121fff2778a11316b72e1f95df649c7e5c0aaad6ba7ba"
+    },
+    {
+      "path": "tools/compose_model.py",
+      "bytes": 20507,
+      "git_blob_sha": "b1b7d47c343f97e13ad17f4c932fd28fe2a466b9",
+      "sha256": "288015dcfe5fd163e4122aa2d960cf65d8854d8e004d43c450ee16b18289270c"
+    },
+    {
+      "path": "tools/inspect_gfs_fixture.py",
+      "bytes": 11957,
+      "git_blob_sha": "d04b1caee21b3ffef9e1473a85d4a558371cfcf6",
+      "sha256": "febcc4675147be861044ad26fb657bf44e90fe39938d4dc54b75ac0e61ecd234"
+    },
+    {
+      "path": "tools/make_flight_fixture.py",
+      "bytes": 2230,
+      "git_blob_sha": "19bd175dba002f085d1b05274f29447b68ad7d57",
+      "sha256": "1973f804a702b3206d244806286932916cb234443f21cc515603f857fec35dd3"
+    },
+    {
+      "path": "tools/normalize_gfs_fixture.py",
+      "bytes": 16956,
+      "git_blob_sha": "c9bd5397d81fae255f8101f6e5389a1b1f9b9619",
+      "sha256": "2f041a6145bf5ec1be4dfb8bd58837c179e30b59bbcee21fbf8648617c2c2ff0"
+    },
+    {
+      "path": "tools/normalize_jra3q_model_fixture.py",
+      "bytes": 22097,
+      "git_blob_sha": "c1ce0bfa9657b132c64d2427add31186866adef7",
+      "sha256": "04cd56848fb5fad3af9a30556f20cdfd409b223cabc68014e5dd0bec68115970"
+    },
+    {
+      "path": "tools/plan_gfs_forecast.py",
+      "bytes": 16004,
+      "git_blob_sha": "7395cf2cf2f928bf949bba9ba7d347d956ed6131",
+      "sha256": "ad74113c5b58becb1ebc1df355a90eb26ef8f070fddd702e59f804715d738e28"
+    },
+    {
+      "path": "tools/prepare_climate_demo.py",
+      "bytes": 6476,
+      "git_blob_sha": "d0baab86a6bd5851969a23ad8b6e3a88fbc2abaf",
+      "sha256": "d4f5eced9302c55b4f135d4a89e4cd3b7816ee3e44b052ee8e7640963bb0efbf"
+    },
+    {
+      "path": "tools/prepare_jra3q_flight_fixture.py",
+      "bytes": 4491,
+      "git_blob_sha": "4295e212981d25fc492e54d196498f22ba5dad48",
+      "sha256": "0289381e83611b26ebfa9ebab1d42ce734f7bf5d319a159ed6059798a392d635"
+    },
+    {
+      "path": "tools/prepare_workspace.py",
+      "bytes": 13814,
+      "git_blob_sha": "05d3febf1f7d8455b07209655ddb260891b5b89a",
+      "sha256": "c2c3a108ff5cccee50dde536c26000f2c51c4b8cf210cf41206ed45f659001e1"
+    },
+    {
+      "path": "tools/run_checks.py",
+      "bytes": 8565,
+      "git_blob_sha": "cc49e4914cf2b8343c89da50e123efdf65c944cb",
+      "sha256": "dbbb50ded6f5e16e6bf491e9cc368b801bfc627a27131db02547926265bacd37"
+    },
+    {
+      "path": "tools/template.tex",
+      "bytes": 3027,
+      "git_blob_sha": "fe47283563d82e0c4482acf13a5a6c8a7812efd0",
+      "sha256": "a10e663faac6bb6fde3957b3f03fc94e05452c62a50942cfab84ce0a1875f7ff"
+    }
+  ],
+  "scope": "all files tracked in fixed main; no file selection; plus seven distribution companion files",
+  "history": "working tree snapshot only; no .git or commit graph",
+  "previous_runtime_subset_files": 215,
+  "additional_repository_files": 151
+}

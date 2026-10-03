@@ -1,0 +1,111 @@
+{
+  "source_basis": "ed7c6fc0851d96619b08e5bb7df09802b157b97c",
+  "source_files": 213,
+  "python": "3.12.12 | packaged by conda-forge | (main, Oct 22 2025, 23:13:34) [MSC v.1944 64 bit (AMD64)]",
+  "assets": {
+    "/": {
+      "bytes": 426,
+      "sha256": "a4b79d201ffe3877570a50a654c380d27cb0590557fc47631216510fe6418424"
+    },
+    "/scene3d/index.html": {
+      "bytes": 5939,
+      "sha256": "932479dc6798407e0a0ae786f99e73cc0813854179e193baaa38f680161f3a1b"
+    },
+    "/scene3d/data/WW15MGH.DAC": {
+      "bytes": 2076480,
+      "sha256": "9dcaf4efd6857aaa2e1e2e2c574d3f5264eacf47024cdcd5291c40ddad5e5acc"
+    },
+    "/cesium/Cesium.js": {
+      "bytes": 6018837,
+      "sha256": "dbb7a1606ef2150c7266eee6eb10bfeba1bd1351cdce1df85787a45491f482e3"
+    }
+  },
+  "flights": [
+    {
+      "source": "wakayama-gfs-fixture",
+      "run_id": "dd16c03b-b8e6-47bf-bd43-9e19ea873246",
+      "state": "completed",
+      "result_bytes": 700630,
+      "result_sha256": "7ba921a80c1d53722a70ffc3b83af9a4cf71a5a62c649775435507a24884a9c6"
+    },
+    {
+      "source": "hokkaido-gfs-fixture",
+      "run_id": "e50e87f3-f6dd-4c52-9aac-4542910d0de4",
+      "state": "completed",
+      "result_bytes": 523961,
+      "result_sha256": "aab01ec8815dc78ab5230c1c50adf40f452a51390c7f671804dd3b297c763a5e"
+    },
+    {
+      "source": "jra3q-surface-fixture",
+      "run_id": "96e1f676-9265-4918-be1a-a089b586b417",
+      "state": "completed",
+      "result_bytes": 818117,
+      "result_sha256": "bd3120257e1f05195719f1bc8ca060c6ae7e10229507bc153b46ed04adbf9dc2"
+    }
+  ],
+  "climate": [
+    {
+      "source": "JRA-3Q",
+      "hours": null,
+      "analysis_id": "4846e05d-eb87-482b-83f8-656d4ac9a1c4",
+      "quarter_bins": 48,
+      "monthly_profile_available": true,
+      "seconds": 0.7820000000065193
+    },
+    {
+      "source": "JRA-3Q",
+      "hours": [
+        0,
+        6
+      ],
+      "analysis_id": "9b8d314a-3f3c-4328-b846-1fa8d08f121c",
+      "quarter_bins": 48,
+      "monthly_profile_available": true,
+      "seconds": 0.7650000000139698
+    },
+    {
+      "source": "ERA5",
+      "hours": null,
+      "analysis_id": "311e3418-c63d-4a6e-9dea-4c754383082a",
+      "quarter_bins": 48,
+      "monthly_profile_available": true,
+      "seconds": 0.8129999999655411
+    },
+    {
+      "source": "ERA5",
+      "hours": [
+        0,
+        6
+      ],
+      "analysis_id": "b210ebf6-de2b-4b8a-9465-10ff35045e60",
+      "quarter_bins": 48,
+      "monthly_profile_available": true,
+      "seconds": 0.7650000000139698
+    }
+  ],
+  "scope": "fresh dependency/source setup on existing Windows PC; no browser or Google or live forecast acquisition",
+  "health": {
+    "status": "ok",
+    "version": "0.58.0",
+    "workers": 1,
+    "max_queued": 4,
+    "flight_execution": {
+      "available": true,
+      "restart_required": false,
+      "error": null,
+      "queued_policy": "preserved_without_automatic_resubmission"
+    },
+    "instance_id": "a5eb2dee-8877-4ad5-9041-3b00b3192d9d"
+  },
+  "normal_restart_readback": "passed",
+  "elapsed_seconds": 23.31200000003446,
+  "landing_status": [
+    "landed",
+    "landed",
+    "landed"
+  ],
+  "frontend_build": "new npm ci and npm run build passed",
+  "eccodes": "fresh locked pip install; selfcheck passed; native DLL bundled in venv",
+  "node": "24.19.0",
+  "npm": "11.6.2"
+}
