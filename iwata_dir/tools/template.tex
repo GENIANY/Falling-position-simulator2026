@@ -1,0 +1,76 @@
+% Generated document template. This file is an editable build input.
+\documentclass[11pt,a4paper]{article}
+\usepackage[margin=19mm,top=22mm,bottom=21mm,headheight=15pt]{geometry}
+\usepackage{fontspec}
+\usepackage{xeCJK}
+\setmainfont{Noto Sans CJK JP}
+\setsansfont{Noto Sans CJK JP}
+\setmonofont{Noto Sans Mono CJK JP}[Scale=0.86]
+\setCJKmainfont{Noto Sans CJK JP}
+\setCJKsansfont{Noto Sans CJK JP}
+\setCJKmonofont{Noto Sans Mono CJK JP}[Scale=0.86]
+\usepackage{amsmath,amssymb}
+\usepackage{longtable,booktabs,array,calc}
+\usepackage{xcolor,graphicx}
+\definecolor{ink}{HTML}{183046}
+\definecolor{accent}{HTML}{176D86}
+\usepackage{xurl}
+\usepackage[unicode,colorlinks=true,linkcolor=accent,urlcolor=accent]{hyperref}
+\usepackage{bookmark}
+\usepackage{fancyhdr}
+\usepackage[nobottomtitles*]{titlesec}
+% Keep a heading with its next few lines or the beginning of a table.
+% The threshold follows body line height; no document/page-specific breaks.
+\renewcommand{\bottomtitlespace}{8\baselineskip}
+\usepackage{enumitem}
+\usepackage{fancyvrb}
+\usepackage{fvextra}
+\DefineVerbatimEnvironment{verbatim}{Verbatim}{breaklines=true,fontsize=\small}
+\setcounter{secnumdepth}{-1}
+\setcounter{tocdepth}{1}
+\renewcommand{\contentsname}{目次}
+\linespread{1.08}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{5pt}
+\setlength{\emergencystretch}{3em}
+\renewcommand{\arraystretch}{1.28}
+\setlist{nosep,leftmargin=1.8em}
+\providecommand{\tightlist}{\setlength{\itemsep}{1pt}\setlength{\parskip}{1pt}}
+\newcounter{none}
+\titleformat{\section}{\Large\bfseries\color{ink}}{}{0pt}{}
+\titleformat{\subsection}{\large\bfseries\color{accent}}{}{0pt}{}
+\titlespacing*{\section}{0pt}{18pt}{9pt}
+\titlespacing*{\subsection}{0pt}{12pt}{6pt}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\footnotesize Balloon-JP / 開発構想・設計理由・評価計画}
+\fancyhead[R]{\footnotesize REV $if(revision)$$revision$$else$0.3.0$endif$}
+\fancyfoot[L]{\footnotesize $if(build_date)$$build_date$$else$2026-09-17$endif$ / 現行構想・未採用案は明示}
+\fancyfoot[R]{\thepage}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0pt}
+\hypersetup{pdftitle={$title$},pdfauthor={$author$},pdfsubject={Thread-independent project governance proposal}}
+\begin{document}
+\begin{titlepage}
+\vspace*{22mm}
+{\color{accent}\rule{\linewidth}{1.2pt}}\par\vspace{12mm}
+{\fontsize{27}{38}\selectfont\bfseries\color{ink}$title$\par}
+\vspace{8mm}
+{\LARGE\bfseries $subtitle$\par}
+\vspace{17mm}
+{\large $author$\par}
+\vspace{4mm}
+{\large $date$\par}
+\vfill
+{\large\bfseries 現行方針と、審査前の開発構想を分けて管理します。}\par
+\vspace{3mm}
+ユーザー要求、確認済み事実、提案、未確認事項を分け、\par
+会話がなくても検討と開発を再開できる状態を残します。\par
+\vspace{7mm}
+{\small 編集元：docs/PROJECT\_PLAN.md\quad 生成物：TeX / PDF}\par
+{\small 操作状態：BOOTSTRAP\_RUNBOOK.html\quad 入口：README.md}\par
+\end{titlepage}
+\tableofcontents
+\clearpage
+$body$
+\end{document}
