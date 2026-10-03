@@ -1,0 +1,20 @@
+[project]
+name = "balloon-local-backend"
+version = "0.50.0"
+description = "Local FastAPI application adapter for the existing balloon simulator"
+requires-python = ">=3.12,<3.13"
+dependencies = [
+  "fastapi==0.116.2",
+  "uvicorn==0.35.0",
+  "numpy==2.4.4",
+  "scipy==1.17.1",
+  "eccodes==2.48.0",
+  "geographiclib==2.1",
+  "duckdb==1.5.5",
+]
+
+[project.optional-dependencies]
+test = ["httpx==0.28.1", "pytest==8.4.2"]
+
+# Run from the repository root; this is a dependency declaration, not a new
+# distribution of balloon_sim. Install requirements.lock, not an editable root.
